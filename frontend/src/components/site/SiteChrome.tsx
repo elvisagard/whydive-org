@@ -1,0 +1,99 @@
+import Link from 'next/link';
+import { livingSpiralContact, navItems } from '@/lib/siteContent';
+
+export function SiteHeader() {
+  return (
+    <header className="sticky top-0 z-50 w-full overflow-hidden border-b border-[#d9d0c3]/80 bg-[#f8f4ed]/92 backdrop-blur-md">
+      <div className="mx-auto flex w-full max-w-7xl min-w-0 flex-col gap-4 px-5 py-4 md:px-8 lg:flex-row lg:items-center lg:justify-between">
+        <div className="flex min-w-0 items-center justify-between gap-5">
+          <Link href="/" className="group">
+            <span className="block text-xs font-semibold uppercase tracking-[0.32em] text-[#7b633e]">
+              WhyDive
+            </span>
+            <span className="block text-sm text-[#243447]/80">Framework Institute</span>
+          </Link>
+
+          <Link
+            href="/foundations/what-is-whydive"
+            className="rounded-full border border-[#243447]/20 px-4 py-2 text-sm font-semibold text-[#243447] transition hover:border-[#8a6d2f] hover:text-[#6f551e] sm:inline-flex lg:hidden"
+          >
+            Start Here
+          </Link>
+        </div>
+
+        <nav
+          className="flex w-full min-w-0 max-w-full gap-5 overflow-x-auto pb-1 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden lg:w-auto lg:items-center lg:overflow-visible lg:pb-0"
+          aria-label="Primary navigation"
+        >
+          {navItems.map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              className="shrink-0 text-sm font-semibold text-[#243447]/78 transition hover:text-[#0f2433]"
+            >
+              {item.label}
+            </Link>
+          ))}
+        </nav>
+
+        <Link
+          href="/foundations/what-is-whydive"
+          className="hidden rounded-full border border-[#243447]/20 px-4 py-2 text-sm font-semibold text-[#243447] transition hover:border-[#8a6d2f] hover:text-[#6f551e] lg:inline-flex"
+        >
+          Start Here
+        </Link>
+      </div>
+    </header>
+  );
+}
+
+export function SiteFooter() {
+  return (
+    <footer className="border-t border-[#d9d0c3] bg-[#111c24] text-[#f8f4ed]">
+      <div className="mx-auto grid max-w-7xl gap-10 px-5 py-12 md:grid-cols-[1.15fr_0.85fr] md:px-8">
+        <div>
+          <p className="text-xs font-semibold uppercase tracking-[0.32em] text-[#c8a45a]">WhyDive</p>
+          <p className="mt-4 max-w-2xl text-2xl font-semibold leading-snug">
+            A framework for understanding and improving how human beings move from evidence to action.
+          </p>
+          <p className="mt-5 max-w-2xl text-sm leading-7 text-[#d8d0c5]">
+            WhyDive is currently owned and operated by {livingSpiralContact.legalName}. For
+            invitations, questions, and correspondence, use the contact information listed here.
+          </p>
+        </div>
+
+        <div className="grid gap-6 text-sm text-[#d8d0c5] sm:grid-cols-2">
+          <div>
+            <p className="font-semibold text-[#f8f4ed]">Contact</p>
+            <div className="mt-3 space-y-1 leading-6">
+              {livingSpiralContact.addressLines.map((line) => (
+                <p key={line}>{line}</p>
+              ))}
+              <p>
+                <a className="underline decoration-[#c8a45a]/60" href={livingSpiralContact.phoneHref}>
+                  {livingSpiralContact.phone}
+                </a>
+              </p>
+              <p>
+                <a className="underline decoration-[#c8a45a]/60" href={livingSpiralContact.emailHref}>
+                  {livingSpiralContact.email}
+                </a>
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <p className="font-semibold text-[#f8f4ed]">Explore</p>
+            <div className="mt-3 grid gap-2">
+              {[...navItems, { label: 'Contact', href: '/contact' }].map((item) => (
+                <Link key={item.href} className="hover:text-[#c8a45a]" href={item.href}>
+                  {item.label}
+                </Link>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+}

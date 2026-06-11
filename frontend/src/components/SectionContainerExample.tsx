@@ -88,7 +88,7 @@ export function SectionContainerExample() {
             <h2 className="mb-6 text-white">
               Gradient to Transparent with Bottom Alignment
             </h2>
-            <p className="font-cormorant text-xl mb-8">
+            <p className="font-reading text-xl mb-8">
               This section demonstrates a beautiful gradient that fades from blue to purple and then 
               becomes transparent. The content is positioned at the bottom of the container.
             </p>

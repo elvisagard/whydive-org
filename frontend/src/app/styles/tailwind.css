@@ -1,10 +1,23 @@
 @import "tailwindcss";
 
 @theme {
-  --font-montserrat: "Montserrat", sans-serif;
-  --font-cormorant: "Cormorant", serif;
-  --font-mulish: "Mulish", sans-serif;
+  --font-fraunces: "Fraunces", serif;
+  --font-eb-garamond: "EB Garamond", serif;
+  --font-inter: "Inter", sans-serif;
 
-  /* Set Mulish as the default font */
-  --font-sans: "Mulish", sans-serif;
+  --font-display: var(--font-fraunces);
+  --font-reading: var(--font-eb-garamond);
+  --font-interface: var(--font-inter);
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-eb-garamond);
+
+  --color-wd-ink: #101b23;
+  --color-wd-ink-soft: #243447;
+  --color-wd-parchment: #f8f4ed;
+  --color-wd-paper: #fffdf8;
+  --color-wd-line: #d9d0c3;
+  --color-wd-muted: #536271;
+  --color-wd-teal: #2d6f78;
+  --color-wd-gold: #c8a45a;
+  --color-wd-copper: #8a6d2f;
 }
