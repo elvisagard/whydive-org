@@ -16,6 +16,8 @@ In Next.js, reference these assets from the app as:
 
 | Use | Public path | Notes |
 |---|---|---|
+| WhyDive dark logo | `/images/whydive/logo-dark.svg` | Tagless parent WhyDive logo for light backgrounds. The existing WhyDive app will later move toward a WhyDive Education mark. |
+| WhyDive light logo | `/images/whydive/logo-light.svg` | Tagless parent WhyDive logo for dark backgrounds. The existing WhyDive app will later move toward a WhyDive Education mark. |
 | Homepage hero, architectural threshold with water | `/images/whydive/hero-threshold-water-desktop.png` | Primary desktop hero candidate. Strong contemplative threshold image. |
 | Homepage hero, underwater light | `/images/whydive/hero-underwater-light-desktop.png` | Secondary desktop hero or atmospheric section background. |
 | Mobile hero, vertical light threshold | `/images/whydive/hero-mobile-light-threshold.png` | Mobile hero companion image. |

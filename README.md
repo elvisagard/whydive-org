@@ -137,20 +137,24 @@ This monorepo uses pnpm workspaces with the following configuration:
 
 ## 🚀 Deployment
 
-### Frontend (Next.js)
+### WhyDive.org on Coolify
 
-The frontend can be deployed to Vercel, Netlify, or any static hosting service.
+Deploy the public site to Coolify from the repository root using the included `Dockerfile`.
 
-### Backend (Express.js)
+- Application type: Dockerfile
+- Dockerfile path: `Dockerfile`
+- Exposed port: `3000`
+- Health check path: `/`
+- Build command: handled by Dockerfile
+- Start command: handled by Dockerfile
 
-The backend can be deployed to:
+The Docker image builds the `frontend` workspace with Next.js standalone output and runs `node frontend/server.js`.
 
-- Railway
-- Render
-- Heroku
-- DigitalOcean App Platform
-- AWS EC2
-- Google Cloud Run
+See `docs/deployment-coolify.md` for the deployment notes and environment variable checklist.
+
+### Backend (Later Phase)
+
+The Express backend and database migration scripts remain available for later content/database phases, but the current public site deploys as the frontend container.
 
 ## 📝 Environment Variables
 

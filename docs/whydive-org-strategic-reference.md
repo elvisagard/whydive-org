@@ -32,6 +32,14 @@ WhyDive is currently owned and operated under Living Spiral Studio LLC. Future w
 
 Footer, contact, privacy, terms, and support language should therefore reference Living Spiral Studio LLC where legal or operational identity is required.
 
+## Brand Posture
+
+WhyDive.org uses the current WhyDive dark and light logo assets as the parent WhyDive mark.
+
+The existing `/Users/elvisagard/Projects/whydive` app will later be visually adjusted to represent WhyDive Education so the unqualified WhyDive name and mark are reserved for the parent framework.
+
+Until that education-specific mark is created, treat the copied WhyDive.org logo assets as the canonical site logos for the parent brand.
+
 ## What WhyDive.org Is
 
 - A framework institute

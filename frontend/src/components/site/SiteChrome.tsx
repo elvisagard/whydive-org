@@ -1,16 +1,19 @@
 import Link from 'next/link';
 import { livingSpiralContact, navItems } from '@/lib/siteContent';
 
+const logoDark = '/images/whydive/logo-dark.svg';
+const logoLight = '/images/whydive/logo-light.svg';
+
 export function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 w-full overflow-hidden border-b border-[#d9d0c3]/80 bg-[#f8f4ed]/92 backdrop-blur-md">
       <div className="mx-auto flex w-full max-w-7xl min-w-0 flex-col gap-4 px-5 py-4 md:px-8 lg:flex-row lg:items-center lg:justify-between">
         <div className="flex min-w-0 items-center justify-between gap-5">
-          <Link href="/" className="group">
-            <span className="block text-xs font-semibold uppercase tracking-[0.32em] text-[#7b633e]">
-              WhyDive
+          <Link href="/" className="group flex min-w-0 flex-col gap-1" aria-label="WhyDive home">
+            <img src={logoDark} alt="WhyDive" className="h-auto w-[150px] max-w-full sm:w-[178px]" />
+            <span className="block text-xs font-medium tracking-[0.14em] text-[#243447]/72 sm:text-sm">
+              Framework Institute
             </span>
-            <span className="block text-sm text-[#243447]/80">Framework Institute</span>
           </Link>
 
           <Link
@@ -52,7 +55,7 @@ export function SiteFooter() {
     <footer className="border-t border-[#d9d0c3] bg-[#111c24] text-[#f8f4ed]">
       <div className="mx-auto grid max-w-7xl gap-10 px-5 py-12 md:grid-cols-[1.15fr_0.85fr] md:px-8">
         <div>
-          <p className="text-xs font-semibold uppercase tracking-[0.32em] text-[#c8a45a]">WhyDive</p>
+          <img src={logoLight} alt="WhyDive" className="h-auto w-[190px] max-w-full" />
           <p className="mt-4 max-w-2xl text-2xl font-semibold leading-snug">
             A framework for understanding and improving how human beings move from evidence to action.
           </p>
