@@ -127,7 +127,8 @@ export function VisitorActionPanel({
           <p className="mt-4 text-base leading-7 text-[#d8d0c5]">{benefit}</p>
         </div>
         <div className="grid gap-3">
-          {actions.map((action) => {
+          {actions.map((action, index) => {
+            const actionKey = `${action.label}-${action.href}-${index}`;
             const className =
               'block border border-white/12 bg-white/[0.045] p-4 transition hover:border-[#c8a45a]/70 hover:bg-white/[0.07]';
             const content = (
@@ -139,14 +140,14 @@ export function VisitorActionPanel({
 
             if (action.external) {
               return (
-                <a key={action.href} href={action.href} target="_blank" rel="noreferrer" className={className}>
+                <a key={actionKey} href={action.href} target="_blank" rel="noreferrer" className={className}>
                   {content}
                 </a>
               );
             }
 
             return (
-              <Link key={action.href} href={action.href} className={className}>
+              <Link key={actionKey} href={action.href} className={className}>
                 {content}
               </Link>
             );
