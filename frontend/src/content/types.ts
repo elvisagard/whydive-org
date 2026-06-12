@@ -22,11 +22,17 @@ export interface WhitepaperEntry {
   title: string;
   subtitle: string;
   slug: string;
+  sequenceLabel?: string;
   layer: number;
   layerTitle: string;
   question: string;
   audience: string[];
   status: ContentStatus;
+  publicationDate?: string;
+  version?: string;
+  pdfUrl?: string;
+  coverImage?: string;
+  coreClaim?: string;
   purpose: string[];
   relationship?: string;
   sourceDocuments?: string[];

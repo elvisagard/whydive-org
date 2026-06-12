@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
+import Link from 'next/link';
 import { EditorialPage, QuietCard, SectionHeading, VisitorActionPanel } from '@/components/site/EditorialPage';
 import { StructuredData } from '@/components/site/StructuredData';
 import { whitepaperEntries } from '@/content/whitepapers';
@@ -23,9 +24,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   const image =
-    paper.layer <= 2
+    paper.coverImage ??
+    (paper.layer <= 2
       ? '/images/whydive/whitepaper-foundational-document.png'
-      : '/images/whydive/whitepapers-og-publication.png';
+      : '/images/whydive/whitepapers-og-publication.png');
 
   return {
     title: `${paper.title}: ${paper.subtitle}`,
@@ -64,9 +66,10 @@ export default async function WhitepaperDetailPage({ params }: PageProps) {
 
   const paperUrl = absoluteUrl(`/whitepapers/${paper.slug}`);
   const paperImage = absoluteUrl(
-    paper.layer <= 2
+    paper.coverImage ??
+      (paper.layer <= 2
       ? '/images/whydive/whitepaper-foundational-document.png'
-      : '/images/whydive/whitepapers-og-publication.png',
+      : '/images/whydive/whitepapers-og-publication.png'),
   );
   const whitepaperSchema = {
     '@context': 'https://schema.org',
@@ -76,6 +79,7 @@ export default async function WhitepaperDetailPage({ params }: PageProps) {
     description: paper.question,
     url: paperUrl,
     image: paperImage,
+    datePublished: paper.publicationDate,
     articleSection: `Layer ${paper.layer}: ${paper.layerTitle}`,
     inLanguage: 'en-US',
     audience: paper.audience.map((audience) => ({
@@ -113,12 +117,13 @@ export default async function WhitepaperDetailPage({ params }: PageProps) {
     <EditorialPage
       eyebrow={`Layer ${paper.layer}: ${paper.layerTitle}`}
       title={`${paper.title}: ${paper.subtitle}`}
-      intro={paper.question}
+      intro={paper.coreClaim ?? paper.question}
       image={{
         src:
-          paper.layer <= 2
+          paper.coverImage ??
+          (paper.layer <= 2
             ? '/images/whydive/whitepaper-foundational-document.png'
-            : '/images/whydive/whitepapers-og-publication.png',
+            : '/images/whydive/whitepapers-og-publication.png'),
         alt: `Formal whitepaper image for ${paper.title}: ${paper.subtitle}.`,
       }}
     >
@@ -130,6 +135,11 @@ export default async function WhitepaperDetailPage({ params }: PageProps) {
               Use this page to understand the question this document answers, who it serves, and
               how it relates to the wider WhyDive framework.
             </p>
+          </QuietCard>
+          <QuietCard title={paper.sequenceLabel ?? `Layer ${paper.layer}`} eyebrow="Sequence">
+            <p>{paper.question}</p>
+            {paper.version ? <p className="mt-3">{paper.version}</p> : null}
+            {paper.publicationDate ? <p className="mt-3">{paper.publicationDate}</p> : null}
           </QuietCard>
           <QuietCard title="Audience" eyebrow="Who it serves">
             <ul className="space-y-2">
@@ -156,6 +166,29 @@ export default async function WhitepaperDetailPage({ params }: PageProps) {
               </li>
             ))}
           </ul>
+
+          {paper.pdfUrl ? (
+            <div className="mt-10 border border-[#d9d0c3] bg-[#fffdf8] p-6">
+              <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#8a6d2f]">
+                Public whitepaper
+              </p>
+              <h2 className="mt-3 text-2xl font-semibold text-[#101b23]">
+                Read the full PDF.
+              </h2>
+              <p className="mt-3 text-base leading-7 text-[#536271]">
+                This is the formal public distribution draft of the foundational WhyDive framework
+                paper.
+              </p>
+              <Link
+                href={paper.pdfUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="mt-5 inline-flex rounded-full bg-[#101b23] px-5 py-3 text-sm font-semibold text-[#fffdf8] transition hover:bg-[#243447]"
+              >
+                Open whitepaper PDF
+              </Link>
+            </div>
+          ) : null}
 
           {paper.relationship ? (
             <div className="mt-10">
@@ -190,7 +223,21 @@ export default async function WhitepaperDetailPage({ params }: PageProps) {
           <VisitorActionPanel
             title="Use this document for review and conversation."
             benefit="Whitepapers are for readers who want to examine the framework carefully, test its claims, and discuss how it applies in real institutions."
-            actions={[traceApplicationsAction, discussionAction, readFoundationsAction]}
+            actions={[
+              ...(paper.pdfUrl
+                ? [
+                    {
+                      label: 'Read the full PDF',
+                      href: paper.pdfUrl,
+                      description: 'Open the public distribution draft in PDF form.',
+                      external: true,
+                    },
+                  ]
+                : []),
+              traceApplicationsAction,
+              discussionAction,
+              readFoundationsAction,
+            ]}
           />
         </article>
       </div>

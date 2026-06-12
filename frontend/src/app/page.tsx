@@ -6,6 +6,7 @@ import { StructuredData } from '@/components/site/StructuredData';
 import { coreQuestions } from '@/lib/siteContent';
 import { currentApplications } from '@/content/applications';
 import { whyDiveSpaces } from '@/content/spaces';
+import { whitepaperEntries } from '@/content/whitepapers';
 import { absoluteUrl, publisherName, siteName, siteUrl } from '@/lib/discovery';
 import { discussionAction, readFoundationsAction, shareAction, traceApplicationsAction } from '@/lib/visitorActions';
 
@@ -52,6 +53,10 @@ const readingPath = [
 
 const featuredSpaces = whyDiveSpaces.filter((space) =>
   ['educators', 'clergy-and-faith-leaders', 'business-executives'].includes(space.slug),
+);
+
+const foundationalWhitepaper = whitepaperEntries.find(
+  (paper) => paper.slug === 'strengthening-judgment-under-evidence-constraints',
 );
 
 export default function Home() {
@@ -234,6 +239,46 @@ export default function Home() {
           ))}
         </div>
       </section>
+
+      {foundationalWhitepaper ? (
+        <section className="border-y border-[#d9d0c3] bg-[#101b23] px-5 py-16 text-[#f8f4ed] md:px-8 md:py-24">
+          <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.9fr_1.1fr]">
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-[0.34em] text-[#c8a45a]">
+                {foundationalWhitepaper.sequenceLabel} / {foundationalWhitepaper.publicationDate}
+              </p>
+              <h2 className="mt-4 text-4xl font-semibold leading-tight text-[#fffdf8] md:text-5xl">
+                {foundationalWhitepaper.title}: {foundationalWhitepaper.subtitle}
+              </h2>
+            </div>
+            <div className="text-lg leading-9 text-[#d8d0c5]">
+              <p>{foundationalWhitepaper.coreClaim}</p>
+              <p className="mt-5">
+                This is the first public whitepaper in the foundational pair. It explains why
+                WhyDive exists; the second paper will explain how WhyDive works.
+              </p>
+              <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+                <Link
+                  href={`/whitepapers/${foundationalWhitepaper.slug}`}
+                  className="inline-flex justify-center rounded-full bg-[#f8f4ed] px-5 py-3 text-sm font-semibold text-[#101b23] transition hover:bg-white"
+                >
+                  Read Whitepaper 1
+                </Link>
+                {foundationalWhitepaper.pdfUrl ? (
+                  <Link
+                    href={foundationalWhitepaper.pdfUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex justify-center rounded-full border border-white/25 px-5 py-3 text-sm font-semibold text-[#fffdf8] transition hover:border-[#c8a45a] hover:text-[#c8a45a]"
+                  >
+                    Open PDF
+                  </Link>
+                ) : null}
+              </div>
+            </div>
+          </div>
+        </section>
+      ) : null}
 
       <section className="border-y border-[#d9d0c3] bg-[#fffdf8] px-5 py-16 md:px-8 md:py-24">
         <div className="mx-auto max-w-7xl">

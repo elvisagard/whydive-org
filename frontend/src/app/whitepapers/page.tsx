@@ -1,7 +1,8 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { EditorialPage, QuietCard, SectionHeading, VisitorActionPanel } from '@/components/site/EditorialPage';
-import { whitepaperLayers } from '@/content/whitepapers';
+import { whitepaperEntries, whitepaperLayers } from '@/content/whitepapers';
 import { discussionAction, readFoundationsAction, traceApplicationsAction } from '@/lib/visitorActions';
 
 export const metadata: Metadata = {
@@ -10,6 +11,10 @@ export const metadata: Metadata = {
 };
 
 export default function WhitepapersPage() {
+  const flagshipPaper = whitepaperEntries.find(
+    (paper) => paper.slug === 'strengthening-judgment-under-evidence-constraints',
+  );
+
   return (
     <EditorialPage
       eyebrow="Whitepapers"
@@ -20,6 +25,52 @@ export default function WhitepapersPage() {
         alt: 'A formal archival document beneath glass with surrounding evidence fragments.',
       }}
     >
+      {flagshipPaper ? (
+        <section className="mb-14 border border-[#d9d0c3] bg-[#101b23] text-[#f8f4ed]">
+          <div className="grid gap-0 lg:grid-cols-[0.82fr_1.18fr]">
+            {flagshipPaper.coverImage ? (
+              <div className="relative min-h-[420px] border-b border-white/10 bg-[#07141b] lg:border-b-0 lg:border-r">
+                <Image
+                  src={flagshipPaper.coverImage}
+                  alt={`Cover of ${flagshipPaper.title}: ${flagshipPaper.subtitle}.`}
+                  fill
+                  sizes="(min-width: 1024px) 390px, 100vw"
+                  className="object-cover object-top"
+                  priority={false}
+                />
+              </div>
+            ) : null}
+            <div className="p-6 md:p-10">
+              <p className="text-xs font-semibold uppercase tracking-[0.28em] text-[#c8a45a]">
+                {flagshipPaper.sequenceLabel} / {flagshipPaper.publicationDate}
+              </p>
+              <h2 className="mt-4 text-4xl font-semibold leading-tight text-[#fffdf8]">
+                {flagshipPaper.title}: {flagshipPaper.subtitle}
+              </h2>
+              <p className="mt-5 text-lg leading-8 text-[#d8d0c5]">{flagshipPaper.coreClaim}</p>
+              <div className="mt-7 flex flex-col gap-3 sm:flex-row">
+                <Link
+                  href={`/whitepapers/${flagshipPaper.slug}`}
+                  className="inline-flex justify-center rounded-full bg-[#f8f4ed] px-5 py-3 text-sm font-semibold text-[#101b23] transition hover:bg-white"
+                >
+                  View whitepaper page
+                </Link>
+                {flagshipPaper.pdfUrl ? (
+                  <Link
+                    href={flagshipPaper.pdfUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex justify-center rounded-full border border-white/25 px-5 py-3 text-sm font-semibold text-[#fffdf8] transition hover:border-[#c8a45a] hover:text-[#c8a45a]"
+                  >
+                    Open PDF
+                  </Link>
+                ) : null}
+              </div>
+            </div>
+          </div>
+        </section>
+      ) : null}
+
       <SectionHeading title="Repository structure">
         <p>
           Start with the foundational framework, then move into architecture and applications. The

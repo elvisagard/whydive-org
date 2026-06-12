@@ -2,18 +2,25 @@ import type { WhitepaperEntry } from './types';
 
 export const whitepaperEntries: WhitepaperEntry[] = [
   {
-    title: 'WhyDive',
-    subtitle: 'Strengthening Judgment Under Evidence Constraints',
+    title: 'WhyDive Framework',
+    subtitle: 'Why It Exists',
     slug: 'strengthening-judgment-under-evidence-constraints',
+    sequenceLabel: 'Whitepaper 1 of 2',
     layer: 1,
     layerTitle: 'Foundational Framework',
     question: 'Why does WhyDive exist?',
     audience: ['General public', 'Investors', 'Researchers', 'Partners', 'Thought leaders'],
-    status: 'planned',
+    status: 'published',
+    publicationDate: 'June 2026',
+    version: 'Version 1.0 / Public distribution draft',
+    pdfUrl: '/whitepapers/whydive-framework-why-it-exists.pdf',
+    coverImage: '/images/whydive/whitepapers/whydive-framework-why-it-exists-cover.png',
+    coreClaim:
+      'WhyDive makes visible the movement from evidence to commitment before commitment becomes action.',
     purpose: [
-      'Define the human problem',
-      'Define judgment, reasoning, decision-making, evidence, action, and human flourishing',
-      'Establish the philosophical foundation for the framework',
+      'Name the hidden movement from evidence to action as judgment',
+      'Explain why commitment is the key variable under evidence constraints',
+      'Establish the disciplined posture of restraint that governs the framework',
     ],
     sourceDocuments: [
       'WhyDive Foundational Thesis v1',
@@ -22,9 +29,10 @@ export const whitepaperEntries: WhitepaperEntry[] = [
     ],
   },
   {
-    title: 'WhyDive',
-    subtitle: 'Bounded Reasoning Development System',
+    title: 'WhyDive Framework',
+    subtitle: 'How It Works',
     slug: 'bounded-reasoning-development-system',
+    sequenceLabel: 'Whitepaper 2 of 2',
     layer: 2,
     layerTitle: 'Framework Architecture',
     question: 'How does WhyDive operate?',

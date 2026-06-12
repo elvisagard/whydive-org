@@ -29,6 +29,7 @@ In Next.js, reference these assets from the app as:
 | Essays archive social | `/images/whydive/essays-archive-social.png` | Social card or featured essay image. |
 | Whitepaper foundational document | `/images/whydive/whitepaper-foundational-document.png` | Foundational whitepaper page. |
 | Whitepapers publication OG | `/images/whydive/whitepapers-og-publication.png` | Open Graph/social image or whitepapers index support. |
+| Whitepaper 1 cover | `/images/whydive/whitepapers/whydive-framework-why-it-exists-cover.png` | Portrait cover preview for `WhyDive Framework: Why It Exists`, Whitepaper 1 of 2. |
 | Research library banner | `/images/whydive/research-library-banner.png` | Research library page. |
 | Research index cards square | `/images/whydive/research-index-cards-square.png` | Research card or annotation/evidence relationship image. |
 | Applications branching framework banner | `/images/whydive/applications-branching-framework-banner.png` | Applications index page. |
@@ -56,6 +57,14 @@ These assets should use the documentary / journalism style described in [Midjour
 The selected source files came from `/Users/elvisagard/Downloads/` and were copied into the app with semantic names.
 
 The semantic filenames are now the source of truth for app usage. Avoid referencing the original generated filenames from app code.
+
+Formal whitepaper PDFs are stored under:
+
+`frontend/public/whitepapers/`
+
+Reference Whitepaper 1 from the app as:
+
+`/whitepapers/whydive-framework-why-it-exists.pdf`
 
 ## Usage Guidance
 
