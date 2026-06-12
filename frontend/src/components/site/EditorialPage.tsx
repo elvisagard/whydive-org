@@ -9,11 +9,19 @@ interface EditorialPageProps {
   image?: {
     src: string;
     alt: string;
+    presentation?: 'wide' | 'portrait';
   };
   children: ReactNode;
 }
 
 export function EditorialPage({ eyebrow, title, intro, image, children }: EditorialPageProps) {
+  const imagePresentation = image?.presentation ?? 'wide';
+  const imageFrameClass =
+    imagePresentation === 'portrait'
+      ? 'relative mt-10 aspect-[17/22] w-full max-w-[520px] overflow-hidden border border-[#d9d0c3] bg-[#101b23] shadow-[0_24px_80px_rgba(23,38,49,0.12)]'
+      : 'relative mt-10 aspect-[16/9] overflow-hidden border border-[#d9d0c3] bg-[#101b23] shadow-[0_24px_80px_rgba(23,38,49,0.12)]';
+  const imageClass = imagePresentation === 'portrait' ? 'object-contain' : 'object-cover';
+
   return (
     <main className="min-h-screen bg-[#f8f4ed] text-[#172631]">
       <section className="border-b border-[#d9d0c3]">
@@ -24,13 +32,13 @@ export function EditorialPage({ eyebrow, title, intro, image, children }: Editor
           </h1>
           <p className="mt-6 max-w-3xl text-lg leading-8 text-[#465767] md:text-xl">{intro}</p>
           {image ? (
-            <div className="relative mt-10 aspect-[16/9] overflow-hidden border border-[#d9d0c3] bg-[#101b23] shadow-[0_24px_80px_rgba(23,38,49,0.12)]">
+            <div className={imageFrameClass}>
               <Image
                 src={image.src}
                 alt={image.alt}
                 fill
                 sizes="(min-width: 1024px) 960px, 100vw"
-                className="object-cover"
+                className={imageClass}
                 priority={false}
               />
             </div>
@@ -86,13 +94,19 @@ export function QuietCard({
   title,
   eyebrow,
   children,
+  fillHeight = true,
 }: {
   title: string;
   eyebrow?: string;
   children: ReactNode;
+  fillHeight?: boolean;
 }) {
   return (
-    <article className="h-full border border-[#d9d0c3] bg-[#fffdf8] p-6 shadow-[0_20px_60px_rgba(23,38,49,0.05)]">
+    <article
+      className={`border border-[#d9d0c3] bg-[#fffdf8] p-6 shadow-[0_20px_60px_rgba(23,38,49,0.05)] ${
+        fillHeight ? 'h-full' : ''
+      }`}
+    >
       {eyebrow ? (
         <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#8a6d2f]">{eyebrow}</p>
       ) : null}

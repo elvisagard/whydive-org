@@ -125,23 +125,24 @@ export default async function WhitepaperDetailPage({ params }: PageProps) {
             ? '/images/whydive/whitepaper-foundational-document.png'
             : '/images/whydive/whitepapers-og-publication.png'),
         alt: `Formal whitepaper image for ${paper.title}: ${paper.subtitle}.`,
+        presentation: paper.coverImage ? 'portrait' : 'wide',
       }}
     >
       <StructuredData data={whitepaperSchema} />
       <div className="grid gap-10 lg:grid-cols-[0.72fr_1.28fr]">
         <aside className="space-y-5">
-          <QuietCard title="How to read this document" eyebrow="Reader guide">
+          <QuietCard title="How to read this document" eyebrow="Reader guide" fillHeight={false}>
             <p>
               Use this page to understand the question this document answers, who it serves, and
               how it relates to the wider WhyDive framework.
             </p>
           </QuietCard>
-          <QuietCard title={paper.sequenceLabel ?? `Layer ${paper.layer}`} eyebrow="Sequence">
+          <QuietCard title={paper.sequenceLabel ?? `Layer ${paper.layer}`} eyebrow="Sequence" fillHeight={false}>
             <p>{paper.question}</p>
             {paper.version ? <p className="mt-3">{paper.version}</p> : null}
             {paper.publicationDate ? <p className="mt-3">{paper.publicationDate}</p> : null}
           </QuietCard>
-          <QuietCard title="Audience" eyebrow="Who it serves">
+          <QuietCard title="Audience" eyebrow="Who it serves" fillHeight={false}>
             <ul className="space-y-2">
               {paper.audience.map((audience) => (
                 <li key={audience}>{audience}</li>

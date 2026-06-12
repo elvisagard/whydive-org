@@ -242,7 +242,24 @@ export default function Home() {
 
       {foundationalWhitepaper ? (
         <section className="border-y border-[#d9d0c3] bg-[#101b23] px-5 py-16 text-[#f8f4ed] md:px-8 md:py-24">
-          <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.9fr_1.1fr]">
+          <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.62fr_0.95fr_1fr] lg:items-center">
+            {foundationalWhitepaper.coverImage ? (
+              <Link
+                href={`/whitepapers/${foundationalWhitepaper.slug}`}
+                className="group block w-full max-w-[240px] justify-self-start sm:max-w-[280px] lg:max-w-[300px]"
+                aria-label={`Read ${foundationalWhitepaper.title}: ${foundationalWhitepaper.subtitle}`}
+              >
+                <div className="relative aspect-[17/22] overflow-hidden border border-white/14 bg-[#07141b] shadow-[0_28px_90px_rgba(0,0,0,0.28)] transition duration-300 group-hover:border-[#c8a45a]/65">
+                  <Image
+                    src={foundationalWhitepaper.coverImage}
+                    alt={`Cover of ${foundationalWhitepaper.title}: ${foundationalWhitepaper.subtitle}.`}
+                    fill
+                    sizes="(min-width: 1024px) 300px, 70vw"
+                    className="object-cover object-top"
+                  />
+                </div>
+              </Link>
+            ) : null}
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.34em] text-[#c8a45a]">
                 {foundationalWhitepaper.sequenceLabel} / {foundationalWhitepaper.publicationDate}
