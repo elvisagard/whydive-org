@@ -61,6 +61,7 @@ export default async function EssayDetailPage({ params }: PageProps) {
   const category = essayCategories.find((entry) => entry.slug === essay.category);
   const essayUrl = absoluteUrl(`/essays/${essay.slug}`);
   const essayImage = absoluteUrl(assetUrl(essay.image ?? '/images/whydive/essays-study-table-banner.png'));
+  const hasFullEssay = Boolean(essay.sections?.length);
   const articleSchema = {
     '@context': 'https://schema.org',
     '@type': 'Article',
@@ -121,26 +122,63 @@ export default async function EssayDetailPage({ params }: PageProps) {
           </p>
         </div>
 
-        <div className="wd-reading mt-10 space-y-7 text-2xl leading-10 text-[#243447]">
-          <p>
-            This essay is part of the public conversation WhyDive is trying to make possible: a
-            slower, more honest movement from evidence into judgment.
-          </p>
-          <p>
-            Read it as a prompt. What claim is being made? What evidence would justify it? What
-            would need to be held with humility? What would change if a community practiced that
-            discipline together?
-          </p>
-        </div>
+        {hasFullEssay ? (
+          <div className="mt-12 space-y-14">
+            {essay.sections?.map((section, index) => (
+              <section key={section.title ?? `opening-${index}`}>
+                {section.title ? (
+                  <h2 className="wd-display text-4xl leading-tight text-[#101b23]">{section.title}</h2>
+                ) : null}
+                <div className="wd-reading mt-6 space-y-7 text-xl leading-9 text-[#384a5a]">
+                  {section.paragraphs?.map((paragraph) => (
+                    <p key={paragraph}>{paragraph}</p>
+                  ))}
+                </div>
+                {section.bullets?.length ? (
+                  <ul className="mt-7 space-y-3 text-lg leading-8 text-[#465767]">
+                    {section.bullets.map((bullet) => (
+                      <li key={bullet} className="border-l border-[#8a6d2f]/45 pl-4">
+                        {bullet}
+                      </li>
+                    ))}
+                  </ul>
+                ) : null}
+              </section>
+            ))}
+          </div>
+        ) : (
+          <>
+            <div className="wd-reading mt-10 space-y-7 text-2xl leading-10 text-[#243447]">
+              <p>
+                This essay is part of the public conversation WhyDive is trying to make possible: a
+                slower, more honest movement from evidence into judgment.
+              </p>
+              <p>
+                Read it as a prompt. What claim is being made? What evidence would justify it? What
+                would need to be held with humility? What would change if a community practiced that
+                discipline together?
+              </p>
+            </div>
 
-        <div className="mt-12">
-          <SectionHeading title="Related framework question">
+            <div className="mt-12">
+              <SectionHeading title="Related framework question">
+                <p>
+                  What conclusions are justified by the evidence available, and what limits must be
+                  acknowledged before judgment becomes action?
+                </p>
+              </SectionHeading>
+            </div>
+          </>
+        )}
+
+        {essay.sourceNote ? (
+          <div className="mt-12 border-t border-[#d9d0c3] pt-6 text-sm leading-7 text-[#536271]">
             <p>
-              What conclusions are justified by the evidence available, and what limits must be
-              acknowledged before judgment becomes action?
+              <span className="font-semibold text-[#101b23]">Source note: </span>
+              {essay.sourceNote}
             </p>
-          </SectionHeading>
-        </div>
+          </div>
+        ) : null}
 
         <div className="mt-8">
           <QuietCard title="For discussion" eyebrow="Community use">

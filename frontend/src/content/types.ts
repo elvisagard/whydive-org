@@ -16,6 +16,12 @@ export interface EssayEntry {
   updatedDate?: string;
   readingTime?: string;
   image?: string;
+  sourceNote?: string;
+  sections?: {
+    title?: string;
+    paragraphs?: string[];
+    bullets?: string[];
+  }[];
 }
 
 export interface WhitepaperEntry {
