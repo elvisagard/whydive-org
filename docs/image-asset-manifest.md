@@ -33,6 +33,7 @@ R2 keys mirror the local `frontend/public` structure exactly.
 | Essays study table banner | `/images/whydive/essays-study-table-banner.png` | Essays index and writing-home section. |
 | Essays question mark square | `/images/whydive/essays-question-mark-square.png` | Essay category/social/card image. |
 | Essays archive social | `/images/whydive/essays-archive-social.png` | Social card or featured essay image. |
+| What Is WhyDive article social/hero | `/images/whydive/what-is-whydive-linkedin-card.png` | Anchor article image for `/foundations/what-is-whydive`; evidence fragments moving through a boundary toward judgment. |
 | Whitepaper foundational document | `/images/whydive/whitepaper-foundational-document.png` | Foundational whitepaper page. |
 | Whitepapers publication OG | `/images/whydive/whitepapers-og-publication.png` | Open Graph/social image or whitepapers index support. |
 | Whitepaper 1 cover | `/images/whydive/whitepapers/whydive-framework-why-it-exists-cover.png` | Portrait cover preview for `WhyDive Framework: Why It Exists`, Whitepaper 1 of 2. |
