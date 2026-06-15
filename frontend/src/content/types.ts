@@ -17,6 +17,7 @@ export interface EssayEntry {
   readingTime?: string;
   image?: string;
   sourceNote?: string;
+  bibliography?: string[];
   sections?: {
     title?: string;
     paragraphs?: string[];

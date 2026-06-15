@@ -180,6 +180,21 @@ export default async function EssayDetailPage({ params }: PageProps) {
           </div>
         ) : null}
 
+        {essay.bibliography?.length ? (
+          <div className="mt-8 border border-[#d9d0c3] bg-[#fffdf8] p-6">
+            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#8a6d2f]">
+              Bibliography
+            </p>
+            <ul className="mt-4 space-y-3 text-sm leading-7 text-[#536271]">
+              {essay.bibliography.map((source) => (
+                <li key={source} className="border-l border-[#8a6d2f]/35 pl-4">
+                  {source}
+                </li>
+              ))}
+            </ul>
+          </div>
+        ) : null}
+
         <div className="mt-8">
           <QuietCard title="For discussion" eyebrow="Community use">
             <p>

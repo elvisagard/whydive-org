@@ -288,6 +288,16 @@ export default function WhatIsWhyDivePage() {
         </p>
       </div>
 
+      <section className="mt-16 border border-[#d9d0c3] bg-[#fffdf8] p-6">
+        <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#8a6d2f]">
+          Source note
+        </p>
+        <p className="mt-4 text-sm leading-7 text-[#536271]">
+          This article is based on internal WhyDive framework and ecosystem documents developed by
+          Living Spiral Studio LLC. It is a framework orientation essay, not a literature review.
+        </p>
+      </section>
+
       <VisitorActionPanel
         title="Use this page to introduce the framework."
         benefit="This is the best starting point for someone who has heard the name WhyDive but does not yet know what problem it addresses."
