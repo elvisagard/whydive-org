@@ -186,11 +186,22 @@ export default async function EssayDetailPage({ params }: PageProps) {
               Bibliography
             </p>
             <ul className="mt-4 space-y-3 text-sm leading-7 text-[#536271]">
-              {essay.bibliography.map((source) => (
-                <li key={source} className="border-l border-[#8a6d2f]/35 pl-4">
-                  {source}
-                </li>
-              ))}
+              {essay.bibliography.map((source) => {
+                const label = typeof source === 'string' ? source : source.label;
+                const href = typeof source === 'string' ? undefined : source.href;
+
+                return (
+                  <li key={label} className="border-l border-[#8a6d2f]/35 pl-4">
+                    {href ? (
+                      <a href={href} target="_blank" rel="noreferrer" className="underline underline-offset-4 hover:text-[#101b23]">
+                        {label}
+                      </a>
+                    ) : (
+                      label
+                    )}
+                  </li>
+                );
+              })}
             </ul>
           </div>
         ) : null}
