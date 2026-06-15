@@ -44,11 +44,10 @@ The root page is prerendered by Next.js and is a good deployment readiness signa
 
 ## Required Environment Variables
 
-No runtime environment variables are required for the current static/content-first site.
-
-Keep these values available in Coolify for the later database and asset phases:
+Set the public asset origin so images, PDFs, favicons, and social assets are served from R2 rather than the VPS container:
 
 ```env
+NEXT_PUBLIC_ASSET_BASE_URL=https://static.whydive.org
 CHART_ASSETS_S3_ENDPOINT=
 CHART_ASSETS_S3_REGION=auto
 CHART_ASSETS_S3_FORCE_PATH_STYLE=true
@@ -57,6 +56,8 @@ CHART_ASSETS_S3_ACCESS_KEY_ID=
 CHART_ASSETS_S3_SECRET_ACCESS_KEY=
 DATABASE_URL=postgres://postgres:...:5432/postgres?sslmode=require&useLibpqCompat=true
 ```
+
+`NEXT_PUBLIC_ASSET_BASE_URL` must be the public R2 custom domain or public bucket URL. The `CHART_ASSETS_S3_*` values are for uploading/syncing assets to R2, not for browser delivery.
 
 Do not commit production `.env` files.
 
@@ -70,4 +71,4 @@ node frontend/server.js
 
 That file is produced by `next build` with `output: "standalone"` enabled in `frontend/next.config.ts`.
 
-Static assets in `frontend/public` are copied into the runtime image, including favicon files, social images, page imagery, and WhyDive logo assets. R2 remains useful as the canonical external asset store, but the current app can deploy without fetching assets at runtime.
+Static assets in `frontend/public` are still copied into the runtime image as a fallback, but production should set `NEXT_PUBLIC_ASSET_BASE_URL` so the browser fetches those assets from R2. Run `pnpm assets:sync:r2` before deployment whenever public images, PDFs, favicons, or manifest files change.

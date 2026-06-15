@@ -4,13 +4,19 @@
 
 This manifest records the selected generated images, their intended use, and their public app paths.
 
-All files are stored under:
+Image source files are stored under:
 
 `frontend/public/images/whydive/`
 
-In Next.js, reference these assets from the app as:
+Formal PDFs are stored under:
 
-`/images/whydive/<filename>.png`
+`frontend/public/whitepapers/`
+
+In code, reference static assets through `assetUrl()` so production can serve them from R2:
+
+`assetUrl('/images/whydive/<filename>.png')`
+
+R2 keys mirror the local `frontend/public` structure exactly.
 
 ## Selected Assets
 

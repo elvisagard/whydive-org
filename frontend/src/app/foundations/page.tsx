@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { EditorialPage, QuietCard, SectionHeading, VisitorActionPanel } from '@/components/site/EditorialPage';
+import { assetUrl } from '@/lib/assets';
 import { discussionAction, shareAction, traceApplicationsAction } from '@/lib/visitorActions';
 
 export const metadata: Metadata = {
@@ -33,7 +34,7 @@ export default function FoundationsPage() {
       title="Start with the movement from evidence to judgment."
       intro="The Foundations section defines WhyDive before any application, product, or domain expression enters the conversation."
       image={{
-        src: '/images/whydive/foundations-layered-evidence-banner.png',
+        src: assetUrl('/images/whydive/foundations-layered-evidence-banner.png'),
         alt: 'Layered translucent sheets suggesting evidence, boundaries, and framework architecture.',
       }}
     >

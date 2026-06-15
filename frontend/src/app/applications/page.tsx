@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { EditorialPage, QuietCard, SectionHeading, VisitorActionPanel } from '@/components/site/EditorialPage';
 import { currentApplications, futureApplications } from '@/content/applications';
+import { assetUrl } from '@/lib/assets';
 import { discussionAction, readFoundationsAction, traceApplicationsAction } from '@/lib/visitorActions';
 
 export const metadata: Metadata = {
@@ -15,7 +16,7 @@ export default function ApplicationsPage() {
       title="The domain changes. The pattern remains."
       intro="WhyDive appears in education, reading, data literacy, policy, business, AI, and civic reasoning wherever people must ask what evidence authorizes."
       image={{
-        src: '/images/whydive/applications-branching-framework-banner.png',
+        src: assetUrl('/images/whydive/applications-branching-framework-banner.png'),
         alt: 'A central illuminated line branching into several pathways across textured paper.',
       }}
     >

@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import { EditorialPage, QuietCard, SectionHeading, VisitorActionPanel } from '@/components/site/EditorialPage';
 import { StructuredData } from '@/components/site/StructuredData';
 import { essayCategories, essayEntries } from '@/content/essays';
+import { assetUrl } from '@/lib/assets';
 import { absoluteUrl, publisherName, siteName, siteUrl } from '@/lib/discovery';
 import { discussionAction, readFoundationsAction, shareAction } from '@/lib/visitorActions';
 
@@ -35,7 +36,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       url: absoluteUrl(`/essays/${essay.slug}`),
       images: [
         {
-          url: essay.image ?? '/images/whydive/essays-study-table-banner.png',
+          url: assetUrl(essay.image ?? '/images/whydive/essays-study-table-banner.png'),
           alt: `Editorial image for ${essay.title}.`,
         },
       ],
@@ -44,7 +45,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       card: 'summary_large_image',
       title: essay.title,
       description: essay.deck,
-      images: [essay.image ?? '/images/whydive/essays-study-table-banner.png'],
+      images: [assetUrl(essay.image ?? '/images/whydive/essays-study-table-banner.png')],
     },
   };
 }
@@ -59,7 +60,7 @@ export default async function EssayDetailPage({ params }: PageProps) {
 
   const category = essayCategories.find((entry) => entry.slug === essay.category);
   const essayUrl = absoluteUrl(`/essays/${essay.slug}`);
-  const essayImage = absoluteUrl(essay.image ?? '/images/whydive/essays-study-table-banner.png');
+  const essayImage = absoluteUrl(assetUrl(essay.image ?? '/images/whydive/essays-study-table-banner.png'));
   const articleSchema = {
     '@context': 'https://schema.org',
     '@type': 'Article',
@@ -99,7 +100,7 @@ export default async function EssayDetailPage({ params }: PageProps) {
       title={essay.title}
       intro={essay.deck}
       image={{
-        src: essay.image ?? '/images/whydive/essays-study-table-banner.png',
+        src: assetUrl(essay.image ?? '/images/whydive/essays-study-table-banner.png'),
         alt: `Editorial image for ${essay.title}.`,
       }}
     >

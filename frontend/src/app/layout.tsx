@@ -3,6 +3,7 @@ import "./globals.css";
 import { ebGaramond, fraunces, inter } from "./fonts";
 import { SiteFooter, SiteHeader } from "@/components/site/SiteChrome";
 import { StructuredData } from "@/components/site/StructuredData";
+import { assetUrl } from "@/lib/assets";
 import { discoveryTopics, publisherName, siteName, siteUrl } from "@/lib/discovery";
 
 export const metadata: Metadata = {
@@ -39,7 +40,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/images/whydive/hero-threshold-water-desktop.png",
+        url: assetUrl("/images/whydive/hero-threshold-water-desktop.png"),
         width: 1600,
         height: 768,
         alt: "A lone figure standing near a reflective pool at a bright architectural threshold.",
@@ -51,17 +52,17 @@ export const metadata: Metadata = {
     title: "WhyDive | Evidence, Reasoning, Judgment",
     description:
       "WhyDive is a framework for understanding and improving how human beings move from evidence to action.",
-    images: ["/images/whydive/hero-threshold-water-desktop.png"],
+    images: [assetUrl("/images/whydive/hero-threshold-water-desktop.png")],
   },
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },
-      { url: "/favicon.svg", type: "image/svg+xml" },
-      { url: "/favicon-96x96.png", sizes: "96x96", type: "image/png" },
+      { url: assetUrl("/favicon.svg"), type: "image/svg+xml" },
+      { url: assetUrl("/favicon-96x96.png"), sizes: "96x96", type: "image/png" },
     ],
-    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
+    apple: [{ url: assetUrl("/apple-touch-icon.png"), sizes: "180x180", type: "image/png" }],
   },
-  manifest: "/site.webmanifest",
+  manifest: assetUrl("/site.webmanifest"),
 };
 
 export default function RootLayout({

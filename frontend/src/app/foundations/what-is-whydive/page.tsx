@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { EditorialPage, QuietCard, SectionHeading, VisitorActionPanel } from '@/components/site/EditorialPage';
 import { StructuredData } from '@/components/site/StructuredData';
+import { assetUrl } from '@/lib/assets';
 import { absoluteUrl, publisherName, siteName, siteUrl } from '@/lib/discovery';
 import { discussionAction, shareAction, traceApplicationsAction } from '@/lib/visitorActions';
 
@@ -71,7 +72,7 @@ export default function WhatIsWhyDivePage() {
       title="What is WhyDive?"
       intro="WhyDive is a framework for understanding and improving how human beings move from evidence to action."
       image={{
-        src: '/images/whydive/ecosystem-spiral-map-square.png',
+        src: assetUrl('/images/whydive/ecosystem-spiral-map-square.png'),
         alt: 'A hand-drawn spiral architecture map with connected nodes and subtle gold and teal lines.',
       }}
     >

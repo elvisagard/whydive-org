@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { EditorialPage, QuietCard, SectionHeading, VisitorActionPanel } from '@/components/site/EditorialPage';
 import { researchTopics } from '@/content/research';
+import { assetUrl } from '@/lib/assets';
 import { discussionAction, readFoundationsAction, shareAction } from '@/lib/visitorActions';
 
 export const metadata: Metadata = {
@@ -15,7 +16,7 @@ export default function ResearchPage() {
       title="Connecting WhyDive to scholarship."
       intro="The research library connects WhyDive to scholarship on reasoning, judgment, wisdom, decision-making, learning, and public life."
       image={{
-        src: '/images/whydive/research-library-banner.png',
+        src: assetUrl('/images/whydive/research-library-banner.png'),
         alt: 'A quiet library reading room with books and notes arranged across a long table.',
       }}
     >

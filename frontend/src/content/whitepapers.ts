@@ -1,4 +1,5 @@
 import type { WhitepaperEntry } from './types';
+import { assetUrl } from '@/lib/assets';
 
 export const whitepaperEntries: WhitepaperEntry[] = [
   {
@@ -13,8 +14,8 @@ export const whitepaperEntries: WhitepaperEntry[] = [
     status: 'published',
     publicationDate: 'June 2026',
     version: 'Version 1.0 / Public distribution draft',
-    pdfUrl: '/whitepapers/whydive-framework-why-it-exists.pdf',
-    coverImage: '/images/whydive/whitepapers/whydive-framework-why-it-exists-cover.png',
+    pdfUrl: assetUrl('/whitepapers/whydive-framework-why-it-exists.pdf'),
+    coverImage: assetUrl('/images/whydive/whitepapers/whydive-framework-why-it-exists-cover.png'),
     coreClaim:
       'WhyDive makes visible the movement from evidence to commitment before commitment becomes action.',
     purpose: [
@@ -40,8 +41,8 @@ export const whitepaperEntries: WhitepaperEntry[] = [
     status: 'published',
     publicationDate: 'June 2026',
     version: 'Version 1.0 / Public distribution draft',
-    pdfUrl: '/whitepapers/whydive-framework-how-it-works.pdf',
-    coverImage: '/images/whydive/whitepapers/whydive-framework-how-it-works-cover.png',
+    pdfUrl: assetUrl('/whitepapers/whydive-framework-how-it-works.pdf'),
+    coverImage: assetUrl('/images/whydive/whitepapers/whydive-framework-how-it-works-cover.png'),
     coreClaim:
       'WhyDive disciplines the movement from evidence to judgment by evaluating what the evidence authorizes.',
     purpose: [

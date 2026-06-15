@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { EditorialPage, QuietCard, SectionHeading, VisitorActionPanel } from '@/components/site/EditorialPage';
 import { StructuredData } from '@/components/site/StructuredData';
+import { assetUrl } from '@/lib/assets';
 import { absoluteUrl, publisherName, siteName, siteUrl } from '@/lib/discovery';
 import { discussionAction, shareAction, traceApplicationsAction } from '@/lib/visitorActions';
 
@@ -64,7 +65,7 @@ export default function FrameworkOverviewPage() {
     headline: 'WhyDive Framework Overview',
     description: 'A first map of the WhyDive movement from evidence to action.',
     url: pageUrl,
-    image: absoluteUrl('/images/whydive/foundations-thresholds-framework.png'),
+    image: absoluteUrl(assetUrl('/images/whydive/foundations-thresholds-framework.png')),
     articleSection: 'Foundations',
     inLanguage: 'en-US',
     isPartOf: {
@@ -90,7 +91,7 @@ export default function FrameworkOverviewPage() {
       title="The framework makes the movement visible."
       intro="WhyDive studies the passage from evidence through reasoning and judgment into action."
       image={{
-        src: '/images/whydive/foundations-thresholds-framework.png',
+        src: assetUrl('/images/whydive/foundations-thresholds-framework.png'),
         alt: 'Illuminated thresholds receding across a dark architectural room.',
       }}
     >

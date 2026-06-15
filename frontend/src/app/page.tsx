@@ -7,6 +7,7 @@ import { coreQuestions } from '@/lib/siteContent';
 import { currentApplications } from '@/content/applications';
 import { whyDiveSpaces } from '@/content/spaces';
 import { whitepaperEntries } from '@/content/whitepapers';
+import { assetUrl } from '@/lib/assets';
 import { absoluteUrl, publisherName, siteName, siteUrl } from '@/lib/discovery';
 import { discussionAction, readFoundationsAction, shareAction, traceApplicationsAction } from '@/lib/visitorActions';
 
@@ -100,7 +101,7 @@ export default function Home() {
 
       <section className="relative min-h-[760px] overflow-hidden border-b border-[#d9d0c3] bg-[#101b23] text-[#f8f4ed]">
         <Image
-          src="/images/whydive/hero-threshold-water-desktop.png"
+          src={assetUrl('/images/whydive/hero-threshold-water-desktop.png')}
           alt="A lone figure standing near a reflective pool at a bright architectural threshold."
           fill
           priority
@@ -108,7 +109,7 @@ export default function Home() {
           className="hidden object-cover opacity-72 md:block"
         />
         <Image
-          src="/images/whydive/hero-mobile-light-threshold.png"
+          src={assetUrl('/images/whydive/hero-mobile-light-threshold.png')}
           alt="A narrow beam of light reaching water and submerged fragments below a threshold."
           fill
           priority

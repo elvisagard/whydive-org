@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { EditorialPage, QuietCard, SectionHeading, VisitorActionPanel } from '@/components/site/EditorialPage';
 import { whitepaperEntries, whitepaperLayers } from '@/content/whitepapers';
+import { assetUrl } from '@/lib/assets';
 import { discussionAction, readFoundationsAction, traceApplicationsAction } from '@/lib/visitorActions';
 
 export const metadata: Metadata = {
@@ -23,7 +24,7 @@ export default function WhitepapersPage() {
       title="Formal documents for the framework and its applications."
       intro="Whitepapers give careful readers a more formal way to examine WhyDive: its claims, architecture, applications, and open questions."
       image={{
-        src: '/images/whydive/whitepaper-foundational-document.png',
+        src: assetUrl('/images/whydive/whitepaper-foundational-document.png'),
         alt: 'A formal archival document beneath glass with surrounding evidence fragments.',
       }}
     >

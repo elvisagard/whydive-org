@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { EditorialPage, QuietCard, SectionHeading, VisitorActionPanel } from '@/components/site/EditorialPage';
+import { assetUrl } from '@/lib/assets';
 import { discussionAction, readFoundationsAction } from '@/lib/visitorActions';
 
 export const metadata: Metadata = {
@@ -205,7 +206,7 @@ export default function EcosystemPage() {
       title="One parent framework, several distinct expressions."
       intro="The ecosystem page exists to prevent confusion among WhyDive, WhyDive Education, the DLS, the Chart-Ed Institute, and Chart-Ed."
       image={{
-        src: '/images/whydive/ecosystem-constellation-banner.png',
+        src: assetUrl('/images/whydive/ecosystem-constellation-banner.png'),
         alt: 'A dark constellation-like framework map with connected gold nodes and orbital lines.',
       }}
     >

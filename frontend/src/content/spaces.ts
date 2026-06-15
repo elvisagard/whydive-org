@@ -1,3 +1,5 @@
+import { assetUrl } from '@/lib/assets';
+
 export interface WhyDiveSpace {
   title: string;
   slug: string;
@@ -31,7 +33,7 @@ export const whyDiveSpaces: WhyDiveSpace[] = [
       text: 'A student reads a chart, article, AI answer, or primary source and reaches a strong conclusion. The class can repeat the claim, but cannot yet show what evidence actually supports it or what remains uncertain.',
     },
     image: {
-      src: '/images/whydive/spaces-educators-documentary-banner.png',
+      src: assetUrl('/images/whydive/spaces-educators-documentary-banner.png'),
       alt: 'An educator guiding a small group discussion around printed evidence, notes, and questions.',
     },
     breakdown: [
@@ -67,7 +69,7 @@ export const whyDiveSpaces: WhyDiveSpace[] = [
       text: 'A leader is asked to interpret a difficult situation: a public controversy, a personal crisis, a moral decision, a sacred text, or a claim spreading through the congregation. People want certainty quickly, but the evidence, context, and responsibilities are complex.',
     },
     image: {
-      src: '/images/whydive/spaces-clergy-documentary-banner-v2.png',
+      src: assetUrl('/images/whydive/spaces-clergy-documentary-banner-v2.png'),
       alt: 'A small group seated around open books and notebooks in a contemplative discussion.',
     },
     breakdown: [
@@ -103,7 +105,7 @@ export const whyDiveSpaces: WhyDiveSpace[] = [
       text: 'A leadership team sees a trend in revenue, retention, customer behavior, hiring, or risk. The numbers are persuasive, but the choice will affect employees, customers, reputation, and long-term trust.',
     },
     image: {
-      src: '/images/whydive/spaces-business-documentary-banner.png',
+      src: assetUrl('/images/whydive/spaces-business-documentary-banner.png'),
       alt: 'Business leaders reviewing printed reports and charts during a serious decision meeting.',
     },
     breakdown: [
@@ -139,7 +141,7 @@ export const whyDiveSpaces: WhyDiveSpace[] = [
       text: 'A community faces a claim about safety, schooling, housing, health, funding, or local priorities. People bring facts, stories, fear, values, and distrust into the same room.',
     },
     image: {
-      src: '/images/whydive/spaces-civic-documentary-banner-v2.png',
+      src: assetUrl('/images/whydive/spaces-civic-documentary-banner-v2.png'),
       alt: 'Community members gathered in a public meeting around a map covered with notes.',
     },
     breakdown: [
@@ -175,7 +177,7 @@ export const whyDiveSpaces: WhyDiveSpace[] = [
       text: 'A study, evaluation, or model produces an important result. By the time it reaches a memo, grant report, media article, or policy meeting, its limitations have been softened and its conclusions strengthened.',
     },
     image: {
-      src: '/images/whydive/spaces-research-policy-documentary-banner.png',
+      src: assetUrl('/images/whydive/spaces-research-policy-documentary-banner.png'),
       alt: 'Researchers and policy thinkers reviewing notes, documents, and a laptop during a careful discussion.',
     },
     breakdown: [
@@ -211,7 +213,7 @@ export const whyDiveSpaces: WhyDiveSpace[] = [
       text: 'A model produces a summary, recommendation, explanation, score, or generated response. It is fast, fluent, and plausible. The risk is not only that the answer may be wrong; it is that people may stop noticing where judgment is still required.',
     },
     image: {
-      src: '/images/whydive/spaces-ai-technology-documentary-banner.png',
+      src: assetUrl('/images/whydive/spaces-ai-technology-documentary-banner.png'),
       alt: 'A technology team comparing digital outputs with printed notes and source material.',
     },
     breakdown: [

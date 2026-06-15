@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { EditorialPage, QuietCard, SectionHeading, VisitorActionPanel } from '@/components/site/EditorialPage';
+import { assetUrl } from '@/lib/assets';
 import { livingSpiralContact } from '@/lib/siteContent';
 import { discussionAction, readFoundationsAction, traceApplicationsAction } from '@/lib/visitorActions';
 
@@ -15,7 +16,7 @@ export default function ContactPage() {
       title="WhyDive currently uses Living Spiral Studio LLC contact information."
       intro="Use this page for invitations, questions, correspondence, and ecosystem clarification related to WhyDive."
       image={{
-        src: '/images/whydive/contact-letter-banner.png',
+        src: assetUrl('/images/whydive/contact-letter-banner.png'),
         alt: 'A simple letter on warm paper beside a dark pen and brass paperweight.',
       }}
     >

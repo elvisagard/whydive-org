@@ -1,8 +1,9 @@
 import Link from 'next/link';
+import { assetUrl } from '@/lib/assets';
 import { livingSpiralContact, navItems } from '@/lib/siteContent';
 
-const logoDark = '/images/whydive/logo-dark.svg';
-const logoLight = '/images/whydive/logo-light.svg';
+const logoDark = assetUrl('/images/whydive/logo-dark.svg');
+const logoLight = assetUrl('/images/whydive/logo-light.svg');
 
 export function SiteHeader() {
   return (

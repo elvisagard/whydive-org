@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { EditorialPage, QuietCard, SectionHeading, VisitorActionPanel } from '@/components/site/EditorialPage';
 import { whyDiveSpaces } from '@/content/spaces';
+import { assetUrl } from '@/lib/assets';
 import { discussionAction, readFoundationsAction, shareAction, traceApplicationsAction } from '@/lib/visitorActions';
 
 export const metadata: Metadata = {
@@ -17,7 +18,7 @@ export default function SpacesPage() {
       title="Find the room where the framework meets your work."
       intro="WhyDive becomes useful when it enters real situations: classrooms, congregations, boardrooms, civic meetings, research reviews, and technology decisions."
       image={{
-        src: '/images/whydive/spaces-documentary-table-social-v2.png',
+        src: assetUrl('/images/whydive/spaces-documentary-table-social-v2.png'),
         alt: 'A group gathered around maps, notes, photographs, and documents during a serious evidence discussion.',
       }}
     >

@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { EditorialPage, QuietCard, SectionHeading, VisitorActionPanel } from '@/components/site/EditorialPage';
 import { essayCategories, essayEntries } from '@/content/essays';
+import { assetUrl } from '@/lib/assets';
 import { discussionAction, readFoundationsAction, shareAction } from '@/lib/visitorActions';
 
 export const metadata: Metadata = {
@@ -16,7 +17,7 @@ export default function EssaysPage() {
       title="A writing home for disciplined judgment."
       intro="Essays connect the framework to the questions people actually face: what to believe, when to trust, how to decide, and how to live with consequences."
       image={{
-        src: '/images/whydive/essays-study-table-banner.png',
+        src: assetUrl('/images/whydive/essays-study-table-banner.png'),
         alt: 'A quiet study table with an open notebook and pen in soft window light.',
       }}
     >

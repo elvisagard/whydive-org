@@ -126,7 +126,7 @@ Current implementation notes:
 - Fraunces, EB Garamond, and Inter are implemented through `next/font/google`.
 - WhyDive color tokens are defined in Tailwind theme configuration.
 - Selected images are stored under `/images/whydive/` and wired into the homepage and primary route shells.
-- Static image assets can be synced to Cloudflare R2 using the documented workflow in [R2 Static Asset Workflow](./r2-static-assets.md).
+- Static assets should be served from Cloudflare R2 in production using `NEXT_PUBLIC_ASSET_BASE_URL`; the local `frontend/public` tree remains the development fallback and sync source. See [R2 Static Asset Workflow](./r2-static-assets.md).
 - The symbolic institute image system now has a complementary documentary image system for Spaces and relatable case-study pages. Use [Midjourney Image Prompt Plan](./midjourney-image-prompts.md), Prompt Family 9, for educator, clergy, executive, civic, research, and technology scenarios.
 - Future refinements should tune spacing, contrast, and long-form reading pages after the content model is established.
 

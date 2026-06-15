@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { EditorialPage, QuietCard, SectionHeading, VisitorActionPanel } from '@/components/site/EditorialPage';
 import { StructuredData } from '@/components/site/StructuredData';
 import { whitepaperEntries } from '@/content/whitepapers';
+import { assetUrl } from '@/lib/assets';
 import { absoluteUrl, publisherName, siteName, siteUrl } from '@/lib/discovery';
 import { discussionAction, readFoundationsAction, traceApplicationsAction } from '@/lib/visitorActions';
 
@@ -25,7 +26,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   const image =
     paper.coverImage ??
-    (paper.layer <= 2
+    assetUrl(paper.layer <= 2
       ? '/images/whydive/whitepaper-foundational-document.png'
       : '/images/whydive/whitepapers-og-publication.png');
 
@@ -67,7 +68,7 @@ export default async function WhitepaperDetailPage({ params }: PageProps) {
   const paperUrl = absoluteUrl(`/whitepapers/${paper.slug}`);
   const paperImage = absoluteUrl(
     paper.coverImage ??
-      (paper.layer <= 2
+      assetUrl(paper.layer <= 2
       ? '/images/whydive/whitepaper-foundational-document.png'
       : '/images/whydive/whitepapers-og-publication.png'),
   );
@@ -121,7 +122,7 @@ export default async function WhitepaperDetailPage({ params }: PageProps) {
       image={{
         src:
           paper.coverImage ??
-          (paper.layer <= 2
+          assetUrl(paper.layer <= 2
             ? '/images/whydive/whitepaper-foundational-document.png'
             : '/images/whydive/whitepapers-og-publication.png'),
         alt: `Formal whitepaper image for ${paper.title}: ${paper.subtitle}.`,

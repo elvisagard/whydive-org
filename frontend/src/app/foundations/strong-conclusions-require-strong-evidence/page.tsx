@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { EditorialPage, QuietCard, SectionHeading, VisitorActionPanel } from '@/components/site/EditorialPage';
 import { StructuredData } from '@/components/site/StructuredData';
+import { assetUrl } from '@/lib/assets';
 import { absoluteUrl, publisherName, siteName, siteUrl } from '@/lib/discovery';
 import { discussionAction, shareAction, traceApplicationsAction } from '@/lib/visitorActions';
 
@@ -49,7 +50,7 @@ export default function StrongConclusionsPage() {
     headline: 'Strong conclusions require strong evidence.',
     description: 'The governing principle beneath the WhyDive framework.',
     url: pageUrl,
-    image: absoluteUrl('/images/whydive/foundations-boundary-gold-line-square.png'),
+    image: absoluteUrl(assetUrl('/images/whydive/foundations-boundary-gold-line-square.png')),
     articleSection: 'Foundations',
     inLanguage: 'en-US',
     isPartOf: {
@@ -85,7 +86,7 @@ export default function StrongConclusionsPage() {
       title="Strong conclusions require strong evidence."
       intro="The strength of a conclusion should not exceed the strength of the evidence supporting it."
       image={{
-        src: '/images/whydive/foundations-boundary-gold-line-square.png',
+        src: assetUrl('/images/whydive/foundations-boundary-gold-line-square.png'),
         alt: 'A hand places a thin gold line between handwritten evidence notes and an unfinished conclusion.',
       }}
     >

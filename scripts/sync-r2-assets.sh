@@ -3,7 +3,7 @@ set -euo pipefail
 
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 ENV_FILE="$ROOT_DIR/.env"
-SOURCE_DIR="$ROOT_DIR/frontend/public/images/whydive"
+SOURCE_DIR="$ROOT_DIR/frontend/public"
 
 if [[ ! -f "$ENV_FILE" ]]; then
   echo "Missing .env file at $ENV_FILE" >&2
@@ -27,7 +27,7 @@ set +a
 
 AWS_ACCESS_KEY_ID="$CHART_ASSETS_S3_ACCESS_KEY_ID" \
 AWS_SECRET_ACCESS_KEY="$CHART_ASSETS_S3_SECRET_ACCESS_KEY" \
-aws s3 sync "$SOURCE_DIR" "s3://$CHART_ASSETS_S3_BUCKET/images/whydive/" \
+aws s3 sync "$SOURCE_DIR" "s3://$CHART_ASSETS_S3_BUCKET/" \
   --endpoint-url "$CHART_ASSETS_S3_ENDPOINT" \
   --region "$CHART_ASSETS_S3_REGION" \
   --cache-control "public, max-age=86400" \

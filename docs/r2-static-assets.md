@@ -2,15 +2,21 @@
 
 ## Purpose
 
-WhyDive.org can store generated static assets in Cloudflare R2 using the S3-compatible credentials in the project `.env`.
+WhyDive.org uses Cloudflare R2 to relieve the VPS of serving heavy static assets such as page imagery, whitepaper cover images, social images, and PDF whitepapers.
 
-The app currently keeps selected image assets in:
+The repository still keeps a local copy of static assets in:
 
-`frontend/public/images/whydive/`
+`frontend/public/`
 
-Those local assets are available to Next.js at:
+Those local assets provide a development fallback and define the public path structure. In production, the app should point those same paths at the public R2 asset domain.
 
-`/images/whydive/<filename>.png`
+Example:
+
+`/whitepapers/whydive-framework-why-it-exists.pdf`
+
+becomes:
+
+`https://static.whydive.org/whitepapers/whydive-framework-why-it-exists.pdf`
 
 ## Credential Status
 
@@ -20,21 +26,34 @@ Do not commit `.env`.
 
 If these credentials are ever pasted into a shared system, rotate them in Cloudflare and update local `.env`.
 
+## Production Asset Origin
+
+Set this environment variable in Coolify:
+
+```env
+NEXT_PUBLIC_ASSET_BASE_URL=https://static.whydive.org
+```
+
+Use the final public R2 custom domain or public bucket URL. Do not use the private S3 API endpoint as the public base URL.
+
+When `NEXT_PUBLIC_ASSET_BASE_URL` is set, the app rewrites public asset paths through R2. When it is absent, the app falls back to local `/public` paths for local development.
+
 ## Next.js Image Behavior
 
-The app uses the Next.js `Image` component from `next/image` for the homepage hero and editorial page images.
+The app uses the Next.js `Image` component from `next/image` for homepage, editorial, space, and whitepaper cover images.
 
-When deployed with the standard Next.js image optimizer, these images are optimized and served in modern formats such as WebP when the requesting browser supports them. This depends on the deployment target supporting the Next.js image optimization route. A static export-only deployment would not perform the same runtime conversion.
+When `NEXT_PUBLIC_ASSET_BASE_URL` is set, `frontend/next.config.ts` adds that public host to `images.remotePatterns`, allowing Next.js to optimize remote R2 images and serve modern formats such as WebP when the browser supports them.
 
-If images are later served directly from an R2 public domain, add the public asset host to `next.config.ts` `images.remotePatterns`.
+PDF links are served directly from R2 and are not image-optimized.
 
-## Public Base URL
+## Public Path Contract
 
-The `.env` includes a placeholder/commented public base URL. Before switching app image references from local `/images/...` paths to R2 URLs, confirm the final public domain for WhyDive assets.
+R2 keys should mirror `frontend/public` paths exactly:
 
-Recommended future shape:
-
-`https://static.whydive.org/images/whydive/<filename>.png`
+- `frontend/public/images/whydive/logo-dark.svg` -> `https://static.whydive.org/images/whydive/logo-dark.svg`
+- `frontend/public/images/whydive/hero-threshold-water-desktop.png` -> `https://static.whydive.org/images/whydive/hero-threshold-water-desktop.png`
+- `frontend/public/whitepapers/whydive-framework-how-it-works.pdf` -> `https://static.whydive.org/whitepapers/whydive-framework-how-it-works.pdf`
+- `frontend/public/site.webmanifest` -> `https://static.whydive.org/site.webmanifest`
 
 ## Sync Command
 
@@ -48,7 +67,7 @@ The script:
 
 - Reads `.env`
 - Maps the custom R2 variables to AWS CLI variables
-- Syncs `frontend/public/images/whydive/` to `s3://$CHART_ASSETS_S3_BUCKET/images/whydive/`
+- Syncs `frontend/public/` to `s3://$CHART_ASSETS_S3_BUCKET/`
 - Sets browser cache headers suitable for current human-readable asset filenames
 
 Current cache policy:
@@ -59,10 +78,10 @@ Use content-hashed filenames before switching to immutable one-year caching.
 
 ## App Usage Guidance
 
-For now, keep app references local:
+Use `assetUrl()` for static assets that should be served by R2 in production:
 
 ```tsx
-<Image src="/images/whydive/hero-threshold-water-desktop.png" ... />
+<Image src={assetUrl('/images/whydive/hero-threshold-water-desktop.png')} ... />
 ```
 
-This keeps the app simple and lets Next.js optimize local public assets. Move to R2 URLs when the public asset domain is finalized.
+This preserves local development while making Coolify production serve assets from R2.

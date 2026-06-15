@@ -1,4 +1,5 @@
 import type { EssayCategory, EssayEntry } from './types';
+import { assetUrl } from '@/lib/assets';
 
 export const essayCategories: EssayCategory[] = [
   {
@@ -55,7 +56,7 @@ export const essayEntries: EssayEntry[] = [
     deck: 'The governing principle beneath the WhyDive framework.',
     category: 'evidence',
     status: 'draft',
-    image: '/images/whydive/essays-archive-social.png',
+    image: assetUrl('/images/whydive/essays-archive-social.png'),
   },
   {
     title: 'Why Judgment Matters',
