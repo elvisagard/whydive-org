@@ -29,9 +29,12 @@ export default function EssaysPage() {
       </SectionHeading>
       <div className="mt-8 grid gap-4 md:grid-cols-3">
         {essayCategories.map((category) => (
-          <QuietCard key={category.slug} title={category.title}>
-            <p>{category.description}</p>
-          </QuietCard>
+          <Link key={category.slug} href={`/essays/category/${category.slug}`} className="block">
+            <QuietCard title={category.title} eyebrow="Category">
+              <p>{category.description}</p>
+              <p className="mt-4 font-semibold text-[#6f551e]">View archive</p>
+            </QuietCard>
+          </Link>
         ))}
       </div>
 
