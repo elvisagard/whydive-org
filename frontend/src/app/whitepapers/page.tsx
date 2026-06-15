@@ -11,8 +11,10 @@ export const metadata: Metadata = {
 };
 
 export default function WhitepapersPage() {
-  const flagshipPaper = whitepaperEntries.find(
-    (paper) => paper.slug === 'strengthening-judgment-under-evidence-constraints',
+  const foundationalPair = whitepaperEntries.filter((paper) =>
+    ['strengthening-judgment-under-evidence-constraints', 'bounded-reasoning-development-system'].includes(
+      paper.slug,
+    ),
   );
 
   return (
@@ -25,46 +27,57 @@ export default function WhitepapersPage() {
         alt: 'A formal archival document beneath glass with surrounding evidence fragments.',
       }}
     >
-      {flagshipPaper ? (
+      {foundationalPair.length ? (
         <section className="mb-14 border border-[#d9d0c3] bg-[#101b23] text-[#f8f4ed]">
-          <div className="grid gap-0 lg:grid-cols-[0.82fr_1.18fr]">
-            {flagshipPaper.coverImage ? (
-              <div className="relative min-h-[420px] border-b border-white/10 bg-[#07141b] lg:border-b-0 lg:border-r">
-                <Image
-                  src={flagshipPaper.coverImage}
-                  alt={`Cover of ${flagshipPaper.title}: ${flagshipPaper.subtitle}.`}
-                  fill
-                  sizes="(min-width: 1024px) 390px, 100vw"
-                  className="object-cover object-top"
-                  priority={false}
-                />
-              </div>
-            ) : null}
+          <div className="grid gap-0 lg:grid-cols-[0.95fr_1.05fr]">
+            <div className="grid gap-4 border-b border-white/10 bg-[#07141b] p-6 sm:grid-cols-2 lg:border-b-0 lg:border-r">
+              {foundationalPair.map((paper) =>
+                paper.coverImage ? (
+                  <Link
+                    key={paper.slug}
+                    href={`/whitepapers/${paper.slug}`}
+                    className="group block"
+                    aria-label={`Read ${paper.title}: ${paper.subtitle}`}
+                  >
+                    <div className="relative aspect-[17/22] overflow-hidden border border-white/12 bg-[#101b23] transition group-hover:border-[#c8a45a]/70">
+                      <Image
+                        src={paper.coverImage}
+                        alt={`Cover of ${paper.title}: ${paper.subtitle}.`}
+                        fill
+                        sizes="(min-width: 1024px) 230px, 45vw"
+                        className="object-cover object-top"
+                        priority={false}
+                      />
+                    </div>
+                  </Link>
+                ) : null,
+              )}
+            </div>
             <div className="p-6 md:p-10">
               <p className="text-xs font-semibold uppercase tracking-[0.28em] text-[#c8a45a]">
-                {flagshipPaper.sequenceLabel} / {flagshipPaper.publicationDate}
+                Foundational pair / June 2026
               </p>
               <h2 className="mt-4 text-4xl font-semibold leading-tight text-[#fffdf8]">
-                {flagshipPaper.title}: {flagshipPaper.subtitle}
+                WhyDive Framework: why it exists and how it works.
               </h2>
-              <p className="mt-5 text-lg leading-8 text-[#d8d0c5]">{flagshipPaper.coreClaim}</p>
+              <p className="mt-5 text-lg leading-8 text-[#d8d0c5]">
+                Whitepaper 1 names the human problem and foundational claim. Whitepaper 2 defines
+                the parent-framework architecture for bounded reasoning development.
+              </p>
               <div className="mt-7 flex flex-col gap-3 sm:flex-row">
-                <Link
-                  href={`/whitepapers/${flagshipPaper.slug}`}
-                  className="inline-flex justify-center rounded-full bg-[#f8f4ed] px-5 py-3 text-sm font-semibold text-[#101b23] transition hover:bg-white"
-                >
-                  View whitepaper page
-                </Link>
-                {flagshipPaper.pdfUrl ? (
+                {foundationalPair.map((paper, index) => (
                   <Link
-                    href={flagshipPaper.pdfUrl}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="inline-flex justify-center rounded-full border border-white/25 px-5 py-3 text-sm font-semibold text-[#fffdf8] transition hover:border-[#c8a45a] hover:text-[#c8a45a]"
+                    key={paper.slug}
+                    href={`/whitepapers/${paper.slug}`}
+                    className={`inline-flex justify-center rounded-full px-5 py-3 text-sm font-semibold transition ${
+                      index === 0
+                        ? 'bg-[#f8f4ed] text-[#101b23] hover:bg-white'
+                        : 'border border-white/25 text-[#fffdf8] hover:border-[#c8a45a] hover:text-[#c8a45a]'
+                    }`}
                   >
-                    Open PDF
+                    Read Whitepaper {index + 1}
                   </Link>
-                ) : null}
+                ))}
               </div>
             </div>
           </div>
@@ -109,9 +122,9 @@ export default function WhitepapersPage() {
         benefit="The whitepaper section is where the framework can be examined with more formality. Readers should know whether to review a claim, trace the architecture, or start a discussion."
         actions={[
           {
-            label: 'Review the foundational whitepaper',
+            label: 'Review the foundational pair',
             href: '/whitepapers/strengthening-judgment-under-evidence-constraints',
-            description: 'Start with the public paper that frames the purpose and stakes of WhyDive.',
+            description: 'Start with why WhyDive exists, then continue into how the architecture works.',
           },
           traceApplicationsAction,
           discussionAction,

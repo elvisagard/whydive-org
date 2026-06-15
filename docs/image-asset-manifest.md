@@ -30,6 +30,7 @@ In Next.js, reference these assets from the app as:
 | Whitepaper foundational document | `/images/whydive/whitepaper-foundational-document.png` | Foundational whitepaper page. |
 | Whitepapers publication OG | `/images/whydive/whitepapers-og-publication.png` | Open Graph/social image or whitepapers index support. |
 | Whitepaper 1 cover | `/images/whydive/whitepapers/whydive-framework-why-it-exists-cover.png` | Portrait cover preview for `WhyDive Framework: Why It Exists`, Whitepaper 1 of 2. |
+| Whitepaper 2 cover | `/images/whydive/whitepapers/whydive-framework-how-it-works-cover.png` | Portrait cover preview for `WhyDive Framework: How It Works`, Whitepaper 2 of 2. |
 | Research library banner | `/images/whydive/research-library-banner.png` | Research library page. |
 | Research index cards square | `/images/whydive/research-index-cards-square.png` | Research card or annotation/evidence relationship image. |
 | Applications branching framework banner | `/images/whydive/applications-branching-framework-banner.png` | Applications index page. |
@@ -65,6 +66,10 @@ Formal whitepaper PDFs are stored under:
 Reference Whitepaper 1 from the app as:
 
 `/whitepapers/whydive-framework-why-it-exists.pdf`
+
+Reference Whitepaper 2 from the app as:
+
+`/whitepapers/whydive-framework-how-it-works.pdf`
 
 ## Usage Guidance
 

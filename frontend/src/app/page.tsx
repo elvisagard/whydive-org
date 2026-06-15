@@ -59,6 +59,10 @@ const foundationalWhitepaper = whitepaperEntries.find(
   (paper) => paper.slug === 'strengthening-judgment-under-evidence-constraints',
 );
 
+const architectureWhitepaper = whitepaperEntries.find(
+  (paper) => paper.slug === 'bounded-reasoning-development-system',
+);
+
 export default function Home() {
   const homeSchema = {
     '@context': 'https://schema.org',
@@ -242,37 +246,43 @@ export default function Home() {
 
       {foundationalWhitepaper ? (
         <section className="border-y border-[#d9d0c3] bg-[#101b23] px-5 py-16 text-[#f8f4ed] md:px-8 md:py-24">
-          <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.62fr_0.95fr_1fr] lg:items-center">
-            {foundationalWhitepaper.coverImage ? (
-              <Link
-                href={`/whitepapers/${foundationalWhitepaper.slug}`}
-                className="group block w-full max-w-[240px] justify-self-start sm:max-w-[280px] lg:max-w-[300px]"
-                aria-label={`Read ${foundationalWhitepaper.title}: ${foundationalWhitepaper.subtitle}`}
-              >
-                <div className="relative aspect-[17/22] overflow-hidden border border-white/14 bg-[#07141b] shadow-[0_28px_90px_rgba(0,0,0,0.28)] transition duration-300 group-hover:border-[#c8a45a]/65">
-                  <Image
-                    src={foundationalWhitepaper.coverImage}
-                    alt={`Cover of ${foundationalWhitepaper.title}: ${foundationalWhitepaper.subtitle}.`}
-                    fill
-                    sizes="(min-width: 1024px) 300px, 70vw"
-                    className="object-cover object-top"
-                  />
-                </div>
-              </Link>
-            ) : null}
+          <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.75fr_0.9fr_1fr] lg:items-center">
+            <div className="flex gap-4">
+              {[foundationalWhitepaper, architectureWhitepaper].filter(Boolean).map((paper) =>
+                paper?.coverImage ? (
+                  <Link
+                    key={paper.slug}
+                    href={`/whitepapers/${paper.slug}`}
+                    className="group block w-full max-w-[155px] sm:max-w-[190px] lg:max-w-[205px]"
+                    aria-label={`Read ${paper.title}: ${paper.subtitle}`}
+                  >
+                    <div className="relative aspect-[17/22] overflow-hidden border border-white/14 bg-[#07141b] shadow-[0_28px_90px_rgba(0,0,0,0.28)] transition duration-300 group-hover:border-[#c8a45a]/65">
+                      <Image
+                        src={paper.coverImage}
+                        alt={`Cover of ${paper.title}: ${paper.subtitle}.`}
+                        fill
+                        sizes="(min-width: 1024px) 205px, 45vw"
+                        className="object-cover object-top"
+                      />
+                    </div>
+                  </Link>
+                ) : null,
+              )}
+            </div>
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.34em] text-[#c8a45a]">
-                {foundationalWhitepaper.sequenceLabel} / {foundationalWhitepaper.publicationDate}
+                Foundational whitepapers / {foundationalWhitepaper.publicationDate}
               </p>
               <h2 className="mt-4 text-4xl font-semibold leading-tight text-[#fffdf8] md:text-5xl">
-                {foundationalWhitepaper.title}: {foundationalWhitepaper.subtitle}
+                WhyDive Framework: why it exists and how it works.
               </h2>
             </div>
             <div className="text-lg leading-9 text-[#d8d0c5]">
               <p>{foundationalWhitepaper.coreClaim}</p>
               <p className="mt-5">
-                This is the first public whitepaper in the foundational pair. It explains why
-                WhyDive exists; the second paper will explain how WhyDive works.
+                The first paper explains why WhyDive exists. The second explains how the framework
+                works through reasoning events, authorization, boundaries, repair, and disciplined
+                judgment.
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <Link
@@ -288,7 +298,15 @@ export default function Home() {
                     rel="noreferrer"
                     className="inline-flex justify-center rounded-full border border-white/25 px-5 py-3 text-sm font-semibold text-[#fffdf8] transition hover:border-[#c8a45a] hover:text-[#c8a45a]"
                   >
-                    Open PDF
+                    Open Whitepaper 1 PDF
+                  </Link>
+                ) : null}
+                {architectureWhitepaper ? (
+                  <Link
+                    href={`/whitepapers/${architectureWhitepaper.slug}`}
+                    className="inline-flex justify-center rounded-full border border-white/25 px-5 py-3 text-sm font-semibold text-[#fffdf8] transition hover:border-[#c8a45a] hover:text-[#c8a45a]"
+                  >
+                    Read Whitepaper 2
                   </Link>
                 ) : null}
               </div>

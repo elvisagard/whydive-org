@@ -37,11 +37,17 @@ export const whitepaperEntries: WhitepaperEntry[] = [
     layerTitle: 'Framework Architecture',
     question: 'How does WhyDive operate?',
     audience: ['Researchers', 'Technical reviewers', 'Investors performing diligence', 'System designers'],
-    status: 'draft',
+    status: 'published',
+    publicationDate: 'June 2026',
+    version: 'Version 1.0 / Public distribution draft',
+    pdfUrl: '/whitepapers/whydive-framework-how-it-works.pdf',
+    coverImage: '/images/whydive/whitepapers/whydive-framework-how-it-works-cover.png',
+    coreClaim:
+      'WhyDive disciplines the movement from evidence to judgment by evaluating what the evidence authorizes.',
     purpose: [
-      'Define the reasoning chain',
-      'Explain how people recognize evidence boundaries, repair overreach, and make disciplined reasoning habitual',
-      'Explain the architecture beneath application domains',
+      'Define the reasoning event as the unit WhyDive evaluates',
+      'Explain authorization, boundaries, violations, repair, development, and internalization',
+      'Describe the parent-framework architecture beneath application domains',
     ],
   },
   {
