@@ -69,12 +69,6 @@ export const essayEntries: EssayEntry[] = [
     image: assetUrl('/images/whydive/essays-study-table-banner.png'),
     sourceNote:
       'This essay is based on internal WhyDive framework and ecosystem documents developed by Living Spiral Studio LLC. It is a framework essay, not a literature review.',
-    bibliography: [
-      'Living Spiral Studio LLC / WhyDive. "WhyDive Foundational Thesis." Internal framework document.',
-      'Living Spiral Studio LLC / WhyDive. "WhyDive Worldview." Internal worldview document.',
-      'Living Spiral Studio LLC / WhyDive. "WhyDive.org Parent Entity Direction." Internal strategy document, 2026.',
-      'Living Spiral Studio LLC / WhyDive. "WhyDive Public Positioning Architecture." Internal positioning document, 2026.',
-    ],
     sections: [
       {
         paragraphs: [
