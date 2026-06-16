@@ -11,6 +11,23 @@ export const metadata: Metadata = {
 };
 
 export default function EssaysPage() {
+  const categoryCounts = new Map(
+    essayCategories.map((category) => {
+      const articles = essayEntries.filter((essay) => essay.category === category.slug);
+      const published = articles.filter((essay) => essay.status === 'published').length;
+      const future = articles.length - published;
+
+      return [
+        category.slug,
+        {
+          total: articles.length,
+          published,
+          future,
+        },
+      ];
+    }),
+  );
+
   return (
     <EditorialPage
       eyebrow="Essays"
@@ -28,14 +45,33 @@ export default function EssaysPage() {
         </p>
       </SectionHeading>
       <div className="mt-8 grid gap-4 md:grid-cols-3">
-        {essayCategories.map((category) => (
-          <Link key={category.slug} href={`/essays/category/${category.slug}`} className="block">
-            <QuietCard title={category.title} eyebrow="Category">
-              <p>{category.description}</p>
-              <p className="mt-4 font-semibold text-[#6f551e]">View archive</p>
-            </QuietCard>
-          </Link>
-        ))}
+        {essayCategories.map((category) => {
+          const counts = categoryCounts.get(category.slug) ?? { total: 0, published: 0, future: 0 };
+
+          return (
+            <Link key={category.slug} href={`/essays/category/${category.slug}`} className="block">
+              <QuietCard title={category.title} eyebrow="Category">
+                <p>{category.description}</p>
+                <div className="mt-5 flex flex-wrap gap-2">
+                  <span className="border border-[#8a6d2f]/35 bg-[#fff8e6] px-2.5 py-1 text-xs font-semibold uppercase tracking-[0.14em] text-[#6f551e]">
+                    {counts.total} {counts.total === 1 ? 'article' : 'articles'}
+                  </span>
+                  {counts.published ? (
+                    <span className="border border-[#d9d0c3] bg-[#f8f4ed] px-2.5 py-1 text-xs font-semibold uppercase tracking-[0.14em] text-[#536271]">
+                      {counts.published} live
+                    </span>
+                  ) : null}
+                  {counts.future ? (
+                    <span className="border border-[#d9d0c3] bg-[#f8f4ed] px-2.5 py-1 text-xs font-semibold uppercase tracking-[0.14em] text-[#536271]">
+                      {counts.future} future
+                    </span>
+                  ) : null}
+                </div>
+                <p className="mt-4 font-semibold text-[#6f551e]">View archive</p>
+              </QuietCard>
+            </Link>
+          );
+        })}
       </div>
 
       <div className="mt-14">

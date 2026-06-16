@@ -5,7 +5,7 @@ import { assetUrl } from '@/lib/assets';
 import { absoluteUrl, publisherName, siteName, siteUrl } from '@/lib/discovery';
 import { discussionAction, shareAction, traceApplicationsAction } from '@/lib/visitorActions';
 
-const articleImage = assetUrl('/images/whydive/what-is-whydive-linkedin-card.png');
+const articleImage = assetUrl('/images/whydive/what-is-whydive-approved-hero.png');
 
 export const metadata: Metadata = {
   title: 'What Is WhyDive? A Framework for Stronger Judgment',
@@ -23,9 +23,9 @@ export const metadata: Metadata = {
     images: [
       {
         url: articleImage,
-        width: 1732,
-        height: 908,
-        alt: 'Evidence fragments moving through an illuminated boundary toward a point of judgment.',
+        width: 1734,
+        height: 907,
+        alt: 'A navigation chart showing the WhyDive path from evidence through reasoning and judgment to action and consequences.',
       },
     ],
   },
@@ -88,7 +88,7 @@ export default function WhatIsWhyDivePage() {
       intro="WhyDive is a framework for strengthening judgment by helping people align conclusions with evidence."
       image={{
         src: articleImage,
-        alt: 'Evidence fragments moving through an illuminated boundary toward a point of judgment.',
+        alt: 'A navigation chart showing the WhyDive path from evidence through reasoning and judgment to action and consequences.',
       }}
     >
       <StructuredData data={pageSchema} />
@@ -149,6 +149,15 @@ export default function WhatIsWhyDivePage() {
               <p>{statement}</p>
             </QuietCard>
           ))}
+        </div>
+        <div className="mt-10 border-l border-[#8a6d2f]/50 pl-6 text-lg leading-9 text-[#465767]">
+          <p>
+            One way to picture WhyDive is as a navigation chart for judgment. Evidence does not
+            become action by magic. It has to be interpreted, reasoned through, brought into
+            judgment, and carried into decisions whose consequences matter. WhyDive makes that route
+            visible so people can ask whether each step is justified by what the evidence can
+            actually support.
+          </p>
         </div>
       </section>
 

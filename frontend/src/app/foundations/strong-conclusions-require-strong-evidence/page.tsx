@@ -13,6 +13,8 @@ export const metadata: Metadata = {
   },
 };
 
+const articleImage = assetUrl('/images/whydive/strong-conclusions-require-strong-evidence-approved-hero.png');
+
 const commonBreakdowns = [
   {
     title: 'Possibility Becomes Probability',
@@ -50,7 +52,7 @@ export default function StrongConclusionsPage() {
     headline: 'Strong conclusions require strong evidence.',
     description: 'The governing principle beneath the WhyDive framework.',
     url: pageUrl,
-    image: absoluteUrl(assetUrl('/images/whydive/foundations-boundary-gold-line-square.png')),
+    image: absoluteUrl(articleImage),
     articleSection: 'Foundations',
     inLanguage: 'en-US',
     isPartOf: {
@@ -86,8 +88,8 @@ export default function StrongConclusionsPage() {
       title="Strong conclusions require strong evidence."
       intro="The strength of a conclusion should not exceed the strength of the evidence supporting it."
       image={{
-        src: assetUrl('/images/whydive/foundations-boundary-gold-line-square.png'),
-        alt: 'A hand places a thin gold line between handwritten evidence notes and an unfinished conclusion.',
+        src: articleImage,
+        alt: 'A visual metaphor of evidence as a bridge that must be strong enough to carry the weight of a conclusion.',
       }}
     >
       <StructuredData data={articleSchema} />
@@ -104,6 +106,11 @@ export default function StrongConclusionsPage() {
           WhyDive begins by asking whether a conclusion is proportionate to the evidence available.
           A weak conclusion may only need modest evidence. A strong conclusion requires stronger
           evidence because it carries greater force into judgment, decision, action, and consequence.
+        </p>
+        <p>
+          One way to picture the problem is a bridge. Evidence is the structure carrying the claim.
+          A light claim may cross on limited support. A heavy claim needs stronger support. When the
+          claim becomes heavier than the evidence can carry, judgment has crossed into overclaiming.
         </p>
         <blockquote className="wd-display border-l border-[#8a6d2f]/60 pl-6 text-3xl leading-tight text-[#243447]">
           What does the evidence authorize? What does it not authorize? What judgment should follow?
