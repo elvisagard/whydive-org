@@ -1,5 +1,7 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
+import { ArticlePrintButton } from '@/components/site/ArticlePrintButton';
+import { ArticlePrintStyles } from '@/components/site/ArticlePrintStyles';
 import { EditorialPage, QuietCard, SectionHeading, VisitorActionPanel } from '@/components/site/EditorialPage';
 import { StructuredData } from '@/components/site/StructuredData';
 import { essayCategories, essayEntries } from '@/content/essays';
@@ -60,7 +62,8 @@ export default async function EssayDetailPage({ params }: PageProps) {
 
   const category = essayCategories.find((entry) => entry.slug === essay.category);
   const essayUrl = absoluteUrl(`/essays/${essay.slug}`);
-  const essayImage = absoluteUrl(assetUrl(essay.image ?? '/images/whydive/essays-study-table-banner.png'));
+  const essayImagePath = assetUrl(essay.image ?? '/images/whydive/essays-study-table-banner.png');
+  const essayImage = absoluteUrl(essayImagePath);
   const hasFullEssay = Boolean(essay.sections?.length);
   const articleSchema = {
     '@context': 'https://schema.org',
@@ -101,13 +104,58 @@ export default async function EssayDetailPage({ params }: PageProps) {
       title={essay.title}
       intro={essay.deck}
       image={{
-        src: assetUrl(essay.image ?? '/images/whydive/essays-study-table-banner.png'),
+        src: essayImagePath,
         alt: `Editorial image for ${essay.title}.`,
       }}
     >
+      <ArticlePrintStyles essayUrl={essayUrl} />
       <StructuredData data={articleSchema} />
-      <article className="mx-auto max-w-3xl">
-        <div className="grid gap-4 border-y border-[#d9d0c3] py-6 text-sm text-[#536271] sm:grid-cols-3">
+      <div className="print-hide mb-8 flex justify-end">
+        <ArticlePrintButton />
+      </div>
+      <article className="essay-print-body mx-auto max-w-3xl">
+        <div className="essay-print-cover" aria-hidden="true">
+          <p className="essay-print-cover-label">Document Metadata</p>
+          <div className="essay-print-meta">
+            <div>
+              <p>
+                <strong>Use</strong>
+                Reading and discussion
+              </p>
+              <p>
+                <strong>Category</strong>
+                {category?.title ?? essay.category}
+              </p>
+              <p>
+                <strong>Reading time</strong>
+                {essay.readingTime ?? 'Reflective read'}
+              </p>
+            </div>
+            <div>
+              <p>
+                <strong>Publication</strong>
+                WhyDive Essay
+              </p>
+              <p>
+                <strong>Category</strong>
+                {category?.title ?? essay.category}
+              </p>
+              <p>
+                <strong>Author</strong>
+                Elvis Agard
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="essay-print-article-opener" aria-hidden="true">
+          <p className="essay-print-kicker">{category?.title ?? 'Essay'}</p>
+          <h1 className="essay-print-title">{essay.title}</h1>
+          <p className="essay-print-deck">{essay.deck}</p>
+          <img className="essay-print-image" src={essayImagePath} alt="" />
+        </div>
+
+        <div className="print-hide grid gap-4 border-y border-[#d9d0c3] py-6 text-sm text-[#536271] sm:grid-cols-3">
           <p>
             <span className="block font-semibold text-[#101b23]">Use</span>
             Reading and discussion
@@ -172,17 +220,17 @@ export default async function EssayDetailPage({ params }: PageProps) {
         )}
 
         {essay.sourceNote ? (
-          <div className="mt-12 border-t border-[#d9d0c3] pt-6 text-sm leading-7 text-[#536271]">
+          <div className="essay-print-backmatter mt-12 border-t border-[#d9d0c3] pt-6 text-sm leading-7 text-[#536271]">
             <p>
-              <span className="font-semibold text-[#101b23]">Source note: </span>
+              <span className="essay-print-backmatter-heading font-semibold text-[#101b23]">Source note: </span>
               {essay.sourceNote}
             </p>
           </div>
         ) : null}
 
         {essay.bibliography?.length ? (
-          <div className="mt-8 border border-[#d9d0c3] bg-[#fffdf8] p-6">
-            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#8a6d2f]">
+          <div className="essay-print-backmatter mt-8 border border-[#d9d0c3] bg-[#fffdf8] p-6">
+            <p className="essay-print-backmatter-heading text-xs font-semibold uppercase tracking-[0.24em] text-[#8a6d2f]">
               Bibliography
             </p>
             <ul className="mt-4 space-y-3 text-sm leading-7 text-[#536271]">
@@ -206,7 +254,7 @@ export default async function EssayDetailPage({ params }: PageProps) {
           </div>
         ) : null}
 
-        <div className="mt-8">
+        <div className="print-hide mt-8">
           <QuietCard title="For discussion" eyebrow="Community use">
             <p>
               Bring the question to a classroom, reading group, faculty meeting, leadership team,

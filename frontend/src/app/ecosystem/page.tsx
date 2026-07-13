@@ -1,5 +1,19 @@
 import type { Metadata } from 'next';
+import {
+  AcademicCapIcon,
+  BookOpenIcon,
+  BriefcaseIcon,
+  BuildingLibraryIcon,
+  BuildingOffice2Icon,
+  ChartBarIcon,
+  CpuChipIcon,
+  HeartIcon,
+  MagnifyingGlassIcon,
+  ShieldCheckIcon,
+  ShoppingCartIcon,
+} from '@heroicons/react/24/outline';
 import { EditorialPage, QuietCard, SectionHeading, VisitorActionPanel } from '@/components/site/EditorialPage';
+import { DiagramPreviewLink } from '@/components/site/DiagramPreviewLink';
 import { assetUrl } from '@/lib/assets';
 import { discussionAction, readFoundationsAction } from '@/lib/visitorActions';
 
@@ -20,177 +34,221 @@ const entities = [
 ];
 
 function EcosystemFlowDiagram() {
+  const serviceDomains = [
+    { name: 'Business', sublabel: 'organizational judgment', href: '/applications', icon: BriefcaseIcon },
+    { name: 'Healthcare', sublabel: 'clinical judgment', href: '/applications', icon: HeartIcon },
+    {
+      name: 'Education',
+      sublabel: 'learning judgment',
+      href: 'https://whydive.education',
+      previewSrc: assetUrl('/images/site-previews/whydive-education.png'),
+      icon: AcademicCapIcon,
+    },
+    { name: 'Policy', sublabel: 'public judgment', href: '/applications', icon: BuildingLibraryIcon },
+    { name: 'AI', sublabel: 'synthetic claims', href: '/applications', icon: CpuChipIcon },
+    { name: 'Research', sublabel: 'evidence methods', href: '/research', icon: MagnifyingGlassIcon },
+  ];
+
+  const educationBranches = [
+    {
+      name: 'WhyDive Education',
+      sublabel: 'district-facing diagnostics',
+      href: 'https://whydive.education',
+      logoSrc: assetUrl('/images/whydive/logo-light.svg'),
+      logoAlt: 'WhyDive',
+      previewSrc: assetUrl('/images/site-previews/whydive-education.png'),
+      icon: BuildingOffice2Icon,
+      children: [
+        {
+          name: 'Reading',
+          sublabel: 'textual reasoning',
+          href: 'https://whydive.education/reading',
+          previewSrc: assetUrl('/images/site-previews/whydive-reading.png'),
+          logoSrc: undefined,
+          logoAlt: undefined,
+          icon: BookOpenIcon,
+        },
+        {
+          name: 'Charts',
+          sublabel: 'data reasoning',
+          href: 'https://whydive.education/charts',
+          previewSrc: assetUrl('/images/site-previews/whydive-charts.png'),
+          logoSrc: undefined,
+          logoAlt: undefined,
+          icon: ChartBarIcon,
+        },
+      ],
+    },
+    {
+      name: 'Data Literacy Standards',
+      sublabel: 'chart and data reasoning standards',
+      href: 'https://chart-ed.cc/en/standards/the-dls-standard',
+      logoSrc: 'https://chart-ed.cc/dls-logo.svg',
+      logoAlt: 'Data Literacy Standards',
+      previewSrc: assetUrl('/images/site-previews/chart-ed-institute.png'),
+      icon: BookOpenIcon,
+      children: [
+        {
+          name: 'Chart-Ed Institute',
+          sublabel: 'stewardship and authority',
+          href: 'https://chart-ed.cc/en',
+          previewSrc: assetUrl('/images/site-previews/chart-ed-institute.png'),
+          logoSrc: 'https://chart-ed.cc/dls-logo.svg',
+          logoAlt: 'Chart-Ed Institute',
+          icon: ShieldCheckIcon,
+        },
+        {
+          name: 'Chart-Ed',
+          sublabel: 'products',
+          href: 'https://chart-ed.com',
+          previewSrc: assetUrl('/images/site-previews/chart-ed.png'),
+          logoSrc: assetUrl('/images/brands/chart-ed-logo.svg'),
+          logoAlt: 'Chart-Ed',
+          icon: ShoppingCartIcon,
+        },
+      ],
+    },
+  ];
+
   return (
-    <figure className="mt-8 overflow-hidden border border-[#d9d0c3] bg-[#101b23] shadow-[0_24px_80px_rgba(23,38,49,0.12)]">
-      <div className="space-y-4 p-5 md:hidden">
-        <p className="text-center text-sm leading-6 text-[#d5c8b7]">
-          Legal ownership, framework authority, and application paths
-        </p>
-        <div className="border border-[#d9d0c3]/35 bg-[#172631] p-4 text-center">
-          <p className="font-sans text-base font-semibold text-[#fffdf8]">Living Spiral Studio LLC</p>
-          <p className="mt-1 font-sans text-sm leading-6 text-[#d5c8b7]">Current legal parent and public contact identity</p>
-        </div>
-        <div className="text-center font-sans text-sm font-semibold text-[#c9a24d]">operates</div>
-        <div className="border-2 border-[#c9a24d] bg-[#f8f4ed] p-4 text-center">
-          <p className="font-sans text-lg font-semibold text-[#101b23]">WhyDive</p>
-          <p className="mt-1 font-sans text-sm leading-6 text-[#465767]">
-            Parent framework for evidence, reasoning, judgment, decision, and action
+    <figure className="mt-8 overflow-visible border border-[#d9d0c3] bg-[#f7f3eb] p-4 shadow-[0_24px_80px_rgba(23,38,49,0.12)] md:p-7">
+      <div
+        className="border border-[#d8cab4] bg-[#fffdf8] px-4 py-8 md:px-8"
+        role="img"
+        aria-label="WhyDive ecosystem map showing the parent framework, service domains, and the current education worked example."
+      >
+        <div className="mx-auto max-w-3xl text-center">
+          <p className="text-sm font-bold uppercase tracking-[0.26em] text-[#8a6d2f]">
+            Parent framework
           </p>
+          <a
+            className="group mt-2 block border border-[#c8a45a] bg-[#101b23] px-6 py-6 shadow-sm transition hover:border-[#f0d68a]"
+            href="/foundations/what-is-whydive"
+          >
+            <p className="wd-display text-5xl leading-none text-[#fffdf8] md:text-6xl">WhyDive</p>
+          </a>
         </div>
-        <div className="grid gap-4">
-          <div className="border border-[#d9d0c3]/35 bg-[#172631] p-4">
-            <p className="font-sans text-sm font-semibold uppercase tracking-[0.18em] text-[#c9a24d]">Application path</p>
-            <p className="mt-3 font-sans text-base font-semibold text-[#fffdf8]">WhyDive Education</p>
-            <p className="mt-1 font-sans text-sm leading-6 text-[#d5c8b7]">District-facing adaptive assessment</p>
-            <div className="mt-4 grid gap-2 text-sm text-[#101b23]">
-              <p className="bg-[#fffdf8] p-3 font-sans font-semibold">WhyDive Reading</p>
-              <p className="bg-[#fffdf8] p-3 font-sans font-semibold">WhyDive Charts</p>
+
+        <div className="flex h-9 items-end justify-center" aria-hidden="true">
+          <div className="h-full w-px bg-[#8a6d2f]" />
+          <div className="-ml-[8px] h-0 w-0 border-x-8 border-t-[14px] border-x-transparent border-t-[#8a6d2f]" />
+        </div>
+
+        <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-4">
+          <div className="h-px bg-[#c8a45a]" />
+          <p className="text-center text-sm font-bold uppercase tracking-[0.24em] text-[#101b23]">
+            Service layer: domain examples
+          </p>
+          <div className="h-px bg-[#c8a45a]" />
+        </div>
+
+        <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
+          {serviceDomains.map(({ name, sublabel, href, previewSrc, icon: Icon }) => (
+            <DiagramPreviewLink
+              key={name}
+              className="group border border-[#d8cab4] bg-[#fffdf8] p-4 text-center shadow-sm transition hover:border-[#8a6d2f] hover:bg-[#fffaf0]"
+              href={href}
+              previewAlt={`${name} site preview`}
+              previewSrc={previewSrc}
+              rel={href.startsWith('http') ? 'noreferrer' : undefined}
+              target={href.startsWith('http') ? '_blank' : undefined}
+            >
+              <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-[#f0eee9] text-[#0b2442]">
+                <Icon className="h-8 w-8" aria-hidden="true" />
+              </div>
+              <p className="mt-4 text-lg font-bold leading-tight text-[#101b23]">{name}</p>
+              <p className="mt-2 text-sm leading-6 text-[#25364a]">{sublabel}</p>
+            </DiagramPreviewLink>
+          ))}
+        </div>
+
+        <div className="mt-8 grid grid-cols-[1fr_auto_1fr] items-center gap-4">
+          <div className="h-px bg-[#c8a45a]" />
+          <p className="text-center text-sm font-bold uppercase tracking-[0.24em] text-[#101b23]">
+            Current worked example: education
+          </p>
+          <div className="h-px bg-[#c8a45a]" />
+        </div>
+
+        <div className="mt-6 grid gap-8 lg:grid-cols-2">
+          {educationBranches.map(({ name, sublabel, href, logoSrc, logoAlt, previewSrc, icon: Icon, children }) => (
+            <div key={name} className="relative">
+              <DiagramPreviewLink
+                className="group flex h-[216px] flex-col items-center justify-center border border-[#c8a45a] bg-[#101b23] p-6 text-center text-[#fffdf8] shadow-sm transition hover:border-[#f0d68a]"
+                href={href}
+                previewAlt={`${name} site preview`}
+                previewSrc={previewSrc}
+                rel="noreferrer"
+                target="_blank"
+              >
+                {logoSrc ? (
+                  <div className="mx-auto flex h-16 w-full max-w-[250px] items-center justify-center">
+                    <img
+                      alt={logoAlt}
+                      className={[
+                        'max-h-14 w-full object-contain',
+                        logoSrc.includes('dls-logo') ? 'brightness-0 invert' : '',
+                      ].join(' ')}
+                      src={logoSrc}
+                    />
+                  </div>
+                ) : (
+                  <Icon className="h-12 w-12 flex-none text-[#fffdf8]" aria-hidden="true" />
+                )}
+                <div className="mt-4">
+                  <p className="font-serif text-2xl font-semibold leading-tight text-balance">{name}</p>
+                  <p className="mx-auto mt-2 max-w-[24ch] text-base leading-6 text-[#d8d0c5]">{sublabel}</p>
+                </div>
+              </DiagramPreviewLink>
+
+              <div className="mx-auto h-8 w-px bg-[#8a6d2f]" aria-hidden="true" />
+              <div className="grid gap-4 sm:grid-cols-2">
+                {children.map(
+                  ({
+                    name: childName,
+                    sublabel: childSublabel,
+                    href: childHref,
+                    previewSrc: childPreviewSrc,
+                    logoSrc: childLogoSrc,
+                    logoAlt: childLogoAlt,
+                    icon: ChildIcon,
+                  }) => (
+                    <DiagramPreviewLink
+                      key={childName}
+                      className={[
+                        'flex min-h-[126px] flex-col justify-center border border-[#b7c8dc] bg-[#f7fbff] p-4 text-[#0b2442] shadow-sm transition hover:border-[#4e7fb2] hover:bg-[#eff7ff]',
+                        childLogoSrc ? 'items-center text-center' : 'md:grid md:grid-cols-[44px_1fr] md:items-center md:gap-4',
+                      ].join(' ')}
+                      href={childHref}
+                      previewAlt={`${childName} site preview`}
+                      previewSrc={childPreviewSrc}
+                      rel="noreferrer"
+                      target="_blank"
+                    >
+                      {childLogoSrc ? (
+                        <div className="mx-auto flex h-12 w-full max-w-[150px] items-center justify-center">
+                          <img alt={childLogoAlt} className="max-h-10 w-full object-contain" src={childLogoSrc} />
+                        </div>
+                      ) : (
+                        <ChildIcon className="h-10 w-10 flex-none" aria-hidden="true" />
+                      )}
+                      <div className={childLogoSrc ? 'mt-3' : 'mt-3 md:mt-0'}>
+                        <p className="text-lg font-bold leading-tight text-balance">{childName}</p>
+                        <p className="mx-auto mt-1 max-w-[18ch] text-sm leading-6 text-[#25364a]">{childSublabel}</p>
+                      </div>
+                    </DiagramPreviewLink>
+                  ),
+                )}
+              </div>
             </div>
-          </div>
-          <div className="border border-[#d9d0c3]/35 bg-[#172631] p-4">
-            <p className="font-sans text-sm font-semibold uppercase tracking-[0.18em] text-[#c9a24d]">Standards path</p>
-            <p className="mt-3 font-sans text-base font-semibold text-[#fffdf8]">Data Literacy Standards</p>
-            <p className="mt-1 font-sans text-sm leading-6 text-[#d5c8b7]">Global standards expression of WhyDive</p>
-            <p className="mt-4 bg-[#fffdf8] p-3 font-sans text-sm font-semibold leading-6 text-[#101b23]">
-              Chart-Ed Institute and Chart-Ed
-            </p>
-          </div>
+          ))}
+        </div>
+
+        <div className="mx-auto mt-8 max-w-4xl border-l-4 border-[#8a6d2f] bg-[#f7f3eb] px-5 py-4 text-center text-sm font-semibold leading-6 text-[#25364a] md:text-base">
+          The education branch shows the pattern in use. It is not the boundary of WhyDive.
         </div>
       </div>
-      <svg
-        className="hidden h-auto w-full md:block"
-        viewBox="0 0 920 780"
-        role="img"
-        aria-labelledby="ecosystem-flow-title ecosystem-flow-desc"
-      >
-        <title id="ecosystem-flow-title">WhyDive ecosystem architecture</title>
-        <desc id="ecosystem-flow-desc">
-          A flow diagram showing Living Spiral Studio LLC as the current legal parent, WhyDive as
-          the domain-neutral framework, and two parallel application pathways: WhyDive Education
-          and the Data Literacy Standards pathway through Chart-Ed Institute and Chart-Ed.
-        </desc>
-        <defs>
-          <marker
-            id="ecosystem-arrow"
-            viewBox="0 0 10 10"
-            refX="8"
-            refY="5"
-            markerWidth="7"
-            markerHeight="7"
-            orient="auto-start-reverse"
-          >
-            <path d="M2 1L8 5L2 9" fill="none" stroke="#c9a24d" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-          </marker>
-          <linearGradient id="ecosystem-gold" x1="0" x2="1" y1="0" y2="1">
-            <stop offset="0%" stopColor="#ead08b" />
-            <stop offset="100%" stopColor="#8a6d2f" />
-          </linearGradient>
-        </defs>
-
-        <rect width="920" height="780" fill="#101b23" />
-        <path d="M80 650C220 590 270 690 420 610C570 530 640 610 820 540" fill="none" stroke="#233949" strokeWidth="1" opacity="0.7" />
-        <path d="M120 130C260 90 360 125 470 100C610 70 690 105 810 80" fill="none" stroke="#8a6d2f" strokeWidth="1" opacity="0.35" />
-
-        <text x="460" y="54" textAnchor="middle" className="fill-[#d5c8b7] font-sans text-[15px]">
-          Legal ownership, framework authority, and application paths
-        </text>
-
-        <g>
-          <rect x="258" y="84" width="404" height="78" rx="8" fill="#172631" stroke="#d9d0c3" strokeOpacity="0.38" />
-          <text x="460" y="116" textAnchor="middle" className="fill-[#fffdf8] font-sans text-[18px] font-semibold">
-            Living Spiral Studio LLC
-          </text>
-          <text x="460" y="140" textAnchor="middle" className="fill-[#d5c8b7] font-sans text-[14px]">
-            Current legal parent and public contact identity
-          </text>
-        </g>
-
-        <line x1="460" y1="162" x2="460" y2="206" stroke="#c9a24d" strokeWidth="2" markerEnd="url(#ecosystem-arrow)" />
-        <text x="484" y="189" className="fill-[#d5c8b7] font-sans text-[12px]">operates</text>
-
-        <g>
-          <rect x="182" y="212" width="556" height="92" rx="8" fill="#f8f4ed" stroke="url(#ecosystem-gold)" strokeWidth="2" />
-          <text x="460" y="246" textAnchor="middle" className="fill-[#101b23] font-sans text-[22px] font-semibold">
-            WhyDive
-          </text>
-          <text x="460" y="272" textAnchor="middle" className="fill-[#465767] font-sans text-[15px]">
-            Parent epistemic framework for evidence, reasoning, judgment, decision, and action
-          </text>
-        </g>
-
-        <path d="M394 304C300 352 232 378 180 420" fill="none" stroke="#c9a24d" strokeWidth="2" markerEnd="url(#ecosystem-arrow)" />
-        <path d="M526 304C620 352 688 378 740 420" fill="none" stroke="#c9a24d" strokeWidth="2" markerEnd="url(#ecosystem-arrow)" />
-        <text x="250" y="354" textAnchor="middle" className="fill-[#d5c8b7] font-sans text-[13px]">application path</text>
-        <text x="668" y="354" textAnchor="middle" className="fill-[#d5c8b7] font-sans text-[13px]">standards path</text>
-
-        <g>
-          <rect x="72" y="424" width="300" height="118" rx="8" fill="#172631" stroke="#d9d0c3" strokeOpacity="0.45" />
-          <text x="222" y="458" textAnchor="middle" className="fill-[#fffdf8] font-sans text-[18px] font-semibold">
-            WhyDive Education
-          </text>
-          <text x="222" y="484" textAnchor="middle" className="fill-[#d5c8b7] font-sans text-[14px]">
-            District-facing adaptive assessment
-          </text>
-          <text x="222" y="508" textAnchor="middle" className="fill-[#d5c8b7] font-sans text-[14px]">
-            whydive.education
-          </text>
-        </g>
-
-        <g>
-          <rect x="548" y="424" width="300" height="118" rx="8" fill="#172631" stroke="#d9d0c3" strokeOpacity="0.45" />
-          <text x="698" y="458" textAnchor="middle" className="fill-[#fffdf8] font-sans text-[18px] font-semibold">
-            Data Literacy Standards
-          </text>
-          <text x="698" y="484" textAnchor="middle" className="fill-[#d5c8b7] font-sans text-[14px]">
-            Global standards expression of WhyDive
-          </text>
-          <text x="698" y="508" textAnchor="middle" className="fill-[#d5c8b7] font-sans text-[14px]">
-            chart-ed.cc/en/standards/the-dls-standard
-          </text>
-        </g>
-
-        <path d="M222 542L150 602" fill="none" stroke="#c9a24d" strokeWidth="1.75" markerEnd="url(#ecosystem-arrow)" />
-        <path d="M222 542L294 602" fill="none" stroke="#c9a24d" strokeWidth="1.75" markerEnd="url(#ecosystem-arrow)" />
-        <path d="M698 542L698 600" fill="none" stroke="#c9a24d" strokeWidth="1.75" markerEnd="url(#ecosystem-arrow)" />
-
-        <g>
-          <rect x="48" y="606" width="204" height="84" rx="8" fill="#fffdf8" stroke="#d9d0c3" />
-          <text x="150" y="638" textAnchor="middle" className="fill-[#101b23] font-sans text-[16px] font-semibold">
-            WhyDive Reading
-          </text>
-          <text x="150" y="662" textAnchor="middle" className="fill-[#536271] font-sans text-[13px]">
-            Textual reasoning
-          </text>
-        </g>
-
-        <g>
-          <rect x="270" y="606" width="204" height="84" rx="8" fill="#fffdf8" stroke="#d9d0c3" />
-          <text x="372" y="638" textAnchor="middle" className="fill-[#101b23] font-sans text-[16px] font-semibold">
-            WhyDive Charts
-          </text>
-          <text x="372" y="662" textAnchor="middle" className="fill-[#536271] font-sans text-[13px]">
-            Chart reasoning
-          </text>
-        </g>
-
-        <g>
-          <rect x="548" y="606" width="300" height="84" rx="8" fill="#fffdf8" stroke="#d9d0c3" />
-          <text x="698" y="638" textAnchor="middle" className="fill-[#101b23] font-sans text-[16px] font-semibold">
-            Chart-Ed Institute and Chart-Ed
-          </text>
-          <text x="698" y="662" textAnchor="middle" className="fill-[#536271] font-sans text-[13px]">
-            Stewardship and American K-12 teacher tools
-          </text>
-        </g>
-
-        <g>
-          <line x1="100" y1="732" x2="820" y2="732" stroke="#d9d0c3" strokeOpacity="0.2" />
-          <text x="460" y="754" textAnchor="middle" className="fill-[#d5c8b7] font-sans text-[13px]">
-            WhyDive.org explains the framework. Product, standards, and classroom tools live on their own domains.
-          </text>
-        </g>
-      </svg>
-      <figcaption className="border-t border-[#d9d0c3]/20 px-5 py-4 text-sm leading-6 text-[#d5c8b7] md:px-7">
+      <figcaption className="border-t border-[#d9d0c3] bg-[#fffdf8] px-5 py-4 text-sm leading-6 text-[#465767] md:px-7">
         The important distinction: WhyDive Education and the DLS pathway are parallel applications
         of the parent framework. Chart-Ed is a DLS-based implementation, not the same thing as
         WhyDive Education.

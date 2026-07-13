@@ -24,7 +24,7 @@ export function EditorialPage({ eyebrow, title, intro, image, children }: Editor
 
   return (
     <main className="min-h-screen bg-[#f8f4ed] text-[#172631]">
-      <section className="border-b border-[#d9d0c3]">
+      <section className="editorial-web-hero border-b border-[#d9d0c3]">
         <div className="mx-auto max-w-5xl px-5 py-16 md:px-8 md:py-24">
           <p className="text-xs font-semibold uppercase tracking-[0.34em] text-[#7b633e]">{eyebrow}</p>
           <h1 className="mt-5 max-w-4xl text-4xl font-semibold leading-tight tracking-normal text-[#101b23] md:text-6xl">
@@ -45,7 +45,7 @@ export function EditorialPage({ eyebrow, title, intro, image, children }: Editor
           ) : null}
         </div>
       </section>
-      <div className="mx-auto max-w-5xl px-5 py-12 md:px-8 md:py-16">{children}</div>
+      <div className="editorial-web-content mx-auto max-w-5xl px-5 py-12 md:px-8 md:py-16">{children}</div>
     </main>
   );
 }
@@ -133,7 +133,7 @@ export function VisitorActionPanel({
   }>;
 }) {
   return (
-    <section className="mt-16 border border-[#d9d0c3] bg-[#101b23] p-6 text-[#f8f4ed] md:p-8">
+    <section className="print-hide mt-16 border border-[#d9d0c3] bg-[#101b23] p-6 text-[#f8f4ed] md:p-8">
       <p className="text-xs font-semibold uppercase tracking-[0.28em] text-[#c8a45a]">{eyebrow}</p>
       <div className="mt-4 grid gap-8 lg:grid-cols-[0.85fr_1.15fr]">
         <div>
