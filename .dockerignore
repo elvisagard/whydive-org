@@ -19,3 +19,13 @@ yarn-error.log*
 
 coverage
 *.tsbuildinfo
+
+# Production serves heavy assets from Cloudflare R2 via NEXT_PUBLIC_ASSET_BASE_URL.
+# Keep local copies in git/dev, but exclude them from Docker build context and runtime image.
+frontend/public/images/**/*.png
+frontend/public/images/**/*.jpg
+frontend/public/images/**/*.jpeg
+frontend/public/images/**/*.webp
+frontend/public/images/**/*.avif
+frontend/public/whitepapers/*.pdf
+!frontend/public/images/whydive/article-fallback.svg

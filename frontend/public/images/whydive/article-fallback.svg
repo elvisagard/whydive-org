@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">WhyDive essay fallback image</title>
+  <desc id="desc">A simple WhyDive editorial fallback image for essays.</desc>
+  <rect width="1200" height="675" fill="#f8f4ed"/>
+  <rect x="80" y="78" width="1040" height="519" fill="#fffdf8" stroke="#d9d0c3" stroke-width="2"/>
+  <path d="M160 176h520M160 236h760M160 296h700M160 416h470" stroke="#8a6d2f" stroke-width="10" stroke-linecap="square" opacity=".55"/>
+  <path d="M160 356h840" stroke="#243447" stroke-width="2" opacity=".22"/>
+  <circle cx="948" cy="200" r="58" fill="none" stroke="#0f6f78" stroke-width="10" opacity=".76"/>
+  <path d="M924 200c0-24 16-42 38-47M948 258v42M948 118V92M884 200h-28M1040 200h28" stroke="#0f6f78" stroke-width="8" stroke-linecap="round" opacity=".72"/>
+  <text x="160" y="520" fill="#101b23" font-family="Georgia, 'Times New Roman', serif" font-size="64" font-weight="700">WhyDive</text>
+  <text x="160" y="558" fill="#536271" font-family="Arial, sans-serif" font-size="22" letter-spacing="6">ESSAY</text>
+</svg>

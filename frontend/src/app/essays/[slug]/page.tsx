@@ -14,6 +14,8 @@ interface PageProps {
   params: Promise<{ slug: string }>;
 }
 
+const articleFallbackImage = '/images/whydive/article-fallback.svg';
+
 function renderBibliographyLabel(label: string) {
   return label.split(/(\*[^*]+\*)/g).map((part, index) => {
     if (part.startsWith('*') && part.endsWith('*')) {
@@ -81,7 +83,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       section: essay.category,
       images: [
         {
-          url: assetUrl(essay.image ?? '/images/whydive/essays-study-table-banner.png'),
+          url: assetUrl(essay.image ?? articleFallbackImage),
           alt: `Editorial image for ${essay.title}.`,
         },
       ],
@@ -90,7 +92,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       card: 'summary_large_image',
       title: essay.title,
       description: essay.deck,
-      images: [assetUrl(essay.image ?? '/images/whydive/essays-study-table-banner.png')],
+      images: [assetUrl(essay.image ?? articleFallbackImage)],
     },
   };
 }
@@ -105,7 +107,7 @@ export default async function EssayDetailPage({ params }: PageProps) {
 
   const category = essayCategories.find((entry) => entry.slug === essay.category);
   const essayUrl = absoluteUrl(`/essays/${essay.slug}`);
-  const essayImagePath = assetUrl(essay.image ?? '/images/whydive/essays-study-table-banner.png');
+  const essayImagePath = assetUrl(essay.image ?? articleFallbackImage);
   const essayImage = absoluteUrl(essayImagePath);
   const hasFullEssay = Boolean(essay.sections?.length);
   const essayWordCount = getEssayWordCount(essay);

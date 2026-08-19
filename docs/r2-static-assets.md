@@ -85,3 +85,16 @@ Use `assetUrl()` for static assets that should be served by R2 in production:
 ```
 
 This preserves local development while making Coolify production serve assets from R2.
+
+## Production Image Size
+
+The Docker build excludes heavy local image and whitepaper assets from the Docker context and
+runtime image. Production must set:
+
+```env
+NEXT_PUBLIC_ASSET_BASE_URL=https://static.whydive.org
+```
+
+The runtime image keeps only lightweight root public files, brand SVGs, the advisor PDF, and
+`/images/whydive/article-fallback.svg`. This keeps local development convenient while preventing
+the VPS/container from carrying the full `frontend/public/images` payload.

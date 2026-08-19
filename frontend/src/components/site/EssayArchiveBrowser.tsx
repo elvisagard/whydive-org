@@ -23,6 +23,7 @@ interface EssayArchiveBrowserProps {
 }
 
 const pageSize = 6;
+const articleFallbackImage = '/images/whydive/article-fallback.svg';
 
 const statusLabels: Record<ContentStatus, string> = {
   published: 'Published',
@@ -90,28 +91,22 @@ function StatusBadge({ status }: { status: ContentStatus }) {
 }
 
 function EssayListItem({ essay }: { essay: EssayEntry }) {
-  const hasImage = Boolean(essay.image);
+  const imageSrc = assetUrl(essay.image ?? articleFallbackImage);
 
   return (
     <Link
       href={`/essays/${essay.slug}`}
       className="group grid gap-5 border border-[#d9d0c3] bg-[#fffdf8] p-4 transition hover:border-[#8a6d2f]/55 hover:shadow-[0_18px_45px_rgba(35,38,49,0.08)] sm:grid-cols-[160px_1fr]"
     >
-      {hasImage ? (
-        <div className="relative aspect-[16/10] overflow-hidden bg-[#101b23] sm:aspect-auto sm:min-h-32">
-          <Image
-            src={assetUrl(essay.image ?? '/images/whydive/essays-study-table-banner.png')}
-            alt={`Editorial image for ${essay.title}.`}
-            fill
-            sizes="(min-width: 768px) 160px, 100vw"
-            className="object-cover transition duration-500 group-hover:scale-[1.025]"
-          />
-        </div>
-      ) : (
-        <div className="flex min-h-28 items-center justify-center border border-dashed border-[#d9d0c3] bg-[#f8f4ed] px-4 text-center text-xs font-semibold uppercase tracking-[0.18em] text-[#8a6d2f]">
-          Forthcoming
-        </div>
-      )}
+      <div className="relative aspect-[16/10] overflow-hidden bg-[#101b23] sm:aspect-auto sm:min-h-32">
+        <Image
+          src={imageSrc}
+          alt={`Editorial image for ${essay.title}.`}
+          fill
+          sizes="(min-width: 768px) 160px, 100vw"
+          className="object-cover transition duration-500 group-hover:scale-[1.025]"
+        />
+      </div>
 
       <div>
         <div className="flex flex-wrap items-center gap-2">
@@ -130,28 +125,22 @@ function EssayListItem({ essay }: { essay: EssayEntry }) {
 }
 
 function EssayCard({ essay }: { essay: EssayEntry }) {
-  const hasImage = Boolean(essay.image);
+  const imageSrc = assetUrl(essay.image ?? articleFallbackImage);
 
   return (
     <Link
       href={`/essays/${essay.slug}`}
       className="group block h-full border border-[#d9d0c3] bg-[#fffdf8] transition hover:border-[#8a6d2f]/55 hover:shadow-[0_18px_45px_rgba(35,38,49,0.09)]"
     >
-      {hasImage ? (
-        <div className="relative aspect-[16/9] overflow-hidden bg-[#101b23]">
-          <Image
-            src={assetUrl(essay.image ?? '/images/whydive/essays-study-table-banner.png')}
-            alt={`Editorial image for ${essay.title}.`}
-            fill
-            sizes="(min-width: 768px) 50vw, 100vw"
-            className="object-cover transition duration-500 group-hover:scale-[1.025]"
-          />
-        </div>
-      ) : (
-        <div className="flex aspect-[16/9] items-center justify-center bg-[#f8f4ed] px-6 text-center text-xs font-semibold uppercase tracking-[0.22em] text-[#8a6d2f]">
-          Future article
-        </div>
-      )}
+      <div className="relative aspect-[16/9] overflow-hidden bg-[#101b23]">
+        <Image
+          src={imageSrc}
+          alt={`Editorial image for ${essay.title}.`}
+          fill
+          sizes="(min-width: 768px) 50vw, 100vw"
+          className="object-cover transition duration-500 group-hover:scale-[1.025]"
+        />
+      </div>
       <div className="p-6">
         <StatusBadge status={essay.status} />
         <h2 className="wd-display mt-3 text-3xl leading-tight text-[#101b23]">{essay.title}</h2>

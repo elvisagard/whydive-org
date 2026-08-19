@@ -71,4 +71,4 @@ node frontend/server.js
 
 That file is produced by `next build` with `output: "standalone"` enabled in `frontend/next.config.ts`.
 
-Static assets in `frontend/public` are still copied into the runtime image as a fallback, but production should set `NEXT_PUBLIC_ASSET_BASE_URL` so the browser fetches those assets from R2. Run `pnpm assets:sync:r2` before deployment whenever public images, PDFs, favicons, or manifest files change.
+The Docker build excludes heavy local image and whitepaper assets from the build context and runtime image. Production should set `NEXT_PUBLIC_ASSET_BASE_URL` at build time so generated pages point to R2. The runtime image keeps only lightweight public fallbacks such as favicons, manifests, brand SVGs, the advisor PDF, and the generic article fallback image. Run `pnpm assets:sync:r2` before deployment whenever public images, PDFs, favicons, or manifest files change.
