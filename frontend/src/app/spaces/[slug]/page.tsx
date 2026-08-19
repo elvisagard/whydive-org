@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
+import Link from 'next/link';
 import { EditorialPage, QuietCard, SectionHeading, VisitorActionPanel } from '@/components/site/EditorialPage';
+import { essayEntries } from '@/content/essays';
 import { getWhyDiveSpace, whyDiveSpaces } from '@/content/spaces';
 import { discussionAction, readFoundationsAction, shareAction, traceApplicationsAction } from '@/lib/visitorActions';
 
@@ -36,6 +38,8 @@ export default async function SpaceDetailPage({ params }: PageProps) {
   if (!space) {
     notFound();
   }
+
+  const featuredEssays = essayEntries.filter((essay) => space.featuredEssaySlugs?.includes(essay.slug));
 
   return (
     <EditorialPage
@@ -132,6 +136,26 @@ export default async function SpaceDetailPage({ params }: PageProps) {
           ))}
         </div>
       </section>
+
+      {featuredEssays.length ? (
+        <section className="mt-16">
+          <SectionHeading eyebrow="Related Reading" title="Essays for this space.">
+            <p>
+              These essays show the framework at work inside the kinds of judgment this space has
+              to carry.
+            </p>
+          </SectionHeading>
+          <div className="mt-8 grid gap-5 md:grid-cols-2">
+            {featuredEssays.map((essay) => (
+              <Link key={essay.slug} href={`/essays/${essay.slug}`}>
+                <QuietCard title={essay.title} eyebrow="Essay">
+                  <p>{essay.deck}</p>
+                </QuietCard>
+              </Link>
+            ))}
+          </div>
+        </section>
+      ) : null}
 
       <VisitorActionPanel
         title="Bring this space to your people."

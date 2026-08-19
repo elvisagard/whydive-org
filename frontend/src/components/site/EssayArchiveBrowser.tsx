@@ -90,14 +90,14 @@ function StatusBadge({ status }: { status: ContentStatus }) {
 }
 
 function EssayListItem({ essay }: { essay: EssayEntry }) {
-  const isPublished = essay.status === 'published';
+  const hasImage = Boolean(essay.image);
 
   return (
     <Link
       href={`/essays/${essay.slug}`}
       className="group grid gap-5 border border-[#d9d0c3] bg-[#fffdf8] p-4 transition hover:border-[#8a6d2f]/55 hover:shadow-[0_18px_45px_rgba(35,38,49,0.08)] sm:grid-cols-[160px_1fr]"
     >
-      {isPublished ? (
+      {hasImage ? (
         <div className="relative aspect-[16/10] overflow-hidden bg-[#101b23] sm:aspect-auto sm:min-h-32">
           <Image
             src={assetUrl(essay.image ?? '/images/whydive/essays-study-table-banner.png')}
@@ -130,14 +130,14 @@ function EssayListItem({ essay }: { essay: EssayEntry }) {
 }
 
 function EssayCard({ essay }: { essay: EssayEntry }) {
-  const isPublished = essay.status === 'published';
+  const hasImage = Boolean(essay.image);
 
   return (
     <Link
       href={`/essays/${essay.slug}`}
       className="group block h-full border border-[#d9d0c3] bg-[#fffdf8] transition hover:border-[#8a6d2f]/55 hover:shadow-[0_18px_45px_rgba(35,38,49,0.09)]"
     >
-      {isPublished ? (
+      {hasImage ? (
         <div className="relative aspect-[16/9] overflow-hidden bg-[#101b23]">
           <Image
             src={assetUrl(essay.image ?? '/images/whydive/essays-study-table-banner.png')}

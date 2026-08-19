@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { ArticlePrintButton } from '@/components/site/ArticlePrintButton';
 import { ArticlePrintStyles } from '@/components/site/ArticlePrintStyles';
+import { EssaySectionJumpNav } from '@/components/site/EssaySectionJumpNav';
 import { EditorialPage, QuietCard, SectionHeading, VisitorActionPanel } from '@/components/site/EditorialPage';
 import { StructuredData } from '@/components/site/StructuredData';
 import { essayCategories, essayEntries } from '@/content/essays';
@@ -11,6 +12,44 @@ import { discussionAction, readFoundationsAction, shareAction } from '@/lib/visi
 
 interface PageProps {
   params: Promise<{ slug: string }>;
+}
+
+function renderBibliographyLabel(label: string) {
+  return label.split(/(\*[^*]+\*)/g).map((part, index) => {
+    if (part.startsWith('*') && part.endsWith('*')) {
+      return <em key={`${part}-${index}`}>{part.slice(1, -1)}</em>;
+    }
+
+    return part;
+  });
+}
+
+function getEssayWordCount(essay: (typeof essayEntries)[number]) {
+  const text = essay.sections
+    ?.flatMap((section) => [...(section.paragraphs ?? []), ...(section.bullets ?? [])])
+    .join(' ');
+
+  if (!text) return undefined;
+
+  return text.trim().split(/\s+/).filter(Boolean).length;
+}
+
+function toIsoDate(value?: string) {
+  if (!value) return undefined;
+
+  const parsed = Date.parse(value);
+  if (Number.isNaN(parsed)) return undefined;
+
+  return new Date(parsed).toISOString().slice(0, 10);
+}
+
+function sectionAnchor(title: string, index: number) {
+  const slug = title
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-|-$/g, '');
+
+  return `section-${index}-${slug || 'essay-section'}`;
 }
 
 export function generateStaticParams() {
@@ -36,6 +75,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       description: essay.deck,
       type: 'article',
       url: absoluteUrl(`/essays/${essay.slug}`),
+      publishedTime: toIsoDate(essay.publicationDate),
+      modifiedTime: toIsoDate(essay.updatedDate ?? essay.publicationDate),
+      authors: ['Elvis Agard'],
+      section: essay.category,
       images: [
         {
           url: assetUrl(essay.image ?? '/images/whydive/essays-study-table-banner.png'),
@@ -65,6 +108,22 @@ export default async function EssayDetailPage({ params }: PageProps) {
   const essayImagePath = assetUrl(essay.image ?? '/images/whydive/essays-study-table-banner.png');
   const essayImage = absoluteUrl(essayImagePath);
   const hasFullEssay = Boolean(essay.sections?.length);
+  const essayWordCount = getEssayWordCount(essay);
+  const datePublished = toIsoDate(essay.publicationDate);
+  const dateModified = toIsoDate(essay.updatedDate ?? essay.publicationDate);
+  const sectionNavItems =
+    essay.sections
+      ?.map((section, index) => {
+        if (!section.title) return null;
+
+        return {
+          id: sectionAnchor(section.title, index),
+          title: section.title,
+          isMovementTitle: section.title.startsWith('Movement '),
+        };
+      })
+      .filter((item): item is { id: string; title: string; isMovementTitle: boolean } => Boolean(item)) ?? [];
+  const showSectionNav = sectionNavItems.length > 5;
   const articleSchema = {
     '@context': 'https://schema.org',
     '@type': 'Article',
@@ -72,9 +131,14 @@ export default async function EssayDetailPage({ params }: PageProps) {
     headline: essay.title,
     description: essay.deck,
     url: essayUrl,
+    mainEntityOfPage: essayUrl,
     image: essayImage,
+    thumbnailUrl: essayImage,
     articleSection: category?.title ?? essay.category,
     inLanguage: 'en-US',
+    datePublished,
+    dateModified,
+    wordCount: essayWordCount,
     isPartOf: {
       '@id': `${siteUrl}/#website`,
     },
@@ -101,6 +165,7 @@ export default async function EssayDetailPage({ params }: PageProps) {
   return (
     <EditorialPage
       eyebrow={category?.title ?? 'Essay'}
+      eyebrowHref={category ? `/essays/category/${category.slug}` : undefined}
       title={essay.title}
       intro={essay.deck}
       image={{
@@ -113,7 +178,12 @@ export default async function EssayDetailPage({ params }: PageProps) {
       <div className="print-hide mb-8 flex justify-end">
         <ArticlePrintButton />
       </div>
-      <article className="essay-print-body mx-auto max-w-3xl">
+      {showSectionNav ? (
+        <EssaySectionJumpNav items={sectionNavItems} />
+      ) : null}
+
+      <div className="grid gap-12 lg:grid-cols-[minmax(0,1fr)_240px] lg:items-start">
+      <article className="essay-print-body mx-auto w-full max-w-3xl lg:mx-0">
         <div className="essay-print-cover" aria-hidden="true">
           <p className="essay-print-cover-label">Document Metadata</p>
           <div className="essay-print-meta">
@@ -172,27 +242,41 @@ export default async function EssayDetailPage({ params }: PageProps) {
 
         {hasFullEssay ? (
           <div className="mt-12 space-y-14">
-            {essay.sections?.map((section, index) => (
-              <section key={section.title ?? `opening-${index}`}>
-                {section.title ? (
-                  <h2 className="wd-display text-4xl leading-tight text-[#101b23]">{section.title}</h2>
-                ) : null}
-                <div className="wd-reading mt-6 space-y-7 text-xl leading-9 text-[#384a5a]">
-                  {section.paragraphs?.map((paragraph) => (
-                    <p key={paragraph}>{paragraph}</p>
-                  ))}
-                </div>
-                {section.bullets?.length ? (
-                  <ul className="mt-7 space-y-3 text-lg leading-8 text-[#465767]">
-                    {section.bullets.map((bullet) => (
-                      <li key={bullet} className="border-l border-[#8a6d2f]/45 pl-4">
-                        {bullet}
-                      </li>
+            {essay.sections?.map((section, index) => {
+              const isMovementTitle = section.title?.startsWith('Movement ');
+
+              return (
+                <section
+                  key={section.title ?? `opening-${index}`}
+                  id={section.title ? sectionAnchor(section.title, index) : undefined}
+                  className="scroll-mt-28"
+                >
+                  {section.title ? (
+                    <h2
+                      className={`wd-display text-4xl leading-tight ${
+                        isMovementTitle ? 'text-[#8a6d2f]' : 'text-[#101b23]'
+                      }`}
+                    >
+                      {section.title}
+                    </h2>
+                  ) : null}
+                  <div className="wd-reading mt-6 space-y-7 text-xl leading-9 text-[#384a5a]">
+                    {section.paragraphs?.map((paragraph) => (
+                      <p key={paragraph}>{paragraph}</p>
                     ))}
-                  </ul>
-                ) : null}
-              </section>
-            ))}
+                  </div>
+                  {section.bullets?.length ? (
+                    <ul className="mt-7 space-y-3 text-lg leading-8 text-[#465767]">
+                      {section.bullets.map((bullet) => (
+                        <li key={bullet} className="border-l border-[#8a6d2f]/45 pl-4">
+                          {bullet}
+                        </li>
+                      ))}
+                    </ul>
+                  ) : null}
+                </section>
+              );
+            })}
           </div>
         ) : (
           <>
@@ -242,10 +326,10 @@ export default async function EssayDetailPage({ params }: PageProps) {
                   <li key={label} className="border-l border-[#8a6d2f]/35 pl-4">
                     {href ? (
                       <a href={href} target="_blank" rel="noreferrer" className="underline underline-offset-4 hover:text-[#101b23]">
-                        {label}
+                        {renderBibliographyLabel(label)}
                       </a>
                     ) : (
-                      label
+                      renderBibliographyLabel(label)
                     )}
                   </li>
                 );
@@ -270,6 +354,28 @@ export default async function EssayDetailPage({ params }: PageProps) {
           actions={[shareAction, discussionAction, readFoundationsAction]}
         />
       </article>
+
+      {showSectionNav ? (
+        <aside className="print-hide sticky top-28 hidden max-h-[calc(100vh-8rem)] overflow-y-auto border-l border-[#d9d0c3] pl-5 lg:block">
+          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#8a6d2f]">On This Essay</p>
+          <nav aria-label="Essay sections" className="mt-4 grid gap-2">
+            {sectionNavItems.map((item) => (
+              <a
+                key={item.id}
+                href={`#${item.id}`}
+                className={`block border-l pl-3 text-sm leading-6 transition hover:border-[#8a6d2f] hover:text-[#101b23] ${
+                  item.isMovementTitle
+                    ? 'border-[#8a6d2f]/65 font-semibold text-[#8a6d2f]'
+                    : 'border-transparent text-[#536271]'
+                }`}
+              >
+                {item.title}
+              </a>
+            ))}
+          </nav>
+        </aside>
+      ) : null}
+      </div>
     </EditorialPage>
   );
 }

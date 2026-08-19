@@ -4,6 +4,7 @@ import Image from 'next/image';
 
 interface EditorialPageProps {
   eyebrow: string;
+  eyebrowHref?: string;
   title: string;
   intro: string;
   image?: {
@@ -14,7 +15,7 @@ interface EditorialPageProps {
   children: ReactNode;
 }
 
-export function EditorialPage({ eyebrow, title, intro, image, children }: EditorialPageProps) {
+export function EditorialPage({ eyebrow, eyebrowHref, title, intro, image, children }: EditorialPageProps) {
   const imagePresentation = image?.presentation ?? 'wide';
   const imageFrameClass =
     imagePresentation === 'portrait'
@@ -26,7 +27,16 @@ export function EditorialPage({ eyebrow, title, intro, image, children }: Editor
     <main className="min-h-screen bg-[#f8f4ed] text-[#172631]">
       <section className="editorial-web-hero border-b border-[#d9d0c3]">
         <div className="mx-auto max-w-5xl px-5 py-16 md:px-8 md:py-24">
-          <p className="text-xs font-semibold uppercase tracking-[0.34em] text-[#7b633e]">{eyebrow}</p>
+          {eyebrowHref ? (
+            <Link
+              href={eyebrowHref}
+              className="inline-flex text-xs font-semibold uppercase tracking-[0.34em] text-[#7b633e] transition hover:text-[#101b23]"
+            >
+              {eyebrow}
+            </Link>
+          ) : (
+            <p className="text-xs font-semibold uppercase tracking-[0.34em] text-[#7b633e]">{eyebrow}</p>
+          )}
           <h1 className="mt-5 max-w-4xl text-4xl font-semibold leading-tight tracking-normal text-[#101b23] md:text-6xl">
             {title}
           </h1>

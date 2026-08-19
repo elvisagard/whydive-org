@@ -38,6 +38,7 @@ export const essayDiscoveryRoutes = essayEntries.map((essay) => ({
   path: `/essays/${essay.slug}`,
   priority: essay.status === 'draft' ? 0.72 : 0.55,
   changeFrequency: 'monthly' as const,
+  lastModified: essay.updatedDate ?? essay.publicationDate,
 }));
 
 export const essayCategoryDiscoveryRoutes = essayCategories.map((category) => ({

@@ -18,6 +18,7 @@ export interface WhyDiveSpace {
   questions: string[];
   frameworkOffers: string[];
   practices: string[];
+  featuredEssaySlugs?: string[];
 }
 
 export const whyDiveSpaces: WhyDiveSpace[] = [
@@ -92,6 +93,7 @@ export const whyDiveSpaces: WhyDiveSpace[] = [
       'Use the framework to help groups distinguish interpretation from certainty.',
       'Invite the community to ask what judgment love and truth can responsibly support.',
     ],
+    featuredEssaySlugs: ['in-the-beginning-god'],
   },
   {
     title: 'Business Executives',

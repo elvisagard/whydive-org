@@ -1,5 +1,6 @@
 import type { EssayCategory, EssayEntry } from './types';
 import { assetUrl } from '@/lib/assets';
+import { genesisBeginningEssay } from './genesisBeginningEssay';
 
 export const essayCategories: EssayCategory[] = [
   {
@@ -28,6 +29,12 @@ export const essayCategories: EssayCategory[] = [
     description: 'Character, humility, discernment, and the formation of evidence-bound people.',
   },
   {
+    title: 'Religion',
+    slug: 'religion',
+    description:
+      'Evidence, interpretation, belief, authority, confidence, and judgment in religious life.',
+  },
+  {
     title: 'AI and Human Reasoning',
     slug: 'ai-and-human-reasoning',
     description: 'How people should evaluate fluent synthetic claims and AI-generated answers.',
@@ -50,6 +57,7 @@ export const essayCategories: EssayCategory[] = [
 ];
 
 export const essayEntries: EssayEntry[] = [
+  genesisBeginningEssay,
   {
     title: 'Strong Conclusions Require Strong Evidence',
     slug: 'strong-conclusions-require-strong-evidence',

@@ -1,4 +1,7 @@
+'use client';
+
 import Link from 'next/link';
+import { useState } from 'react';
 import { assetUrl } from '@/lib/assets';
 import { livingSpiralContact, navItems } from '@/lib/siteContent';
 
@@ -6,8 +9,10 @@ const logoDark = assetUrl('/images/whydive/logo-dark.svg');
 const logoLight = assetUrl('/images/whydive/logo-light.svg');
 
 export function SiteHeader() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
-    <header className="sticky top-0 z-50 w-full overflow-hidden border-b border-[#d9d0c3]/80 bg-[#f8f4ed]/92 backdrop-blur-md">
+    <header className="sticky top-0 z-50 w-full border-b border-[#d9d0c3]/80 bg-[#f8f4ed]/92 backdrop-blur-md">
       <div className="mx-auto flex w-full max-w-7xl min-w-0 flex-col gap-4 px-5 py-4 md:px-8 lg:flex-row lg:items-center lg:justify-between">
         <div className="flex min-w-0 items-center justify-between gap-5">
           <Link href="/" className="group flex min-w-0 flex-col gap-1" aria-label="WhyDive home">
@@ -19,14 +24,28 @@ export function SiteHeader() {
 
           <Link
             href="/foundations/what-is-whydive"
-            className="rounded-full border border-[#243447]/20 px-4 py-2 text-sm font-semibold text-[#243447] transition hover:border-[#8a6d2f] hover:text-[#6f551e] sm:inline-flex lg:hidden"
+            className="hidden rounded-full border border-[#243447]/20 px-4 py-2 text-sm font-semibold text-[#243447] transition hover:border-[#8a6d2f] hover:text-[#6f551e] sm:inline-flex lg:hidden"
           >
             Start Here
           </Link>
+          <button
+            type="button"
+            aria-expanded={isMenuOpen}
+            aria-controls="site-mobile-navigation"
+            className="inline-flex h-10 w-10 items-center justify-center border border-[#243447]/20 text-[#243447] transition hover:border-[#8a6d2f] hover:text-[#6f551e] lg:hidden"
+            onClick={() => setIsMenuOpen((value) => !value)}
+          >
+            <span className="sr-only">Toggle navigation</span>
+            <span aria-hidden="true" className="grid gap-1">
+              <span className={`block h-0.5 w-5 bg-current transition ${isMenuOpen ? 'translate-y-1.5 rotate-45' : ''}`} />
+              <span className={`block h-0.5 w-5 bg-current transition ${isMenuOpen ? 'opacity-0' : ''}`} />
+              <span className={`block h-0.5 w-5 bg-current transition ${isMenuOpen ? '-translate-y-1.5 -rotate-45' : ''}`} />
+            </span>
+          </button>
         </div>
 
         <nav
-          className="flex w-full min-w-0 max-w-full gap-5 overflow-x-auto pb-1 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden lg:w-auto lg:items-center lg:overflow-visible lg:pb-0"
+          className="hidden w-full min-w-0 max-w-full gap-5 lg:flex lg:w-auto lg:items-center"
           aria-label="Primary navigation"
         >
           {navItems.map((item) => (
@@ -46,6 +65,25 @@ export function SiteHeader() {
         >
           Start Here
         </Link>
+
+        {isMenuOpen ? (
+          <nav
+            id="site-mobile-navigation"
+            className="grid gap-1 border-t border-[#d9d0c3] pt-3 lg:hidden"
+            aria-label="Mobile primary navigation"
+          >
+            {[...navItems, { label: 'Start Here', href: '/foundations/what-is-whydive' }].map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="block border border-transparent px-3 py-2 text-sm font-semibold text-[#243447] transition hover:border-[#8a6d2f]/35 hover:bg-[#fffdf8]"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {item.label}
+              </Link>
+            ))}
+          </nav>
+        ) : null}
       </div>
     </header>
   );

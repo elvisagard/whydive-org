@@ -1,3 +1,4 @@
+import { essayCategories, essayEntries } from '@/content/essays';
 import { coreDiscoveryClaims, discoveryRoutes, discoveryTopics, siteName, siteUrl } from '@/lib/discovery';
 
 export const dynamic = 'force-static';
@@ -21,6 +22,12 @@ export function GET() {
     ...discoveryRoutes
       .filter((route) => route.priority >= 0.8)
       .map((route) => `- ${siteUrl}${route.path}`),
+    '',
+    '## Essay Categories',
+    ...essayCategories.map((category) => `- ${category.title}: ${siteUrl}/essays/category/${category.slug}`),
+    '',
+    '## Essays',
+    ...essayEntries.map((essay) => `- ${essay.title}: ${siteUrl}/essays/${essay.slug}`),
     '',
     '## Ownership',
     'WhyDive is currently owned and operated under Living Spiral Studio LLC.',
