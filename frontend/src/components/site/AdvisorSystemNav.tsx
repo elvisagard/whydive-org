@@ -32,6 +32,36 @@ export function AdvisorSystemNav() {
 
   return (
     <nav className="sticky top-0 z-50 border-b border-[#d8cab4] bg-[#fffdf8]/95 text-[#172631] shadow-[0_1px_0_rgba(16,27,35,0.04)] backdrop-blur">
+      <div className="border-b border-[#eadfce] bg-[#f7f3eb]/90">
+        <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-2 md:px-10 lg:px-14">
+          <p className="hidden text-[11px] font-semibold uppercase tracking-[0.24em] text-[#8a6d2f] sm:block">
+            Advisor resources
+          </p>
+          <div className="flex w-full gap-2 overflow-x-auto sm:w-auto">
+            {supportLinks.map((item) => {
+              const active = isActivePath(pathname, item.href);
+              const className = `shrink-0 px-2 py-1 text-[11px] font-semibold uppercase tracking-[0.14em] transition ${
+                active ? 'text-[#101b23]' : 'text-[#6f551e] hover:text-[#101b23]'
+              }`;
+
+              if ('download' in item && item.download) {
+                return (
+                  <a key={item.href} href={item.href} download className={className}>
+                    {item.label}
+                  </a>
+                );
+              }
+
+              return (
+                <Link key={item.href} href={item.href} className={className} aria-current={active ? 'page' : undefined}>
+                  {item.label}
+                </Link>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+
       <div className="mx-auto flex min-h-[68px] max-w-7xl flex-col gap-3 px-5 py-3 md:px-10 lg:flex-row lg:items-center lg:justify-between lg:px-14">
         <Link href="/advisor" className="shrink-0 text-sm font-semibold text-[#101b23] hover:text-[#6f551e]">
           WhyDive Advisor Pathway
@@ -53,36 +83,6 @@ export function AdvisorSystemNav() {
                 aria-current={active ? 'page' : undefined}
               >
                 <span className="mr-2 text-[#8a6d2f]">{String(index + 1).padStart(2, '0')}</span>
-                {item.label}
-              </Link>
-            );
-          })}
-        </div>
-
-        <div className="flex gap-2">
-          {supportLinks.map((item) => {
-            const active = isActivePath(pathname, item.href);
-            const className = `shrink-0 border px-3 py-2 text-xs font-semibold transition ${
-              active
-                ? 'border-[#8a6d2f] bg-[#f7f3eb] text-[#101b23]'
-                : 'border-[#d8cab4] bg-[#fffdf8] text-[#6f551e] hover:border-[#8a6d2f] hover:text-[#101b23]'
-            }`;
-
-            if ('download' in item && item.download) {
-              return (
-                <a key={item.href} href={item.href} download className={className}>
-                  {item.label}
-                </a>
-              );
-            }
-
-            return (
-              <Link
-                key={item.href}
-                href={item.href}
-                className={className}
-                aria-current={active ? 'page' : undefined}
-              >
                 {item.label}
               </Link>
             );

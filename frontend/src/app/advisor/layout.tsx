@@ -17,7 +17,7 @@ export default function AdvisorLayout({ children }: { children: React.ReactNode 
           display: none !important;
         }
       `}</style>
-      <div className="[--advisor-nav-height:68px]">
+      <div className="[--advisor-nav-height:112px]">
         <AdvisorSystemNav />
         {children}
       </div>
