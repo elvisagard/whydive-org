@@ -1,11 +1,18 @@
-name: Build Production Image
+name: Build and Deploy Production
 
 on:
+  push:
+    branches:
+      - main
   workflow_dispatch:
 
 permissions:
   contents: read
   packages: write
+
+concurrency:
+  group: whydive-production
+  cancel-in-progress: true
 
 jobs:
   build:
@@ -38,3 +45,12 @@ jobs:
             ghcr.io/${{ github.repository_owner }}/whydive-org:latest
           cache-from: type=gha
           cache-to: type=gha,mode=max
+
+      - name: Deploy production image through Coolify
+        env:
+          COOLIFY_DEPLOY_WEBHOOK: ${{ secrets.COOLIFY_DEPLOY_WEBHOOK }}
+        run: |
+          curl --fail-with-body \
+            --retry 3 \
+            --retry-delay 5 \
+            "$COOLIFY_DEPLOY_WEBHOOK"
