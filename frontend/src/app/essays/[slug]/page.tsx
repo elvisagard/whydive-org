@@ -16,8 +16,12 @@ interface PageProps {
 
 const articleFallbackImage = '/images/whydive/article-fallback.svg';
 
-function renderBibliographyLabel(label: string) {
-  return label.split(/(\*[^*]+\*)/g).map((part, index) => {
+function renderInlineMarkup(label: string) {
+  return label.split(/(\*\*[^*]+\*\*|\*[^*]+\*)/g).map((part, index) => {
+    if (part.startsWith('**') && part.endsWith('**')) {
+      return <strong key={`${part}-${index}`}>{part.slice(2, -2)}</strong>;
+    }
+
     if (part.startsWith('*') && part.endsWith('*')) {
       return <em key={`${part}-${index}`}>{part.slice(1, -1)}</em>;
     }
@@ -264,14 +268,14 @@ export default async function EssayDetailPage({ params }: PageProps) {
                   ) : null}
                   <div className="wd-reading mt-6 space-y-7 text-xl leading-9 text-[#384a5a]">
                     {section.paragraphs?.map((paragraph) => (
-                      <p key={paragraph}>{paragraph}</p>
+                      <p key={paragraph}>{renderInlineMarkup(paragraph)}</p>
                     ))}
                   </div>
                   {section.bullets?.length ? (
                     <ul className="mt-7 space-y-3 text-lg leading-8 text-[#465767]">
                       {section.bullets.map((bullet) => (
                         <li key={bullet} className="border-l border-[#8a6d2f]/45 pl-4">
-                          {bullet}
+                          {renderInlineMarkup(bullet)}
                         </li>
                       ))}
                     </ul>
@@ -328,10 +332,10 @@ export default async function EssayDetailPage({ params }: PageProps) {
                   <li key={label} className="border-l border-[#8a6d2f]/35 pl-4">
                     {href ? (
                       <a href={href} target="_blank" rel="noreferrer" className="underline underline-offset-4 hover:text-[#101b23]">
-                        {renderBibliographyLabel(label)}
+                        {renderInlineMarkup(label)}
                       </a>
                     ) : (
-                      renderBibliographyLabel(label)
+                      renderInlineMarkup(label)
                     )}
                   </li>
                 );
