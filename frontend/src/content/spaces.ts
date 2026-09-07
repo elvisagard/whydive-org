@@ -93,7 +93,11 @@ export const whyDiveSpaces: WhyDiveSpace[] = [
       'Use the framework to help groups distinguish interpretation from certainty.',
       'Invite the community to ask what judgment love and truth can responsibly support.',
     ],
-    featuredEssaySlugs: ['when-god-looks-at-light', 'in-the-beginning-god'],
+    featuredEssaySlugs: [
+      'does-god-change-when-the-language-does',
+      'when-god-looks-at-light',
+      'in-the-beginning-god',
+    ],
   },
   {
     title: 'Business Executives',
