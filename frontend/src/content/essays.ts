@@ -1,6 +1,7 @@
 import type { EssayCategory, EssayEntry } from './types';
 import { assetUrl } from '@/lib/assets';
 import { genesisBeginningEssay } from './genesisBeginningEssay';
+import { genesisBeginningContinuationEssay } from './genesisBeginningContinuationEssay';
 import { genesisLanguageEssay } from './genesisLanguageEssay';
 import { genesisLightEssay } from './genesisLightEssay';
 
@@ -61,6 +62,7 @@ export const essayCategories: EssayCategory[] = [
 export const essayEntries: EssayEntry[] = [
   genesisLanguageEssay,
   genesisLightEssay,
+  genesisBeginningContinuationEssay,
   genesisBeginningEssay,
   {
     title: 'Strong Conclusions Require Strong Evidence',

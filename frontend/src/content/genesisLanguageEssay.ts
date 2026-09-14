@@ -10,6 +10,15 @@ export const genesisLanguageEssay: EssayEntry = {
   "publicationDate": "September 2026",
   "readingTime": "13 minute read",
   "image": assetUrl('/images/whydive/does-god-change-when-the-language-does-hero.png'),
+  "series": {
+    "title": "Relational Knowledge of God",
+    "slug": "relational-knowledge-of-god",
+    "order": 4,
+    "label": "Translation and Salience"
+  },
+  "scriptureRange": "Genesis 1",
+  "topics": ["Genesis", "translation", "language", "salience", "interpretation", "evidence", "knowing God"],
+  "tags": ["Genesis 1", "translation", "Scripture", "interpretation", "evidence", "religion"],
   "sourceNote": "This essay is adapted from an internal Relational Knowledge of God reflection on Genesis, translation, reader salience, and the discipline of testing discoveries across language and community.",
   "sections": [
     {

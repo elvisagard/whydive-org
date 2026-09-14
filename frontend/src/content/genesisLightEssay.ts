@@ -10,6 +10,15 @@ export const genesisLightEssay: EssayEntry = {
   "publicationDate": "September 2026",
   "readingTime": "13 minute read",
   "image": assetUrl('/images/whydive/when-god-looks-at-light-hero.png'),
+  "series": {
+    "title": "Relational Knowledge of God",
+    "slug": "relational-knowledge-of-god",
+    "order": 3,
+    "label": "Genesis 1:3-5"
+  },
+  "scriptureRange": "Genesis 1:3-5",
+  "topics": ["Genesis", "creation", "light", "divine speech", "attention", "goodness", "knowing God"],
+  "tags": ["Genesis 1", "light", "creation", "Scripture", "interpretation", "religion"],
   "sourceNote": "This essay is adapted from an internal Relational Knowledge of God draft on Genesis 1:3-5. It continues WhyDive's close reading of Genesis by attending to what the passage gives, what it withholds, and how the reader is invited to know the Creator through His action and attention.",
   "bibliography": [
     "Alter, Robert. *The Art of Biblical Narrative*. New York: Basic Books, 1981.",

@@ -6,6 +6,13 @@ export interface EssayCategory {
   description: string;
 }
 
+export interface EssaySeriesRef {
+  title: string;
+  slug: string;
+  order: number;
+  label?: string;
+}
+
 export interface EssayEntry {
   title: string;
   slug: string;
@@ -16,6 +23,10 @@ export interface EssayEntry {
   updatedDate?: string;
   readingTime?: string;
   image?: string;
+  series?: EssaySeriesRef;
+  scriptureRange?: string;
+  topics?: string[];
+  tags?: string[];
   sourceNote?: string;
   bibliography?: Array<string | { label: string; href?: string }>;
   sections?: {

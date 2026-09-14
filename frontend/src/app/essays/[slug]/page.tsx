@@ -145,6 +145,7 @@ export default async function EssayDetailPage({ params }: PageProps) {
     datePublished,
     dateModified,
     wordCount: essayWordCount,
+    keywords: [...(essay.topics ?? []), ...(essay.tags ?? [])],
     isPartOf: {
       '@id': `${siteUrl}/#website`,
     },
@@ -165,8 +166,17 @@ export default async function EssayDetailPage({ params }: PageProps) {
         '@type': 'Thing',
         name: category?.title ?? essay.category,
       },
+      ...(essay.series
+        ? [
+            {
+              '@type': 'CreativeWorkSeries',
+              name: essay.series.title,
+            },
+          ]
+        : []),
     ],
   };
+  const seriesLabel = [essay.series?.title, essay.series?.label].filter(Boolean).join(' / ');
 
   return (
     <EditorialPage
@@ -202,6 +212,12 @@ export default async function EssayDetailPage({ params }: PageProps) {
                 <strong>Category</strong>
                 {category?.title ?? essay.category}
               </p>
+              {seriesLabel ? (
+                <p>
+                  <strong>Series</strong>
+                  {seriesLabel}
+                </p>
+              ) : null}
               <p>
                 <strong>Reading time</strong>
                 {essay.readingTime ?? 'Reflective read'}
@@ -216,6 +232,12 @@ export default async function EssayDetailPage({ params }: PageProps) {
                 <strong>Category</strong>
                 {category?.title ?? essay.category}
               </p>
+              {essay.scriptureRange ? (
+                <p>
+                  <strong>Text</strong>
+                  {essay.scriptureRange}
+                </p>
+              ) : null}
               <p>
                 <strong>Author</strong>
                 Elvis Agard
@@ -231,7 +253,7 @@ export default async function EssayDetailPage({ params }: PageProps) {
           <img className="essay-print-image" src={essayImagePath} alt="" />
         </div>
 
-        <div className="print-hide grid gap-4 border-y border-[#d9d0c3] py-6 text-sm text-[#536271] sm:grid-cols-3">
+        <div className="print-hide grid gap-4 border-y border-[#d9d0c3] py-6 text-sm text-[#536271] sm:grid-cols-4">
           <p>
             <span className="block font-semibold text-[#101b23]">Use</span>
             Reading and discussion
@@ -239,6 +261,10 @@ export default async function EssayDetailPage({ params }: PageProps) {
           <p>
             <span className="block font-semibold text-[#101b23]">Category</span>
             {category?.title ?? essay.category}
+          </p>
+          <p>
+            <span className="block font-semibold text-[#101b23]">Series</span>
+            {seriesLabel || 'Independent essay'}
           </p>
           <p>
             <span className="block font-semibold text-[#101b23]">Reading time</span>

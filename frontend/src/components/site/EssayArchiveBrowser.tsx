@@ -16,7 +16,7 @@ import { assetUrl } from '@/lib/assets';
 
 type ArchiveView = 'list' | 'cards';
 type StatusFilter = 'all' | 'published' | 'future';
-type SortMode = 'newest' | 'title' | 'status';
+type SortMode = 'newest' | 'series' | 'title' | 'status';
 
 interface EssayArchiveBrowserProps {
   essays: EssayEntry[];
@@ -42,6 +42,25 @@ function getDateRank(essay: EssayEntry) {
   if (!dateLabel) return 0;
   const parsed = Date.parse(dateLabel);
   return Number.isNaN(parsed) ? 0 : parsed;
+}
+
+function getSeriesRank(essay: EssayEntry) {
+  return essay.series?.order ?? Number.MAX_SAFE_INTEGER;
+}
+
+function getEssaySearchText(essay: EssayEntry) {
+  return [
+    essay.title,
+    essay.deck,
+    essay.category,
+    essay.scriptureRange,
+    essay.series?.title,
+    essay.series?.label,
+    ...(essay.topics ?? []),
+    ...(essay.tags ?? []),
+  ]
+    .filter(Boolean)
+    .join(' ');
 }
 
 function normalize(value: string) {
@@ -117,6 +136,11 @@ function EssayListItem({ essay }: { essay: EssayEntry }) {
             </span>
           ) : null}
         </div>
+        {essay.series || essay.scriptureRange ? (
+          <p className="mt-3 text-xs font-semibold uppercase tracking-[0.16em] text-[#8a6d2f]">
+            {[essay.series?.label, essay.scriptureRange].filter(Boolean).join(' / ')}
+          </p>
+        ) : null}
         <h2 className="wd-display mt-3 text-2xl leading-tight text-[#101b23]">{essay.title}</h2>
         <p className="mt-3 text-sm leading-7 text-[#536271]">{essay.deck}</p>
       </div>
@@ -143,6 +167,11 @@ function EssayCard({ essay }: { essay: EssayEntry }) {
       </div>
       <div className="p-6">
         <StatusBadge status={essay.status} />
+        {essay.series || essay.scriptureRange ? (
+          <p className="mt-3 text-xs font-semibold uppercase tracking-[0.16em] text-[#8a6d2f]">
+            {[essay.series?.label, essay.scriptureRange].filter(Boolean).join(' / ')}
+          </p>
+        ) : null}
         <h2 className="wd-display mt-3 text-3xl leading-tight text-[#101b23]">{essay.title}</h2>
         <p className="mt-4 text-base leading-7 text-[#536271]">{essay.deck}</p>
         {essay.readingTime ? (
@@ -171,11 +200,18 @@ export function EssayArchiveBrowser({ essays }: EssayArchiveBrowserProps) {
         if (statusFilter === 'future' && essay.status === 'published') return false;
         if (!normalizedQuery) return true;
 
-        return normalize(`${essay.title} ${essay.deck} ${essay.category}`).includes(normalizedQuery);
+        return normalize(getEssaySearchText(essay)).includes(normalizedQuery);
       })
       .sort((a, b) => {
         if (sortMode === 'title') return a.title.localeCompare(b.title);
         if (sortMode === 'newest') return getDateRank(b) - getDateRank(a);
+        if (sortMode === 'series') {
+          return (
+            getSeriesRank(a) - getSeriesRank(b) ||
+            getDateRank(b) - getDateRank(a) ||
+            a.title.localeCompare(b.title)
+          );
+        }
         return getStatusRank(a.status) - getStatusRank(b.status) || a.title.localeCompare(b.title);
       });
   }, [essays, query, sortMode, statusFilter]);
@@ -247,6 +283,7 @@ export function EssayArchiveBrowser({ essays }: EssayArchiveBrowserProps) {
               className="mt-2 h-11 w-full border border-[#d9d0c3] bg-[#f8f4ed] px-3 text-sm text-[#101b23] outline-none transition focus:border-[#8a6d2f]"
             >
               <option value="status">Published first</option>
+              <option value="series">Series order</option>
               <option value="newest">Newest</option>
               <option value="title">Title</option>
             </select>
