@@ -161,6 +161,49 @@ export default async function ClaimAuditPage({ params }: PageProps) {
         </div>
       </section>
 
+      {audit.boundaryClaims?.length ? (
+        <section className="mt-16">
+          <SectionHeading title="Claims Outside Present Authorization">
+            <p>
+              These claims show where the investigation stopped, narrowed, or refused to convert a
+              possibility into a conclusion.
+            </p>
+          </SectionHeading>
+          <div className="mt-8 overflow-x-auto border border-[#d9d0c3] bg-[#fffdf8] shadow-[0_20px_60px_rgba(23,38,49,0.05)]">
+            <table className="min-w-[820px] border-collapse text-left text-sm">
+              <thead className="bg-[#101b23] text-[#fffdf8]">
+                <tr>
+                  <th scope="col" className="w-[38%] px-4 py-3 font-semibold">
+                    Claim
+                  </th>
+                  <th scope="col" className="w-[22%] px-4 py-3 font-semibold">
+                    Present Status
+                  </th>
+                  <th scope="col" className="w-[40%] px-4 py-3 font-semibold">
+                    Reason
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {audit.boundaryClaims.map((claim, index) => (
+                  <tr key={claim.claim} className={index % 2 ? 'bg-[#f8f4ed]' : 'bg-[#fffdf8]'}>
+                    <td className="border-t border-[#d9d0c3] px-4 py-4 align-top font-semibold text-[#101b23]">
+                      {claim.claim}
+                    </td>
+                    <td className="border-t border-[#d9d0c3] px-4 py-4 align-top text-[#6f551e]">
+                      {claim.status}
+                    </td>
+                    <td className="border-t border-[#d9d0c3] px-4 py-4 align-top leading-6 text-[#536271]">
+                      {claim.reason}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </section>
+      ) : null}
+
       <section className="mt-16">
         <SectionHeading title="Argument Records">
           <p>

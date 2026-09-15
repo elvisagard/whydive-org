@@ -54,6 +54,12 @@ export interface ClaimAuditRow {
   argumentRecordId: string;
 }
 
+export interface BoundaryClaim {
+  claim: string;
+  status: string;
+  reason: string;
+}
+
 export interface ArgumentRecord {
   id: string;
   title: string;
@@ -80,6 +86,7 @@ export interface ClaimAuditEntry {
   deck: string;
   statusNote: string;
   rows: ClaimAuditRow[];
+  boundaryClaims?: BoundaryClaim[];
   argumentRecords: ArgumentRecord[];
   revisionRecord?: RevisionRecordEntry[];
   architecture?: string[];

@@ -489,6 +489,466 @@ export const claimAuditEntries: ClaimAuditEntry[] = [
       'The reader should be able to move from judgment back toward evidence.',
     ],
   },
+  {
+    title: 'When God Looks at Light',
+    slug: 'when-god-looks-at-light',
+    essaySlug: 'when-god-looks-at-light',
+    deck: 'Claim Audit & Argument Records for the Genesis 1:3-5 essay.',
+    statusNote:
+      'Present status means present status. New evidence may strengthen, weaken, revise, or overturn any judgment below.',
+    rows: [
+      {
+        claim: "In Genesis 1:3, God's expressed intention concerning light corresponds with the resulting reality.",
+        status: 'High-confidence finding / translation-resilient',
+        rationale:
+          "Yehi 'or -> wayehi 'or gives strong local correspondence. The finding does not establish a universal metaphysical proposition about every divine intention.",
+        argumentRecordId: 'ar-01-expressed-intention',
+      },
+      {
+        claim:
+          'Through Genesis 1:1-5, God remains the only explicitly disclosed center of intentional agency.',
+        status: 'High-confidence finding / translation-resilient',
+        rationale:
+          'Intentional and conceptual activity is concentrated in God; created realities are not explicitly attributed deliberation, volition, or self-determined purpose.',
+        argumentRecordId: 'ar-02-intentional-agency',
+      },
+      {
+        claim:
+          "Genesis 1:1-5 narrates large-scope divine creative activity with striking economy and without explicit divine self-praise emphasizing the magnitude of God's achievement.",
+        status: 'High-confidence literary finding / translation-resilient with rhetorical sensitivity',
+        rationale:
+          'Narrative compression is clear, though exact economy varies by translation. Stronger psychological claims about admiration are not authorized.',
+        argumentRecordId: 'ar-03-narrative-economy',
+      },
+      {
+        claim:
+          'Genesis 1:4 presents God as seeing the light and discloses His positive appraisal.',
+        status: 'High-confidence finding + strong inference / translation-resilient',
+        rationale:
+          'God saw is immediately joined to tov. Nothing in the speech/result sequence depicts failed realization requiring inspection.',
+        argumentRecordId: 'ar-04-god-saw-appraisal',
+      },
+      {
+        claim:
+          "For the sequential reader of Genesis, the first tov occurs as God's positive appraisal of light before human moral performance enters the narrative.",
+        status: 'High-confidence finding / translation-resilient with lexical sensitivity',
+        rationale:
+          'Tov has a broader positive semantic range than a simple moral binary. Human command, guilt, obedience, and moral performance have not yet entered the story.',
+        argumentRecordId: 'ar-05-first-tov',
+      },
+      {
+        claim: "Light's explicit appraisal as tov does not authorize declaring darkness morally evil or ra.",
+        status: 'High-confidence finding / translation-resilient',
+        rationale:
+          'Darkness is neither explicitly called tov nor ra. It is separated, named Night, and retained within the developing order.',
+        argumentRecordId: 'ar-06-darkness-not-evil',
+      },
+      {
+        claim: 'Positive divine appraisal and continued development/order coexist within the first creative movement.',
+        status: 'High-confidence structural finding + strong inference / translation-resilient',
+        rationale:
+          'Light is tov, yet God continues differentiating and naming while the larger project remains incomplete.',
+        argumentRecordId: 'ar-07-good-and-unfinished',
+      },
+      {
+        claim:
+          "God's differentiation of light and darkness is not narrated as hostility, combat, resistance, or defeat between competing intentional agents.",
+        status: 'High-confidence finding / translation-resilient',
+        rationale:
+          'God separates and names rather than destroys. No competing intention is attributed to darkness.',
+        argumentRecordId: 'ar-08-differentiation-without-hostility',
+      },
+      {
+        claim: 'Day and Night are the immediate designations God gives the differentiated light and darkness.',
+        status: 'High-confidence finding / translation-resilient',
+        rationale:
+          'These are the categories Genesis itself supplies before later symbolism. They constrain an immediate Good/Evil reading without excluding later symbolic uses.',
+        argumentRecordId: 'ar-09-day-and-night',
+      },
+      {
+        claim:
+          "Genesis 1:3-5 gives readers limited but genuine revelatory access to aspects of God's perspective.",
+        status: 'High-confidence composite finding + strong relational inference / translation-resilient',
+        rationale:
+          "God's expressed intention, attention, positive appraisal, distinctions, and designations accumulate without implying exhaustive access to divine cognition.",
+        argumentRecordId: 'ar-10-access-to-gods-perspective',
+      },
+      {
+        claim:
+          'Effective divine creative action coexists with staged progression rather than instantaneous completion of the larger project.',
+        status: 'High-confidence structural finding / translation-resilient',
+        rationale:
+          'Effective speech/result correspondence is followed by appraisal, differentiation, naming, and a bounded temporal unit.',
+        argumentRecordId: 'ar-11-progressive-creation',
+      },
+      {
+        claim:
+          "Genesis 1:3-5 positions readers to consider created reality in relation to God's disclosed perspective.",
+        status: 'Strong reader-effect finding / provisional perceptual-formation hypothesis',
+        rationale:
+          'Reader positioning arises from demonstrable textual features and narratological support; specific divine purpose remains provisional.',
+        argumentRecordId: 'ar-12-reader-perception',
+      },
+    ],
+    boundaryClaims: [
+      {
+        claim: 'Darkness is evil because light is tov.',
+        status: 'Not presently authorized',
+        reason: 'The text supplies no ra appraisal of darkness.',
+      },
+      {
+        claim: 'Darkness must therefore also be tov.',
+        status: 'Not presently authorized',
+        reason: 'The text specifically appraises light; do not erase the asymmetry.',
+      },
+      {
+        claim: "Matter consciously obeys God's command.",
+        status: 'Not presently authorized',
+        reason: 'No intentional agency is attributed to matter.',
+      },
+      {
+        claim: 'Ruach Elohim is explicitly the mechanism producing light.',
+        status: 'Open question / not presently authorized',
+        reason: 'Divine activity is present, but mechanism is undisclosed.',
+      },
+      {
+        claim: 'Tov means exclusively functional.',
+        status: 'Not presently authorized',
+        reason: 'Its semantic range is broader.',
+      },
+      {
+        claim: 'God evaluates light to discover whether creation succeeded.',
+        status: 'Weakened/rejected formulation',
+        reason: 'Appraises better fits the evidence without importing uncertainty.',
+      },
+      {
+        claim: 'God is an artist.',
+        status: 'Not presently authorized / rejected formulation',
+        reason: "Genesis' category is Creator; only the activity's motif is compared with composition rather than conflict.",
+      },
+      {
+        claim: 'Genesis 1:3 explicitly teaches the electromagnetic spectrum.',
+        status: 'Not presently authorized',
+        reason: 'Modern physical knowledge concerns the referent; it cannot determine the ancient lexical claim.',
+      },
+      {
+        claim: "God's silence about mechanism proves opposition to inquiry.",
+        status: 'Not presently authorized',
+        reason: 'Silence constrains claims but does not establish motive.',
+      },
+      {
+        claim: 'God withheld explanation specifically to stimulate curiosity.',
+        status: 'Provisional purpose hypothesis',
+        reason: 'A curiosity-producing effect is possible; purpose is not established.',
+      },
+      {
+        claim: 'God structured Genesis 1:3-5 specifically to train readers to see as He sees.',
+        status: 'Provisional hypothesis',
+        reason: 'Reader positioning is much stronger than evidence for communicative purpose.',
+      },
+      {
+        claim: 'Progressive creation explains later human suffering or divine delay.',
+        status: 'Not presently authorized',
+        reason: 'The local process observation cannot carry that later theological burden.',
+      },
+    ],
+    argumentRecords: [
+      {
+        id: 'ar-01-expressed-intention',
+        title: 'Expressed Intention',
+        claim: "In Genesis 1:3, God's expressed intention concerning light corresponds with the resulting reality.",
+        status: 'High-confidence finding / translation-resilient',
+        sections: [
+          {
+            body: [
+              "The local wording moves from yehi 'or to wayehi 'or: light-be, and light was. The essay can state this as real correspondence while the audit preserves scope.",
+            ],
+          },
+          {
+            label: 'Boundary',
+            body: [
+              "This does not establish a universal metaphysical claim about every possible divine intention. It establishes what Genesis 1:3 narrates here.",
+            ],
+          },
+        ],
+      },
+      {
+        id: 'ar-02-intentional-agency',
+        title: 'Intentional Agency',
+        claim:
+          'Through Genesis 1:1-5, God remains the only explicitly disclosed center of intentional agency.',
+        status: 'High-confidence finding / translation-resilient',
+        sections: [
+          {
+            body: [
+              'Created realities may function or participate, but the text has not explicitly attributed deliberation, volition, self-determined purpose, or independent intention to them.',
+            ],
+          },
+          {
+            label: 'Essay consequence',
+            body: [
+              'The essay can keep the line, "The only disclosed Mind is God\'s," because disclosed carries the necessary epistemic restraint.',
+            ],
+          },
+        ],
+      },
+      {
+        id: 'ar-03-narrative-economy',
+        title: 'Narrative Economy',
+        claim:
+          "Genesis 1:1-5 narrates large-scope divine creative activity with striking economy and without explicit divine self-praise emphasizing the magnitude of God's achievement.",
+        status: 'High-confidence literary finding / translation-resilient with rhetorical sensitivity',
+        sections: [
+          {
+            body: [
+              'The magnitude of what is narrated and the economy of the narration are clear literary features. The stronger claim concerns presentation, not inferred divine psychology.',
+            ],
+          },
+          {
+            label: 'Revision pressure',
+            body: [
+              'The essay should avoid making God\'s internal motive or attention more specific than the narrative presentation authorizes.',
+            ],
+          },
+        ],
+      },
+      {
+        id: 'ar-04-god-saw-appraisal',
+        title: 'God Saw & Appraisal',
+        claim:
+          'Genesis 1:4 presents God as seeing the light and discloses His positive appraisal; the sequence is better characterized as attention/appraisal than uncertain inspection.',
+        status: 'High-confidence finding + strong inference / translation-resilient',
+        sections: [
+          {
+            body: [
+              'God saw is immediately joined to tov. Nothing in the preceding speech/result sequence depicts failed realization requiring quality-control inspection.',
+            ],
+          },
+          {
+            label: 'Essay consequence',
+            body: [
+              'The essay may speak of God placing attention on the light as long as this remains provisional and tied to the narrated sequence.',
+            ],
+          },
+        ],
+      },
+      {
+        id: 'ar-05-first-tov',
+        title: 'The First Tov',
+        claim:
+          "For the sequential reader of Genesis, the first tov occurs as God's positive appraisal of light before human moral performance enters the narrative.",
+        status: 'High-confidence finding / translation-resilient with lexical sensitivity',
+        sections: [
+          {
+            body: [
+              'The immediate context has not yet introduced human command, guilt, obedience, disobedience, reward, failure, accusation, or moral performance.',
+            ],
+          },
+          {
+            label: 'Lexical boundary',
+            body: [
+              'Tov carries a broad positive range and should not be reduced to a simple moral binary or to a single functional meaning.',
+            ],
+          },
+        ],
+      },
+      {
+        id: 'ar-06-darkness-not-evil',
+        title: 'Darkness Not Evil',
+        claim: "Light's explicit appraisal as tov does not authorize declaring darkness morally evil or ra.",
+        status: 'High-confidence finding / translation-resilient',
+        sections: [
+          {
+            body: [
+              'Darkness is neither explicitly called tov nor ra. It is subsequently separated, named Night, and retained within the developing order.',
+            ],
+          },
+          {
+            label: 'Boundary',
+            body: ['Silence cannot be converted into the opposite assertion.'],
+          },
+        ],
+      },
+      {
+        id: 'ar-07-good-and-unfinished',
+        title: 'Good & Unfinished',
+        claim: 'Positive divine appraisal and continued development/order coexist within the first creative movement.',
+        status: 'High-confidence structural finding + strong inference / translation-resilient',
+        sections: [
+          {
+            body: [
+              'Light is tov, yet God continues differentiating and naming while the larger project remains incomplete. Good does not mean finished is an appropriate essay simplification.',
+            ],
+          },
+          {
+            label: 'Local scope',
+            body: [
+              "The positive appraisal concerns light within an unfinished larger project, not a blanket appraisal of the entire unfinished project.",
+            ],
+          },
+        ],
+      },
+      {
+        id: 'ar-08-differentiation-without-hostility',
+        title: 'Differentiation Without Hostility',
+        claim:
+          "God's differentiation of light and darkness is not narrated as hostility, combat, resistance, or defeat between competing intentional agents.",
+        status: 'High-confidence finding / translation-resilient',
+        sections: [
+          {
+            body: [
+              'God separates and names rather than destroys. No competing intention is attributed to darkness. The activity resembles composition/order more than conflict while God remains Creator, not artist.',
+            ],
+          },
+        ],
+      },
+      {
+        id: 'ar-09-day-and-night',
+        title: 'Day & Night',
+        claim: 'Day and Night are the immediate designations God gives the differentiated light and darkness.',
+        status: 'High-confidence finding / translation-resilient',
+        sections: [
+          {
+            body: [
+              'These are the categories Genesis supplies before later symbolism. They constrain an immediate Good/Evil reading without excluding later symbolic uses.',
+            ],
+          },
+          {
+            label: 'Boundary',
+            body: ['Designation does not exhaust ontology.'],
+          },
+        ],
+      },
+      {
+        id: 'ar-10-access-to-gods-perspective',
+        title: "Access to God's Perspective",
+        claim:
+          "Genesis 1:3-5 gives readers limited but genuine revelatory access to aspects of God's perspective.",
+        status: 'High-confidence composite finding + strong relational inference / translation-resilient',
+        sections: [
+          {
+            body: [
+              "God's expressed intention, attention, positive appraisal, distinctions, and designations are made available to readers. Access to God's mind is appropriate essay language when understood as limited disclosed access, not exhaustive divine cognition.",
+            ],
+          },
+        ],
+      },
+      {
+        id: 'ar-11-progressive-creation',
+        title: 'Progressive Creation',
+        claim:
+          'Effective divine creative action coexists with staged progression rather than instantaneous completion of the larger project.',
+        status: 'High-confidence structural finding / translation-resilient',
+        sections: [
+          {
+            body: [
+              'Effective speech/result correspondence is followed by appraisal, differentiation, naming, and a bounded temporal unit. Process therefore cannot itself be treated as evidence of incapacity.',
+            ],
+          },
+          {
+            label: 'Essay consequence',
+            body: ['Power does not require immediacy is appropriately simplified for the essay.'],
+          },
+        ],
+      },
+      {
+        id: 'ar-12-reader-perception',
+        title: 'Reader Perception',
+        claim:
+          "Genesis 1:3-5 positions readers to consider created reality in relation to God's disclosed perspective.",
+        status: 'Strong reader-effect finding / provisional perceptual-formation hypothesis',
+        sections: [
+          {
+            body: [
+              'Reader positioning arises from demonstrable textual features and has narratological support. The stronger claim that God specifically designed the passage to train human perception remains provisional.',
+            ],
+          },
+          {
+            label: 'Essay consequence',
+            body: [
+              'The section headed "Perhaps Genesis Is Teaching Us How to Look" should remain provisional rather than be flattened into technical prose.',
+            ],
+          },
+        ],
+      },
+    ],
+    revisionRecord: [
+      {
+        earlier: "Matter responds/obeys God's command.",
+        challenge:
+          'Nothing created is explicitly attributed intention or volition; later methodology distinguished participation from intentional agency.',
+        present:
+          'God expresses intention and corresponding reality is narrated; no created intentional response is required.',
+      },
+      {
+        earlier: 'Nothing resists God.',
+        challenge: 'Resistance itself presupposes competing volition that has not been disclosed.',
+        present: 'No competing intention is disclosed.',
+      },
+      {
+        earlier: 'Matter has no agency.',
+        challenge:
+          'Later agency methodology distinguished function, productive capacity, participation, grammatical agency, intentional agency, and independent agency.',
+        present: 'Nothing created is explicitly attributed intentional or independent agency here.',
+      },
+      {
+        earlier: 'God evaluates the light.',
+        challenge: 'Evaluate can imply testing under uncertainty.',
+        present: 'God appraises the light positively.',
+      },
+      {
+        earlier: 'Tov means morally good.',
+        challenge: 'Hebrew semantic range and immediate context are broader.',
+        present: 'Tov expresses positive valuation/appraisal whose exact nuance remains context-dependent.',
+      },
+      {
+        earlier: 'Light is good, therefore darkness is evil.',
+        challenge: 'Darkness is neither called ra nor destroyed; it becomes Night.',
+        present: "Light's positive appraisal does not authorize a negative moral appraisal of darkness.",
+      },
+      {
+        earlier: 'Darkness therefore must also be good.',
+        challenge: 'The text preserves an asymmetry: light alone receives explicit tov.',
+        present: 'Darkness remains without explicit positive or negative appraisal here.',
+      },
+      {
+        earlier: 'God calls the unfinished creation good.',
+        challenge: 'Tov specifically concerns light at this stage.',
+        present: 'God positively appraises light within an unfinished larger project.',
+      },
+      {
+        earlier: 'God is an artist.',
+        challenge: 'This confused motif with identity.',
+        present: 'God is Creator; the narrated activity resembles composition/order more than conflict.',
+      },
+      {
+        earlier: "We have access to God's mind without qualification.",
+        challenge: 'Mind could imply exhaustive divine cognition.',
+        present: "Readers receive limited revelatory access to God's disclosed perspective.",
+      },
+      {
+        earlier: 'Genesis teaches us how to see.',
+        challenge: 'No explicit command; effect/purpose distinction developed later.',
+        present:
+          "Genesis makes God's perspective available and positions readers to consider reality in relation to it; perceptual formation remains provisional.",
+      },
+      {
+        earlier: 'Human usefulness strengthens the exegesis.',
+        challenge: 'Human correspondence cannot authorize textual interpretation.',
+        present: 'Human correspondence is tested after textual adjudication and cannot authorize interpretation.',
+      },
+    ],
+    architecture: [
+      'Essay - The Encounter: accessible narrative of discovery.',
+      'Claim Audit - The Judgment: consequential claims, present status, concise rationale, and links into the audit trail.',
+      'Argument Records - The Audit Trail: supporting evidence, counterevidence, competing interpretations, revisions, canonical and human-experience correspondence, and sources.',
+    ],
+    closingPrinciples: [
+      'A correction is evidence that the method is working, not something publication should conceal.',
+      'The essay remains the accessible encounter; the audit carries the heavier epistemic machinery.',
+      'The reader should be able to move from judgment back toward evidence.',
+    ],
+  },
 ];
 
 export function getClaimAuditByEssaySlug(essaySlug: string) {
