@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { ArticlePrintButton } from '@/components/site/ArticlePrintButton';
 import { ArticlePrintStyles } from '@/components/site/ArticlePrintStyles';
@@ -182,6 +183,7 @@ export default async function EssayDetailPage({ params }: PageProps) {
   };
   const seriesLabel = [essay.series?.title, essay.series?.label].filter(Boolean).join(' / ');
   const visibleTags = essay.tags ?? [];
+  const claimAuditHref = essay.claimAuditSlug ? `/essays/${essay.slug}/claim-audit` : undefined;
 
   return (
     <EditorialPage
@@ -287,6 +289,27 @@ export default async function EssayDetailPage({ params }: PageProps) {
                 {tag}
               </span>
             ))}
+          </div>
+        ) : null}
+
+        {claimAuditHref ? (
+          <div className="print-hide mt-8 border border-[#d9d0c3] bg-[#fffdf8] p-6 shadow-[0_20px_60px_rgba(23,38,49,0.05)]">
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#8a6d2f]">
+              Claim Audit
+            </p>
+            <h2 className="mt-3 text-2xl font-semibold leading-tight text-[#101b23]">
+              Inspect the claim audit.
+            </h2>
+            <p className="mt-3 text-base leading-7 text-[#536271]">
+              See the present status of this essay's claims, argument records, source links, and
+              revision notes.
+            </p>
+            <Link
+              href={claimAuditHref}
+              className="mt-5 inline-flex border border-[#8a6d2f] bg-[#101b23] px-4 py-2 text-sm font-semibold text-[#fffdf8] transition hover:bg-[#243447]"
+            >
+              Open Claim Audit
+            </Link>
           </div>
         ) : null}
 

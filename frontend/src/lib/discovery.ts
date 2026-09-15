@@ -1,3 +1,4 @@
+import { claimAuditEntries } from '@/content/claimAudits';
 import { essayEntries } from '@/content/essays';
 import { essayCategories } from '@/content/essays';
 import { whyDiveSpaces } from '@/content/spaces';
@@ -47,6 +48,12 @@ export const essayCategoryDiscoveryRoutes = essayCategories.map((category) => ({
   changeFrequency: 'monthly' as const,
 }));
 
+export const claimAuditDiscoveryRoutes = claimAuditEntries.map((audit) => ({
+  path: `/essays/${audit.essaySlug}/claim-audit`,
+  priority: 0.5,
+  changeFrequency: 'monthly' as const,
+}));
+
 export const whitepaperDiscoveryRoutes = whitepaperEntries.map((paper) => ({
   path: `/whitepapers/${paper.slug}`,
   priority: paper.layer <= 2 ? 0.82 : 0.68,
@@ -64,6 +71,7 @@ export const discoveryRoutes = [
   ...spaceDiscoveryRoutes,
   ...essayCategoryDiscoveryRoutes,
   ...essayDiscoveryRoutes,
+  ...claimAuditDiscoveryRoutes,
   ...whitepaperDiscoveryRoutes,
 ];
 

@@ -19,6 +19,7 @@ export const genesisSeedEssay: EssayEntry = {
   "scriptureRange": "Genesis 1:9-13",
   "topics": ["Genesis", "creation", "land", "seed", "correspondence", "evidence", "knowing God"],
   "tags": ["Genesis 1", "seed", "creation", "evidence", "Scripture", "interpretation", "religion"],
+  "claimAuditSlug": "you-can-look-now",
   "sourceNote": "This essay is adapted from an internal Relational Knowledge of God draft on Genesis 1:9-13. It continues WhyDive's close reading of Genesis by attending to what the passage gives, what the reader can now observe, and how testimony and visible correspondence begin to work together.",
   "bibliography": [
     {

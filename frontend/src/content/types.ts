@@ -27,6 +27,7 @@ export interface EssayEntry {
   scriptureRange?: string;
   topics?: string[];
   tags?: string[];
+  claimAuditSlug?: string;
   sourceNote?: string;
   bibliography?: Array<string | { label: string; href?: string }>;
   sections?: {
@@ -39,6 +40,50 @@ export interface EssayEntry {
     paragraphs?: string[];
     bullets?: string[];
   }[];
+}
+
+export interface ClaimAuditSource {
+  label: string;
+  href: string;
+}
+
+export interface ClaimAuditRow {
+  claim: string;
+  status: string;
+  rationale: string;
+  argumentRecordId: string;
+}
+
+export interface ArgumentRecord {
+  id: string;
+  title: string;
+  claim: string;
+  status: string;
+  sections: {
+    label?: string;
+    body: string[];
+    quote?: string;
+  }[];
+  sources?: ClaimAuditSource[];
+}
+
+export interface RevisionRecordEntry {
+  earlier: string;
+  challenge: string;
+  present: string;
+}
+
+export interface ClaimAuditEntry {
+  title: string;
+  slug: string;
+  essaySlug: string;
+  deck: string;
+  statusNote: string;
+  rows: ClaimAuditRow[];
+  argumentRecords: ArgumentRecord[];
+  revisionRecord?: RevisionRecordEntry[];
+  architecture?: string[];
+  closingPrinciples?: string[];
 }
 
 export interface WhitepaperEntry {
