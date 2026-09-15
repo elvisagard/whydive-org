@@ -8,6 +8,7 @@ export const genesisBeginningEssay: EssayEntry = {
   "category": "religion",
   "status": "published",
   "publicationDate": "September 2026",
+  "publicationDateIso": "2026-09-01",
   "readingTime": "28 minute read",
   "image": assetUrl('/images/whydive/in-the-beginning-god-hero.png'),
   "series": {

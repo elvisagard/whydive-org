@@ -8,6 +8,7 @@ export const genesisBeginningContinuationEssay: EssayEntry = {
   "category": "religion",
   "status": "published",
   "publicationDate": "September 2026",
+  "publicationDateIso": "2026-09-01",
   "readingTime": "18 minute read",
   "image": assetUrl('/images/whydive/let-the-beginning-remain-a-beginning-hero.png'),
   "series": {

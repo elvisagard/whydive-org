@@ -8,6 +8,7 @@ export const genesisLightEssay: EssayEntry = {
   "category": "religion",
   "status": "published",
   "publicationDate": "September 2026",
+  "publicationDateIso": "2026-09-01",
   "readingTime": "13 minute read",
   "image": assetUrl('/images/whydive/when-god-looks-at-light-hero.png'),
   "series": {

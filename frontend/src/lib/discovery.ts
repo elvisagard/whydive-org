@@ -37,9 +37,9 @@ export const staticDiscoveryRoutes = [
 
 export const essayDiscoveryRoutes = essayEntries.map((essay) => ({
   path: `/essays/${essay.slug}`,
-  priority: essay.status === 'draft' ? 0.72 : 0.55,
+  priority: essay.status === 'published' ? 0.72 : 0.45,
   changeFrequency: 'monthly' as const,
-  lastModified: essay.updatedDate ?? essay.publicationDate,
+  lastModified: essay.updatedDateIso ?? essay.publicationDateIso ?? essay.updatedDate ?? essay.publicationDate,
 }));
 
 export const essayCategoryDiscoveryRoutes = essayCategories.map((category) => ({
@@ -48,11 +48,16 @@ export const essayCategoryDiscoveryRoutes = essayCategories.map((category) => ({
   changeFrequency: 'monthly' as const,
 }));
 
-export const claimAuditDiscoveryRoutes = claimAuditEntries.map((audit) => ({
-  path: `/essays/${audit.essaySlug}/claim-audit`,
-  priority: 0.5,
-  changeFrequency: 'monthly' as const,
-}));
+export const claimAuditDiscoveryRoutes = claimAuditEntries.map((audit) => {
+  const essay = essayEntries.find((entry) => entry.slug === audit.essaySlug);
+
+  return {
+    path: `/essays/${audit.essaySlug}/claim-audit`,
+    priority: 0.5,
+    changeFrequency: 'monthly' as const,
+    lastModified: essay?.updatedDateIso ?? essay?.publicationDateIso,
+  };
+});
 
 export const whitepaperDiscoveryRoutes = whitepaperEntries.map((paper) => ({
   path: `/whitepapers/${paper.slug}`,

@@ -4,6 +4,23 @@ import { coreDiscoveryClaims, discoveryRoutes, discoveryTopics, siteName, siteUr
 
 export const dynamic = 'force-static';
 
+function formatEssayLine(essay: (typeof essayEntries)[number]) {
+  const parts = [
+    `${essay.title}: ${siteUrl}/essays/${essay.slug}`,
+    essay.deck,
+    `Category: ${essay.category}`,
+    essay.status ? `Status: ${essay.status}` : undefined,
+    essay.publicationDateIso ? `Published: ${essay.publicationDateIso}` : essay.publicationDate,
+    essay.series ? `Series: ${essay.series.title}, order ${essay.series.order}` : undefined,
+    essay.scriptureRange ? `Text: ${essay.scriptureRange}` : undefined,
+    essay.topics?.length ? `Topics: ${essay.topics.join(', ')}` : undefined,
+    essay.tags?.length ? `Tags: ${essay.tags.join(', ')}` : undefined,
+    essay.claimAuditSlug ? `Claim audit: ${siteUrl}/essays/${essay.slug}/claim-audit` : undefined,
+  ].filter(Boolean);
+
+  return `- ${parts.join(' — ')}`;
+}
+
 export function GET() {
   const lines = [
     `# ${siteName}`,
@@ -28,10 +45,22 @@ export function GET() {
     ...essayCategories.map((category) => `- ${category.title}: ${siteUrl}/essays/category/${category.slug}`),
     '',
     '## Essays',
-    ...essayEntries.map((essay) => `- ${essay.title}: ${siteUrl}/essays/${essay.slug}`),
+    ...essayEntries.map(formatEssayLine),
     '',
     '## Claim Audits',
-    ...claimAuditEntries.map((audit) => `- ${audit.title}: ${siteUrl}/essays/${audit.essaySlug}/claim-audit`),
+    ...claimAuditEntries.map((audit) => {
+      const essay = essayEntries.find((entry) => entry.slug === audit.essaySlug);
+      const parts = [
+        `${audit.title}: ${siteUrl}/essays/${audit.essaySlug}/claim-audit`,
+        audit.deck,
+        essay?.series ? `Series: ${essay.series.title}, order ${essay.series.order}` : undefined,
+        essay?.scriptureRange ? `Text: ${essay.scriptureRange}` : undefined,
+        `Claims: ${audit.rows.length}`,
+        `Argument records: ${audit.argumentRecords.length}`,
+      ].filter(Boolean);
+
+      return `- ${parts.join(' — ')}`;
+    }),
     '',
     '## Ownership',
     'WhyDive is currently owned and operated under Living Spiral Studio LLC.',

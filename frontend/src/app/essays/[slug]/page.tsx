@@ -86,10 +86,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       description: essay.deck,
       type: 'article',
       url: absoluteUrl(`/essays/${essay.slug}`),
-      publishedTime: toIsoDate(essay.publicationDate),
-      modifiedTime: toIsoDate(essay.updatedDate ?? essay.publicationDate),
+      publishedTime: toIsoDate(essay.publicationDateIso ?? essay.publicationDate),
+      modifiedTime: toIsoDate(essay.updatedDateIso ?? essay.updatedDate ?? essay.publicationDateIso ?? essay.publicationDate),
       authors: ['Elvis Agard'],
       section: essay.category,
+      tags: [...(essay.topics ?? []), ...(essay.tags ?? [])],
       images: [
         {
           url: assetUrl(essay.image ?? articleFallbackImage),
@@ -120,8 +121,8 @@ export default async function EssayDetailPage({ params }: PageProps) {
   const essayImage = absoluteUrl(essayImagePath);
   const hasFullEssay = Boolean(essay.sections?.length);
   const essayWordCount = getEssayWordCount(essay);
-  const datePublished = toIsoDate(essay.publicationDate);
-  const dateModified = toIsoDate(essay.updatedDate ?? essay.publicationDate);
+  const datePublished = toIsoDate(essay.publicationDateIso ?? essay.publicationDate);
+  const dateModified = toIsoDate(essay.updatedDateIso ?? essay.updatedDate ?? essay.publicationDateIso ?? essay.publicationDate);
   const sectionNavItems =
     essay.sections
       ?.map((section, index) => {
@@ -135,6 +136,8 @@ export default async function EssayDetailPage({ params }: PageProps) {
       })
       .filter((item): item is { id: string; title: string; isMovementTitle: boolean } => Boolean(item)) ?? [];
   const showSectionNav = sectionNavItems.length > 5;
+  const claimAuditHref = essay.claimAuditSlug ? `/essays/${essay.slug}/claim-audit` : undefined;
+  const claimAuditUrl = claimAuditHref ? absoluteUrl(claimAuditHref) : undefined;
   const articleSchema = {
     '@context': 'https://schema.org',
     '@type': 'Article',
@@ -151,17 +154,6 @@ export default async function EssayDetailPage({ params }: PageProps) {
     dateModified,
     wordCount: essayWordCount,
     keywords: [...(essay.topics ?? []), ...(essay.tags ?? [])],
-    isPartOf: {
-      '@id': `${siteUrl}/#website`,
-    },
-    publisher: {
-      '@type': 'Organization',
-      name: publisherName,
-    },
-    author: {
-      '@type': 'Person',
-      name: 'Elvis Agard',
-    },
     about: [
       {
         '@type': 'Thing',
@@ -171,6 +163,10 @@ export default async function EssayDetailPage({ params }: PageProps) {
         '@type': 'Thing',
         name: category?.title ?? essay.category,
       },
+      ...(essay.topics ?? []).map((topic) => ({
+        '@type': 'Thing',
+        name: topic,
+      })),
       ...(essay.series
         ? [
             {
@@ -180,10 +176,44 @@ export default async function EssayDetailPage({ params }: PageProps) {
           ]
         : []),
     ],
+    ...(essay.series
+      ? {
+          isPartOf: [
+            {
+              '@id': `${siteUrl}/#website`,
+            },
+            {
+              '@type': 'CreativeWorkSeries',
+              name: essay.series.title,
+              position: essay.series.order,
+            },
+          ],
+        }
+      : {
+          isPartOf: {
+            '@id': `${siteUrl}/#website`,
+          },
+        }),
+    ...(claimAuditUrl
+      ? {
+          subjectOf: {
+            '@type': 'CreativeWork',
+            name: `${essay.title} Claim Audit`,
+            url: claimAuditUrl,
+          },
+        }
+      : {}),
+    publisher: {
+      '@type': 'Organization',
+      name: publisherName,
+    },
+    author: {
+      '@type': 'Person',
+      name: 'Elvis Agard',
+    },
   };
   const seriesLabel = [essay.series?.title, essay.series?.label].filter(Boolean).join(' / ');
   const visibleTags = essay.tags ?? [];
-  const claimAuditHref = essay.claimAuditSlug ? `/essays/${essay.slug}/claim-audit` : undefined;
 
   return (
     <EditorialPage

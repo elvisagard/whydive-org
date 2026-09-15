@@ -8,6 +8,7 @@ export const genesisSeedEssay: EssayEntry = {
   "category": "religion",
   "status": "published",
   "publicationDate": "September 2026",
+  "publicationDateIso": "2026-09-01",
   "readingTime": "10 minute read",
   "image": assetUrl('/images/whydive/you-can-look-now-hero.png'),
   "series": {

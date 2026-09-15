@@ -20,7 +20,9 @@ export interface EssayEntry {
   category: string;
   status: ContentStatus;
   publicationDate?: string;
+  publicationDateIso?: string;
   updatedDate?: string;
+  updatedDateIso?: string;
   readingTime?: string;
   image?: string;
   series?: EssaySeriesRef;
