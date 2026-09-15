@@ -20,6 +20,7 @@ export const genesisLanguageEssay: EssayEntry = {
   "scriptureRange": "Genesis 1",
   "topics": ["Genesis", "translation", "language", "salience", "interpretation", "evidence", "knowing God"],
   "tags": ["Genesis 1", "translation", "Scripture", "interpretation", "evidence", "religion"],
+  "claimAuditSlug": "does-god-change-when-the-language-does",
   "sourceNote": "This essay is adapted from an internal Relational Knowledge of God reflection on Genesis, translation, reader salience, and the discipline of testing discoveries across language and community.",
   "sections": [
     {
@@ -99,7 +100,7 @@ export const genesisLanguageEssay: EssayEntry = {
         "If I build an elaborate conclusion upon the identity of the *ruach* while pretending the translation question doesn't exist, I may be asking the text to support more than it presently can.",
         "The investigation was already doing something useful.",
         "It wasn't making Genesis meaningless.",
-        "It was teaching me where to become less certain.",
+        "It was teaching me not simply to become less certain, but to become more precise about where my uncertainty belonged.",
         "And then we found something that changed one of my observations even more directly."
       ]
     },
@@ -245,7 +246,7 @@ export const genesisLanguageEssay: EssayEntry = {
         "Whatever precision *tov* ultimately requires, something much less fragile is happening.",
         "**God brings something about.**",
         "**God attends to it.**",
-        "**God evaluates it positively.**",
+        "**God appraises it positively.**",
         "**God then continues creating.**",
         "My uncertainty about the exact semantic range of *tov* does not erase the narrated act of divine appraisal.",
         "In fact, after examining the detail, I may become **less confident about exactly what the appraisal means while becoming more confident that attending and appraising are part of the Person I am watching.**",

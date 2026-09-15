@@ -55,7 +55,9 @@ export interface ClaimAuditRow {
   rationale: string;
   argumentRecordId: string;
   argumentRecordIds?: string[];
+  revisionRecordIds?: string[];
   emergentRecordIds?: string[];
+  openQuestionIds?: string[];
 }
 
 export interface BoundaryClaim {
@@ -99,6 +101,14 @@ export interface EmergentRecord {
   sources?: ClaimAuditSource[];
 }
 
+export interface OpenQuestionRecord {
+  id: string;
+  question: string;
+  status?: string;
+  notes?: string[];
+  relatedArgumentRecordIds?: string[];
+}
+
 export interface ClaimAuditEntry {
   title: string;
   slug: string;
@@ -109,6 +119,7 @@ export interface ClaimAuditEntry {
   boundaryClaims?: BoundaryClaim[];
   argumentRecords: ArgumentRecord[];
   emergentRecords?: EmergentRecord[];
+  openQuestions?: OpenQuestionRecord[];
   revisionRecord?: RevisionRecordEntry[];
   architecture?: string[];
   closingPrinciples?: string[];

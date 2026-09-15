@@ -108,7 +108,7 @@ export default async function ClaimAuditPage({ params }: PageProps) {
         <SectionHeading title="Claim Audit">
           <p>
             This table shows what the essay presently claims, how strongly each claim is held, and
-            where a reader can inspect the supporting argument record.
+            where a reader can inspect the supporting records.
           </p>
         </SectionHeading>
 
@@ -126,7 +126,7 @@ export default async function ClaimAuditPage({ params }: PageProps) {
                   Why This Status?
                 </th>
                 <th scope="col" className="w-[15%] px-4 py-3 font-semibold">
-                  Evidence
+                  Evidence &amp; Dialogue
                 </th>
               </tr>
             </thead>
@@ -141,6 +141,16 @@ export default async function ClaimAuditPage({ params }: PageProps) {
                   row.emergentRecordIds?.map((recordId) => ({
                     id: recordId,
                     record: audit.emergentRecords?.find((entry) => entry.id === recordId),
+                  })) ?? [];
+                const revisionRecords =
+                  row.revisionRecordIds?.map((recordId) => ({
+                    id: recordId,
+                    record: audit.revisionRecord?.find((entry) => entry.id === recordId),
+                  })) ?? [];
+                const openQuestions =
+                  row.openQuestionIds?.map((recordId) => ({
+                    id: recordId,
+                    record: audit.openQuestions?.find((entry) => entry.id === recordId),
                   })) ?? [];
 
                 return (
@@ -175,6 +185,30 @@ export default async function ClaimAuditPage({ params }: PageProps) {
                               Later Development
                             </span>
                             {record ? record.title : id}
+                          </a>
+                        ))}
+                        {revisionRecords.map(({ id }) => (
+                          <a
+                            key={`${row.argumentRecordId}-${id}`}
+                            href={`#${id}`}
+                            className="font-semibold text-[#8a6d2f] underline underline-offset-4 hover:text-[#101b23]"
+                          >
+                            <span className="block text-[0.65rem] uppercase tracking-[0.16em] text-[#536271]">
+                              Revision Record
+                            </span>
+                            {id}
+                          </a>
+                        ))}
+                        {openQuestions.map(({ id, record }) => (
+                          <a
+                            key={`${row.argumentRecordId}-${id}`}
+                            href={`#${id}`}
+                            className="font-semibold text-[#8a6d2f] underline underline-offset-4 hover:text-[#101b23]"
+                          >
+                            <span className="block text-[0.65rem] uppercase tracking-[0.16em] text-[#536271]">
+                              Open Question
+                            </span>
+                            {record ? record.id : id}
                           </a>
                         ))}
                       </div>
@@ -382,6 +416,51 @@ export default async function ClaimAuditPage({ params }: PageProps) {
         </section>
       ) : null}
 
+      {audit.openQuestions?.length ? (
+        <section className="mt-16">
+          <SectionHeading title="Open Questions">
+            <p>
+              These records preserve consequential questions the present evidence does not yet
+              authorize the audit to resolve.
+            </p>
+          </SectionHeading>
+
+          <div className="mt-8 grid gap-4">
+            {audit.openQuestions.map((record) => (
+              <article
+                key={record.id}
+                id={record.id}
+                className="scroll-mt-28 border border-[#d9d0c3] bg-[#fffdf8] p-5 shadow-[0_20px_60px_rgba(23,38,49,0.05)]"
+              >
+                <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#8a6d2f]">{record.id}</p>
+                <p className="mt-3 text-lg font-semibold leading-7 text-[#101b23]">{record.question}</p>
+                {record.status ? <p className="mt-3 text-base leading-7 text-[#6f551e]">{record.status}</p> : null}
+                {record.notes?.length ? (
+                  <div className="mt-4 grid gap-3 text-base leading-7 text-[#536271]">
+                    {record.notes.map((note) => (
+                      <p key={note}>{renderInlineMarkup(note)}</p>
+                    ))}
+                  </div>
+                ) : null}
+                {record.relatedArgumentRecordIds?.length ? (
+                  <div className="mt-4 flex flex-wrap gap-2 border-t border-[#d9d0c3] pt-4">
+                    {record.relatedArgumentRecordIds.map((recordId) => (
+                      <a
+                        key={`${record.id}-${recordId}`}
+                        href={`#${recordId}`}
+                        className="border border-[#d9d0c3] bg-[#f8f4ed] px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.12em] text-[#536271] transition hover:border-[#8a6d2f] hover:text-[#101b23]"
+                      >
+                        {recordId}
+                      </a>
+                    ))}
+                  </div>
+                ) : null}
+              </article>
+            ))}
+          </div>
+        </section>
+      ) : null}
+
       {audit.revisionRecord?.length ? (
         <section className="mt-16">
           <SectionHeading title="Revision Record">
@@ -417,7 +496,11 @@ export default async function ClaimAuditPage({ params }: PageProps) {
               </thead>
               <tbody>
                 {audit.revisionRecord.map((entry, index) => (
-                  <tr key={entry.id ?? entry.earlier} className={index % 2 ? 'bg-[#f8f4ed]' : 'bg-[#fffdf8]'}>
+                  <tr
+                    key={entry.id ?? entry.earlier}
+                    id={entry.id}
+                    className={`${index % 2 ? 'bg-[#f8f4ed]' : 'bg-[#fffdf8]'} scroll-mt-28`}
+                  >
                     {audit.revisionRecord?.some((record) => record.id) ? (
                       <td className="border-t border-[#d9d0c3] px-4 py-4 align-top font-semibold text-[#6f551e]">
                         {entry.id}

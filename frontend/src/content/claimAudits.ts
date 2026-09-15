@@ -1290,6 +1290,447 @@ export const claimAuditEntries: ClaimAuditEntry[] = [
     ],
   },
   {
+    title: 'Does God Change When the Language Does?',
+    slug: 'does-god-change-when-the-language-does',
+    essaySlug: 'does-god-change-when-the-language-does',
+    deck: 'Claim Audit & Argument Records for the Genesis translation and salience essay.',
+    statusNote:
+      'Present status means present status. New evidence may strengthen, weaken, revise, or overturn any judgment below.',
+    rows: [
+      {
+        claim: "Several major patterns of God's narrated behavior remained recognizable across the witnesses examined.",
+        status: 'High-confidence / translation-resilient within tested corpus',
+        rationale:
+          'Lexical/textual differences appeared, while creating, speaking, seeing/appraising, differentiating, naming, and continued activity remained comparatively stable.',
+        argumentRecordId: 'AR-01',
+      },
+      {
+        claim: 'Significant character evidence is available without prior Hebrew/Greek specialization.',
+        status: 'Strong methodological inference',
+        rationale:
+          'Major behavioral observations were available in translations and survived later testing. Availability does not guarantee reader recognition.',
+        argumentRecordId: 'AR-02',
+      },
+      {
+        claim:
+          'The study tested textual availability, not whether readers across languages perceive the same portrait.',
+        status: 'High-confidence methodological boundary',
+        rationale: 'No independent cross-cultural reader study was conducted.',
+        argumentRecordId: 'AR-03',
+        openQuestionIds: ['OQ-01'],
+      },
+      {
+        claim: "God's expressed volition concerning light corresponds with resulting reality.",
+        status: 'High-confidence / translation-resilient',
+        rationale:
+          'Speech to reality remained stable; Korean made volition salient and Hebrew examination supported the broader characterization.',
+        argumentRecordId: 'AR-04',
+      },
+      {
+        claim: 'God positively appraises light; the exact force of *tov* is more translation-sensitive.',
+        status: 'High-confidence behavioral finding; lexical meaning sensitive',
+        rationale:
+          'Positive appraisal survives more strongly than any one exhaustive gloss of *tov*.',
+        argumentRecordId: 'AR-05',
+      },
+      {
+        claim: 'Differentiation, naming, and progressive activity remain comparatively stable.',
+        status: 'High-confidence / strong structural inference',
+        rationale:
+          'These actions survive the witnesses examined; why God chooses progression remains open.',
+        argumentRecordId: 'AR-06',
+      },
+      {
+        claim:
+          'Some local expressions require greater translation restraint than the wider behavioral portrait.',
+        status: 'High-confidence translation-sensitive finding',
+        rationale:
+          '*Tohu wabohu*, *ruach Elohim*, narrative economy, and related features require narrower confidence.',
+        argumentRecordId: 'AR-07',
+        revisionRecordIds: ['RR-02', 'RR-03'],
+      },
+      {
+        claim:
+          'Missing Day-Two appraisal cannot bear substantial unqualified theology.',
+        status: 'High-confidence negative finding / textual-tradition-sensitive',
+        rationale: 'MT lacks the appraisal while LXX can contain it.',
+        argumentRecordId: 'AR-08',
+        revisionRecordIds: ['RR-04'],
+      },
+      {
+        claim:
+          'Another language can illuminate a possible feature without becoming authoritative for its meaning.',
+        status: 'Strong methodological finding',
+        rationale:
+          'Korean made divine volition salient; the insight was retained only after return to Hebrew evidence.',
+        argumentRecordId: 'AR-09',
+        revisionRecordIds: ['RR-05'],
+      },
+      {
+        claim:
+          'Reader difference can generate candidate insights, but evidence must adjudicate them; collaborative reading remains an invitation to test.',
+        status: 'Strong inference / methodological application; collaborative benefit provisional',
+        rationale:
+          'Reader location can affect salience, but no reader experiment established improved accuracy or perception.',
+        argumentRecordId: 'AR-10',
+        argumentRecordIds: ['AR-10', 'AR-11'],
+        revisionRecordIds: ['RR-06', 'RR-07'],
+        openQuestionIds: ['OQ-02', 'OQ-03'],
+      },
+    ],
+    boundaryClaims: [
+      {
+        claim: "God's character is language-independent.",
+        status: 'Not presently authorized',
+        reason:
+          'The audit supports translation-resilience within the tested corpus, not language independence in every possible linguistic or interpretive setting.',
+      },
+      {
+        claim: 'Comparable textual availability proves comparable reader perception.',
+        status: 'Not presently authorized',
+        reason:
+          'The investigation did not conduct independent cross-cultural reader testing.',
+      },
+      {
+        claim: 'A translation that makes a feature salient becomes authoritative for meaning.',
+        status: 'Not presently authorized',
+        reason:
+          'Illumination generates candidate questions; source evidence and broader textual reasoning adjudicate them.',
+      },
+      {
+        claim: 'Linguistic plurality has a deliberate theological relationship to multiple perceptual angles on revelation.',
+        status: 'Open question',
+        reason: 'The question is consequential and preserved, but the present audit does not authorize resolution.',
+      },
+    ],
+    argumentRecords: [
+      {
+        id: 'AR-01',
+        title: 'The Person Remains Recognizable Across the Tested Witnesses',
+        claim:
+          "Across Genesis 1:1-5 witnesses examined, several major patterns of God's narrated behavior remained comparatively stable.",
+        status: 'High-confidence finding / translation-resilient within tested corpus',
+        sections: [
+          {
+            label: 'Primary evidence',
+            body: [
+              'The witnesses examined varied lexically and descriptively while preserving central narrated behaviors: God creates, remains involved, speaks, expresses volition, sees, positively appraises light, differentiates, names, and continues acting.',
+            ],
+          },
+          {
+            label: 'Complications',
+            body: [
+              '*Tohu wabohu*, *ruach Elohim*, *tov*, temporal formulas, narrative economy, fulfillment placement, and second-day appraisal complicate narrower claims.',
+              "The evidence does not authorize saying God's character is language-independent, that translations contain identical content, or that readers perceive the same portrait identically.",
+            ],
+            quote: 'The vocabulary moved more than the Person did.',
+          },
+        ],
+        sources: [
+          { label: 'Genesis 1:1-5', href: 'https://www.biblegateway.com/passage/?search=Genesis%201%3A1-5&version=KJV' },
+          { label: 'Genesis 1, LXX comparison', href: 'https://openlxx.com/genesis/1/' },
+        ],
+      },
+      {
+        id: 'AR-02',
+        title: 'Significant Character Evidence Is Available to Non-Specialist Readers',
+        claim: 'Translated texts preserve major narrated actions that can support meaningful character inquiry.',
+        status: 'Strong methodological inference / translation-resilient evidence base',
+        sections: [
+          {
+            label: 'Why we presently hold it',
+            body: [
+              'Major narrated actions were visible in translation and survived later testing against source-language and textual questions.',
+              'Availability is not the same as actual recognition; the audit does not claim that every reader notices or interprets the evidence similarly.',
+            ],
+            quote: 'You do not need to become a scholar before you are allowed to start looking.',
+          },
+        ],
+        sources: [
+          { label: 'Genesis 1:1-5', href: 'https://www.biblegateway.com/passage/?search=Genesis%201%3A1-5&version=KJV' },
+        ],
+      },
+      {
+        id: 'AR-03',
+        title: 'Textual Availability Is Not Reader Perception',
+        claim: 'The study tested textual availability, not whether readers across languages perceive the same portrait.',
+        status: 'High-confidence methodological boundary / negative finding',
+        sections: [
+          {
+            label: 'Boundary',
+            body: [
+              'The experiment compared texts and translations. It did not study independent native-language readers.',
+              'Comparable textual evidence may be available while comparable reader perception remains undemonstrated.',
+            ],
+          },
+          {
+            label: 'Open question relationship',
+            body: ['OQ-01 preserves the unresolved reader-perception question.'],
+          },
+        ],
+      },
+      {
+        id: 'AR-04',
+        title: 'Expressed Divine Volition Corresponds With Resulting Reality',
+        claim: "Genesis 1:3 gives the reader access to divine volition concerning light before corresponding reality.",
+        status: 'High-confidence finding / translation-resilient',
+        sections: [
+          {
+            label: 'Primary evidence',
+            body: [
+              'Genesis 1:3 presents divine speech concerning light followed by the reality of light.',
+              'Korean translation discussion made volition newly salient; Hebrew examination supported retaining volition/intention language without making command language wrong.',
+            ],
+          },
+          {
+            label: 'Purpose boundary',
+            body: [
+              'The reader can compare what God expressed with what occurred. The investigation does not establish that God disclosed intention specifically to build trust.',
+            ],
+          },
+        ],
+        sources: [
+          { label: 'Genesis 1:3', href: 'https://www.biblegateway.com/verse/en/Genesis%201%3A3' },
+        ],
+      },
+      {
+        id: 'AR-05',
+        title: 'Positive Appraisal Is Stable; Exact Lexical Content Is Not',
+        claim: 'God sees light and communicates positive appraisal, while the exact force of *tov* remains more translation-sensitive.',
+        status: 'High-confidence behavioral finding / translation-resilient; lexical resolution translation-sensitive',
+        sections: [
+          {
+            label: 'Primary evidence',
+            body: [
+              'Genesis 1:4 narrates God seeing the light and positively appraising it.',
+              'The audit does not reduce *tov* exhaustively to moral goodness, functionality, beauty, usefulness, perfection, or any single English gloss.',
+            ],
+          },
+          {
+            label: 'Local-confidence rule',
+            body: [
+              'Uncertainty about lexical breadth does not erase the narrated act of appraisal.',
+            ],
+          },
+        ],
+        sources: [
+          { label: 'Genesis 1:4', href: 'https://www.biblegateway.com/verse/en/Genesis%201%3A4' },
+          { label: 'NET Bible Genesis 1 notes', href: 'https://netbible.org/bible/Genesis+1' },
+        ],
+      },
+      {
+        id: 'AR-06',
+        title: 'Differentiation, Naming, and Progressive Activity Remain Stable',
+        claim:
+          'God differentiates light/darkness, names Day/Night, and continues creative activity after demonstrating effective agency.',
+        status: 'High-confidence behavioral findings / strong structural inference / translation-resilient',
+        sections: [
+          {
+            label: 'Why we presently hold it',
+            body: [
+              'Differentiation, naming, and continued creative activity survive the witnesses examined.',
+              'Demonstrated efficacy coexists with progressive activity, but why God chooses progression remains open.',
+            ],
+          },
+        ],
+        sources: [
+          { label: 'Genesis 1:4-5', href: 'https://www.biblegateway.com/passage/?search=Genesis%201%3A4-5&version=KJV' },
+        ],
+      },
+      {
+        id: 'AR-07',
+        title: 'Local Translation Differences Require Local Restraint',
+        claim: 'Some local expressions require greater translation restraint than the wider behavioral portrait.',
+        status: 'High-confidence translation-sensitive finding',
+        sections: [
+          {
+            label: 'Translation-sensitive examples',
+            body: [
+              '*Tohu wabohu*: unfinished is a strong synthesis, not an exhaustive lexical equivalent.',
+              '*Ruach Elohim*: Spirit/wind possibilities require restraint; no developed creative mechanism is established.',
+              'Narrative economy: economical narration does not by itself establish divine humility, modesty, or absence of boasting.',
+            ],
+            quote: 'Local uncertainty stays local.',
+          },
+        ],
+        sources: [
+          { label: 'Genesis 1:2', href: 'https://www.biblegateway.com/verse/en/Genesis%201%3A2' },
+          { label: 'NET Bible Genesis 1 notes', href: 'https://netbible.org/bible/Genesis+1' },
+        ],
+      },
+      {
+        id: 'AR-08',
+        title: 'The Day-Two Appraisal Is a Genuine Textual Complication',
+        claim: 'The MT absence of positive appraisal cannot bear substantial unqualified character theology because the LXX tradition can contain the appraisal.',
+        status: 'High-confidence negative finding / textual-tradition-sensitive',
+        sections: [
+          {
+            label: 'Primary evidence',
+            body: [
+              'The MT absence of positive appraisal on Day Two remains observable, while the LXX tradition can contain the appraisal.',
+              'The silence therefore cannot be universalized into substantial unqualified character theology.',
+            ],
+          },
+        ],
+        sources: [
+          { label: 'Genesis 1, LXX comparison', href: 'https://openlxx.com/genesis/1/' },
+          { label: 'Genesis 1:6-8', href: 'https://www.biblegateway.com/passage/?search=Genesis%201%3A6-8&version=KJV' },
+        ],
+      },
+      {
+        id: 'AR-09',
+        title: 'Another Language Can Illuminate Without Becoming Authoritative',
+        claim: 'Another language can illuminate a possible feature without becoming authoritative for its meaning.',
+        status: 'Strong methodological finding',
+        sections: [
+          {
+            label: 'Methodological sequence',
+            body: [
+              'The Korean Genesis 1:3 case demonstrated the process: salience, candidate question, return to source evidence, adjudication, and then retain, revise, or reject.',
+              'Translation may preserve, obscure, interpret, or illuminate. Illumination does not mean the target translation outranks the source.',
+            ],
+            quote: 'Never protect a discovery from another language.',
+          },
+        ],
+      },
+      {
+        id: 'AR-10',
+        title: 'Reader Location Can Affect Salience Without Authorizing Meaning',
+        claim: 'Reader location can affect salience, but evidence must adjudicate meaning.',
+        status: 'Strong inference / externally supported reader-perception principle',
+        sections: [
+          {
+            label: 'Why we presently hold it',
+            body: [
+              'Language, culture, prior theology, education, profession, personality, and life experience can affect salience.',
+              'The Genesis experiment did not experimentally vary actual readers across all these dimensions.',
+            ],
+            quote: 'Salience generates questions and candidate discoveries. Evidence adjudicates them.',
+          },
+        ],
+      },
+      {
+        id: 'AR-11',
+        title: '"Show Me Where You Saw That" Is a Disciplined Invitation',
+        claim:
+          'Asking another reader to locate an observation in shared textual evidence welcomes difference without treating every interpretation as equally authorized.',
+        status: 'Methodological application / praxis recommendation',
+        sections: [
+          {
+            label: 'Praxis boundary',
+            body: [
+              'Collaborative reading is a disciplined invitation to test perception against shared evidence.',
+              'The investigation did not demonstrate greater accuracy, consensus, humility, or completeness from collaborative reading.',
+            ],
+            quote: 'Show me where you saw that.',
+          },
+        ],
+      },
+    ],
+    openQuestions: [
+      {
+        id: 'OQ-01',
+        question:
+          'Would independent readers using different languages spontaneously perceive substantially similar character patterns?',
+        status: 'Open question / preserved unresolved question',
+        relatedArgumentRecordIds: ['AR-03'],
+      },
+      {
+        id: 'OQ-02',
+        question:
+          'Which dimensions of culture and experience materially affect character salience?',
+        status: 'Open question / preserved unresolved question',
+        relatedArgumentRecordIds: ['AR-10'],
+      },
+      {
+        id: 'OQ-03',
+        question:
+          'Can disciplined cross-cultural group reading enlarge perception without increasing interpretive distortion?',
+        status: 'Open question / preserved unresolved question',
+        relatedArgumentRecordIds: ['AR-10', 'AR-11'],
+      },
+      {
+        id: 'OQ-04',
+        question:
+          'Does linguistic plurality have any deliberate theological relationship to multiple perceptual angles on revelation?',
+        status: 'Open question / preserved unresolved question',
+        relatedArgumentRecordIds: ['AR-09', 'AR-10'],
+      },
+    ],
+    revisionRecord: [
+      {
+        id: 'RR-01',
+        earlier: 'Character patterns may effectively be language-agnostic.',
+        challenge: 'Significant lexical/textual variation and reader-perception distinction.',
+        present: 'Major behavioral patterns proved translation-resilient **within the tested corpus**.',
+        relatedArgumentRecordIds: ['AR-01'],
+      },
+      {
+        id: 'RR-02',
+        earlier: '"Unfinished condition" treated nearly as direct description.',
+        challenge: '*Tohu wabohu* / LXX variation.',
+        present: '"Unfinished" is a strong narrative synthesis, not an exhaustive lexical equivalent.',
+        relatedArgumentRecordIds: ['AR-07'],
+      },
+      {
+        id: 'RR-03',
+        earlier: 'Narrative economy might disclose that God does not advertise/boast.',
+        challenge: 'Effect/purpose, narrator/divine-psychology distinction, translation variation.',
+        present:
+          'Extraordinary acts are narrated economically; stronger psychological claims remain weaker.',
+        relatedArgumentRecordIds: ['AR-07'],
+      },
+      {
+        id: 'RR-04',
+        earlier: 'Missing Day-Two *tov* might carry substantial character significance.',
+        challenge: 'LXX contains positive appraisal.',
+        present:
+          'MT absence is real but too variable to bear major unqualified theology.',
+        relatedArgumentRecordIds: ['AR-08'],
+      },
+      {
+        id: 'RR-05',
+        earlier: 'Other languages mainly test English-originating discoveries.',
+        challenge: 'English-privileging problem; Korean emergence.',
+        present:
+          'Other languages can also generate candidates that must return to source evidence.',
+        relatedArgumentRecordIds: ['AR-09'],
+      },
+      {
+        id: 'RR-06',
+        earlier: 'Reader difference is primarily bias to control.',
+        challenge: 'Linguistic emergence and salience dialogue.',
+        present:
+          'Reader location can create bias and make genuine features newly salient; evidence adjudicates.',
+        relatedArgumentRecordIds: ['AR-10'],
+      },
+      {
+        id: 'RR-07',
+        earlier: 'Cross-cultural readers may help one another see more as an outcome.',
+        challenge: 'No actual reader experiment.',
+        present:
+          'Collaborative cross-cultural reading is a plausible experiment/invitation, not a demonstrated result.',
+        relatedArgumentRecordIds: ['AR-10', 'AR-11'],
+      },
+    ],
+    architecture: [
+      'Essay - The Encounter: accessible narrative of discovery.',
+      'Claim Audit - The Judgment: consequential claims, present status, concise rationale, and links into the audit trail.',
+      'Argument Records - The Audit Trail: supporting evidence, boundaries, complications, and source links behind the table.',
+      'Revision Record / Open Questions - The Provenance: changed judgments and preserved unresolved questions.',
+    ],
+    closingPrinciples: [
+      'Effect is not purpose.',
+      'Illumination is not authorization.',
+      'Textual availability is not reader performance.',
+      'Cultural salience is not cultural truth.',
+      'Cross-cultural reading is an invitation, not a validated outcome.',
+      'Local uncertainty stays local.',
+      'Mystery does not automatically reduce confidence in what is disclosed.',
+      'Silence is not negation.',
+    ],
+  },
+  {
     title: 'You Can Look Now',
     slug: 'you-can-look-now',
     essaySlug: 'you-can-look-now',
