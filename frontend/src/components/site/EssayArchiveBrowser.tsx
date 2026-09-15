@@ -16,7 +16,7 @@ import { assetUrl } from '@/lib/assets';
 
 type ArchiveView = 'list' | 'cards';
 type StatusFilter = 'all' | 'published' | 'future';
-type SortMode = 'newest' | 'series' | 'title' | 'status';
+type SortMode = 'chronology' | 'newest' | 'title' | 'status';
 
 interface EssayArchiveBrowserProps {
   essays: EssayEntry[];
@@ -44,7 +44,7 @@ function getDateRank(essay: EssayEntry) {
   return Number.isNaN(parsed) ? 0 : parsed;
 }
 
-function getSeriesRank(essay: EssayEntry) {
+function getChronologyRank(essay: EssayEntry) {
   return essay.series?.order ?? Number.MAX_SAFE_INTEGER;
 }
 
@@ -187,7 +187,7 @@ function EssayCard({ essay }: { essay: EssayEntry }) {
 export function EssayArchiveBrowser({ essays }: EssayArchiveBrowserProps) {
   const [query, setQuery] = useState('');
   const [statusFilter, setStatusFilter] = useState<StatusFilter>('all');
-  const [sortMode, setSortMode] = useState<SortMode>('status');
+  const [sortMode, setSortMode] = useState<SortMode>('chronology');
   const [view, setView] = useState<ArchiveView>('list');
   const [page, setPage] = useState(1);
 
@@ -205,9 +205,9 @@ export function EssayArchiveBrowser({ essays }: EssayArchiveBrowserProps) {
       .sort((a, b) => {
         if (sortMode === 'title') return a.title.localeCompare(b.title);
         if (sortMode === 'newest') return getDateRank(b) - getDateRank(a);
-        if (sortMode === 'series') {
+        if (sortMode === 'chronology') {
           return (
-            getSeriesRank(a) - getSeriesRank(b) ||
+            getChronologyRank(a) - getChronologyRank(b) ||
             getDateRank(b) - getDateRank(a) ||
             a.title.localeCompare(b.title)
           );
@@ -252,7 +252,7 @@ export function EssayArchiveBrowser({ essays }: EssayArchiveBrowserProps) {
                 type="search"
                 value={query}
                 onChange={(event) => updateQuery(event.target.value)}
-                placeholder="Search this archive"
+                placeholder="Search by title, topic, tag, scripture, or series"
                 className="h-11 w-full border border-[#d9d0c3] bg-[#f8f4ed] pl-10 pr-3 text-sm text-[#101b23] outline-none transition placeholder:text-[#7a8793] focus:border-[#8a6d2f]"
               />
             </span>
@@ -282,8 +282,8 @@ export function EssayArchiveBrowser({ essays }: EssayArchiveBrowserProps) {
               onChange={(event) => updateSortMode(event.target.value as SortMode)}
               className="mt-2 h-11 w-full border border-[#d9d0c3] bg-[#f8f4ed] px-3 text-sm text-[#101b23] outline-none transition focus:border-[#8a6d2f]"
             >
+              <option value="chronology">Chronological</option>
               <option value="status">Published first</option>
-              <option value="series">Series order</option>
               <option value="newest">Newest</option>
               <option value="title">Title</option>
             </select>

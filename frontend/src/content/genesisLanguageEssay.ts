@@ -6,7 +6,7 @@ export const genesisLanguageEssay: EssayEntry = {
   "slug": "does-god-change-when-the-language-does",
   "deck": "Reading Genesis across translation, salience, and shared attention.",
   "category": "religion",
-  "status": "draft",
+  "status": "published",
   "publicationDate": "September 2026",
   "readingTime": "13 minute read",
   "image": assetUrl('/images/whydive/does-god-change-when-the-language-does-hero.png'),
