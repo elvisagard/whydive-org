@@ -132,7 +132,11 @@ export default async function ClaimAuditPage({ params }: PageProps) {
             </thead>
             <tbody>
               {audit.rows.map((row, index) => {
-                const record = audit.argumentRecords.find((entry) => entry.id === row.argumentRecordId);
+                const recordIds = row.argumentRecordIds ?? [row.argumentRecordId];
+                const records = recordIds.map((recordId) => ({
+                  id: recordId,
+                  record: audit.argumentRecords.find((entry) => entry.id === recordId),
+                }));
 
                 return (
                   <tr key={row.argumentRecordId} className={index % 2 ? 'bg-[#f8f4ed]' : 'bg-[#fffdf8]'}>
@@ -146,12 +150,17 @@ export default async function ClaimAuditPage({ params }: PageProps) {
                       {row.rationale}
                     </td>
                     <td className="border-t border-[#d9d0c3] px-4 py-4 align-top">
-                      <a
-                        href={`#${row.argumentRecordId}`}
-                        className="font-semibold text-[#8a6d2f] underline underline-offset-4 hover:text-[#101b23]"
-                      >
-                        {record ? record.title : row.argumentRecordId}
-                      </a>
+                      <div className="grid gap-2">
+                        {records.map(({ id, record }) => (
+                          <a
+                            key={`${row.argumentRecordId}-${id}`}
+                            href={`#${id}`}
+                            className="font-semibold text-[#8a6d2f] underline underline-offset-4 hover:text-[#101b23]"
+                          >
+                            {record ? record.title : id}
+                          </a>
+                        ))}
+                      </div>
                     </td>
                   </tr>
                 );
@@ -291,20 +300,35 @@ export default async function ClaimAuditPage({ params }: PageProps) {
             <table className="min-w-[760px] border-collapse text-left text-sm">
               <thead className="bg-[#101b23] text-[#fffdf8]">
                 <tr>
-                  <th scope="col" className="w-1/3 px-4 py-3 font-semibold">
+                  {audit.revisionRecord.some((entry) => entry.id) ? (
+                    <th scope="col" className="w-[10%] px-4 py-3 font-semibold">
+                      ID
+                    </th>
+                  ) : null}
+                  <th scope="col" className="w-[28%] px-4 py-3 font-semibold">
                     Earlier Formulation
                   </th>
-                  <th scope="col" className="w-1/3 px-4 py-3 font-semibold">
+                  <th scope="col" className="w-[28%] px-4 py-3 font-semibold">
                     What Challenged It
                   </th>
-                  <th scope="col" className="w-1/3 px-4 py-3 font-semibold">
+                  <th scope="col" className="w-[28%] px-4 py-3 font-semibold">
                     Present Formulation
                   </th>
+                  {audit.revisionRecord.some((entry) => entry.relatedArgumentRecordIds?.length) ? (
+                    <th scope="col" className="w-[16%] px-4 py-3 font-semibold">
+                      Related AR
+                    </th>
+                  ) : null}
                 </tr>
               </thead>
               <tbody>
                 {audit.revisionRecord.map((entry, index) => (
-                  <tr key={entry.earlier} className={index % 2 ? 'bg-[#f8f4ed]' : 'bg-[#fffdf8]'}>
+                  <tr key={entry.id ?? entry.earlier} className={index % 2 ? 'bg-[#f8f4ed]' : 'bg-[#fffdf8]'}>
+                    {audit.revisionRecord?.some((record) => record.id) ? (
+                      <td className="border-t border-[#d9d0c3] px-4 py-4 align-top font-semibold text-[#6f551e]">
+                        {entry.id}
+                      </td>
+                    ) : null}
                     <td className="border-t border-[#d9d0c3] px-4 py-4 align-top font-semibold text-[#101b23]">
                       {entry.earlier}
                     </td>
@@ -314,6 +338,21 @@ export default async function ClaimAuditPage({ params }: PageProps) {
                     <td className="border-t border-[#d9d0c3] px-4 py-4 align-top leading-6 text-[#536271]">
                       {entry.present}
                     </td>
+                    {audit.revisionRecord?.some((record) => record.relatedArgumentRecordIds?.length) ? (
+                      <td className="border-t border-[#d9d0c3] px-4 py-4 align-top">
+                        <div className="grid gap-2">
+                          {entry.relatedArgumentRecordIds?.map((recordId) => (
+                            <a
+                              key={`${entry.id}-${recordId}`}
+                              href={`#${recordId}`}
+                              className="font-semibold text-[#8a6d2f] underline underline-offset-4 hover:text-[#101b23]"
+                            >
+                              {recordId}
+                            </a>
+                          ))}
+                        </div>
+                      </td>
+                    ) : null}
                   </tr>
                 ))}
               </tbody>

@@ -52,6 +52,7 @@ export interface ClaimAuditRow {
   status: string;
   rationale: string;
   argumentRecordId: string;
+  argumentRecordIds?: string[];
 }
 
 export interface BoundaryClaim {
@@ -74,9 +75,11 @@ export interface ArgumentRecord {
 }
 
 export interface RevisionRecordEntry {
+  id?: string;
   earlier: string;
   challenge: string;
   present: string;
+  relatedArgumentRecordIds?: string[];
 }
 
 export interface ClaimAuditEntry {

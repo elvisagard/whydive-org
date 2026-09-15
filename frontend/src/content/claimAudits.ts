@@ -2,6 +2,650 @@ import type { ClaimAuditEntry } from './types';
 
 export const claimAuditEntries: ClaimAuditEntry[] = [
   {
+    title: 'In the Beginning, God',
+    slug: 'in-the-beginning-god',
+    essaySlug: 'in-the-beginning-god',
+    deck: 'Claim Audit & Argument Records for the Genesis 1:1-2 essay.',
+    statusNote:
+      'Present status means present status. New evidence may strengthen, weaken, revise, or overturn any judgment below.',
+    rows: [
+      {
+        claim: "Genesis introduces God as the acting subject of creation without first explaining God's own being.",
+        status: 'High-confidence finding / translation-resilient',
+        rationale:
+          "Major syntactical readings of Genesis 1:1 differ, but God remains the acting subject of the creation account without a preceding explicit explanation of God's own being.",
+        argumentRecordId: 'G12-AR-01',
+      },
+      {
+        claim:
+          'Divine creative activity precedes any narrated human request, merit, worship, usefulness, contribution, or claim.',
+        status: 'High-confidence narrative finding / strong relational inference',
+        rationale:
+          'Humanity appears later in the creation narrative. Divine initiative therefore precedes narrated human response; gift is a further theological characterization.',
+        argumentRecordId: 'G12-AR-02',
+      },
+      {
+        claim: "Human existence belongs to what God deliberately brings about in the larger Genesis 1 narrative.",
+        status: 'Strong inference / later-context dependent / weakened-revised claim',
+        rationale:
+          "Humanity is not yet present in Genesis 1:1-2 but subsequently appears as part of God's creative activity. Stronger motive or personalized claims require additional evidence.",
+        argumentRecordId: 'G12-AR-03',
+      },
+      {
+        claim: '*Tohu wabohu* does not itself establish moral evil, rebellion, or divine defeat.',
+        status: 'High-confidence negative finding / translation-resilient',
+        rationale:
+          "Serious disagreement remains about the phrase's positive characterization, but the phrase itself does not supply moral rebellion, satanic agency, or divine defeat.",
+        argumentRecordId: 'G12-AR-04',
+      },
+      {
+        claim:
+          'Genesis presents the earth before its later differentiation and filling without identifying that earlier condition as failure.',
+        status: 'Strong literary inference / translation-resilient',
+        rationale:
+          '"Unfinished" is not the lexical definition of *tohu wabohu*, but the narrative develops beyond the verse-2 condition without calling that earlier state failed.',
+        argumentRecordId: 'G12-AR-05',
+      },
+      {
+        claim: 'Darkness in Genesis 1:2 is present without being identified as moral evil.',
+        status: 'High-confidence finding / translation-invariant',
+        rationale:
+          'The verse does not moralize darkness. Its later naming as Night provides local corroboration without generating the original observation.',
+        argumentRecordId: 'G12-AR-06',
+      },
+      {
+        claim:
+          'Genesis 1:1-2 does not narrate God as panicked, threatened, defeated, or struggling for control.',
+        status: 'High-confidence negative narrative finding / strong relational implication',
+        rationale:
+          "No divine emergency, battle, defeat, surprise, or recovery from lost control is narrated. This does not claim exhaustive access to God's internal emotional state.",
+        argumentRecordId: 'G12-AR-07',
+      },
+      {
+        claim: '*Ruach Elohim* is genuinely translation-sensitive.',
+        status: 'High-confidence finding / translation-sensitive / competing possibilities',
+        rationale:
+          'Serious readings include Spirit of God, wind from God, and mighty wind. Later doctrine may correspond without settling the lexical question in advance.',
+        argumentRecordId: 'G12-AR-08',
+      },
+      {
+        claim:
+          'The ambiguity of *ruach Elohim* does not erase all meaningful evidence or require the scene to be characterized as divine absence.',
+        status: 'Strong inference / translation-resilient',
+        rationale:
+          'Exact identification remains open, but placement, movement, and narrative relation survive much of the disagreement. Uncertainty should remain local.',
+        argumentRecordId: 'G12-AR-09',
+      },
+      {
+        claim:
+          'Genesis gives placement and movement before exhaustive definition, supporting a practice of attending before defining.',
+        status: 'High-confidence literary finding / strong methodological application',
+        rationale:
+          '*Ruach Elohim* is presented in relation to the waters and moving before exhaustive definition. The reader practice arises from that disclosure structure.',
+        argumentRecordId: 'G12-AR-10',
+        argumentRecordIds: ['G12-AR-10', 'G12-AR-11'],
+      },
+    ],
+    boundaryClaims: [
+      {
+        claim: 'Genesis deliberately rejects surrounding ancient Near Eastern chaos-war creation myths.',
+        status: 'Open question / future comparative research',
+        reason:
+          'The present investigation authorizes the narrower local finding that Genesis 1:1-2 itself does not narrate God fighting, being defeated by, or recovering control from hostile primordial powers.',
+      },
+      {
+        claim:
+          'Genesis introduces the Creator before every later religious, doctrinal, or communal boundary.',
+        status: 'Post-publication emergent insight / explicitly excluded here',
+        reason:
+          'This later insight did not generate the original essay and belongs to a separate development stream associated principally with Let the Beginning Remain a Beginning.',
+      },
+    ],
+    argumentRecords: [
+      {
+        id: 'G12-AR-01',
+        title: 'God Before Explanation',
+        claim: "Genesis introduces God as the acting subject of creation without first explaining God's own being.",
+        status: 'High-confidence finding / translation-resilient',
+        sections: [
+          {
+            label: 'Primary evidence',
+            body: [
+              "Genesis opens by naming God in relation to creation. Whether Genesis 1:1 is read as an independent clause or through a serious temporal alternative, God appears as the acting subject of the creation account.",
+              "The text does not first provide God's origin, an argument for God's existence, a definition of God's being, or an explanation of divine causation.",
+            ],
+          },
+          {
+            label: 'Translation/source-language evidence',
+            body: [
+              'The syntax of Genesis 1:1 is genuinely disputed. The present claim therefore does not depend on settling absolute chronology, creation ex nihilo, or the independent-clause versus temporal-clause question.',
+            ],
+          },
+          {
+            label: 'Counterevidence / complication',
+            body: [
+              'The word God already carries conceptual content. Before explanation does not mean the opening is theologically empty; it means Genesis does not first give an explicit account of divine being before presenting God acting.',
+            ],
+          },
+          {
+            label: 'Previous formulation / revision',
+            body: [
+              'Earlier reasoning moved toward saying God chose this beginning because finite creatures require encounter before explanation. The later effect/purpose distinction weakened that stronger claim.',
+            ],
+          },
+          {
+            label: 'What could change this status?',
+            body: [
+              "A compelling reading showing that Genesis begins by explicitly explaining God's being prior to presenting God acting would change this status. No such reading emerged.",
+            ],
+          },
+        ],
+        sources: [
+          { label: 'Genesis 1:1', href: 'https://www.biblegateway.com/verse/en/Genesis%201%3A1' },
+          { label: 'NET Bible Genesis 1:1 notes', href: 'https://netbible.org/bible/Genesis+1' },
+          { label: 'Westermann, Genesis 1-11', href: 'https://www.logos.com/product/9219/continental-commentary-series-genesis-1-11' },
+        ],
+      },
+      {
+        id: 'G12-AR-02',
+        title: 'Divine Initiative Before Human Claim',
+        claim:
+          'Divine creative activity precedes any narrated human request, merit, worship, usefulness, contribution, or claim.',
+        status: 'High-confidence narrative finding / strong relational inference',
+        sections: [
+          {
+            label: 'Primary evidence',
+            body: [
+              'Human beings appear later in Genesis 1. No human has yet requested existence, earned it, supplied material, worshiped, obeyed, proved useful, or persuaded God to create.',
+            ],
+          },
+          {
+            label: 'Competing interpretations',
+            body: [
+              'The asymmetry may be characterized as givenness, gift, grace, divine initiative, or creaturely dependence. Initiative/reception is closest to the evidence. Gift is meaningful theological characterization one step further.',
+            ],
+          },
+          {
+            label: 'Counterevidence / complication',
+            body: [
+              "The claim does not establish God's exhaustive motive for creation and does not imply that later human response is unimportant.",
+            ],
+          },
+          {
+            label: 'Previous formulation / revision',
+            body: [
+              'Gift is first was refined into divine initiative and creaturely reception, with gift retained as interpretive language.',
+            ],
+          },
+        ],
+        sources: [
+          { label: 'Genesis 1', href: 'https://www.biblegateway.com/passage/?search=Genesis%201&version=KJV' },
+        ],
+      },
+      {
+        id: 'G12-AR-03',
+        title: 'Human Existence Belongs to What God Deliberately Brings About',
+        claim: "Human existence belongs to what God deliberately brings about in the larger Genesis 1 narrative.",
+        status: 'Strong inference / later-context dependent / weakened-revised claim',
+        sections: [
+          {
+            label: 'Primary evidence',
+            body: [
+              "Genesis 1:1-2 does not yet contain humanity. Later Genesis 1 explicitly includes humanity within God's creative activity.",
+            ],
+          },
+          {
+            label: 'Important limitation',
+            body: [
+              "This does not establish from Genesis 1:1-2 God's exhaustive motive for creating humanity. It also does not establish God wanted me as an individual proposition.",
+            ],
+          },
+          {
+            label: 'Counterevidence / complication',
+            body: [
+              'This claim depends on later Genesis 1, so its evidentiary status must remain visibly different from direct verse-1-2 observations.',
+            ],
+          },
+          {
+            label: 'Previous formulation / revision',
+            body: [
+              'Earlier formulations included Human existence is something God wanted and God wants me. The present judgment is narrower: human existence belongs to what God deliberately brings about in Genesis 1.',
+            ],
+          },
+          {
+            label: 'What could change this status?',
+            body: [
+              'A dedicated canonical investigation into divine intention for humanity could strengthen or revise the larger relational claim.',
+            ],
+          },
+        ],
+        sources: [
+          { label: 'Genesis 1:26-31', href: 'https://www.biblegateway.com/passage/?search=Genesis%201%3A26-31&version=KJV' },
+        ],
+      },
+      {
+        id: 'G12-AR-04',
+        title: '*Tohu Wabohu* Does Not Establish Moral Evil, Rebellion, or Divine Defeat',
+        claim:
+          '*Tohu wabohu* does not itself authorize the conclusion that moral evil, rebellion, or divine defeat is already present.',
+        status: 'High-confidence negative finding / translation-resilient',
+        sections: [
+          {
+            label: 'Primary evidence',
+            body: [
+              "Genesis 1:2 does not call the condition sinful, wicked, rebellious, satanic, divine judgment, or God's defeat.",
+            ],
+          },
+          {
+            label: 'Translation/source-language evidence',
+            body: [
+              'The investigation encountered real disagreement. Tsumura strongly challenges a primordial-chaos reading. Westermann complicates simplistic mythological-chaos assumptions. Routledge preserves a serious theological use of chaos.',
+              'The positive characterization remains contested, but chaos is not identical with moral evil, rebellion, or divine defeat.',
+            ],
+          },
+          {
+            label: 'Counterevidence / complication',
+            body: [
+              'Elsewhere *tohu* can describe desolation, emptiness, or waste. The Hebrew therefore does not establish serene artistic beauty either.',
+            ],
+          },
+          {
+            label: 'Previous formulation / revision',
+            body: [
+              'Earlier positive descriptions of beautiful or orderly unfinishedness exceeded the lexical evidence.',
+            ],
+          },
+        ],
+        sources: [
+          {
+            label: 'Tsumura, The Earth and the Waters',
+            href: 'https://books.google.com/books/about/The_Earth_and_the_Waters_in_Genesis_1_an.html?id=Z7S9QgAACAAJ',
+          },
+          {
+            label: 'Tsumura, Creation and Destruction',
+            href: 'https://www.eisenbrauns.org/books/titles/978-1-57506-106-1.html',
+          },
+          {
+            label: 'Routledge, Did God Create Chaos?',
+            href: 'https://www.tyndalebulletin.org/article/29296-did-god-create-chaos-unresolved-tension-in-genesis-1-1-2',
+          },
+          { label: 'Westermann, Genesis 1-11', href: 'https://www.logos.com/product/9219/continental-commentary-series-genesis-1-11' },
+        ],
+      },
+      {
+        id: 'G12-AR-05',
+        title: 'Unfinished Is Not Automatically Failed',
+        claim:
+          'Genesis presents the earth before its later differentiation and filling without identifying that earlier condition as failure.',
+        status: 'Strong literary inference / translation-resilient',
+        sections: [
+          {
+            label: 'Primary evidence',
+            body: [
+              'The verse-2 condition precedes the progressively differentiated and populated world of the remainder of Genesis 1. The earlier condition is not called failure, mistake, rebellion, or divine disappointment.',
+            ],
+          },
+          {
+            label: 'Why we presently hold it',
+            body: [
+              '"Unfinished" is a literary characterization of the chapter\'s progression, not the lexical definition of *tohu wabohu*. The responsible inference is that incompletion should not automatically be classified as failure.',
+            ],
+          },
+          {
+            label: 'Counterevidence / complication',
+            body: [
+              'This does not mean every unfinished human situation is healthy, every failed project is merely incomplete, or every unresolved situation will be completed favorably.',
+            ],
+          },
+          {
+            label: 'Correspondence with human experience',
+            body: [
+              'The unfinished-artwork analogy illustrates the logical distinction unfinished does not necessarily mean ruined. It does not authorize the exegesis.',
+            ],
+          },
+        ],
+        sources: [
+          { label: 'Genesis 1:2', href: 'https://www.biblegateway.com/verse/en/Genesis%201%3A2' },
+          {
+            label: 'Routledge, Did God Create Chaos?',
+            href: 'https://www.tyndalebulletin.org/article/29296-did-god-create-chaos-unresolved-tension-in-genesis-1-1-2',
+          },
+        ],
+      },
+      {
+        id: 'G12-AR-06',
+        title: 'Darkness Before Moralizing',
+        claim: 'Darkness in Genesis 1:2 is present without being identified as moral evil.',
+        status: 'High-confidence finding / translation-invariant',
+        sections: [
+          {
+            label: 'Primary evidence',
+            body: [
+              'Genesis 1:2 says darkness is present. It does not call darkness evil, wicked, sinful, rebellious, or demonic.',
+            ],
+          },
+          {
+            label: 'Canonical correspondence',
+            body: [
+              'Genesis 1:5 later names darkness Night. This corroborates restraint but must not manufacture the earlier observation.',
+            ],
+          },
+          {
+            label: 'Counterevidence / complication',
+            body: [
+              'Later Scripture genuinely uses darkness metaphorically for negative realities, and those meanings must be allowed to arrive later. Absence of moralization does not prove darkness has no other literary or theological significance.',
+            ],
+          },
+          {
+            label: 'Previous formulation / revision',
+            body: [
+              'Earlier: darkness is neutral. Present: darkness is not identified as moral evil.',
+            ],
+          },
+        ],
+        sources: [
+          { label: 'Genesis 1:2', href: 'https://www.biblegateway.com/verse/en/Genesis%201%3A2' },
+          { label: 'Genesis 1:5', href: 'https://www.biblegateway.com/verse/en/Genesis%201%3A5' },
+        ],
+      },
+      {
+        id: 'G12-AR-07',
+        title: 'No Narrated Divine Panic',
+        claim:
+          'Genesis 1:1-2 does not narrate God as panicked, threatened, surprised, defeated, or struggling to regain control.',
+        status: 'High-confidence negative narrative finding / strong relational implication',
+        sections: [
+          {
+            label: 'Primary evidence',
+            body: [
+              'The opening narrates no divine emergency, cosmic battle, surprise, defeat, or recovery of lost control.',
+            ],
+          },
+          {
+            label: 'Why we presently hold it',
+            body: [
+              "This is a claim about narration, not exhaustive access to God's psychology.",
+            ],
+          },
+          {
+            label: 'Counterevidence / complication',
+            body: [
+              'Ancient Near Eastern creation traditions sometimes contain deity-versus-chaos conflict. The original investigation did not complete enough comparative research to establish that Genesis deliberately functions as a polemic against such traditions.',
+            ],
+          },
+          {
+            label: 'Relational implication',
+            body: ['Readers should hesitate before projecting their own alarm onto God\'s narrated posture.'],
+          },
+        ],
+        sources: [
+          { label: 'Genesis 1:1-2', href: 'https://www.biblegateway.com/passage/?search=Genesis%201%3A1-2&version=KJV' },
+          {
+            label: 'Tsumura, Creation and Destruction',
+            href: 'https://www.eisenbrauns.org/books/titles/978-1-57506-106-1.html',
+          },
+          {
+            label: 'Routledge, Did God Create Chaos?',
+            href: 'https://www.tyndalebulletin.org/article/29296-did-god-create-chaos-unresolved-tension-in-genesis-1-1-2',
+          },
+        ],
+      },
+      {
+        id: 'G12-AR-08',
+        title: '*Ruach Elohim* Is Translation-Sensitive',
+        claim: '*Ruach Elohim* is genuinely translation-sensitive.',
+        status: 'High-confidence finding / translation-sensitive / competing possibilities',
+        sections: [
+          {
+            label: 'Primary evidence',
+            body: ['The investigation encountered serious readings including Spirit of God, wind from God, and mighty wind.'],
+          },
+          {
+            label: 'Translation/source-language evidence',
+            body: [
+              '*Ruach* can occupy a semantic field involving spirit, wind, and breath. The relation of *Elohim* to the noun is also interpreted differently.',
+            ],
+          },
+          {
+            label: 'Why we presently hold it',
+            body: [
+              'The familiar English Spirit of God should not be treated as though the translation question never existed. Translation sensitivity also does not mean every interpretation is equally probable or the phrase is meaningless.',
+            ],
+          },
+          {
+            label: 'Canonical correspondence',
+            body: [
+              'Later Spirit theology may correspond meaningfully. It cannot simply become the lexical adjudicator of Genesis 1:2.',
+            ],
+          },
+        ],
+        sources: [
+          { label: 'NET Bible Genesis 1:2 notes', href: 'https://netbible.org/bible/Genesis+1' },
+          { label: 'Ibn Ezra on Genesis 1:2', href: 'https://www.sefaria.org/Ibn_Ezra_on_Genesis.1.2' },
+          {
+            label: 'Berkovic, Merahefet',
+            href: 'https://hrcak.srce.hr/en/clanak/38509',
+          },
+        ],
+      },
+      {
+        id: 'G12-AR-09',
+        title: 'Ambiguity Does Not Require a Divine-Absence Reading',
+        claim:
+          'The unresolved translation of *ruach Elohim* does not erase all meaningful evidence or require the scene to be characterized as one of divine absence.',
+        status: 'Strong inference / translation-resilient',
+        sections: [
+          {
+            label: 'Primary evidence',
+            body: [
+              'Across the interpretations considered, important textual features remain: the phrase itself, relation to the waters, movement, and placement within a God-centered creation narrative.',
+            ],
+          },
+          {
+            label: 'Why we presently hold it',
+            body: [
+              'The investigation learned that uncertainty should remain attached to the claim whose evidence warrants it. Exact identification can remain uncertain without making every neighboring observation uncertain.',
+            ],
+          },
+          {
+            label: 'Counterevidence / complication',
+            body: [
+              'The mighty-wind reading weakens direct personal-presence claims. Therefore every translation should not be treated as proving personal divine presence identically.',
+            ],
+          },
+          {
+            label: 'Previous formulation / revision',
+            body: [
+              'The investigation moved between overcertainty and ambiguity-as-emptiness. The mature result is local confidence.',
+            ],
+          },
+        ],
+        sources: [
+          { label: 'Genesis 1:2', href: 'https://www.biblegateway.com/verse/en/Genesis%201%3A2' },
+          { label: 'NET Bible Genesis 1:2 notes', href: 'https://netbible.org/bible/Genesis+1' },
+        ],
+      },
+      {
+        id: 'G12-AR-10',
+        title: 'Placement and Movement Before Exhaustive Definition',
+        claim: 'Genesis gives the reader *ruach Elohim* in relation to the waters and in motion before supplying an exhaustive definition.',
+        status: 'High-confidence literary finding / translation-resilient',
+        sections: [
+          {
+            label: 'Primary evidence',
+            body: [
+              'The phrase is presented over or in relation to the waters, with movement expressed through *merahephet*. The text does not pause to provide an exhaustive ontology or doctrine.',
+            ],
+          },
+          {
+            label: '*Merahephet* evidence',
+            body: [
+              'The Deuteronomy 32:11 correspondence illuminates the movement root. But Genesis itself supplies no bird, nest, wings, or explicit maternal image.',
+              'Movement or hovering is warranted; a developed brooding-bird metaphor is not presently authorized.',
+            ],
+          },
+          {
+            label: 'Purpose safeguard',
+            body: [
+              "The text demonstrably gives scene before exhaustive definition. The stronger claim that this proves God's universal pedagogical preference for experience-before-definition remains inferential.",
+            ],
+          },
+          {
+            label: 'Previous formulation / revision',
+            body: [
+              'Earlier attraction to brooding or mother-bird imagery was narrowed to movement/hovering because Genesis 1:2 itself does not supply the full metaphor.',
+            ],
+          },
+        ],
+        sources: [
+          { label: 'Genesis 1:2', href: 'https://www.biblegateway.com/verse/en/Genesis%201%3A2' },
+          { label: 'Deuteronomy 32:11', href: 'https://www.biblegateway.com/verse/en/Deuteronomy%2032%3A11' },
+          {
+            label: 'Berkovic, Merahefet',
+            href: 'https://hrcak.srce.hr/en/clanak/38509',
+          },
+        ],
+      },
+      {
+        id: 'G12-AR-11',
+        title: 'Attend Before Defining',
+        claim:
+          'The encounter with *ruach Elohim* supports a reader discipline of attending carefully to what the text gives before demanding exhaustive definition.',
+        status: 'Strong reader-effect inference / methodological application',
+        sections: [
+          {
+            label: 'Primary evidence',
+            body: [
+              'The investigation encountered genuine ambiguity, stable textual features, multiple serious interpretations, unresolved questions, and continuing disclosure.',
+            ],
+          },
+          {
+            label: 'Why we presently hold it',
+            body: [
+              'Two responses proved disproportionate: premature certainty and interpretive paralysis. The text permitted a third posture: attend carefully to what has actually been disclosed while leaving unresolved what has not yet been settled.',
+            ],
+          },
+          {
+            label: 'Reader/relational lens',
+            body: [
+              'The reader may say, "I do not fully understand this. But I am paying attention." That effect arises from demonstrable textual features: something has been disclosed, something remains unresolved, and the narrative continues.',
+            ],
+          },
+          {
+            label: 'Counterevidence / complication',
+            body: [
+              'Attend before defining does not mean never define, doctrine is unnecessary, precise language is unimportant, ambiguity is spiritually preferable to clarity, or every interpretation is equally legitimate.',
+            ],
+          },
+          {
+            label: 'Canonical correspondence',
+            body: [
+              'Later revelation may deepen, clarify, or reframe the reader\'s understanding of *ruach Elohim*. That possibility reinforces attend now; continue later.',
+            ],
+          },
+          {
+            label: 'Correspondence with human experience',
+            body: [
+              'Ordinary relational knowing offers an analogy: a person may be genuinely encountered before being exhaustively understood. The analogy helps readers grasp the practice but does not establish the interpretation of Genesis 1:2.',
+            ],
+          },
+        ],
+        sources: [
+          { label: 'Genesis 1:2', href: 'https://www.biblegateway.com/verse/en/Genesis%201%3A2' },
+          { label: 'NET Bible Genesis 1:2 notes', href: 'https://netbible.org/bible/Genesis+1' },
+        ],
+      },
+    ],
+    revisionRecord: [
+      {
+        id: 'G12-RR-01',
+        earlier: 'God chose this beginning because creatures need a starting place they can understand.',
+        challenge: 'Textual effect was being converted into precise divine communicative purpose.',
+        present:
+          'Genesis gives finite readers a place from which they can begin; precise divine pedagogical purpose remains inferential.',
+        relatedArgumentRecordIds: ['G12-AR-01', 'G12-AR-10', 'G12-AR-11'],
+      },
+      {
+        id: 'G12-RR-02',
+        earlier: 'Gift is first.',
+        challenge: 'Divine initiative/reception is narratively observable; gift adds theological characterization.',
+        present: 'Humanity enters as recipient of a reality it did not initiate; gift remains a meaningful inference.',
+        relatedArgumentRecordIds: ['G12-AR-02'],
+      },
+      {
+        id: 'G12-RR-03',
+        earlier: 'Human existence is something God wanted / God wants me.',
+        challenge: "Genesis 1:1-2 does not yet contain humanity or disclose God's motive.",
+        present: 'Human existence belongs to what God deliberately brings about in the larger Genesis 1 narrative.',
+        relatedArgumentRecordIds: ['G12-AR-03'],
+      },
+      {
+        id: 'G12-RR-04',
+        earlier: '*Tohu wabohu* depicts a beautiful/orderly unfinished stage rather than chaos.',
+        challenge: 'Hebrew scholarship permits competing positive descriptions.',
+        present:
+          'The phrase does not itself establish moral evil, rebellion, or divine defeat; exact positive characterization remains contested.',
+        relatedArgumentRecordIds: ['G12-AR-04'],
+      },
+      {
+        id: 'G12-RR-05',
+        earlier: '*Tohu wabohu* means unfinished.',
+        challenge: 'Lexical meaning and literary development had been conflated.',
+        present:
+          'Genesis presents an earlier condition before later differentiation/filling without identifying it as failure.',
+        relatedArgumentRecordIds: ['G12-AR-05'],
+      },
+      {
+        id: 'G12-RR-06',
+        earlier: 'Darkness is simply neutral.',
+        challenge: 'Lack of moralization does not prove absence of all literary/theological significance.',
+        present: 'Darkness is present without being identified as moral evil.',
+        relatedArgumentRecordIds: ['G12-AR-06'],
+      },
+      {
+        id: 'G12-RR-07',
+        earlier: 'God is calm, unhurried, enjoying the process.',
+        challenge: 'These formulations exceeded the narrative by claiming access to divine psychology.',
+        present: 'Genesis does not narrate God as panicked, threatened, defeated, or struggling for control.',
+        relatedArgumentRecordIds: ['G12-AR-07'],
+      },
+      {
+        id: 'G12-RR-08',
+        earlier: '*Ruach Elohim* straightforwardly means the later doctrinal Holy Spirit.',
+        challenge: 'Hebrew lexical range and serious competing translations.',
+        present:
+          '*Ruach Elohim* remains translation-sensitive; later doctrine may correspond without settling the lexical question in advance.',
+        relatedArgumentRecordIds: ['G12-AR-08', 'G12-AR-09'],
+      },
+      {
+        id: 'G12-RR-09',
+        earlier: 'If *ruach Elohim* remains ambiguous, little can confidently be known.',
+        challenge: 'Placement, movement, and narrative relation survive much of the disagreement.',
+        present: 'Ambiguity requires care without producing epistemic emptiness; uncertainty remains local.',
+        relatedArgumentRecordIds: ['G12-AR-09', 'G12-AR-10', 'G12-AR-11'],
+      },
+      {
+        id: 'G12-RR-10',
+        earlier: '*Merahephet* establishes a mother-bird brooding image.',
+        challenge: 'Deuteronomy 32:11 illuminates the root, but Genesis supplies no bird/nest/wings imagery.',
+        present:
+          'Movement/hovering is warranted; a developed brooding-bird metaphor is not presently authorized.',
+        relatedArgumentRecordIds: ['G12-AR-10'],
+      },
+    ],
+    architecture: [
+      'Essay - The Encounter: accessible narrative of discovery.',
+      'Claim Audit - The Judgment: consequential claims, present status, concise rationale, and links into the audit trail.',
+      'Argument Records - The Audit Trail: supporting evidence, counterevidence, competing interpretations, revisions, canonical and human-experience correspondence, and sources.',
+      'Revision Record - The Provenance: earlier formulation, pressure from evidence, present judgment, and related Argument Records.',
+    ],
+    closingPrinciples: [
+      'A correction is evidence that the method is working, not something publication should conceal.',
+      'The essay remains the accessible encounter; the audit carries the heavier epistemic machinery.',
+      'The reader should be able to move from judgment back toward evidence.',
+    ],
+  },
+  {
     title: 'You Can Look Now',
     slug: 'you-can-look-now',
     essaySlug: 'you-can-look-now',

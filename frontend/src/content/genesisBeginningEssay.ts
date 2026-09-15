@@ -19,6 +19,7 @@ export const genesisBeginningEssay: EssayEntry = {
   "scriptureRange": "Genesis 1:1-2",
   "topics": ["Genesis", "creation", "attention", "unfinishedness", "darkness", "ruach Elohim", "knowing God"],
   "tags": ["Genesis 1", "creation", "Scripture", "interpretation", "attention", "uncertainty", "religion"],
+  "claimAuditSlug": "in-the-beginning-god",
   "sourceNote": "This essay is adapted from an internal Relational Knowledge of God draft on Genesis 1:1-2. It reads from biblical faith and uses WhyDive's discipline of proportion: what the text gives, what can responsibly be inferred, and what remains open.",
   "bibliography": [
     "David Toshio Tsumura, *The Earth and the Waters in Genesis 1 and 2: A Linguistic Investigation*, JSOT Supplement Series 83 (Sheffield: JSOT Press, 1989).",
