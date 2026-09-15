@@ -4,6 +4,7 @@ import { genesisBeginningEssay } from './genesisBeginningEssay';
 import { genesisBeginningContinuationEssay } from './genesisBeginningContinuationEssay';
 import { genesisLanguageEssay } from './genesisLanguageEssay';
 import { genesisLightEssay } from './genesisLightEssay';
+import { genesisSeedEssay } from './genesisSeedEssay';
 
 export const essayCategories: EssayCategory[] = [
   {
@@ -60,10 +61,11 @@ export const essayCategories: EssayCategory[] = [
 ];
 
 export const essayEntries: EssayEntry[] = [
-  genesisLanguageEssay,
-  genesisLightEssay,
-  genesisBeginningContinuationEssay,
   genesisBeginningEssay,
+  genesisBeginningContinuationEssay,
+  genesisLightEssay,
+  genesisSeedEssay,
+  genesisLanguageEssay,
   {
     title: 'Strong Conclusions Require Strong Evidence',
     slug: 'strong-conclusions-require-strong-evidence',

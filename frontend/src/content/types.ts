@@ -31,6 +31,11 @@ export interface EssayEntry {
   bibliography?: Array<string | { label: string; href?: string }>;
   sections?: {
     title?: string;
+    blocks?: {
+      type: 'paragraph' | 'quote' | 'heading';
+      text: string;
+      cite?: string;
+    }[];
     paragraphs?: string[];
     bullets?: string[];
   }[];

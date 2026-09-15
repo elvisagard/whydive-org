@@ -13,7 +13,7 @@ export const genesisLanguageEssay: EssayEntry = {
   "series": {
     "title": "Relational Knowledge of God",
     "slug": "relational-knowledge-of-god",
-    "order": 4,
+    "order": 5,
     "label": "Translation and Salience"
   },
   "scriptureRange": "Genesis 1",

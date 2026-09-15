@@ -22,7 +22,7 @@ function renderInlineMarkup(label: string) {
       return <strong key={`${part}-${index}`}>{part.slice(2, -2)}</strong>;
     }
 
-    if (part.startsWith('*') && part.endsWith('*')) {
+    if (part.startsWith('*') && part.endsWith('*') && !part.startsWith('**')) {
       return <em key={`${part}-${index}`}>{part.slice(1, -1)}</em>;
     }
 
@@ -32,7 +32,11 @@ function renderInlineMarkup(label: string) {
 
 function getEssayWordCount(essay: (typeof essayEntries)[number]) {
   const text = essay.sections
-    ?.flatMap((section) => [...(section.paragraphs ?? []), ...(section.bullets ?? [])])
+    ?.flatMap((section) => [
+      ...(section.blocks?.map((block) => block.text) ?? []),
+      ...(section.paragraphs ?? []),
+      ...(section.bullets ?? []),
+    ])
     .join(' ');
 
   if (!text) return undefined;
@@ -307,9 +311,37 @@ export default async function EssayDetailPage({ params }: PageProps) {
                     </h2>
                   ) : null}
                   <div className="wd-reading mt-6 space-y-7 text-xl leading-9 text-[#384a5a]">
-                    {section.paragraphs?.map((paragraph) => (
-                      <p key={paragraph}>{renderInlineMarkup(paragraph)}</p>
-                    ))}
+                    {section.blocks?.length
+                      ? section.blocks.map((block) => {
+                          if (block.type === 'quote') {
+                            return (
+                              <blockquote
+                                key={block.text}
+                                className="border-l-2 border-[#8a6d2f] bg-[#fff8e6] px-5 py-4 text-[#243447]"
+                              >
+                                <p>{renderInlineMarkup(block.text)}</p>
+                                {block.cite ? (
+                                  <cite className="mt-3 block text-sm not-italic uppercase tracking-[0.16em] text-[#8a6d2f]">
+                                    {block.cite}
+                                  </cite>
+                                ) : null}
+                              </blockquote>
+                            );
+                          }
+
+                          if (block.type === 'heading') {
+                            return (
+                              <h3 key={block.text} className="wd-display pt-2 text-2xl leading-tight text-[#101b23]">
+                                {renderInlineMarkup(block.text)}
+                              </h3>
+                            );
+                          }
+
+                          return <p key={block.text}>{renderInlineMarkup(block.text)}</p>;
+                        })
+                      : section.paragraphs?.map((paragraph) => (
+                          <p key={paragraph}>{renderInlineMarkup(paragraph)}</p>
+                        ))}
                   </div>
                   {section.bullets?.length ? (
                     <ul className="mt-7 space-y-3 text-lg leading-8 text-[#465767]">
