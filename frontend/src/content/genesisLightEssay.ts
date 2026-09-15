@@ -6,7 +6,7 @@ export const genesisLightEssay: EssayEntry = {
   "slug": "when-god-looks-at-light",
   "deck": "Meeting the Creator in Genesis 1:3-5",
   "category": "religion",
-  "status": "draft",
+  "status": "published",
   "publicationDate": "September 2026",
   "readingTime": "13 minute read",
   "image": assetUrl('/images/whydive/when-god-looks-at-light-hero.png'),

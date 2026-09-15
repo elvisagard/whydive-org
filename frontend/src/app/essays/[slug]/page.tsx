@@ -177,6 +177,7 @@ export default async function EssayDetailPage({ params }: PageProps) {
     ],
   };
   const seriesLabel = [essay.series?.title, essay.series?.label].filter(Boolean).join(' / ');
+  const visibleTags = essay.tags ?? [];
 
   return (
     <EditorialPage
@@ -271,6 +272,19 @@ export default async function EssayDetailPage({ params }: PageProps) {
             {essay.readingTime ?? 'Reflective read'}
           </p>
         </div>
+
+        {visibleTags.length ? (
+          <div className="print-hide mt-6 flex flex-wrap gap-2">
+            {visibleTags.map((tag) => (
+              <span
+                key={tag}
+                className="border border-[#d9d0c3] bg-[#f8f4ed] px-2.5 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.14em] text-[#536271]"
+              >
+                {tag}
+              </span>
+            ))}
+          </div>
+        ) : null}
 
         {hasFullEssay ? (
           <div className="mt-12 space-y-14">

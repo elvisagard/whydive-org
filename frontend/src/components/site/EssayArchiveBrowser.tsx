@@ -109,6 +109,23 @@ function StatusBadge({ status }: { status: ContentStatus }) {
   );
 }
 
+function EssayTags({ tags }: { tags?: string[] }) {
+  if (!tags?.length) return null;
+
+  return (
+    <div className="mt-4 flex flex-wrap gap-2">
+      {tags.slice(0, 5).map((tag) => (
+        <span
+          key={tag}
+          className="border border-[#d9d0c3] bg-[#f8f4ed] px-2.5 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.14em] text-[#536271]"
+        >
+          {tag}
+        </span>
+      ))}
+    </div>
+  );
+}
+
 function EssayListItem({ essay }: { essay: EssayEntry }) {
   const imageSrc = assetUrl(essay.image ?? articleFallbackImage);
 
@@ -143,6 +160,7 @@ function EssayListItem({ essay }: { essay: EssayEntry }) {
         ) : null}
         <h2 className="wd-display mt-3 text-2xl leading-tight text-[#101b23]">{essay.title}</h2>
         <p className="mt-3 text-sm leading-7 text-[#536271]">{essay.deck}</p>
+        <EssayTags tags={essay.tags} />
       </div>
     </Link>
   );
@@ -174,6 +192,7 @@ function EssayCard({ essay }: { essay: EssayEntry }) {
         ) : null}
         <h2 className="wd-display mt-3 text-3xl leading-tight text-[#101b23]">{essay.title}</h2>
         <p className="mt-4 text-base leading-7 text-[#536271]">{essay.deck}</p>
+        <EssayTags tags={essay.tags} />
         {essay.readingTime ? (
           <p className="mt-5 text-xs font-semibold uppercase tracking-[0.18em] text-[#8a6d2f]">
             {essay.readingTime}
