@@ -646,6 +646,650 @@ export const claimAuditEntries: ClaimAuditEntry[] = [
     ],
   },
   {
+    title: 'Let the Beginning Remain a Beginning',
+    slug: 'let-the-beginning-remain-a-beginning',
+    essaySlug: 'let-the-beginning-remain-a-beginning',
+    deck: 'Claim Audit & Argument Records for the Genesis 1:1-2 continuation essay.',
+    statusNote:
+      'Present status means present status. New evidence may strengthen, weaken, revise, or overturn any judgment below.',
+    rows: [
+      {
+        claim: 'Genesis 1:1-2 leaves major questions unanswered while nevertheless providing genuine disclosure.',
+        status: 'High-confidence literary finding / strong epistemic inference',
+        rationale:
+          'The opening leaves substantial questions unresolved while still placing identifiable information about God and the scene before the reader.',
+        argumentRecordId: 'G12-AR-12',
+      },
+      {
+        claim:
+          'The opening gives enough to begin responsible recognition, not enough to finish every theological question.',
+        status: 'Strong reader-effect inference / methodological synthesis',
+        rationale:
+          'Genuine disclosure and genuine incompletion coexist. Enough means enough to begin responsible recognition, not enough to complete every doctrine or later theological question.',
+        argumentRecordId: 'G12-AR-13',
+      },
+      {
+        claim: "Genesis's selection and sequence order what becomes available to the reader's attention first.",
+        status: 'High-confidence literary finding / strong reader-effect inference',
+        rationale:
+          'Some realities are presented before many questions readers later bring. A later application showed that Genesis introduces God as Creator before human religious boundaries appear.',
+        argumentRecordId: 'G12-AR-14',
+        emergentRecordIds: ['G12-ER-01'],
+      },
+      {
+        claim:
+          "Demonstrable textual effect should be distinguished from claims about God's precise communicative purpose.",
+        status: 'High-confidence methodological judgment / weakened-revised purpose claim',
+        rationale:
+          'Selection, sequence, and reader effect are observable. Claims about precisely why God selected those features require additional evidence unless purpose itself is disclosed.',
+        argumentRecordId: 'G12-AR-15',
+      },
+      {
+        claim:
+          'Later revelation should be allowed to arrive rather than being imported prematurely into the opening.',
+        status: 'High-confidence methodological judgment / canonical-sequencing principle',
+        rationale:
+          'Later biblical truth may inform, test, deepen, or correct an earlier reading without being treated as though Genesis 1:1-2 had already explicitly supplied it.',
+        argumentRecordId: 'G12-AR-16',
+      },
+      {
+        claim:
+          'Later Scripture may confirm, deepen, complicate, or correct our interpretation; the earlier text is not thereby "immature."',
+        status: 'High-confidence methodological judgment / strong theological-methodological inference',
+        rationale:
+          "The biblical text must be distinguished from the reader's recognition of it. Later evidence has genuine corrective authority over interpretation.",
+        argumentRecordId: 'G12-AR-17',
+        argumentRecordIds: ['G12-AR-17', 'G12-AR-18'],
+      },
+      {
+        claim:
+          'First recognition should remain teachable: carried forward without being absolutized, erased, or made predictive of everything later revelation will disclose.',
+        status: 'Strong methodological synthesis / relational-theological safeguard',
+        rationale:
+          'Genuine recognition need not become final mastery. Corrigibility also need not collapse into epistemic emptiness.',
+        argumentRecordId: 'G12-AR-19',
+        argumentRecordIds: ['G12-AR-19', 'G12-AR-20'],
+      },
+      {
+        claim: 'Genuine knowledge of God need not be exhaustive knowledge of God.',
+        status: 'Strong theological-epistemic inference / canonically corroborated',
+        rationale:
+          'Genesis provides real disclosure without exhaustive explanation. Later disciple narratives provide canonical correspondence for genuine knowing amid substantial incompletion.',
+        argumentRecordId: 'G12-AR-22',
+      },
+      {
+        claim:
+          'Genuine relationship with God can coexist with incomplete understanding, and correction need not automatically mean rejection.',
+        status: 'Strong relational-theological finding / canonically corroborated',
+        rationale:
+          'John 13, John 16, Mark 8, and Luke 24 show incomplete or mistaken understanding, continued relationship, correction, and further teaching.',
+        argumentRecordId: 'G12-AR-21',
+        argumentRecordIds: ['G12-AR-21', 'G12-AR-24', 'G12-AR-25'],
+      },
+      {
+        claim:
+          'God may genuinely make Himself known without becoming exhaustively containable within creaturely explanation.',
+        status: 'Strong theological synthesis / broader biblical-theological premise',
+        rationale:
+          'The local investigation establishes genuine but incomplete disclosure. Containment language extends this into broader Creator-creature theology and remains classified as synthesis.',
+        argumentRecordId: 'G12-AR-23',
+      },
+    ],
+    boundaryClaims: [
+      {
+        claim: 'Genesis 1:1-2 supplies a complete doctrine of God, creation, Spirit, or every later theological question.',
+        status: 'Not presently authorized',
+        reason:
+          'The opening gives enough to begin responsible recognition, not enough to finish every theological question.',
+      },
+      {
+        claim: "Later revelation exists mainly to confirm or enlarge the reader's first portrait.",
+        status: 'Weakened/rejected formulation',
+        reason:
+          'Later Scripture may confirm, deepen, complicate, or correct interpretation. It must retain authority to surprise the reader.',
+      },
+      {
+        claim: 'A relationally helpful interpretation is therefore textually true.',
+        status: 'Not presently authorized',
+        reason:
+          'The order remains text, responsible inference, relational implication, not the reverse.',
+      },
+      {
+        claim: 'Creator before our boundaries means all religious claims are equally valid.',
+        status: 'Not presently authorized',
+        reason:
+          'G12-ER-01 concerns priority and horizon, not the resolution of later questions about covenant, worship, truth, election, or salvation.',
+      },
+    ],
+    argumentRecords: [
+      {
+        id: 'G12-AR-12',
+        title: 'Genuine Disclosure Amid Unanswered Questions',
+        claim: 'Genesis 1:1-2 leaves major questions unanswered while nevertheless providing genuine disclosure.',
+        status: 'High-confidence literary finding / strong epistemic inference',
+        sections: [
+          {
+            label: 'Primary evidence',
+            body: [
+              "Genesis 1:1-2 names God, creation, heaven and earth, the earth's early condition, darkness, deep, waters, and *ruach Elohim*, while leaving many later questions unanswered.",
+            ],
+          },
+          {
+            label: 'Why we presently hold it',
+            body: [
+              'Unanswered questions do not cancel disclosed content. The passage withholds exhaustive explanation while still giving identifiable realities for responsible attention.',
+            ],
+          },
+          {
+            label: 'Counterevidence / complication',
+            body: [
+              'This does not mean every desired question is irrelevant. It means those questions should not be treated as already answered by the opening.',
+            ],
+          },
+        ],
+        sources: [
+          { label: 'Genesis 1:1-2', href: 'https://www.biblegateway.com/passage/?search=Genesis%201%3A1-2&version=KJV' },
+        ],
+      },
+      {
+        id: 'G12-AR-13',
+        title: 'Enough to Begin',
+        claim:
+          'The opening gives enough to begin responsible recognition, not enough to finish every theological question.',
+        status: 'Strong reader-effect inference / methodological synthesis',
+        sections: [
+          {
+            label: 'Primary evidence',
+            body: [
+              'The text combines genuine disclosure with genuine incompletion. It gives a beginning rather than mastery.',
+            ],
+          },
+          {
+            label: 'Boundary',
+            body: [
+              'Enough is task-specific. It means enough to begin responsible recognition, not enough for a complete doctrine of God, creation, Spirit, or every later theological question.',
+            ],
+          },
+          {
+            label: 'Previous formulation / revision',
+            body: ['Less than exhaustive disclosure does not equal no meaningful knowledge.'],
+          },
+        ],
+        sources: [
+          { label: 'Genesis 1:1-2', href: 'https://www.biblegateway.com/passage/?search=Genesis%201%3A1-2&version=KJV' },
+        ],
+      },
+      {
+        id: 'G12-AR-14',
+        title: 'Ordered Attention',
+        claim: "Genesis's selection and sequence order what becomes available to the reader's attention first.",
+        status: 'High-confidence literary finding / strong reader-effect inference',
+        sections: [
+          {
+            label: 'Primary evidence',
+            body: [
+              'The received text places God, creative action, heaven and earth, the earth before completion, darkness, deep, waters, and *ruach Elohim* before many later questions readers bring.',
+            ],
+          },
+          {
+            label: 'Why we presently hold it',
+            body: [
+              'Selection and sequence are observable features of the text. They order attention without settling every question about why God chose this exact beginning.',
+            ],
+          },
+          {
+            label: 'Public audit relationship',
+            body: [
+              'B-03 is supported by this original Argument Record. The later Creator-before-boundaries application is separately marked as G12-ER-01.',
+            ],
+          },
+        ],
+        sources: [
+          { label: 'Genesis 1:1-2', href: 'https://www.biblegateway.com/passage/?search=Genesis%201%3A1-2&version=KJV' },
+        ],
+      },
+      {
+        id: 'G12-AR-15',
+        title: 'Effect Is Not Automatically Purpose',
+        claim:
+          "Demonstrable textual effect should be distinguished from claims about God's precise communicative purpose.",
+        status: 'High-confidence methodological judgment / weakened-revised purpose claim',
+        sections: [
+          {
+            label: 'Primary evidence',
+            body: [
+              'The text demonstrably selects some realities and sequences them before others. That creates reader effect.',
+            ],
+          },
+          {
+            label: 'Why we presently hold it',
+            body: [
+              'A claim about precisely why God selected those features requires additional evidence unless purpose itself is disclosed.',
+            ],
+          },
+          {
+            label: 'Previous formulation / revision',
+            body: [
+              'The investigation shifted from "Why did God choose to begin this way?" toward "What does this selection and sequence demonstrably do?"',
+            ],
+          },
+        ],
+      },
+      {
+        id: 'G12-AR-16',
+        title: 'Let Later Revelation Arrive',
+        claim:
+          'Later revelation should be allowed to arrive rather than being imported prematurely into the opening.',
+        status: 'High-confidence methodological judgment / canonical-sequencing principle',
+        sections: [
+          {
+            label: 'Primary evidence',
+            body: [
+              'Genesis 1:1-2 begins a canonical sequence; it does not speak every later word at once.',
+            ],
+          },
+          {
+            label: 'Why we presently hold it',
+            body: [
+              'Later biblical truth may inform, test, deepen, or correct an earlier reading without being treated as though the opening had already explicitly supplied it.',
+            ],
+          },
+          {
+            label: 'Boundary',
+            body: ['Not first does not mean not ever. It means later revelation should be allowed to arrive as later revelation.'],
+          },
+        ],
+        sources: [
+          { label: 'Genesis 1:1-2', href: 'https://www.biblegateway.com/passage/?search=Genesis%201%3A1-2&version=KJV' },
+        ],
+      },
+      {
+        id: 'G12-AR-17',
+        title: 'Later Revelation Can Correct Recognition',
+        claim:
+          'Later Scripture may confirm, deepen, complicate, or correct our interpretation of an earlier text.',
+        status: 'High-confidence methodological judgment / strong theological-methodological inference',
+        sections: [
+          {
+            label: 'Primary evidence',
+            body: [
+              'The essay distinguishes the earlier text from the reader\'s recognition of it. The text is not immature; interpretation may be.',
+            ],
+          },
+          {
+            label: 'Why we presently hold it',
+            body: [
+              'Later evidence has genuine corrective authority over interpretation. This prevents first recognition from becoming confirmation bias.',
+            ],
+          },
+        ],
+        sources: [
+          { label: 'John 16:12-15', href: 'https://www.biblegateway.com/passage/?search=John%2016%3A12-15&version=KJV' },
+          { label: 'Luke 24:25-32', href: 'https://www.biblegateway.com/passage/?search=Luke%2024%3A25-32&version=KJV' },
+        ],
+      },
+      {
+        id: 'G12-AR-18',
+        title: 'The Earlier Text Is Not Immature',
+        claim:
+          'Later correction of interpretation does not mean the earlier revelation itself was immature.',
+        status: 'High-confidence methodological judgment / canonical-sequencing safeguard',
+        sections: [
+          {
+            label: 'Primary evidence',
+            body: [
+              'A reader may misrecognize what a text gives, or overextend a first recognition, without the earlier text being defective.',
+            ],
+          },
+          {
+            label: 'Boundary',
+            body: [
+              'Later Scripture should not be used to erase the beginning, and the beginning should not be used to control everything later Scripture is allowed to say.',
+            ],
+          },
+        ],
+        sources: [
+          { label: 'John 13:7', href: 'https://www.biblegateway.com/verse/en/John%2013%3A7' },
+          { label: 'Mark 8:27-34', href: 'https://www.biblegateway.com/passage/?search=Mark%208%3A27-34&version=KJV' },
+        ],
+      },
+      {
+        id: 'G12-AR-19',
+        title: 'Corrigible Recognition',
+        claim:
+          'First recognition should remain teachable: carried forward without being absolutized, erased, or made predictive of everything later revelation will disclose.',
+        status: 'Strong methodological synthesis / relational-theological safeguard',
+        sections: [
+          {
+            label: 'Primary evidence',
+            body: [
+              'Genesis gives a genuine beginning. The reader must carry what has been seen while allowing later Scripture to test and refine the recognition.',
+            ],
+          },
+          {
+            label: 'Why we presently hold it',
+            body: [
+              'Genuine recognition need not become final mastery. Corrigibility need not become epistemic emptiness.',
+            ],
+          },
+          {
+            label: 'Previous formulation / revision',
+            body: ['Recognizable does not mean predictable. Do not defend the first portrait; continue knowing the Person.'],
+          },
+        ],
+      },
+      {
+        id: 'G12-AR-20',
+        title: 'Recognizable Does Not Mean Predictable',
+        claim:
+          'A true first recognition may remain recognizable while later revelation surprises, deepens, or corrects the reader.',
+        status: 'Strong relational-theological safeguard',
+        sections: [
+          {
+            label: 'Correspondence with human experience',
+            body: [
+              'Ordinary relational knowing can begin truthfully without predicting everything a person will later reveal. The analogy illustrates the reading posture; it does not authorize the exegesis.',
+            ],
+          },
+          {
+            label: 'Boundary',
+            body: [
+              "Later Scripture is not required to fit the reader's existing portrait. It retains authority to surprise.",
+            ],
+          },
+        ],
+      },
+      {
+        id: 'G12-AR-21',
+        title: 'Correction Within Relationship',
+        claim:
+          'Genuine relationship with God can coexist with incomplete understanding, and correction need not automatically mean rejection.',
+        status: 'Strong relational-theological finding / canonically corroborated',
+        sections: [
+          {
+            label: 'Canonical correspondence',
+            body: [
+              'John 13, John 16, Mark 8, and Luke 24 show disciples in continuing relationship while misunderstanding, receiving correction, or awaiting further teaching.',
+            ],
+          },
+          {
+            label: 'Why we presently hold it',
+            body: [
+              'The later canonical pass strengthened the relational hypothesis generated by the Genesis investigation without manufacturing the Genesis finding retroactively.',
+            ],
+          },
+          {
+            label: 'Previous formulation / revision',
+            body: [
+              'God tolerates incomplete understanding was replaced by a richer pattern: continuing relationship, teaching, correction, and further disclosure.',
+            ],
+          },
+        ],
+        sources: [
+          { label: 'John 13:7', href: 'https://www.biblegateway.com/verse/en/John%2013%3A7' },
+          { label: 'John 16:12-15', href: 'https://www.biblegateway.com/passage/?search=John%2016%3A12-15&version=KJV' },
+          { label: 'Mark 8:27-34', href: 'https://www.biblegateway.com/passage/?search=Mark%208%3A27-34&version=KJV' },
+          { label: 'Luke 24:25-32', href: 'https://www.biblegateway.com/passage/?search=Luke%2024%3A25-32&version=KJV' },
+        ],
+      },
+      {
+        id: 'G12-AR-22',
+        title: 'True Without Exhaustive',
+        claim: 'Genuine knowledge of God need not be exhaustive knowledge of God.',
+        status: 'Strong theological-epistemic inference / canonically corroborated',
+        sections: [
+          {
+            label: 'Primary evidence',
+            body: [
+              'Genesis provides real disclosure without exhaustive explanation. The reader can know truly without knowing exhaustively.',
+            ],
+          },
+          {
+            label: 'Boundary',
+            body: [
+              'This does not mean every incomplete belief about God is therefore genuine knowledge. Each belief must still be supported by evidence.',
+            ],
+          },
+          {
+            label: 'Canonical correspondence',
+            body: [
+              'The disciple narratives give canonical correspondence for genuine knowing amid substantial incompletion.',
+            ],
+          },
+        ],
+        sources: [
+          { label: 'John 13:7', href: 'https://www.biblegateway.com/verse/en/John%2013%3A7' },
+          { label: 'John 16:12-15', href: 'https://www.biblegateway.com/passage/?search=John%2016%3A12-15&version=KJV' },
+        ],
+      },
+      {
+        id: 'G12-AR-23',
+        title: 'Known Without Being Contained',
+        claim:
+          'God may genuinely make Himself known without becoming exhaustively containable within creaturely explanation.',
+        status: 'Strong theological synthesis / broader biblical-theological premise',
+        sections: [
+          {
+            label: 'Primary evidence',
+            body: [
+              'The local investigation establishes genuine but incomplete disclosure. The language of containment extends this into broader Creator-creature theology.',
+            ],
+          },
+          {
+            label: 'Boundary',
+            body: [
+              'Containment is not a direct lexical finding from Genesis 1:1-2. Its status remains theological synthesis.',
+            ],
+          },
+        ],
+      },
+      {
+        id: 'G12-AR-24',
+        title: 'Further Teaching Within Relationship',
+        claim:
+          'Incomplete understanding may be met with further teaching rather than relational dismissal.',
+        status: 'Strong canonical correspondence / relational-theological finding',
+        sections: [
+          {
+            label: 'Canonical correspondence',
+            body: [
+              'John 16:12-15 presents further teaching as something disciples cannot yet bear but will later receive. Luke 24 shows correction and opened understanding within continuing encounter.',
+            ],
+          },
+          {
+            label: 'Boundary',
+            body: [
+              'These later passages test and strengthen the relational hypothesis; they are not used to make Genesis 1:1-2 say what it has not said.',
+            ],
+          },
+        ],
+        sources: [
+          { label: 'John 16:12-15', href: 'https://www.biblegateway.com/passage/?search=John%2016%3A12-15&version=KJV' },
+          { label: 'Luke 24:25-32', href: 'https://www.biblegateway.com/passage/?search=Luke%2024%3A25-32&version=KJV' },
+        ],
+      },
+      {
+        id: 'G12-AR-25',
+        title: 'Correction Need Not Mean Rejection',
+        claim: 'Correction can occur within continuing relationship and need not automatically mean rejection.',
+        status: 'Strong canonical correspondence / relational-theological finding',
+        sections: [
+          {
+            label: 'Canonical correspondence',
+            body: [
+              "Mark 8 shows Peter's recognition and misrecognition in close sequence, followed by severe correction without erasing discipleship. John 13 shows present incomprehension held within continuing relationship.",
+            ],
+          },
+          {
+            label: 'Boundary',
+            body: [
+              'Correction as mercy may be appropriate theological reflection, but mercy is not made to carry evidentiary weight beyond what the canonical pass supports.',
+            ],
+          },
+        ],
+        sources: [
+          { label: 'Mark 8:27-34', href: 'https://www.biblegateway.com/passage/?search=Mark%208%3A27-34&version=KJV' },
+          { label: 'John 13:7', href: 'https://www.biblegateway.com/verse/en/John%2013%3A7' },
+        ],
+      },
+    ],
+    emergentRecords: [
+      {
+        id: 'G12-ER-01',
+        title: 'Creator Before Our Boundaries',
+        provenanceLabel: 'Post-publication emergent insight',
+        claim:
+          'Genesis introduces God as Creator before the narrative introduces any human religious community, and later biblical particularity therefore arises within a Creator-creature horizon that precedes it.',
+        status:
+          'Strong literary-theological inference / externally corroborated / post-publication emergent insight',
+        sections: [
+          {
+            label: 'Required synthesis',
+            body: [
+              "Genesis does not introduce the Creator from inside a religious boundary. It introduces every later boundary from inside the Creator's world.",
+            ],
+          },
+          {
+            label: 'Provenance',
+            body: [
+              'This insight emerged after publication by applying the matured method again. It authorizes a narrow Movement IV addition and supports B-03 as a later development, not as an original Argument Record.',
+            ],
+          },
+          {
+            label: 'Guardrails',
+            body: [
+              'The claim does not establish that all religions are equally true, all religious claims are equally warranted, covenant is unimportant, election is illegitimate, God never distinguishes among peoples, all worship is equivalent, universal salvation, or religious institutions are inherently corrupt.',
+              'The insight concerns priority and horizon, not resolution of later religious questions.',
+            ],
+          },
+          {
+            label: 'External dialogue',
+            body: [
+              'Sacks helps preserve universal human horizon without erasing particular vocation. Levenson helps name a universal horizon for biblical particularism while warning against simplistic universal/particular binaries. Clifford and Brooke keep creation traditions historically and theologically located. Kaminsky and Lohr warn against flattening election or particularity into modern preferences.',
+            ],
+          },
+          {
+            label: 'Future questions',
+            body: [
+              'Future work may address universal Creatorhood and election, creation and covenant, "our God" without proprietary containment, religious outsiders, particularity and universality, and Jesus and these categories.',
+            ],
+          },
+        ],
+        sources: [
+          {
+            label: 'Sacks, The Dignity of Difference',
+            href: 'https://www.tandfonline.com/doi/abs/10.1080/15570274.2009.9523391',
+          },
+          {
+            label: 'Levenson, The Universal Horizon of Biblical Particularism',
+            href: 'https://doi.org/10.1163/9789004493544_010',
+          },
+          {
+            label: 'Clifford, Creation Accounts in the Ancient Near East and in the Bible',
+            href: 'https://wipfandstock.com/9781666786590/creation-accounts-in-the-ancient-near-east-and-in-the-bible/',
+          },
+          {
+            label: 'Kaminsky, Election in the Hebrew Bible',
+            href: 'https://bibleinterp.arizona.edu/articles/election-hebrew-bible',
+          },
+          {
+            label: 'Lohr, Chosen and Unchosen',
+            href: 'https://www.eisenbrauns.org/books/titles/978-1-57506-171-9.html',
+          },
+          {
+            label: 'Brooke, Creation in the Biblical Tradition',
+            href: 'https://doi.org/10.1111/j.1467-9744.1987.tb00848.x',
+          },
+        ],
+      },
+    ],
+    revisionRecord: [
+      {
+        id: 'G12-RR-01',
+        earlier: 'God chose this beginning because creatures need a starting place they can understand.',
+        challenge: 'Textual effect was being converted into precise divine communicative purpose.',
+        present:
+          'Genesis gives finite readers a place from which they can begin; precise divine pedagogical purpose remains inferential.',
+        relatedArgumentRecordIds: ['G12-AR-12', 'G12-AR-13', 'G12-AR-15'],
+      },
+      {
+        id: 'G12-RR-09',
+        earlier: 'If *ruach Elohim* remains ambiguous, little can confidently be known.',
+        challenge: 'Placement, movement, and narrative relation survive much of the disagreement.',
+        present: 'Ambiguity requires care without producing epistemic emptiness; uncertainty remains local.',
+        relatedArgumentRecordIds: ['G12-AR-12', 'G12-AR-13'],
+      },
+      {
+        id: 'G12-RR-11',
+        earlier: 'Why did God choose to begin this way?',
+        challenge: 'Purpose was being inferred from demonstrable textual effect.',
+        present: 'Ask first what this selection and sequence demonstrably do; theological purpose questions remain inferential.',
+        relatedArgumentRecordIds: ['G12-AR-14', 'G12-AR-15'],
+      },
+      {
+        id: 'G12-RR-12',
+        earlier: 'Less than exhaustive disclosure leaves the reader with too little to know meaningfully.',
+        challenge: 'Genesis gives real disclosure and real incompletion together.',
+        present: 'Enough to begin is different from enough to finish.',
+        relatedArgumentRecordIds: ['G12-AR-13'],
+      },
+      {
+        id: 'G12-RR-13',
+        earlier: 'Later revelation should preserve or enlarge the first picture.',
+        challenge: 'Later Scripture may also complicate or correct the reader.',
+        present: 'Later revelation should be allowed to confirm, deepen, complicate, or correct interpretation.',
+        relatedArgumentRecordIds: ['G12-AR-16', 'G12-AR-17', 'G12-AR-18'],
+      },
+      {
+        id: 'G12-RR-14',
+        earlier: 'Later revelation mainly confirms or deepens the first picture.',
+        challenge: 'Canonical examples showed correction as well as confirmation and deepening.',
+        present: 'Later revelation may confirm, deepen, complicate, or correct the reader\'s first interpretation.',
+        relatedArgumentRecordIds: ['G12-AR-17', 'G12-AR-18'],
+      },
+      {
+        id: 'G12-RR-15',
+        earlier: 'A recognizable God should fit the reader\'s first portrait.',
+        challenge: 'Recognition can become defensive predictability.',
+        present: 'Recognizable does not mean predictable; continue knowing the Person rather than defending the portrait.',
+        relatedArgumentRecordIds: ['G12-AR-19', 'G12-AR-20'],
+      },
+      {
+        id: 'G12-RR-16',
+        earlier: 'God tolerates incomplete understanding.',
+        challenge: 'The canonical pattern is richer than reluctant tolerance.',
+        present: 'Genuine relationship can continue through teaching, correction, and further disclosure.',
+        relatedArgumentRecordIds: ['G12-AR-21', 'G12-AR-24', 'G12-AR-25'],
+      },
+      {
+        id: 'G12-RR-17',
+        earlier: 'Correction is mercy.',
+        challenge: 'Mercy was carrying more evidentiary weight than the investigation established.',
+        present: 'Correction can occur within continuing relationship and need not automatically mean rejection.',
+        relatedArgumentRecordIds: ['G12-AR-21', 'G12-AR-25'],
+      },
+      {
+        id: 'G12-RR-18',
+        earlier: 'Known without being contained is a direct Genesis 1:1-2 finding.',
+        challenge: 'Containment language extends beyond direct lexical observation.',
+        present: 'God makes Himself known without becoming containable is theological synthesis grounded in genuine but incomplete disclosure.',
+        relatedArgumentRecordIds: ['G12-AR-22', 'G12-AR-23'],
+      },
+    ],
+    architecture: [
+      'Essay - The Encounter: accessible narrative of discovery.',
+      'Claim Audit - The Judgment: consequential claims, present status, concise rationale, and links into the audit trail.',
+      'Argument Records - The Audit Trail: supporting evidence, counterevidence, competing interpretations, revisions, canonical and human-experience correspondence, and sources.',
+      'Post-Publication Development - The Later Insight: new adjudicated insight with distinct provenance.',
+      'Revision Record - The Provenance: earlier formulation, pressure from evidence, present judgment, and related Argument Records.',
+    ],
+    closingPrinciples: [
+      'Do not make the original essay say it always knew G12-ER-01.',
+      'Do not hide that the later insight is consequential.',
+      'The reader should be able to move from judgment back toward evidence without losing provenance.',
+    ],
+  },
+  {
     title: 'You Can Look Now',
     slug: 'you-can-look-now',
     essaySlug: 'you-can-look-now',

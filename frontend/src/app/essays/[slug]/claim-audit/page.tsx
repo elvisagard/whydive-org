@@ -137,6 +137,11 @@ export default async function ClaimAuditPage({ params }: PageProps) {
                   id: recordId,
                   record: audit.argumentRecords.find((entry) => entry.id === recordId),
                 }));
+                const emergentRecords =
+                  row.emergentRecordIds?.map((recordId) => ({
+                    id: recordId,
+                    record: audit.emergentRecords?.find((entry) => entry.id === recordId),
+                  })) ?? [];
 
                 return (
                   <tr key={row.argumentRecordId} className={index % 2 ? 'bg-[#f8f4ed]' : 'bg-[#fffdf8]'}>
@@ -157,6 +162,18 @@ export default async function ClaimAuditPage({ params }: PageProps) {
                             href={`#${id}`}
                             className="font-semibold text-[#8a6d2f] underline underline-offset-4 hover:text-[#101b23]"
                           >
+                            {record ? record.title : id}
+                          </a>
+                        ))}
+                        {emergentRecords.map(({ id, record }) => (
+                          <a
+                            key={`${row.argumentRecordId}-${id}`}
+                            href={`#${id}`}
+                            className="font-semibold text-[#8a6d2f] underline underline-offset-4 hover:text-[#101b23]"
+                          >
+                            <span className="block text-[0.65rem] uppercase tracking-[0.16em] text-[#536271]">
+                              Later Development
+                            </span>
                             {record ? record.title : id}
                           </a>
                         ))}
@@ -287,6 +304,83 @@ export default async function ClaimAuditPage({ params }: PageProps) {
           ))}
         </div>
       </section>
+
+      {audit.emergentRecords?.length ? (
+        <section className="mt-16">
+          <SectionHeading title="Post-Publication Development">
+            <p>
+              These records preserve insights that emerged after publication and should not be
+              represented as part of the original investigation.
+            </p>
+          </SectionHeading>
+
+          <div className="mt-8 grid gap-6">
+            {audit.emergentRecords.map((record) => (
+              <article
+                key={record.id}
+                id={record.id}
+                className="scroll-mt-28 border border-[#d9d0c3] bg-[#fffdf8] p-6 shadow-[0_20px_60px_rgba(23,38,49,0.05)]"
+              >
+                <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#8a6d2f]">
+                  {record.id} / {record.provenanceLabel}
+                </p>
+                <h2 className="wd-display mt-3 text-3xl leading-tight text-[#101b23]">{record.title}</h2>
+                <div className="mt-5 grid gap-4 text-base leading-7 text-[#536271]">
+                  <p>
+                    <span className="font-semibold text-[#101b23]">Claim: </span>
+                    {record.claim}
+                  </p>
+                  <p>
+                    <span className="font-semibold text-[#101b23]">Present status: </span>
+                    {record.status}
+                  </p>
+                </div>
+
+                <div className="mt-6 space-y-5 text-base leading-7 text-[#536271]">
+                  {record.sections.map((section, index) => (
+                    <div key={`${record.id}-${section.label ?? index}`}>
+                      {section.label ? (
+                        <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-[#8a6d2f]">
+                          {section.label}
+                        </h3>
+                      ) : null}
+                      <div className={section.label ? 'mt-2 space-y-3' : 'space-y-3'}>
+                        {section.body.map((paragraph) => (
+                          <p key={paragraph}>{renderInlineMarkup(paragraph)}</p>
+                        ))}
+                        {section.quote ? (
+                          <blockquote className="border-l-2 border-[#8a6d2f] bg-[#fff8e6] px-5 py-4 font-semibold text-[#243447]">
+                            {renderInlineMarkup(section.quote)}
+                          </blockquote>
+                        ) : null}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+
+                {record.sources?.length ? (
+                  <div className="mt-6 border-t border-[#d9d0c3] pt-5">
+                    <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-[#8a6d2f]">Sources</h3>
+                    <div className="mt-3 flex flex-wrap gap-2">
+                      {record.sources.map((source) => (
+                        <a
+                          key={`${record.id}-${source.href}`}
+                          href={source.href}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="border border-[#d9d0c3] bg-[#f8f4ed] px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.12em] text-[#536271] transition hover:border-[#8a6d2f] hover:text-[#101b23]"
+                        >
+                          {source.label}
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                ) : null}
+              </article>
+            ))}
+          </div>
+        </section>
+      ) : null}
 
       {audit.revisionRecord?.length ? (
         <section className="mt-16">

@@ -55,6 +55,7 @@ export interface ClaimAuditRow {
   rationale: string;
   argumentRecordId: string;
   argumentRecordIds?: string[];
+  emergentRecordIds?: string[];
 }
 
 export interface BoundaryClaim {
@@ -84,6 +85,20 @@ export interface RevisionRecordEntry {
   relatedArgumentRecordIds?: string[];
 }
 
+export interface EmergentRecord {
+  id: string;
+  title: string;
+  provenanceLabel: string;
+  claim: string;
+  status: string;
+  sections: {
+    label?: string;
+    body: string[];
+    quote?: string;
+  }[];
+  sources?: ClaimAuditSource[];
+}
+
 export interface ClaimAuditEntry {
   title: string;
   slug: string;
@@ -93,6 +108,7 @@ export interface ClaimAuditEntry {
   rows: ClaimAuditRow[];
   boundaryClaims?: BoundaryClaim[];
   argumentRecords: ArgumentRecord[];
+  emergentRecords?: EmergentRecord[];
   revisionRecord?: RevisionRecordEntry[];
   architecture?: string[];
   closingPrinciples?: string[];

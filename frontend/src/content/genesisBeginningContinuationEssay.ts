@@ -18,8 +18,9 @@ export const genesisBeginningContinuationEssay: EssayEntry = {
     "label": "Genesis 1:1-2, Part 2"
   },
   "scriptureRange": "Genesis 1:1-2",
-  "topics": ["Genesis", "revelation", "attention", "partial knowledge", "correction", "teachability", "knowing God"],
-  "tags": ["Genesis 1", "Scripture", "interpretation", "revelation", "correction", "uncertainty", "religion"],
+  "topics": ["Genesis", "revelation", "attention", "partial knowledge", "correction", "teachability", "Creator before boundaries", "knowing God"],
+  "tags": ["Genesis 1", "Scripture", "interpretation", "revelation", "correction", "uncertainty", "religion", "Creator before boundaries"],
+  "claimAuditSlug": "let-the-beginning-remain-a-beginning",
   "sourceNote": "This essay continues an internal Relational Knowledge of God draft on Genesis 1:1-2. It focuses on the reading posture that follows from the opening of Scripture: carrying what has been given, leaving open what remains unresolved, and letting later revelation arrive.",
   "bibliography": [
     "David Toshio Tsumura, *The Earth and the Waters in Genesis 1 and 2: A Linguistic Investigation*, JSOT Supplement Series 83 (Sheffield: JSOT Press, 1989).",
@@ -69,8 +70,10 @@ export const genesisBeginningContinuationEssay: EssayEntry = {
         "Genesis introduces God before it introduces any human religious boundary. There is no Israel yet, no covenant community, no sanctuary, priesthood, institution, denomination, or theological school. Those things may later matter greatly. But they are not first.",
         "God is first presented as Creator of heaven and earth.",
         "We do not begin with a group's God. We begin with the Creator before there are groups.",
-        "That does not tell us that every later belief is equally true, or that God will never distinguish among peoples, covenants, worship, or ways of responding to Him. Those questions have not arrived yet.",
+        "That does not erase the distinctions the biblical story will later make. It does not tell us that every belief about God is equally true, that every worship is equivalent, that covenant will not matter, or that God will never distinguish among peoples, covenants, callings, and ways of responding to Him. Those questions have not arrived yet.",
         "But their order has.",
+        "Later particularity arises inside a world whose Creator is already there.",
+        "That priority changes how attention begins.",
         "Genesis does not introduce the Creator from inside a religious boundary. It introduces every later boundary from inside the Creator's world."
       ]
     },
@@ -298,7 +301,7 @@ export const genesisBeginningContinuationEssay: EssayEntry = {
         "What do I tend to bring to a passage before I have noticed what is actually there?",
         "When a passage is ambiguous, do I rush toward certainty, retreat into \"nobody can know,\" or remain carefully attentive?",
         "What belief about God do I currently hold with greater confidence than the evidence supporting it warrants?",
-        "What happens to my picture of God when I remember that Genesis introduces Him as Creator before any human religious boundary exists?"
+        "What happens to my picture of God when I remember that Genesis introduces Him as Creator before any human religious community appears?"
       ]
     },
     {
