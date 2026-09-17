@@ -49,7 +49,7 @@ export function EditorialPage({ eyebrow, eyebrowHref, title, intro, image, child
                 fill
                 sizes="(min-width: 1024px) 960px, 100vw"
                 className={imageClass}
-                priority={false}
+                priority
               />
             </div>
           ) : null}

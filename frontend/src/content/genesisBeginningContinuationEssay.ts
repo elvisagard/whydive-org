@@ -12,10 +12,11 @@ export const genesisBeginningContinuationEssay: EssayEntry = {
   "readingTime": "18 minute read",
   "image": assetUrl('/images/whydive/let-the-beginning-remain-a-beginning-hero.png'),
   "series": {
-    "title": "Relational Knowledge of God",
-    "slug": "relational-knowledge-of-god",
+    "title": "Knowing God in Genesis",
+    "slug": "knowing-god-in-genesis",
     "order": 2,
-    "label": "Genesis 1:1-2, Part 2"
+    "label": "Genesis 1:1-2, Part 2",
+    "role": "installment"
   },
   "scriptureRange": "Genesis 1:1-2",
   "topics": ["Genesis", "revelation", "attention", "partial knowledge", "correction", "teachability", "Creator before boundaries", "knowing God"],

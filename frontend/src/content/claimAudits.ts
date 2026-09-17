@@ -2678,6 +2678,461 @@ export const claimAuditEntries: ClaimAuditEntry[] = [
       'The reader should be able to move from judgment back toward evidence.',
     ],
   },
+  {
+    title: 'Water from Water',
+    slug: 'water-from-water',
+    essaySlug: 'water-from-water',
+    deck: 'Claim Audit & Argument Records for the Genesis 1:6-8 essay.',
+    statusNote:
+      'Present status means present status. New evidence may strengthen, weaken, revise, or overturn any judgment below.',
+    rows: [
+      {
+        claim: 'Differentiation has become repeated divine behavior.',
+        status: 'High-confidence / Translation-resilient',
+        rationale:
+          'Genesis 1:4 and 1:6-7 repeat separation behavior, including corresponding Hebrew and Greek word families.',
+        argumentRecordId: 'AR-168-01',
+      },
+      {
+        claim: 'Genesis 1:6 differentiates within lexical sameness: waters from waters.',
+        status: 'High-confidence',
+        rationale:
+          'Unlike light and darkness, the same designation occurs on both sides. Verse 7 subsequently specifies the relationship as below and above.',
+        argumentRecordId: 'AR-168-02',
+        argumentRecordIds: ['AR-168-02', 'AR-168-03'],
+      },
+      {
+        claim:
+          "God's disclosed distinction precedes the reader's fuller specification of the resulting arrangement.",
+        status: 'Strong inference',
+        rationale:
+          "The reader moves from waters, to waters and waters, to waters below and above. God's utterance supplies the distinction before its fuller realized specification.",
+        argumentRecordId: 'AR-168-03',
+      },
+      {
+        claim: "God's disclosed utterance corresponds with subsequently narrated reality.",
+        status: 'High-confidence / Translation-resilient',
+        rationale:
+          'Raqia, separating function, and waters-from-waters in the utterance correspond with making, separation, and below-and-above waters in realization.',
+        argumentRecordId: 'AR-168-04',
+      },
+      {
+        claim:
+          'God intentionally makes this speech/result correspondence available to the reader within revelation.',
+        status: 'Strong Relational/Reader finding',
+        rationale:
+          "Genesis discloses both what God says and what follows. Within the study's Scripture-as-revelation premise, their availability is not treated as accidental.",
+        argumentRecordId: 'AR-168-05',
+      },
+      {
+        claim:
+          "Genesis 1:6-8 does not presently establish God's particular purpose for making this correspondence available.",
+        status: 'Not presently authorized as a specific-purpose claim',
+        rationale:
+          "Trust and perception formation remain plausible hypotheses, but demonstrable effect and intentional availability do not identify God's particular purpose.",
+        argumentRecordId: 'AR-168-05',
+        openQuestionIds: ['OQ-168-01', 'OQ-168-02', 'OQ-168-03'],
+      },
+      {
+        claim:
+          'Created reality can possess genuine function without being presented as independently intentional.',
+        status: 'Strong inference',
+        rationale:
+          'The raqia receives separating function while God remains the disclosed maker and separator.',
+        argumentRecordId: 'AR-168-06',
+      },
+      {
+        claim:
+          'The revelation supplies precise relational information while leaving substantial mechanism and purpose unexplained.',
+        status: 'Strong whole-unit finding',
+        rationale:
+          'The passage establishes speech, function, separation, relationship, making, and naming while leaving physical mechanism and comprehensive purpose unresolved.',
+        argumentRecordId: 'AR-168-07',
+      },
+      {
+        claim: 'Naming repeats, but differentiation does not require immediate exhaustive naming.',
+        status: 'High-confidence / Translation-resilient',
+        rationale:
+          'God names the raqia but does not separately name the two groups of waters within this movement.',
+        argumentRecordId: 'AR-168-08',
+      },
+      {
+        claim:
+          'Explicit positive appraisal on Day Two is textual-tradition-sensitive; continued development does not itself establish defect.',
+        status: 'High-confidence textual finding / cumulative finding',
+        rationale:
+          'The Masoretic Text and Old Greek differ concerning explicit appraisal. Continued development occurs regardless; continuation alone therefore cannot establish defect.',
+        argumentRecordId: 'AR-168-09',
+      },
+    ],
+    boundaryClaims: [
+      {
+        claim: 'The passage identifies the precise physical nature of the raqia.',
+        status: 'Not presently authorized',
+        reason: 'The Character-of-God findings do not depend upon resolving its disputed physical referent.',
+      },
+      {
+        claim: 'Speech is disclosed as the physical mechanism of creation.',
+        status: 'Not presently authorized',
+        reason: 'Genesis foregrounds speech and directly attributes making and separating to God, but does not disclose the connecting mechanism.',
+      },
+      {
+        claim: 'God uses this architecture primarily to create trust.',
+        status: 'Open purpose hypothesis',
+        reason: 'The architecture can support trust without establishing trust formation as its particular purpose.',
+      },
+      {
+        claim: 'The missing Masoretic Day-Two appraisal means God regarded the work as defective.',
+        status: 'Not presently authorized',
+        reason: 'The textual traditions differ, and continued development does not by itself establish defect.',
+      },
+    ],
+    argumentRecords: [
+      {
+        id: 'AR-168-01',
+        title: 'Repeated Differentiation',
+        claim: 'Differentiation has become repeated divine behavior.',
+        status: 'High-confidence / Translation-resilient',
+        sections: [
+          {
+            label: 'Primary evidence',
+            body: [
+              'Genesis 1:4 presents God separating light from darkness. Genesis 1:6-7 presents separation within the waters. Hebrew uses the bdl family in both movements, and the Old Greek likewise preserves related separation vocabulary.',
+            ],
+          },
+          {
+            label: 'Present judgment',
+            body: ['The second occurrence turns an isolated action into repeated disclosed behavior.'],
+          },
+          {
+            label: 'Boundary',
+            body: ['Repetition here does not establish that every divine distinction has the same purpose or meaning.'],
+          },
+        ],
+        sources: [
+          { label: 'Genesis 1:4 Hebrew/Greek', href: 'https://fellowshipbook.org/en/genesis/1/4' },
+          { label: 'Genesis 1:6 Hebrew/Greek', href: 'https://fellowshipbook.org/en/genesis/1/6' },
+        ],
+      },
+      {
+        id: 'AR-168-02',
+        title: 'Differentiation Within Sameness',
+        claim: 'Genesis 1:6 differentiates within lexical sameness: waters from waters.',
+        status: 'High-confidence',
+        sections: [
+          {
+            label: 'Evidence',
+            body: [
+              'The same designation appears on both sides of the announced separation. Verse 7 subsequently distinguishes the waters by relation to the raqia: below and above.',
+            ],
+            quote: 'Different relational placement does not by itself authorize a claim of different essence.',
+          },
+          {
+            label: 'Translation finding',
+            body: ['The waters-from-waters phenomenon survives the principal witnesses, while its salience can vary by translation.'],
+          },
+        ],
+        sources: [
+          { label: 'NET Bible, Genesis 1:6-8', href: 'https://classic.net.bible.org/passage.php?passage=gen+1%3A6-8' },
+          { label: 'Translation comparison', href: 'https://www.biblegateway.com/passage/?search=Genesis+1%3A6-8&version=NET%3BKJV%3BNIV%3BNKJV' },
+        ],
+      },
+      {
+        id: 'AR-168-03',
+        title: 'Prior Divine Distinction / Developing Reader Resolution',
+        claim:
+          "God's disclosed distinction precedes the reader's fuller specification of the resulting arrangement.",
+        status: 'Strong inference',
+        sections: [
+          {
+            label: 'Evidence sequence',
+            body: ['The reader moves from waters, to waters-from-waters, to waters below and waters above.'],
+          },
+          {
+            label: 'Present formulation',
+            body: [
+              "The text gives the reader God's announced distinction before it gives the reader the fuller relational description of the realized arrangement.",
+            ],
+          },
+          {
+            label: 'Boundary',
+            body: [
+              'This concerns the order of disclosed information. It does not claim exhaustive access to divine cognition or prove that progressive perception is the purpose of the sequence.',
+            ],
+          },
+        ],
+      },
+      {
+        id: 'AR-168-04',
+        title: 'Speech/Result Correspondence',
+        claim: "God's disclosed utterance corresponds with subsequently narrated reality.",
+        status: 'High-confidence / Translation-resilient',
+        sections: [
+          {
+            label: 'Disclosed utterance and result',
+            body: [
+              'The utterance announces a raqia in the midst of the waters with separating function. The realization narrates making, separation, and waters below and above.',
+            ],
+          },
+          {
+            label: 'Textual complication',
+            body: [
+              'The Masoretic Text and Old Greek place the fulfillment formula differently, but both preserve substantive command/result correspondence.',
+            ],
+          },
+          {
+            label: 'Boundary',
+            body: ['Substantive correspondence does not require verbal duplication or disclose physical mechanism.'],
+          },
+        ],
+        sources: [
+          { label: 'Genesis 1:6 Hebrew/Greek', href: 'https://fellowshipbook.org/en/genesis/1/6' },
+          { label: 'NET Bible, Genesis 1:6-8', href: 'https://classic.net.bible.org/passage.php?passage=gen+1%3A6-8' },
+        ],
+      },
+      {
+        id: 'AR-168-05',
+        title: 'Intentional Availability and Trust',
+        claim:
+          'The speech/result correspondence is intentionally available within revelation, but its particular divine purpose is not presently established.',
+        status: 'Strong Relational/Reader finding; specific-purpose claim not authorized',
+        sections: [
+          {
+            label: 'Evidence',
+            body: ['Genesis gives readers both the disclosed utterance and the narrated result, making comparison possible.'],
+          },
+          {
+            label: 'Governing premise',
+            body: [
+              'Within a study that receives Scripture as divine-human revelation, responsibly established features may be treated as intentionally available within the revelatory act.',
+            ],
+          },
+          {
+            label: 'Critical distinction',
+            body: [
+              'Intentional availability does not by itself establish the particular purpose for which God chose the feature or form.',
+            ],
+            quote: 'Effect is not purpose.',
+          },
+        ],
+      },
+      {
+        id: 'AR-168-06',
+        title: 'Created Function and Divine Agency',
+        claim:
+          'Created reality can possess genuine function without being presented as independently intentional.',
+        status: 'Strong inference',
+        sections: [
+          {
+            label: 'Evidence',
+            body: [
+              'The raqia is assigned a separating function while God is directly presented as making and separating.',
+            ],
+          },
+          {
+            label: 'Governing distinction',
+            body: [
+              'Function, participation, grammatical agency, intentional agency, and independent agency should not be collapsed into one category.',
+            ],
+          },
+          {
+            label: 'Not presently authorized',
+            body: ['The text does not attribute deliberation, volition, or independent purpose to the created reality.'],
+          },
+        ],
+      },
+      {
+        id: 'AR-168-07',
+        title: 'Curated Disclosure',
+        claim:
+          'The revelation supplies precise relational information while leaving substantial mechanism and purpose unexplained.',
+        status: 'Strong whole-unit finding',
+        sections: [
+          {
+            label: 'Disclosed',
+            body: ['Speech, making, function, separation, below/above relationship, and naming are disclosed.'],
+          },
+          {
+            label: 'Undisclosed',
+            body: ['Precise physical mechanism, comprehensive purpose, and a settled physical identification of raqia remain undisclosed.'],
+          },
+          {
+            label: 'Present judgment',
+            body: ['The revelation is sufficiently determinate to authorize genuine knowledge while remaining radically non-exhaustive.'],
+          },
+        ],
+      },
+      {
+        id: 'AR-168-08',
+        title: 'Naming Without Exhaustive Naming',
+        claim: 'Naming repeats, but differentiation does not require immediate exhaustive naming.',
+        status: 'High-confidence / Translation-resilient',
+        sections: [
+          {
+            label: 'Evidence',
+            body: [
+              'God names the raqia Heaven or Sky, depending on translation. The two related groups of waters are described by position but not separately named within the movement.',
+            ],
+          },
+          {
+            label: 'Negative finding',
+            body: ['The passage does not establish that every differentiated reality must immediately receive its own name.'],
+          },
+        ],
+        sources: [
+          { label: 'Translation comparison', href: 'https://www.biblegateway.com/passage/?search=Genesis+1%3A6-8&version=NET%3BKJV%3BNIV%3BNKJV' },
+        ],
+      },
+      {
+        id: 'AR-168-09',
+        title: 'Day-Two Appraisal and Continued Development',
+        claim:
+          'Explicit positive appraisal on Day Two is textual-tradition-sensitive; continued development does not itself establish defect.',
+        status: 'High-confidence textual finding / high-confidence cumulative finding',
+        sections: [
+          {
+            label: 'Textual finding',
+            body: [
+              'The Masoretic Text and Old Greek differ in whether explicit positive appraisal appears on Day Two. The textual scholarship used here supports treating the Old Greek appraisal as likely attributable to the Greek translator rather than assuming an alternative Hebrew Vorlage.',
+            ],
+          },
+          {
+            label: 'Consequence',
+            body: [
+              'The variation prevents substantial Character-of-God theology from being built merely upon the Masoretic omission without accounting for the Greek evidence.',
+              'Continued development occurs regardless; continuation alone does not establish defect in the preceding stage.',
+            ],
+          },
+          {
+            label: 'Historic competing interpretation',
+            body: [
+              "Rashi preserves an unfinished-water-work explanation for the missing Masoretic appraisal. It is historically significant and plausible as an MT-based explanation, but it is not this project's translation-resilient finding.",
+            ],
+          },
+        ],
+        sources: [
+          { label: 'Genesis 1:6 Hebrew/Greek', href: 'https://fellowshipbook.org/en/genesis/1/6' },
+          { label: 'Rashi on Genesis 1:6', href: 'https://www.sefaria.org/Rashi_on_Genesis.1.6' },
+          { label: "Hiebert, 'A Genetic Commentary,' JSCS 46 (2013)", href: 'https://septuaginta.uni-goettingen.de/static/ioscs/pdf/volumes/jscs46.pdf' },
+        ],
+      },
+    ],
+    emergentRecords: [
+      {
+        id: 'ER-168-01',
+        title: 'God Before the Developing Reality',
+        provenanceLabel: 'Later Development',
+        claim: 'Genesis presents God as prior to the heavens-and-earth reality whose beginning it narrates.',
+        status: 'High-confidence emergent observation',
+        sections: [
+          {
+            label: 'Origin',
+            body: ['Post-draft Reflective Return from Genesis 1:6-8 to Genesis 1:1.'],
+          },
+          {
+            label: 'Wide-angle implication',
+            body: [
+              'The developing condition of creation should not be treated as the source or exhaustive measure of the Creator who precedes it.',
+            ],
+          },
+          {
+            label: 'Publication effect',
+            body: [
+              'This later development authorized the bounded addition in essay section 7 concerning God before the developing reality.',
+            ],
+          },
+          {
+            label: 'Boundary',
+            body: [
+              'The finding does not make the created order irrelevant to knowing God, nor does it make every intermediate condition meaningless.',
+            ],
+          },
+        ],
+      },
+    ],
+    openQuestions: [
+      {
+        id: 'OQ-168-01',
+        question: 'Why is the distinction disclosed before the realized arrangement is fully specified?',
+        status: 'Open purpose question',
+        relatedArgumentRecordIds: ['AR-168-03', 'AR-168-05'],
+      },
+      {
+        id: 'OQ-168-02',
+        question: 'Is trust formation among the purposes of the speech/result architecture?',
+        status: 'Plausible hypothesis; not presently established',
+        relatedArgumentRecordIds: ['AR-168-04', 'AR-168-05'],
+      },
+      {
+        id: 'OQ-168-03',
+        question: 'Does the sequence intentionally form the reader\'s perception over time?',
+        status: 'Plausible Relational/Reader hypothesis; not presently established',
+        relatedArgumentRecordIds: ['AR-168-03', 'AR-168-05'],
+      },
+      {
+        id: 'OQ-168-04',
+        question: 'What does continued development disclose about intermediate stages of creation?',
+        status: 'Open for later Genesis evidence',
+        relatedArgumentRecordIds: ['AR-168-07', 'AR-168-09'],
+      },
+      {
+        id: 'OQ-168-05',
+        question: 'How will later Genesis use and complicate divine differentiation?',
+        status: 'Open for cumulative testing',
+        relatedArgumentRecordIds: ['AR-168-01', 'AR-168-02'],
+      },
+      {
+        id: 'OQ-168-06',
+        question: 'How will later passages clarify created function, participation, and agency?',
+        status: 'Open for later Genesis evidence',
+        relatedArgumentRecordIds: ['AR-168-06'],
+      },
+      {
+        id: 'OQ-168-07',
+        question: "How should created nature and disclosed divine action jointly inform judgments about God's character?",
+        status: 'Open wide-angle question',
+        relatedArgumentRecordIds: ['AR-168-07', 'ER-168-01'],
+      },
+    ],
+    revisionRecord: [
+      {
+        id: 'RR-168-A',
+        earlier: "God's speech is the mechanism by which the waters are separated.",
+        challenge: 'The passage foregrounds speech and directly attributes making and separating to God without disclosing mechanism.',
+        present:
+          'Genesis repeatedly foregrounds divine speech before creative realization while directly attributing making and separating to God; the connecting mechanism remains undisclosed.',
+        relatedArgumentRecordIds: ['AR-168-04', 'AR-168-06'],
+      },
+      {
+        id: 'RR-168-B',
+        earlier: 'Only the Creator could know the distinction announced in Genesis 1:6.',
+        challenge: 'The exclusivity claim outran the local evidence and implied exhaustive access to who could possess the knowledge.',
+        present:
+          "God's disclosed distinction precedes the reader's fuller specification of the resulting arrangement.",
+        relatedArgumentRecordIds: ['AR-168-03'],
+      },
+      {
+        id: 'RR-168-C',
+        earlier: 'God reveals speech/result correspondence in order to build trust.',
+        challenge: 'Demonstrable effect and intentional revelatory availability do not establish a particular divine purpose.',
+        present:
+          'The architecture provides something upon which trust could rest; trust as the particular purpose remains open.',
+        relatedArgumentRecordIds: ['AR-168-05'],
+      },
+    ],
+    architecture: [
+      'Essay - The Encounter: the accessible Genesis 1:6-8 investigation.',
+      'Claim Audit - The Present Judgment: ten consequential claims with proportionate statuses.',
+      'Argument Records - The Audit Trail: evidence, complications, boundaries, and sources.',
+      'Later Development / Open Questions - Provenance preserved beyond the original encounter.',
+    ],
+    closingPrinciples: [
+      'Uncertainty remains attached to the claim whose evidence warrants it.',
+      'Intentional availability does not by itself establish particular purpose.',
+      'An incomplete explanation is not the same thing as an unreliable revelation.',
+      'The unanswered questions are real. But so is what has been shown.',
+    ],
+  },
 ];
 
 export function getClaimAuditByEssaySlug(essaySlug: string) {

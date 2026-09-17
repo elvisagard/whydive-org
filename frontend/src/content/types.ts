@@ -11,6 +11,11 @@ export interface EssaySeriesRef {
   slug: string;
   order: number;
   label?: string;
+  role?: 'installment' | 'method-guide';
+  relatedSeries?: {
+    title: string;
+    slug: string;
+  };
 }
 
 export interface EssayEntry {

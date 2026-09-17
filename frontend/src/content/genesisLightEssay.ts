@@ -12,10 +12,11 @@ export const genesisLightEssay: EssayEntry = {
   "readingTime": "13 minute read",
   "image": assetUrl('/images/whydive/when-god-looks-at-light-hero.png'),
   "series": {
-    "title": "Relational Knowledge of God",
-    "slug": "relational-knowledge-of-god",
+    "title": "Knowing God in Genesis",
+    "slug": "knowing-god-in-genesis",
     "order": 3,
-    "label": "Genesis 1:3-5"
+    "label": "Genesis 1:3-5",
+    "role": "installment"
   },
   "scriptureRange": "Genesis 1:3-5",
   "topics": ["Genesis", "creation", "light", "divine speech", "attention", "goodness", "knowing God"],

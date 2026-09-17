@@ -154,7 +154,7 @@ export default async function ClaimAuditPage({ params }: PageProps) {
                   })) ?? [];
 
                 return (
-                  <tr key={row.argumentRecordId} className={index % 2 ? 'bg-[#f8f4ed]' : 'bg-[#fffdf8]'}>
+                  <tr key={`${row.argumentRecordId}-${index}`} className={index % 2 ? 'bg-[#f8f4ed]' : 'bg-[#fffdf8]'}>
                     <td className="border-t border-[#d9d0c3] px-4 py-4 align-top font-semibold text-[#101b23]">
                       {row.claim}
                     </td>
@@ -341,10 +341,10 @@ export default async function ClaimAuditPage({ params }: PageProps) {
 
       {audit.emergentRecords?.length ? (
         <section className="mt-16">
-          <SectionHeading title="Post-Publication Development">
+          <SectionHeading title="Later Development">
             <p>
-              These records preserve insights that emerged after publication and should not be
-              represented as part of the original investigation.
+              These records preserve insights that emerged after the original investigation and
+              should not be represented as part of that encounter.
             </p>
           </SectionHeading>
 

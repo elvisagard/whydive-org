@@ -173,6 +173,14 @@ export default async function EssayDetailPage({ params }: PageProps) {
               '@type': 'CreativeWorkSeries',
               name: essay.series.title,
             },
+            ...(essay.series.relatedSeries
+              ? [
+                  {
+                    '@type': 'CreativeWorkSeries',
+                    name: essay.series.relatedSeries.title,
+                  },
+                ]
+              : []),
           ]
         : []),
     ],
@@ -213,6 +221,7 @@ export default async function EssayDetailPage({ params }: PageProps) {
     },
   };
   const seriesLabel = [essay.series?.title, essay.series?.label].filter(Boolean).join(' / ');
+  const relatedSeriesLabel = essay.series?.relatedSeries?.title;
   const visibleTags = essay.tags ?? [];
 
   return (
@@ -322,6 +331,12 @@ export default async function EssayDetailPage({ params }: PageProps) {
           </div>
         ) : null}
 
+        {essay.series?.role === 'method-guide' && relatedSeriesLabel ? (
+          <p className="print-hide mt-5 border-l-2 border-[#8a6d2f] pl-4 text-sm leading-7 text-[#536271]">
+            Method guide for <span className="font-semibold text-[#101b23]">{relatedSeriesLabel}</span>
+          </p>
+        ) : null}
+
         {hasFullEssay ? (
           <div className="mt-12 space-y-14">
             {essay.sections?.map((section, index) => {
@@ -344,11 +359,11 @@ export default async function EssayDetailPage({ params }: PageProps) {
                   ) : null}
                   <div className="wd-reading mt-6 space-y-7 text-xl leading-9 text-[#384a5a]">
                     {section.blocks?.length
-                      ? section.blocks.map((block) => {
+                      ? section.blocks.map((block, blockIndex) => {
                           if (block.type === 'quote') {
                             return (
                               <blockquote
-                                key={block.text}
+                                key={`${block.type}-${blockIndex}`}
                                 className="border-l-2 border-[#8a6d2f] bg-[#fff8e6] px-5 py-4 text-[#243447]"
                               >
                                 <p>{renderInlineMarkup(block.text)}</p>
@@ -363,22 +378,22 @@ export default async function EssayDetailPage({ params }: PageProps) {
 
                           if (block.type === 'heading') {
                             return (
-                              <h3 key={block.text} className="wd-display pt-2 text-2xl leading-tight text-[#101b23]">
+                              <h3 key={`${block.type}-${blockIndex}`} className="wd-display pt-2 text-2xl leading-tight text-[#101b23]">
                                 {renderInlineMarkup(block.text)}
                               </h3>
                             );
                           }
 
-                          return <p key={block.text}>{renderInlineMarkup(block.text)}</p>;
+                          return <p key={`${block.type}-${blockIndex}`}>{renderInlineMarkup(block.text)}</p>;
                         })
-                      : section.paragraphs?.map((paragraph) => (
-                          <p key={paragraph}>{renderInlineMarkup(paragraph)}</p>
+                      : section.paragraphs?.map((paragraph, paragraphIndex) => (
+                          <p key={paragraphIndex}>{renderInlineMarkup(paragraph)}</p>
                         ))}
                   </div>
                   {section.bullets?.length ? (
                     <ul className="mt-7 space-y-3 text-lg leading-8 text-[#465767]">
-                      {section.bullets.map((bullet) => (
-                        <li key={bullet} className="border-l border-[#8a6d2f]/45 pl-4">
+                      {section.bullets.map((bullet, bulletIndex) => (
+                        <li key={bulletIndex} className="border-l border-[#8a6d2f]/45 pl-4">
                           {renderInlineMarkup(bullet)}
                         </li>
                       ))}

@@ -12,10 +12,15 @@ export const genesisLanguageEssay: EssayEntry = {
   "readingTime": "13 minute read",
   "image": assetUrl('/images/whydive/does-god-change-when-the-language-does-hero.png'),
   "series": {
-    "title": "Relational Knowledge of God",
-    "slug": "relational-knowledge-of-god",
-    "order": 5,
-    "label": "Translation and Salience"
+    "title": "How We Read Genesis",
+    "slug": "how-we-read-genesis",
+    "order": 1,
+    "label": "Translation and Salience",
+    "role": "method-guide",
+    "relatedSeries": {
+      "title": "Knowing God in Genesis",
+      "slug": "knowing-god-in-genesis"
+    }
   },
   "scriptureRange": "Genesis 1",
   "topics": ["Genesis", "translation", "language", "salience", "interpretation", "evidence", "knowing God"],

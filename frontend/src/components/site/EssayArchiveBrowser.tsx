@@ -45,6 +45,7 @@ function getDateRank(essay: EssayEntry) {
 }
 
 function getChronologyRank(essay: EssayEntry) {
+  if (essay.series?.role === 'method-guide') return Number.MAX_SAFE_INTEGER;
   return essay.series?.order ?? Number.MAX_SAFE_INTEGER;
 }
 
@@ -56,11 +57,23 @@ function getEssaySearchText(essay: EssayEntry) {
     essay.scriptureRange,
     essay.series?.title,
     essay.series?.label,
+    essay.series?.role,
+    essay.series?.relatedSeries?.title,
     ...(essay.topics ?? []),
     ...(essay.tags ?? []),
   ]
     .filter(Boolean)
     .join(' ');
+}
+
+function getEssayContext(essay: EssayEntry) {
+  return [
+    essay.series?.title,
+    essay.series?.label !== essay.scriptureRange ? essay.series?.label : undefined,
+    essay.scriptureRange,
+  ]
+    .filter(Boolean)
+    .join(' / ');
 }
 
 function normalize(value: string) {
@@ -155,7 +168,7 @@ function EssayListItem({ essay }: { essay: EssayEntry }) {
         </div>
         {essay.series || essay.scriptureRange ? (
           <p className="mt-3 text-xs font-semibold uppercase tracking-[0.16em] text-[#8a6d2f]">
-            {[essay.series?.label, essay.scriptureRange].filter(Boolean).join(' / ')}
+            {getEssayContext(essay)}
           </p>
         ) : null}
         <h2 className="wd-display mt-3 text-2xl leading-tight text-[#101b23]">{essay.title}</h2>
@@ -187,7 +200,7 @@ function EssayCard({ essay }: { essay: EssayEntry }) {
         <StatusBadge status={essay.status} />
         {essay.series || essay.scriptureRange ? (
           <p className="mt-3 text-xs font-semibold uppercase tracking-[0.16em] text-[#8a6d2f]">
-            {[essay.series?.label, essay.scriptureRange].filter(Boolean).join(' / ')}
+            {getEssayContext(essay)}
           </p>
         ) : null}
         <h2 className="wd-display mt-3 text-3xl leading-tight text-[#101b23]">{essay.title}</h2>

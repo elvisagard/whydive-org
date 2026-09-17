@@ -12,10 +12,11 @@ export const genesisSeedEssay: EssayEntry = {
   "readingTime": "10 minute read",
   "image": assetUrl('/images/whydive/you-can-look-now-hero.png'),
   "series": {
-    "title": "Relational Knowledge of God",
-    "slug": "relational-knowledge-of-god",
-    "order": 4,
-    "label": "Genesis 1:9-13"
+    "title": "Knowing God in Genesis",
+    "slug": "knowing-god-in-genesis",
+    "order": 5,
+    "label": "Genesis 1:9-13",
+    "role": "installment"
   },
   "scriptureRange": "Genesis 1:9-13",
   "topics": ["Genesis", "creation", "land", "seed", "correspondence", "evidence", "knowing God"],

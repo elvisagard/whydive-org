@@ -4,6 +4,7 @@ import { genesisBeginningEssay } from './genesisBeginningEssay';
 import { genesisBeginningContinuationEssay } from './genesisBeginningContinuationEssay';
 import { genesisLanguageEssay } from './genesisLanguageEssay';
 import { genesisLightEssay } from './genesisLightEssay';
+import { genesisWaterEssay } from './genesisWaterEssay';
 import { genesisSeedEssay } from './genesisSeedEssay';
 
 export const essayCategories: EssayCategory[] = [
@@ -64,6 +65,7 @@ export const essayEntries: EssayEntry[] = [
   genesisBeginningEssay,
   genesisBeginningContinuationEssay,
   genesisLightEssay,
+  genesisWaterEssay,
   genesisSeedEssay,
   genesisLanguageEssay,
   {

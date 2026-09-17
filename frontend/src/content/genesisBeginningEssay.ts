@@ -12,10 +12,11 @@ export const genesisBeginningEssay: EssayEntry = {
   "readingTime": "28 minute read",
   "image": assetUrl('/images/whydive/in-the-beginning-god-hero.png'),
   "series": {
-    "title": "Relational Knowledge of God",
-    "slug": "relational-knowledge-of-god",
+    "title": "Knowing God in Genesis",
+    "slug": "knowing-god-in-genesis",
     "order": 1,
-    "label": "Genesis 1:1-2, Part 1"
+    "label": "Genesis 1:1-2, Part 1",
+    "role": "installment"
   },
   "scriptureRange": "Genesis 1:1-2",
   "topics": ["Genesis", "creation", "attention", "unfinishedness", "darkness", "ruach Elohim", "knowing God"],
