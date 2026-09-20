@@ -55,9 +55,11 @@ export interface ClaimAuditSource {
 }
 
 export interface ClaimAuditRow {
+  id?: string;
   claim: string;
   status: string;
   rationale: string;
+  externalChallenge?: string;
   argumentRecordId: string;
   argumentRecordIds?: string[];
   revisionRecordIds?: string[];

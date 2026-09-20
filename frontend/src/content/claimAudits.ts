@@ -1,6 +1,8 @@
 import type { ClaimAuditEntry } from './types';
+import { genesisLightsClaimAudit } from './genesisLightsClaimAudit';
 
 export const claimAuditEntries: ClaimAuditEntry[] = [
+  genesisLightsClaimAudit,
   {
     title: 'In the Beginning, God',
     slug: 'in-the-beginning-god',

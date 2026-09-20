@@ -45,6 +45,7 @@ R2 keys mirror the local `frontend/public` structure exactly.
 | Ecosystem constellation banner | `/images/whydive/ecosystem-constellation-banner.png` | Ecosystem page banner. |
 | Ecosystem spiral map square | `/images/whydive/ecosystem-spiral-map-square.png` | Ecosystem card, diagram support, or social image. |
 | Contact letter banner | `/images/whydive/contact-letter-banner.png` | Contact/legal pages. |
+| Before There Were Lights essay hero | `/images/whydive/before-there-were-lights-hero.png` | Genesis 1:14–19 essay image centered on the greater light, lesser light, and stars. |
 
 ## Planned Documentary Space Assets
 

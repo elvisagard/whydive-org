@@ -6,6 +6,7 @@ import { genesisLanguageEssay } from './genesisLanguageEssay';
 import { genesisLightEssay } from './genesisLightEssay';
 import { genesisWaterEssay } from './genesisWaterEssay';
 import { genesisSeedEssay } from './genesisSeedEssay';
+import { genesisLightsEssay } from './genesisLightsEssay';
 
 export const essayCategories: EssayCategory[] = [
   {
@@ -67,6 +68,7 @@ export const essayEntries: EssayEntry[] = [
   genesisLightEssay,
   genesisWaterEssay,
   genesisSeedEssay,
+  genesisLightsEssay,
   genesisLanguageEssay,
   {
     title: 'Strong Conclusions Require Strong Evidence',

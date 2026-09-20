@@ -62,3 +62,85 @@ Genesis 1:14 onward retains full authority to strengthen, complicate, reorder, e
 - Authoritative dossier: AAD-168-01 v1.0
 - Governing protocol: GRA-01 v1.0
 - Recorded: September 17, 2026
+
+## MR-G14-01 — Revelation Dimensions and Investigative Lenses
+
+**Status:** ADOPTED
+
+The Genesis Character-of-God investigation now records findings across three analytical dimensions:
+
+- **Character of God**
+- **Nature of God**
+- **Nature of Reality**
+
+These are analytical dimensions, not categories Genesis explicitly announces. Evidence may contribute to multiple dimensions, and a finding cannot automatically transfer from one dimension to another.
+
+The established investigative lenses remain distinct:
+
+- **Microscope**
+- **Wide-Angle**
+- **Reader Interaction**
+
+> **Lenses govern examination. Dimensions classify possible findings.**
+
+## MR-G14-02 — Standing Inference Safeguards
+
+**Status:** ADOPTED
+
+The following safeguards now govern subsequent investigations:
+
+- **Effect ≠ purpose.**
+- **Sequence ≠ demonstrated purpose.**
+- **Function ≠ mentality.**
+- **Created function ≠ demonstrated divine withdrawal.**
+- **Reader reaction ≠ revelation.**
+- **Reader interaction may generate the question; evidence must authorize the answer.**
+- **External alternative ≠ counterevidence.**
+- **Antiquity ≠ truth.**
+- **Consensus ≠ evidence.**
+- **Correspondence ≠ permission to manufacture interpretation.**
+- **Greater claim distance requires greater independent evidence.**
+
+Preserve explicitly:
+
+> **Truth is not truth because it is old.**
+
+## MR-G14-03 — External Dialogue Is Not an Authority Stage
+
+**Status:** ADOPTED
+
+External thinkers may supply relevant evidence, identify overlooked evidence, expose assumptions, identify reasoning defects, offer competing explanations, or supply counterevidence.
+
+They do not gain evidentiary weight merely from antiquity, historical proximity, tradition, scholarly status, consensus, or number of adherents. External claims must be adjudicated according to the evidence they contribute.
+
+A citation documents the source's argument. It does not mean the project accepts that argument. Public research records must preserve the distinction between **External argument** and **Project adjudication**.
+
+## MR-G14-04 — Narration and Object-of-Inquiry Safeguard
+
+**Status:** ADOPTED
+
+> **God remains the object of inquiry.**
+
+Narrative and literary features may function as evidence-bearing aspects of the disclosure, but they must not silently substitute “the narrator” as the primary intentional agent in the Character-of-God investigation.
+
+The project's acknowledged base assumption remains:
+
+> **Scripture is approached as God's curated disclosure.**
+
+That assumption must remain visible and must not be presented as though independently proved by literary analysis.
+
+## MR-G14-05 — Series Non-Repetition Rule
+
+**Status:** ADOPTED
+
+> **An established finding from an earlier essay receives substantial treatment in a later essay only when the new passage materially strengthens, modifies, challenges, reclassifies, or extends it. Mere recurrence normally receives brief acknowledgment or no repetition.**
+
+The reader's history should accumulate just as the research history accumulates. This rule governs the public *Knowing God in Genesis* series, identified as *And God Said* in the Genesis 1:14–19 working package.
+
+## Provenance — Genesis 1:14–19
+
+- Investigation: Genesis 1:14–19, *Before There Were Lights*
+- Authoritative dossier: Genesis 1:14–19 Authoritative Research Dossier — Reconciled
+- Implementation package: Codex-Ready Implementation Package — Genesis 1:14–19
+- Governing protocol: GRA-01 v1.0
+- Recorded: September 20, 2026

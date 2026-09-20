@@ -73,9 +73,17 @@ export default async function ClaimAuditPage({ params }: PageProps) {
     description: audit.deck,
     url: auditUrl,
     inLanguage: 'en-US',
-    isPartOf: {
-      '@id': `${siteUrl}/#website`,
-    },
+    isPartOf: [
+      {
+        '@id': `${siteUrl}/#website`,
+      },
+      {
+        '@type': 'Article',
+        '@id': `${absoluteUrl(`/essays/${essay.slug}`)}#article`,
+        name: essay.title,
+        url: absoluteUrl(`/essays/${essay.slug}`),
+      },
+    ],
     publisher: {
       '@type': 'Organization',
       name: publisherName,
@@ -88,8 +96,28 @@ export default async function ClaimAuditPage({ params }: PageProps) {
       { '@type': 'Thing', name: siteName },
       { '@type': 'Thing', name: essay.title },
       { '@type': 'Thing', name: 'Claim audit' },
+      ...(essay.topics ?? []).map((topic) => ({ '@type': 'Thing', name: topic })),
+    ],
+    keywords: [...(essay.topics ?? []), ...(essay.tags ?? [])],
+    hasPart: [
+      ...audit.rows.map((row) => ({
+        '@type': 'CreativeWork',
+        identifier: row.id,
+        name: row.claim,
+        description: `${row.status}: ${row.rationale}`,
+        url: `${auditUrl}#${row.argumentRecordId}`,
+      })),
+      ...audit.argumentRecords.map((record) => ({
+        '@type': 'CreativeWork',
+        identifier: record.id,
+        name: record.title,
+        description: `${record.status}: ${record.claim}`,
+        url: `${auditUrl}#${record.id}`,
+      })),
     ],
   };
+  const hasClaimIds = audit.rows.some((row) => row.id);
+  const hasExternalChallenges = audit.rows.some((row) => row.externalChallenge);
 
   return (
     <EditorialPage
@@ -113,18 +141,28 @@ export default async function ClaimAuditPage({ params }: PageProps) {
         </SectionHeading>
 
         <div className="mt-8 overflow-x-auto border border-[#d9d0c3] bg-[#fffdf8] shadow-[0_20px_60px_rgba(23,38,49,0.05)]">
-          <table className="min-w-[880px] border-collapse text-left text-sm">
+          <table className={`${hasExternalChallenges ? 'min-w-[1120px]' : 'min-w-[880px]'} border-collapse text-left text-sm`}>
             <thead className="bg-[#101b23] text-[#fffdf8]">
               <tr>
-                <th scope="col" className="w-[34%] px-4 py-3 font-semibold">
+                {hasClaimIds ? (
+                  <th scope="col" className="w-[10%] px-4 py-3 font-semibold">
+                    Claim ID
+                  </th>
+                ) : null}
+                <th scope="col" className="w-[28%] px-4 py-3 font-semibold">
                   Claim
                 </th>
-                <th scope="col" className="w-[20%] px-4 py-3 font-semibold">
+                <th scope="col" className="w-[16%] px-4 py-3 font-semibold">
                   Present Status
                 </th>
-                <th scope="col" className="w-[31%] px-4 py-3 font-semibold">
+                <th scope="col" className="w-[26%] px-4 py-3 font-semibold">
                   Why This Status?
                 </th>
+                {hasExternalChallenges ? (
+                  <th scope="col" className="w-[25%] px-4 py-3 font-semibold">
+                    External Argument / Challenge
+                  </th>
+                ) : null}
                 <th scope="col" className="w-[15%] px-4 py-3 font-semibold">
                   Evidence &amp; Dialogue
                 </th>
@@ -155,6 +193,11 @@ export default async function ClaimAuditPage({ params }: PageProps) {
 
                 return (
                   <tr key={`${row.argumentRecordId}-${index}`} className={index % 2 ? 'bg-[#f8f4ed]' : 'bg-[#fffdf8]'}>
+                    {hasClaimIds ? (
+                      <td className="border-t border-[#d9d0c3] px-4 py-4 align-top font-semibold text-[#6f551e]">
+                        {row.id}
+                      </td>
+                    ) : null}
                     <td className="border-t border-[#d9d0c3] px-4 py-4 align-top font-semibold text-[#101b23]">
                       {row.claim}
                     </td>
@@ -164,6 +207,13 @@ export default async function ClaimAuditPage({ params }: PageProps) {
                     <td className="border-t border-[#d9d0c3] px-4 py-4 align-top leading-6 text-[#536271]">
                       {row.rationale}
                     </td>
+                    {hasExternalChallenges ? (
+                      <td className="border-t border-[#d9d0c3] px-4 py-4 align-top leading-6 text-[#536271]">
+                        {renderInlineMarkup(
+                          row.externalChallenge ?? 'No material external challenge recorded.',
+                        )}
+                      </td>
+                    ) : null}
                     <td className="border-t border-[#d9d0c3] px-4 py-4 align-top">
                       <div className="grid gap-2">
                         {records.map(({ id, record }) => (
