@@ -22,7 +22,7 @@ interface EssayArchiveBrowserProps {
   essays: EssayEntry[];
 }
 
-const pageSize = 6;
+const pageSize = 12;
 const articleFallbackImage = '/images/whydive/article-fallback.svg';
 
 const statusLabels: Record<ContentStatus, string> = {
@@ -337,7 +337,9 @@ export function EssayArchiveBrowser({ essays }: EssayArchiveBrowserProps) {
         </div>
 
         <div className="mt-5 flex flex-wrap gap-3 border-t border-[#d9d0c3] pt-4 text-xs font-semibold uppercase tracking-[0.16em] text-[#536271]">
-          <span>{filteredEssays.length} shown</span>
+          <span>
+            {filteredEssays.length} {filteredEssays.length === 1 ? 'article' : 'articles'} found
+          </span>
           <span>{publishedCount} published</span>
           <span>{futureCount} future</span>
         </div>
@@ -362,31 +364,33 @@ export function EssayArchiveBrowser({ essays }: EssayArchiveBrowserProps) {
         )}
       </div>
 
-      <div className="mt-8 flex flex-col gap-4 border-t border-[#d9d0c3] pt-5 sm:flex-row sm:items-center sm:justify-between">
-        <p className="text-sm leading-7 text-[#536271]">
-          Page {currentPage} of {totalPages}
-        </p>
-        <div className="flex gap-2">
-          <button
-            type="button"
-            onClick={() => setPage((value) => Math.max(1, value - 1))}
-            disabled={currentPage === 1}
-            className="inline-flex h-10 items-center gap-2 border border-[#d9d0c3] bg-[#fffdf8] px-3 text-sm font-semibold text-[#101b23] transition hover:border-[#8a6d2f]/70 disabled:cursor-not-allowed disabled:opacity-45"
-          >
-            <ChevronLeftIcon className="h-4 w-4" />
-            Previous
-          </button>
-          <button
-            type="button"
-            onClick={() => setPage((value) => Math.min(totalPages, value + 1))}
-            disabled={currentPage === totalPages}
-            className="inline-flex h-10 items-center gap-2 border border-[#d9d0c3] bg-[#fffdf8] px-3 text-sm font-semibold text-[#101b23] transition hover:border-[#8a6d2f]/70 disabled:cursor-not-allowed disabled:opacity-45"
-          >
-            Next
-            <ChevronRightIcon className="h-4 w-4" />
-          </button>
+      {totalPages > 1 ? (
+        <div className="mt-8 flex flex-col gap-4 border-t border-[#d9d0c3] pt-5 sm:flex-row sm:items-center sm:justify-between">
+          <p className="text-sm leading-7 text-[#536271]">
+            Page {currentPage} of {totalPages}
+          </p>
+          <div className="flex gap-2">
+            <button
+              type="button"
+              onClick={() => setPage((value) => Math.max(1, value - 1))}
+              disabled={currentPage === 1}
+              className="inline-flex h-10 items-center gap-2 border border-[#d9d0c3] bg-[#fffdf8] px-3 text-sm font-semibold text-[#101b23] transition hover:border-[#8a6d2f]/70 disabled:cursor-not-allowed disabled:opacity-45"
+            >
+              <ChevronLeftIcon className="h-4 w-4" />
+              Previous
+            </button>
+            <button
+              type="button"
+              onClick={() => setPage((value) => Math.min(totalPages, value + 1))}
+              disabled={currentPage === totalPages}
+              className="inline-flex h-10 items-center gap-2 border border-[#d9d0c3] bg-[#fffdf8] px-3 text-sm font-semibold text-[#101b23] transition hover:border-[#8a6d2f]/70 disabled:cursor-not-allowed disabled:opacity-45"
+            >
+              Next
+              <ChevronRightIcon className="h-4 w-4" />
+            </button>
+          </div>
         </div>
-      </div>
+      ) : null}
     </section>
   );
 }
