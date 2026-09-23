@@ -1,3 +1,4 @@
+import { AuditInlineText } from '@/components/site/AuditInlineText';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
@@ -11,18 +12,8 @@ interface PageProps {
   params: Promise<{ slug: string }>;
 }
 
-function renderInlineMarkup(label: string) {
-  return label.split(/(\*\*[^*]+\*\*|\*[^*]+\*)/g).map((part, index) => {
-    if (part.startsWith('**') && part.endsWith('**')) {
-      return <strong key={`${part}-${index}`}>{part.slice(2, -2)}</strong>;
-    }
-
-    if (part.startsWith('*') && part.endsWith('*') && !part.startsWith('**')) {
-      return <em key={`${part}-${index}`}>{part.slice(1, -1)}</em>;
-    }
-
-    return part;
-  });
+function renderInlineMarkup(text: string) {
+  return <AuditInlineText text={text} />;
 }
 
 export function generateStaticParams() {
@@ -199,13 +190,13 @@ export default async function ClaimAuditPage({ params }: PageProps) {
                       </td>
                     ) : null}
                     <td className="border-t border-[#d9d0c3] px-4 py-4 align-top font-semibold text-[#101b23]">
-                      {row.claim}
+                      {renderInlineMarkup(row.claim)}
                     </td>
                     <td className="border-t border-[#d9d0c3] px-4 py-4 align-top text-[#6f551e]">
                       {row.status}
                     </td>
                     <td className="border-t border-[#d9d0c3] px-4 py-4 align-top leading-6 text-[#536271]">
-                      {row.rationale}
+                      {renderInlineMarkup(row.rationale)}
                     </td>
                     {hasExternalChallenges ? (
                       <td className="border-t border-[#d9d0c3] px-4 py-4 align-top leading-6 text-[#536271]">
@@ -336,7 +327,7 @@ export default async function ClaimAuditPage({ params }: PageProps) {
               <div className="mt-5 grid gap-4 text-base leading-7 text-[#536271]">
                 <p>
                   <span className="font-semibold text-[#101b23]">Claim: </span>
-                  {record.claim}
+                  {renderInlineMarkup(record.claim)}
                 </p>
                 <p>
                   <span className="font-semibold text-[#101b23]">Present status: </span>
@@ -412,7 +403,7 @@ export default async function ClaimAuditPage({ params }: PageProps) {
                 <div className="mt-5 grid gap-4 text-base leading-7 text-[#536271]">
                   <p>
                     <span className="font-semibold text-[#101b23]">Claim: </span>
-                    {record.claim}
+                    {renderInlineMarkup(record.claim)}
                   </p>
                   <p>
                     <span className="font-semibold text-[#101b23]">Present status: </span>
@@ -591,7 +582,7 @@ export default async function ClaimAuditPage({ params }: PageProps) {
       {audit.architecture?.length || audit.closingPrinciples?.length ? (
         <section className="mt-16 border border-[#d9d0c3] bg-[#101b23] p-6 text-[#f8f4ed] md:p-8">
           <p className="text-xs font-semibold uppercase tracking-[0.28em] text-[#c8a45a]">
-            Publication Architecture
+            {audit.architecture?.length ? 'Publication Architecture' : 'Governing Public Conclusion'}
           </p>
           {audit.architecture?.length ? (
             <ol className="mt-5 grid gap-3 text-base leading-7 text-[#d8d0c5]">
@@ -603,7 +594,7 @@ export default async function ClaimAuditPage({ params }: PageProps) {
           {audit.closingPrinciples?.length ? (
             <div className="mt-6 grid gap-3 border-t border-white/15 pt-5 text-base font-semibold leading-7 text-[#fffdf8]">
               {audit.closingPrinciples.map((principle) => (
-                <p key={principle}>{principle}</p>
+                <p key={principle}>{renderInlineMarkup(principle)}</p>
               ))}
             </div>
           ) : null}

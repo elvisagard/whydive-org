@@ -5,6 +5,7 @@ export const genesisReflectionEssay: EssayEntry = {
   "title": "Look at Creation—but Watch God",
   "slug": "look-at-creation-but-watch-god",
   "deck": "What Genesis 1:1–2:3 chooses to make clear",
+  "claimAuditSlug": "look-at-creation-but-watch-god",
   "category": "religion",
   "status": "published",
   "publicationDate": "September 2026",

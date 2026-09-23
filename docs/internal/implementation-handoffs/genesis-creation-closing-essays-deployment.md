@@ -8,7 +8,7 @@ Prepared September 22, 2026. Local integration and R2 asset sync complete. Produ
 8. `/essays/when-the-making-was-finished` — Genesis 1:26–2:3.
 9. `/essays/look-at-creation-but-watch-god` — final reflection on Genesis 1:1–2:3.
 
-Each uses the existing Knowing God in Genesis series, essay rendering, metadata, archive, and sitemap conventions. Content entries are marked published so the next deployment includes them. Canonical user-approved Markdown is preserved in `docs/internal/essay-drafts/`; generated site content preserves every body block, heading, quotation, and emphasis marker. No public claim audits were synthesized from the internal dossiers.
+Each uses the existing Knowing God in Genesis series, essay rendering, metadata, archive, and sitemap conventions. Content entries are marked published so the next deployment includes them. Canonical user-approved Markdown is preserved in `docs/internal/essay-drafts/`; generated site content preserves every body block, heading, quotation, and emphasis marker. Public claim audits are attached to all three essays using the user-supplied public tables, separately from the internal dossiers. All 38 claims/boundaries, including three open questions, retain their supplied statuses, rationale, external dialogue, and source links. Collapsed Claim Status tables link to argument-record anchors on the existing claim-audit routes.
 
 ## Images
 

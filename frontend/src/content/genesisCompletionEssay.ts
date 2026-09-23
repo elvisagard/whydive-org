@@ -5,6 +5,7 @@ export const genesisCompletionEssay: EssayEntry = {
   "title": "When the Making Was Finished",
   "slug": "when-the-making-was-finished",
   "deck": "Genesis 1:26–2:3",
+  "claimAuditSlug": "when-the-making-was-finished",
   "category": "religion",
   "status": "published",
   "publicationDate": "September 2026",

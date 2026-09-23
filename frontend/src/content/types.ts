@@ -117,6 +117,7 @@ export interface OpenQuestionRecord {
 }
 
 export interface ClaimAuditEntry {
+  showClaimStatus?: boolean;
   title: string;
   slug: string;
   essaySlug: string;

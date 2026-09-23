@@ -1,3 +1,5 @@
+import { EssayClaimStatus } from '@/components/site/EssayClaimStatus';
+import { getClaimAuditByEssaySlug } from '@/content/claimAudits';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
@@ -136,6 +138,7 @@ export default async function EssayDetailPage({ params }: PageProps) {
       })
       .filter((item): item is { id: string; title: string; isMovementTitle: boolean } => Boolean(item)) ?? [];
   const showSectionNav = sectionNavItems.length > 5;
+  const claimAudit = getClaimAuditByEssaySlug(essay.slug);
   const claimAuditHref = essay.claimAuditSlug ? `/essays/${essay.slug}/claim-audit` : undefined;
   const claimAuditUrl = claimAuditHref ? absoluteUrl(claimAuditHref) : undefined;
   const articleSchema = {
@@ -461,6 +464,10 @@ export default async function EssayDetailPage({ params }: PageProps) {
               })}
             </ul>
           </div>
+        ) : null}
+
+        {claimAudit?.showClaimStatus ? (
+          <EssayClaimStatus audit={claimAudit} />
         ) : null}
 
         {claimAuditHref ? (

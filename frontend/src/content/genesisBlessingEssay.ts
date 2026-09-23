@@ -5,6 +5,7 @@ export const genesisBlessingEssay: EssayEntry = {
   "title": "And God Blessed Them",
   "slug": "and-god-blessed-them",
   "deck": "Genesis 1:20–25 and the first blessing of life",
+  "claimAuditSlug": "and-god-blessed-them",
   "category": "religion",
   "status": "published",
   "publicationDate": "September 2026",
