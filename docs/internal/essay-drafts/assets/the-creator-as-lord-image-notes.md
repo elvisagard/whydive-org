@@ -1,6 +1,6 @@
 # The Creator as Lord — hero candidate
 
-Status: Revised at the user’s request to sunset with two prominent silhouettes; linked for publication. Original daylight image is superseded.
+Status: User accepted the final prominent-silhouette twilight hero (v3) on September 27, 2026. Linked for publication. Earlier versions are superseded.
 
 Asset: `frontend/public/images/whydive/the-creator-as-lord-hero-v3.png`.
 
