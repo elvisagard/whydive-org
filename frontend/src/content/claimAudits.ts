@@ -2,12 +2,14 @@ import type { ClaimAuditEntry } from './types';
 import { genesisBlessingClaimAudit } from './genesisBlessingClaimAudit';
 import { genesisCompletionClaimAudit } from './genesisCompletionClaimAudit';
 import { genesisReflectionClaimAudit } from './genesisReflectionClaimAudit';
+import { genesisLordClaimAudit } from './genesisLordClaimAudit';
 import { genesisLightsClaimAudit } from './genesisLightsClaimAudit';
 
 export const claimAuditEntries: ClaimAuditEntry[] = [
   genesisBlessingClaimAudit,
   genesisCompletionClaimAudit,
   genesisReflectionClaimAudit,
+  genesisLordClaimAudit,
   genesisLightsClaimAudit,
   {
     title: 'In the Beginning, God',

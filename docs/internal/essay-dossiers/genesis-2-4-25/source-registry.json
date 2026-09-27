@@ -1,0 +1,137 @@
+{
+  "sources": [
+    {
+      "id": "SRC-G2-001",
+      "label": "Genesis’ Two Creation Accounts Compiled and Interpreted as One - TheTorah.com",
+      "href": "https://www.thetorah.com/article/genesis-two-creation-accounts-compiled-and-interpreted-as-one",
+      "provenance": "Supplied source-linked argument records"
+    },
+    {
+      "id": "SRC-G2-002",
+      "label": "H. C. Clifford, review of Dust of the Ground and Breath of Life, The Journal of Theological Studies 69.1 (2018), 274–276.",
+      "href": "https://doi.org/10.1093/jts/fly021",
+      "provenance": "Supplied source-linked argument records"
+    },
+    {
+      "id": "SRC-G2-003",
+      "label": "Genesis 2:8-14 NABRE - The LORD God planted a garden in Eden, - Bible Gateway",
+      "href": "https://www.biblegateway.com/passage/?search=Genesis+2%3A8-14&version=NABRE",
+      "provenance": "Supplied source-linked argument records"
+    },
+    {
+      "id": "SRC-G2-004",
+      "label": "Genesis 2:18 in Hebrew — interlinear & analysis | Fellowshipbook",
+      "href": "https://fellowshipbook.org/en/genesis/2/18",
+      "provenance": "Supplied source-linked argument records"
+    },
+    {
+      "id": "SRC-G2-005",
+      "label": "Tanakh.info, Genesis 2:17 Hebrew text and analysis.",
+      "href": "https://tanakh.info/gn2-17",
+      "provenance": "Supplied source-linked argument records"
+    },
+    {
+      "id": "SRC-G2-006",
+      "label": "NETBible: Genesis 2:16",
+      "href": "https://classic.net.bible.org/verse.php?book=Gen&chapter=2&verse=16",
+      "provenance": "Supplied source-linked argument records"
+    },
+    {
+      "id": "SRC-G2-007",
+      "label": "Alan Jon Hauser, “Genesis 2–3: The Theme of Intimacy and Alienation,” Art and Meaning in Biblical Literature (1982), 20–36; reproduced by eNotes.",
+      "href": "https://www.enotes.com/topics/genesis/criticism/criticism/alan-jon-hauser-essay-date-1982",
+      "provenance": "Supplied source-linked argument records"
+    },
+    {
+      "id": "SRC-G2-008",
+      "label": "Christian Reformed Church, Agenda and Acts of Synod 1990 — discussion of naming and headship (Calvin University archive).",
+      "href": "https://www.calvin.edu/library/database/crcnasynod/1990agendaacts.pdf",
+      "provenance": "Supplied source-linked argument records"
+    },
+    {
+      "id": "SRC-G2-009",
+      "label": "\\\"What is a “Helpmate”? Using Comparative Semitic Linguistics to Propose\\\" by Rebekah Call",
+      "href": "https://scholarship.claremont.edu/cgu_etd/741/",
+      "provenance": "Supplied source-linked argument records"
+    },
+    {
+      "id": "SRC-G2-010",
+      "label": "The Creation of the Woman in Genesis 2:18-24 | Dr. Claude Mariottini – Professor of Old Testament",
+      "href": "https://claudemariottini.com/2011/07/02/the-creation-of-the-woman-in-genesis-218-24/",
+      "provenance": "Supplied source-linked argument records"
+    },
+    {
+      "id": "SRC-G2-011",
+      "label": "Gender in Genesis part (ii) | Psephizo",
+      "href": "https://www.psephizo.com/biblical-studies/gender-in-genesis-ii/",
+      "provenance": "Supplied source-linked argument records"
+    },
+    {
+      "id": "SRC-G2-012",
+      "label": "John L. McKenzie, “The Literary Characteristics of Genesis 2–3,” Theological Studies 15.4 (1954), 541–572, especially 559–560.",
+      "href": "https://doi.org/10.1177/004056395401500402",
+      "provenance": "Named in supplied publication governance; publisher metadata and journal PDF checked during implementation"
+    },
+    {
+      "id": "SRC-G2-013",
+      "label": "Sarah G. Turner-Smith, “Naked But Not Ashamed: A Reading of Genesis 2:25 in Textual and Cultural Context,” The Journal of Theological Studies 69.2 (2018), 425–446.",
+      "href": "https://doi.org/10.1093/jts/fly078",
+      "provenance": "Named in supplied authoritative record CA-G2-12; publisher metadata and abstract checked during implementation"
+    },
+    {
+      "id": "SRC-G2-014",
+      "label": "NET Bible, Genesis 2:17, translation notes on the warning.",
+      "href": "https://classic.net.bible.org/verse.php?book=Gen&chapter=2&verse=17",
+      "provenance": "Adjacent verse locator for supplied NET Bible lexical discussion"
+    }
+  ],
+  "claimSourceMapping": {
+    "CA-G2-01": [
+      "SRC-G2-001"
+    ],
+    "CA-G2-02": [
+      "SRC-G2-002",
+      "SRC-G2-003"
+    ],
+    "CA-G2-03": [
+      "SRC-G2-004",
+      "SRC-G2-005"
+    ],
+    "CA-G2-04": [
+      "SRC-G2-002"
+    ],
+    "CA-G2-05": [
+      "SRC-G2-003"
+    ],
+    "CA-G2-06": [
+      "SRC-G2-006",
+      "SRC-G2-014"
+    ],
+    "CA-G2-07": [
+      "SRC-G2-006",
+      "SRC-G2-014"
+    ],
+    "CA-G2-08": [
+      "SRC-G2-007",
+      "SRC-G2-008"
+    ],
+    "CA-G2-09": [
+      "SRC-G2-007"
+    ],
+    "CA-G2-10": [
+      "SRC-G2-009",
+      "SRC-G2-004",
+      "SRC-G2-010",
+      "SRC-G2-008",
+      "SRC-G2-011"
+    ],
+    "CA-G2-11": [
+      "SRC-G2-004",
+      "SRC-G2-007"
+    ],
+    "CA-G2-12": [
+      "SRC-G2-012",
+      "SRC-G2-013"
+    ]
+  }
+}
