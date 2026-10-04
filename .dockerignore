@@ -29,3 +29,15 @@ frontend/public/images/**/*.webp
 frontend/public/images/**/*.avif
 frontend/public/whitepapers/*.pdf
 !frontend/public/images/whydive/article-fallback.svg
+
+# Local supporting documents are not build inputs.
+docs
+**/docs
+README.md
+**/README.md
+
+# Unused starter graphics are not runtime assets.
+frontend/public/file.svg
+frontend/public/globe.svg
+frontend/public/vercel.svg
+frontend/public/window.svg

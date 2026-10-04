@@ -83,3 +83,37 @@ jspm_packages/
 Thumbs.db 
 
 whydive_org.dump
+
+# Local research, historical records, drafts, and implementation documentation
+# Published content belongs in frontend/src/content; local records stay on disk.
+docs/
+README.md
+
+# Unused asset variants and promotional material (local copies retained)
+/frontend/public/file.svg
+/frontend/public/globe.svg
+/frontend/public/images/balaam.png
+/frontend/public/images/whydive/applications-evidence-objects-square.png
+/frontend/public/images/whydive/ecosystem-spiral-map-square.png
+/frontend/public/images/whydive/essays-archive-social.png
+/frontend/public/images/whydive/essays-question-mark-square.png
+/frontend/public/images/whydive/foundations-boundary-gold-line-square.png
+/frontend/public/images/whydive/hero-underwater-light-desktop.png
+/frontend/public/images/whydive/judgment-problem-age-of-ai-branded-social-dark.png
+/frontend/public/images/whydive/judgment-problem-age-of-ai-branded-social-light.png
+/frontend/public/images/whydive/look-at-creation-but-watch-god-hero.png
+/frontend/public/images/whydive/research-index-cards-square.png
+/frontend/public/images/whydive/spaces-civic-documentary-banner.png
+/frontend/public/images/whydive/spaces-clergy-documentary-banner.png
+/frontend/public/images/whydive/spaces-documentary-table-social.png
+/frontend/public/images/whydive/strong-conclusions-require-strong-evidence-branded-social-light.png
+/frontend/public/images/whydive/the-creator-as-lord-hero-v2.png
+/frontend/public/images/whydive/the-creator-as-lord-hero.png
+/frontend/public/images/whydive/what-is-whydive-branded-social-dark.png
+/frontend/public/images/whydive/what-is-whydive-branded-social-light.png
+/frontend/public/images/whydive/what-is-whydive-linkedin-card.png
+/frontend/public/images/whydive/when-the-making-was-finished-hero.png
+/frontend/public/images/whydive/why-judgment-matters-branded-social-dark.png
+/frontend/public/images/whydive/why-judgment-matters-branded-social-light.png
+/frontend/public/vercel.svg
+/frontend/public/window.svg
