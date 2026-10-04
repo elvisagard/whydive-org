@@ -9,7 +9,7 @@ export const genesisTreeEssay: EssayEntry = {
   "status": "published",
   "publicationDate": "October 2026",
   "publicationDateIso": "2026-10-01",
-  "readingTime": "27 minute read",
+  "readingTime": "35 minute read",
   "image": assetUrl("/images/whydive/when-the-tree-changed-without-changing-hero.png"),
   "series": {
     "title": "Knowing God in Genesis",
@@ -51,7 +51,7 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "That matters because Genesis 3:1–7 is not merely a story about humans breaking a rule. It is also a story about how a competing representation of God can change the way humans perceive an unchanged reality—and therefore change how they live within it."
+          "text": "That matters because Genesis 3:1–7 is not merely a story about humans breaking a rule. It is also a story about how a different picture of God can change the way humans see a reality that has not changed—and therefore change how they live within it."
         },
         {
           "type": "paragraph",
@@ -64,7 +64,7 @@ export const genesisTreeEssay: EssayEntry = {
       "blocks": [
         {
           "type": "paragraph",
-          "text": "God’s instruction concerning the tree had come inside abundance."
+          "text": "God’s instruction about the tree had come in a place where there was plenty."
         },
         {
           "type": "paragraph",
@@ -76,11 +76,11 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Provision came before prohibition."
+          "text": "God provided before He forbade."
         },
         {
           "type": "paragraph",
-          "text": "The boundary did not create a world of scarcity. It existed inside a world already characterized by provision."
+          "text": "The boundary did not create a world where there was too little. It existed inside a world where God had already provided."
         },
         {
           "type": "paragraph",
@@ -92,7 +92,7 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "God’s instruction had begun with abundance and contained a boundary. The serpent’s question makes the boundary sound as though it describes the abundance."
+          "text": "God’s instruction had begun with plenty to eat and included one boundary. The serpent’s question makes that boundary sound as though it applies to everything God gave."
         },
         {
           "type": "paragraph",
@@ -112,15 +112,15 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "The first competing reality in Genesis 3 is therefore not another physical reality."
+          "text": "So the first competing reality in Genesis 3 is not a different physical world."
         },
         {
           "type": "paragraph",
-          "text": "It is another representation of the reality God has already provided."
+          "text": "It is a different picture of the world God has already provided."
         },
         {
           "type": "paragraph",
-          "text": "And the creature supplying that representation will become stranger the longer it speaks."
+          "text": "And the creature presenting that picture will become stranger the longer it speaks."
         }
       ]
     },
@@ -137,7 +137,7 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Nothing in the narrative has prepared the reader to encounter another creator, another god, or another independent source of reality."
+          "text": "Nothing in the story has prepared the reader to meet another creator, another god, or another independent source of reality."
         },
         {
           "type": "paragraph",
@@ -145,7 +145,7 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "But it immediately begins displaying capacities unlike anything Genesis has previously shown us about the other creatures."
+          "text": "But it immediately begins doing things unlike anything Genesis has previously shown us about the other creatures."
         },
         {
           "type": "paragraph",
@@ -153,15 +153,15 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Genesis does not tell us that the woman is shocked that a serpent speaks. It does not tell us that she considers the encounter anomalous. We should not import our modern experience of serpents into her mind."
+          "text": "Genesis does not tell us that the woman is shocked that a serpent speaks. It does not tell us that she finds the encounter strange. We should not put our modern experience of serpents into her mind."
         },
         {
           "type": "paragraph",
-          "text": "The anomaly belongs first to the reader."
+          "text": "The strangeness belongs first to the reader."
         },
         {
           "type": "paragraph",
-          "text": "We have already watched the man encounter the other creatures. He exercised judgment in relation to them, even naming them. Nothing Genesis has previously shown us about those creatures prepares us for one of them to enter a sophisticated conversation about God."
+          "text": "We have already watched the man meet the other creatures. He made judgments about them, even naming them. Nothing Genesis has previously shown us about those creatures prepares us for one of them to enter a complex conversation about God."
         },
         {
           "type": "paragraph",
@@ -193,7 +193,7 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "The anomaly grows with the conversation."
+          "text": "The creature becomes stranger as the conversation continues."
         },
         {
           "type": "paragraph",
@@ -201,11 +201,11 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "It increasingly presents itself as an informational rival."
+          "text": "More and more, it presents itself as a rival source of knowledge."
         },
         {
           "type": "paragraph",
-          "text": "And its attention is remarkably selective."
+          "text": "And its attention stays on a remarkably narrow part of the picture."
         },
         {
           "type": "paragraph",
@@ -245,7 +245,7 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "The one prohibition becomes the point around which the conversation turns."
+          "text": "The one thing God forbade becomes the point around which the conversation turns."
         },
         {
           "type": "paragraph",
@@ -278,7 +278,7 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "The serpent has placed prohibition at the center of its representation of God’s instruction."
+          "text": "The serpent has made what God forbade the center of its picture of God’s instruction."
         },
         {
           "type": "paragraph",
@@ -310,23 +310,23 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "She retrieves relevant information."
+          "text": "She remembers information that matters here."
         },
         {
           "type": "paragraph",
-          "text": "She corrects the scope of its representation."
+          "text": "She corrects how widely it makes the restriction apply."
         },
         {
           "type": "paragraph",
-          "text": "She preserves the general provision."
+          "text": "She preserves the fact that God has given them food to eat."
         },
         {
           "type": "paragraph",
-          "text": "She knows there is a particular prohibition."
+          "text": "She knows there is one thing they must not do."
         },
         {
           "type": "paragraph",
-          "text": "She knows the prohibition carries a serious consequence."
+          "text": "She knows that doing it carries a serious consequence."
         },
         {
           "type": "paragraph",
@@ -334,11 +334,11 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "It has not shown us a woman intellectually overwhelmed because her husband is not participating in the conversation."
+          "text": "It has not shown us a woman unable to think clearly because her husband is not taking part in the conversation."
         },
         {
           "type": "paragraph",
-          "text": "It has not shown us a woman already attracted to the prohibited tree."
+          "text": "It has not shown us a woman already attracted to the forbidden tree."
         },
         {
           "type": "paragraph",
@@ -395,7 +395,7 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "The opening question had distorted the proportions of God’s instruction."
+          "text": "The opening question had made God’s instruction sound far more restrictive than it was."
         },
         {
           "type": "paragraph",
@@ -427,11 +427,11 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "But something more sophisticated is happening."
+          "text": "But something more complex is happening."
         },
         {
           "type": "paragraph",
-          "text": "The serpent is taking realities that already exist in God’s disclosure and changing the relationships among them."
+          "text": "The serpent takes things God has already made known and changes how they appear to fit together."
         },
         {
           "type": "paragraph",
@@ -443,7 +443,7 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Provision can now be seen as containing deprivation."
+          "text": "What God has given can now look as though it leaves the humans without something they should have."
         },
         {
           "type": "paragraph",
@@ -459,7 +459,7 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "A boundary can now be seen as blocked advancement."
+          "text": "A boundary can now look like something blocking a better life."
         },
         {
           "type": "paragraph",
@@ -471,7 +471,7 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Then the warning itself becomes susceptible to another interpretation."
+          "text": "Then the warning itself can be understood in a different way."
         },
         {
           "type": "paragraph",
@@ -479,7 +479,7 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "The warning can now be heard not as consequential information but as something standing between the humans and gain."
+          "text": "The warning can now sound like something standing between the humans and a benefit, rather than information about a consequence."
         },
         {
           "type": "paragraph",
@@ -495,11 +495,11 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "The difference between divine knowledge and human knowledge can now suggest that God possesses an advantage the humans are being prevented from acquiring."
+          "text": "God knows more than the humans. The serpent now makes that difference look like an advantage God has and is keeping them from gaining."
         },
         {
           "type": "paragraph",
-          "text": "Knowledge asymmetry can now be seen as concealed benefit."
+          "text": "A difference in knowledge can now look like a hidden benefit."
         },
         {
           "type": "paragraph",
@@ -523,15 +523,15 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "The serpent takes realities already disclosed and reconnects them."
+          "text": "The serpent takes things already made known and connects them differently."
         },
         {
           "type": "paragraph",
-          "text": "Provision becomes deprivation."
+          "text": "Provision becomes deprivation: what God has given now looks like something missing."
         },
         {
           "type": "paragraph",
-          "text": "Boundary becomes obstruction."
+          "text": "The boundary becomes an obstacle."
         },
         {
           "type": "paragraph",
@@ -539,11 +539,11 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Difference in knowledge becomes suspicious concealment."
+          "text": "A difference in knowledge becomes a reason to suspect God is hiding something."
         },
         {
           "type": "paragraph",
-          "text": "Present human condition becomes something that can be improved."
+          "text": "The humans’ present condition becomes something that can be improved."
         },
         {
           "type": "paragraph",
@@ -555,7 +555,7 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "The serpent can remain close to the existing pieces while radically changing what those pieces mean in relation to one another."
+          "text": "The serpent can stay close to the facts already given while greatly changing what they mean when put together."
         },
         {
           "type": "paragraph",
@@ -563,7 +563,7 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "It can use God’s disclosed reality as the raw material for constructing another interpretation of that reality."
+          "text": "It can use the reality God has made known as the material for another way of understanding that reality."
         }
       ]
     },
@@ -572,7 +572,7 @@ export const genesisTreeEssay: EssayEntry = {
       "blocks": [
         {
           "type": "paragraph",
-          "text": "And here the imbalance between God and the serpent becomes enormous."
+          "text": "And here the difference between what God and the serpent have supplied becomes enormous."
         },
         {
           "type": "paragraph",
@@ -600,7 +600,7 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Their capacities are not predictions about what they might someday possess."
+          "text": "Their abilities are not promises about what they might someday be able to do."
         },
         {
           "type": "paragraph",
@@ -608,7 +608,7 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Human relationship is not a prospective benefit."
+          "text": "Human relationship is not a benefit they are still waiting for."
         },
         {
           "type": "paragraph",
@@ -624,7 +624,7 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "God has supplied both provision and an accumulated evidentiary history."
+          "text": "God has supplied what they need, along with a history that gives evidence about Him."
         },
         {
           "type": "paragraph",
@@ -632,7 +632,7 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "The reader has repeatedly watched God speak and reality correspond."
+          "text": "The reader has repeatedly watched what God says match what happens."
         },
         {
           "type": "paragraph",
@@ -660,15 +660,15 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "No competing history of beneficence."
+          "text": "No competing history of doing good for them."
         },
         {
           "type": "paragraph",
-          "text": "But the asymmetry is not merely material."
+          "text": "But the difference is not only about what they can see and use."
         },
         {
           "type": "paragraph",
-          "text": "The serpent also supplies no evidence that would make its propositions more reasonable than the account it is challenging."
+          "text": "The serpent also supplies no evidence that would give them better reason to believe its claims than the account it challenges."
         },
         {
           "type": "paragraph",
@@ -700,7 +700,7 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "It supplies ideas about the meaning of evidence God has already supplied."
+          "text": "It supplies ideas about what God’s evidence means."
         },
         {
           "type": "paragraph",
@@ -712,7 +712,7 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "The humans’ capacity for knowledge belongs to God’s created reality."
+          "text": "The humans’ ability to know belongs to God’s created reality."
         },
         {
           "type": "paragraph",
@@ -720,7 +720,7 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Their agency is already theirs."
+          "text": "Their agency—the ability to choose and act—is already theirs."
         },
         {
           "type": "paragraph",
@@ -736,7 +736,7 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Nothing the serpent has provided gives them an evidentiary reason to trust its picture of God over the God whose provision they are already living inside."
+          "text": "Nothing the serpent has supplied gives them evidence for trusting its picture of God over the God who has already provided the world they live in."
         },
         {
           "type": "paragraph",
@@ -760,7 +760,7 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Its representation nevertheless becomes influential."
+          "text": "Its picture nevertheless begins to influence them."
         },
         {
           "type": "paragraph",
@@ -789,11 +789,11 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "She sees it as desirable in relation to the knowledge or wisdom-associated gain that has just been placed before her."
+          "text": "She sees it as desirable for the knowledge or wisdom she now thinks she could gain."
         },
         {
           "type": "paragraph",
-          "text": "This is the first point where Genesis actually shows the prohibited alternative becoming attractive to her."
+          "text": "This is the first point where Genesis actually shows the forbidden choice becoming attractive to her."
         },
         {
           "type": "paragraph",
@@ -849,7 +849,7 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "The disclosed development between the woman’s earlier boundary-preserving response and this new positive evaluation is the conversation."
+          "text": "Between the woman’s earlier answer, which preserved the boundary, and this new favorable view of the tree, Genesis has shown us the conversation."
         },
         {
           "type": "paragraph",
@@ -869,7 +869,7 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "The prohibited use has entered her positive evaluation."
+          "text": "She now sees something good in the very use that God had forbidden: eating from it."
         },
         {
           "type": "paragraph",
@@ -885,15 +885,15 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Something more consequential has happened."
+          "text": "Something with greater consequences has happened."
         },
         {
           "type": "paragraph",
-          "text": "The serpent had taken God’s realities and rearranged their relationships."
+          "text": "The serpent had taken the things God made known and changed how they appeared to fit together."
         },
         {
           "type": "paragraph",
-          "text": "Now the woman begins evaluating God’s reality inside those rearranged relationships herself."
+          "text": "Now the woman begins judging God’s reality through those changed connections herself."
         },
         {
           "type": "paragraph",
@@ -925,19 +925,19 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "This is why influence and agency cannot be treated as opposites here."
+          "text": "This is why being influenced and being able to choose cannot be treated as opposites here."
         },
         {
           "type": "paragraph",
-          "text": "The woman’s agency has not disappeared."
+          "text": "The woman’s agency—her ability to choose and act—has not disappeared."
         },
         {
           "type": "paragraph",
-          "text": "It has been redirected through a changed evaluation of reality."
+          "text": "It has taken a different direction because she now sees the same reality differently."
         },
         {
           "type": "paragraph",
-          "text": "The serpent’s ideas have become consequential without becoming evidentially superior."
+          "text": "The serpent’s ideas have changed what she does without gaining better evidence to support them."
         }
       ]
     },
@@ -990,7 +990,7 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "That silence matters because it prevents us from turning either reconstruction into the explanation of what happened."
+          "text": "That silence matters. We cannot take either imagined version—he was there, or he was elsewhere—and make it the explanation of what happened."
         },
         {
           "type": "paragraph",
@@ -998,7 +998,7 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "If he was absent, Genesis does not portray the woman as intellectually helpless without him."
+          "text": "If he was absent, Genesis does not show the woman as unable to think for herself without him."
         },
         {
           "type": "paragraph",
@@ -1006,15 +1006,15 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Her first recorded response to the serpent had demonstrated comprehension, memory, correction, and substantial knowledge of God’s instruction."
+          "text": "Her first recorded response showed that she understood the serpent, remembered what mattered, corrected it, and knew a great deal about God’s instruction."
         },
         {
           "type": "paragraph",
-          "text": "The narrative gives far more attention to the woman’s changing evaluation than to the man’s location."
+          "text": "The story pays far more attention to the woman’s changing view of the tree than to the man’s location."
         },
         {
           "type": "paragraph",
-          "text": "And when it turns to him, it gives us the fact that matters for this movement:"
+          "text": "And when it turns to him, it gives us the fact that matters here:"
         },
         {
           "type": "paragraph",
@@ -1035,7 +1035,7 @@ export const genesisTreeEssay: EssayEntry = {
       "blocks": [
         {
           "type": "paragraph",
-          "text": "Now the competing description of reality begins encountering lived reality."
+          "text": "Now the competing picture begins to meet what the humans actually experience."
         },
         {
           "type": "paragraph",
@@ -1059,7 +1059,7 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Those correspondences are real."
+          "text": "Those points of agreement are real."
         },
         {
           "type": "paragraph",
@@ -1071,7 +1071,7 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "God had already established that crossing this boundary was consequential."
+          "text": "God had already made clear that crossing this boundary would have a consequence."
         },
         {
           "type": "paragraph",
@@ -1079,7 +1079,7 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Part of that description corresponds with what Genesis reports:"
+          "text": "Part of that description matches what Genesis reports:"
         },
         {
           "type": "paragraph",
@@ -1091,19 +1091,19 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "We should concede that fully."
+          "text": "We should acknowledge that fully."
         },
         {
           "type": "paragraph",
-          "text": "If our portrait of the serpent requires us to pretend those correspondences do not exist, our portrait is too fragile."
+          "text": "If our picture of the serpent depends on pretending those points do not match, that picture cannot stand up to the evidence."
         },
         {
           "type": "paragraph",
-          "text": "But correctly naming a feature of an outcome is not the same thing as faithfully characterizing the outcome as lived."
+          "text": "But correctly naming a feature of an outcome is not the same thing as faithfully characterizing the outcome as lived. Getting a detail right does not mean giving a true picture of what the whole experience will be like."
         },
         {
           "type": "paragraph",
-          "text": "The consequential question is not simply:"
+          "text": "The question that matters is not simply:"
         },
         {
           "type": "paragraph",
@@ -1156,7 +1156,7 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "That was the before-state."
+          "text": "That was how things were before."
         },
         {
           "type": "paragraph",
@@ -1212,11 +1212,11 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Genesis does not stop to define this knowledge philosophically."
+          "text": "Genesis does not stop to give us a complete theory of what this knowledge is."
         },
         {
           "type": "paragraph",
-          "text": "It shows us what the new knowing does to lived experience."
+          "text": "It shows us what this new knowing does to their experience."
         },
         {
           "type": "paragraph",
@@ -1236,7 +1236,7 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "The material condition has not changed."
+          "text": "The physical condition has not changed."
         },
         {
           "type": "paragraph",
@@ -1260,11 +1260,11 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Shame is strongly implicated because Genesis had deliberately told us they were previously naked and not ashamed."
+          "text": "Shame is strongly suggested because Genesis had deliberately told us they were previously naked and not ashamed."
         },
         {
           "type": "paragraph",
-          "text": "But we do not need to reconstruct the complete emotional state."
+          "text": "But we do not need to reconstruct everything they feel."
         },
         {
           "type": "paragraph",
@@ -1272,7 +1272,7 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "nakedness has become something they experience as requiring concealment."
+          "text": "nakedness has become something they experience as needing to be covered."
         },
         {
           "type": "paragraph",
@@ -1280,7 +1280,7 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "No environmental danger appears."
+          "text": "No danger from their surroundings appears."
         },
         {
           "type": "paragraph",
@@ -1328,15 +1328,15 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Genesis surrounds knowing with lived experience."
+          "text": "Genesis shows this knowing through what the humans experience."
         },
         {
           "type": "paragraph",
-          "text": "The first narrated manifestation of the promised knowledge is not merely that the humans can recite a new proposition."
+          "text": "The first sign of the promised knowledge in the story is not merely that the humans can repeat a new statement."
         },
         {
           "type": "paragraph",
-          "text": "They now inhabit an old reality differently."
+          "text": "They now live differently with something that was already there."
         },
         {
           "type": "paragraph",
@@ -1360,15 +1360,15 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Their agency."
+          "text": "Their ability to choose and act."
         },
         {
           "type": "paragraph",
-          "text": "Their constructive ability."
+          "text": "Their ability to make things."
         },
         {
           "type": "paragraph",
-          "text": "Vegetation from the world around them."
+          "text": "Plants from the world around them."
         },
         {
           "type": "paragraph",
@@ -1384,7 +1384,7 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Even now, as they respond to the condition entered through acting on that alternative interpretation, they remain dependent upon capacities and materials already belonging to the Creator’s provision."
+          "text": "Even now, as they respond to what happened when they acted on that different picture, they still depend on abilities and materials the Creator had already provided."
         },
         {
           "type": "paragraph",
@@ -1392,7 +1392,7 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "It tells us that they perceive a problem and attempt a remedy."
+          "text": "It tells us that they see a problem and try to solve it."
         },
         {
           "type": "paragraph",
@@ -1405,7 +1405,7 @@ export const genesisTreeEssay: EssayEntry = {
       "blocks": [
         {
           "type": "paragraph",
-          "text": "This is where a simple true-or-false test of the serpent's words becomes inadequate."
+          "text": "This is where testing each of the serpent’s statements as simply true or false is no longer enough."
         },
         {
           "type": "paragraph",
@@ -1425,15 +1425,15 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Those correspondences matter."
+          "text": "Those points of agreement matter."
         },
         {
           "type": "paragraph",
-          "text": "We should not diminish them because they make the serpent's words more complicated to evaluate. If the evidence gives the serpent correspondence at a particular point, then the evidence should receive its full weight."
+          "text": "We should not play them down because they make the serpent’s words harder to judge. Where the serpent’s words match what happens, we should give that evidence its full weight."
         },
         {
           "type": "paragraph",
-          "text": "But correspondence at one level does not settle the larger question."
+          "text": "But getting a part right does not settle the larger question."
         },
         {
           "type": "paragraph",
@@ -1445,7 +1445,7 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "God had already said that eating was consequential."
+          "text": "God had already said that eating would have a consequence."
         },
         {
           "type": "paragraph",
@@ -1489,7 +1489,7 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "And Genesis immediately begins showing us what inhabiting that condition is actually like."
+          "text": "And Genesis immediately begins showing us what it is actually like to live with that change."
         },
         {
           "type": "paragraph",
@@ -1501,7 +1501,7 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "The issue is not whether every possible consequence had to be disclosed."
+          "text": "The issue is not whether every possible consequence had to be explained in advance."
         },
         {
           "type": "paragraph",
@@ -1509,7 +1509,7 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "The issue is whether the representation through which the action became desirable gave a faithful picture of the reality toward which it directed the hearer."
+          "text": "The issue is whether the picture that made the action desirable gave the hearer a faithful account of the reality it led toward."
         },
         {
           "type": "paragraph",
@@ -1521,11 +1521,11 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "The serpent's description can therefore be tested at more than one level."
+          "text": "So we can test the serpent’s description in more than one way."
         },
         {
           "type": "paragraph",
-          "text": "At the level of individual outcome features:"
+          "text": "First, we can ask whether individual details of the outcome match what it said:"
         },
         {
           "type": "paragraph",
@@ -1537,7 +1537,7 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "But at the level of the complete representation, another question remains:"
+          "text": "But when we look at the whole picture, another question remains:"
         },
         {
           "type": "quote",
@@ -1557,15 +1557,15 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "But Genesis does not leave them as abstractions."
+          "text": "But Genesis does not leave them as ideas without a setting."
         },
         {
           "type": "paragraph",
-          "text": "It places them inside lived human experience."
+          "text": "It shows us what they mean in the humans’ actual experience."
         },
         {
           "type": "paragraph",
-          "text": "And the first disclosed lived result is striking:"
+          "text": "And the first result the story shows is striking:"
         },
         {
           "type": "paragraph",
@@ -1585,7 +1585,11 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "A statement may correspond at the level of an individual proposition while the larger picture in which that proposition is placed still requires examination."
+          "text": "A particular statement can match what happens while the overall picture still misleads."
+        },
+        {
+          "type": "paragraph",
+          "text": "We can recognize that a statement is correct and still need to examine the larger picture in which it appears."
         },
         {
           "type": "paragraph",
@@ -1601,7 +1605,7 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "What did those relationships make reasonable to anticipate?"
+          "text": "What did those connections give the hearer reason to expect?"
         },
         {
           "type": "paragraph",
@@ -1609,7 +1613,7 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Those questions matter because the serpent's influence did not depend upon fabricating every piece of reality."
+          "text": "Those questions matter because the serpent did not have to make up every part of the world it described in order to influence the humans."
         },
         {
           "type": "paragraph",
@@ -1665,15 +1669,15 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "So the reader can concede everything that corresponds in the serpent's description without conceding that the serpent therefore represented reality faithfully."
+          "text": "So the reader can acknowledge every detail that matches the serpent’s description without agreeing that its whole picture was faithful."
         },
         {
           "type": "paragraph",
-          "text": "In fact, refusing to concede the correspondence would make it harder to see what is so sophisticated about the distortion."
+          "text": "In fact, refusing to acknowledge those matching details would make it harder to see how this misleading picture can work through accurate details."
         },
         {
           "type": "paragraph",
-          "text": "The serpent's alternative picture did not need to be completely detached from reality in order to redirect the humans."
+          "text": "The serpent’s alternative picture did not have to be completely disconnected from reality to change the humans’ direction."
         },
         {
           "type": "paragraph",
@@ -1685,11 +1689,11 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "And those corresponding pieces could make the larger representation more persuasive."
+          "text": "And those accurate pieces could make the larger picture more persuasive."
         },
         {
           "type": "paragraph",
-          "text": "The deeper test is whether the relationships among those pieces faithfully represented the reality the humans would inhabit."
+          "text": "The deeper test is whether the way those pieces were connected gave a faithful picture of the reality the humans would enter."
         },
         {
           "type": "paragraph",
@@ -1701,7 +1705,7 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "But enough to prevent us from confusing a correct outcome feature with a faithful account of the outcome."
+          "text": "But enough to keep us from confusing one correct detail about the result with a faithful account of the result as a whole."
         }
       ]
     },
@@ -1718,11 +1722,11 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "The woman's perception of the tree changed."
+          "text": "The woman saw the tree differently."
         },
         {
           "type": "paragraph",
-          "text": "Her evaluation changed."
+          "text": "Her judgment of it changed."
         },
         {
           "type": "paragraph",
@@ -1762,11 +1766,11 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "God's abundant provision has been made capable of looking incomplete."
+          "text": "God’s abundant gifts have been made to look as though something is missing."
         },
         {
           "type": "paragraph",
-          "text": "God's boundary has been made capable of looking obstructive."
+          "text": "God’s boundary has been made to look like an obstacle."
         },
         {
           "type": "paragraph",
@@ -1778,15 +1782,15 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "The humans' present condition has been made capable of looking deficient."
+          "text": "The humans’ present condition has been made to look as though it lacks something."
         },
         {
           "type": "paragraph",
-          "text": "That is a radically different representation of God."
+          "text": "That is a very different picture of God."
         },
         {
           "type": "paragraph",
-          "text": "But a changed representation of God is not the same thing as changed evidence about God."
+          "text": "But a changed representation of God is not the same thing as changed evidence about God. A new picture is not, by itself, new evidence."
         },
         {
           "type": "paragraph",
@@ -1794,7 +1798,7 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "We have already seen the scale of that asymmetry."
+          "text": "We have already seen how much more God has supplied than the serpent."
         },
         {
           "type": "paragraph",
@@ -1806,11 +1810,11 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Their capacities were there."
+          "text": "Their abilities were there."
         },
         {
           "type": "paragraph",
-          "text": "Their agency was real."
+          "text": "Their ability to choose and act was real."
         },
         {
           "type": "paragraph",
@@ -1818,15 +1822,15 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "God had communicated a boundary clearly enough for the woman herself to articulate it."
+          "text": "God had explained the boundary clearly enough for the woman herself to state it."
         },
         {
           "type": "paragraph",
-          "text": "And the serpent supplied no comparable provision and no superior evidentiary history before asking its alternative picture to carry the weight of human action."
+          "text": "And before its alternative picture became the basis for human action, the serpent had supplied no comparable gifts and no stronger history of evidence."
         },
         {
           "type": "paragraph",
-          "text": "Nothing that happens through verse 7 retroactively erases that history."
+          "text": "Nothing that happens through verse 7 erases that earlier history."
         },
         {
           "type": "paragraph",
@@ -1846,7 +1850,7 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Likewise, the fact that the woman came to see the tree differently does not establish that God's provision had actually been deficient before she changed her evaluation."
+          "text": "Likewise, the woman’s changed view of the tree does not prove that something was actually missing from God’s provision before she saw it differently."
         },
         {
           "type": "paragraph",
@@ -1858,7 +1862,7 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "And the fact that the serpent's ideas became influential does not establish that God's prior reliability had been evidentially overturned."
+          "text": "And the fact that the serpent’s ideas influenced them does not mean the evidence of God’s earlier reliability had been overturned."
         },
         {
           "type": "paragraph",
@@ -1874,11 +1878,11 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "The prohibition itself can now be examined from a position the humans did not possess before eating."
+          "text": "The humans can now look at the prohibition from the other side of eating."
         },
         {
           "type": "paragraph",
-          "text": "Before the crossing, the serpent's representation made the boundary capable of looking like something standing between the humans and desirable advancement."
+          "text": "Before they crossed the boundary, the serpent’s picture made it look like something standing between them and a better life."
         },
         {
           "type": "paragraph",
@@ -1898,11 +1902,11 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Within that picture, the prohibition can look like restriction imposed against human gain."
+          "text": "Within that picture, the prohibition can look like a rule that keeps humans from gaining something good."
         },
         {
           "type": "paragraph",
-          "text": "But after eating, the humans enter an experiential condition Genesis had not previously disclosed in them."
+          "text": "But after eating, the humans enter an experience Genesis had not shown them having before."
         },
         {
           "type": "paragraph",
@@ -1918,11 +1922,11 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "They begin trying to address a condition they did not previously experience as requiring correction."
+          "text": "They begin trying to deal with something they had not previously experienced as a problem to fix."
         },
         {
           "type": "paragraph",
-          "text": "Whatever else “knowledge of good and evil” will prove to encompass, one thing is now visible:"
+          "text": "Whatever else “knowledge of good and evil” will turn out to include, one thing is now visible:"
         },
         {
           "type": "paragraph",
@@ -1930,11 +1934,11 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "That is an observable effect."
+          "text": "That is an effect we can observe."
         },
         {
           "type": "paragraph",
-          "text": "And that makes a protective purpose of God in giving the prohibition increasingly plausible."
+          "text": "And it gives us stronger reason to think God may have given the prohibition to protect them."
         },
         {
           "type": "paragraph",
@@ -1942,7 +1946,7 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Genesis has shown us what the boundary stood between."
+          "text": "Genesis has shown us the experience that lay on the other side of the boundary."
         },
         {
           "type": "paragraph",
@@ -1950,23 +1954,23 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "There may be dimensions of purpose still undisclosed."
+          "text": "There may be reasons we have not yet been told."
         },
         {
           "type": "paragraph",
-          "text": "But uncertainty about complete purpose should not make us pretend the observable effect is uncertain too."
+          "text": "But not knowing the complete purpose should not make us pretend we cannot see the effect either."
         },
         {
           "type": "paragraph",
-          "text": "Before crossing, this condition had not been disclosed in the humans."
+          "text": "Before crossing, the story had not shown the humans in this condition."
         },
         {
           "type": "paragraph",
-          "text": "After crossing, it is."
+          "text": "After crossing, the story shows it."
         },
         {
           "type": "paragraph",
-          "text": "The boundary had stood between them and a way of knowing they now experience from the inside."
+          "text": "The boundary had stood between them and a way of knowing they now experience for themselves."
         },
         {
           "type": "paragraph",
@@ -1974,11 +1978,11 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "It does, however, give the reader reason to reconsider the serpent's portrayal of the prohibition as an obstacle to human good."
+          "text": "It does, however, give the reader reason to reconsider the serpent’s picture of the prohibition as something blocking human good."
         },
         {
           "type": "paragraph",
-          "text": "The same boundary that could be made to look like deprivation from one side can now be seen, from the other side, as having stood between the humans and a condition they had never before needed to manage."
+          "text": "From one side, the boundary could be made to look as though it kept something good from them. From the other side, we can see that it had stood between them and a condition they had never before needed to deal with."
         },
         {
           "type": "paragraph",
@@ -2003,7 +2007,7 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "He does not narratively interrupt the serpent's opening question."
+          "text": "The story does not show Him interrupting the serpent’s opening question."
         },
         {
           "type": "paragraph",
@@ -2015,7 +2019,7 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "He does not stop the woman's evaluation from changing."
+          "text": "He does not stop the woman’s view of the tree from changing."
         },
         {
           "type": "paragraph",
@@ -2027,19 +2031,19 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "That silence can seem strange if we encounter it as though Genesis has never shown God allowing consequential human action to proceed without continual intervention."
+          "text": "That silence can seem strange if we forget that Genesis has already shown God allowing human decisions to matter without stepping in at every moment."
         },
         {
           "type": "paragraph",
-          "text": "But it has."
+          "text": "We have seen that before."
         },
         {
           "type": "paragraph",
-          "text": "Before any misuse of human agency had been narrated, God brought the animals to the man."
+          "text": "Before the story showed humans misusing their ability to choose and act, God brought the animals to the man."
         },
         {
           "type": "paragraph",
-          "text": "The man encountered them."
+          "text": "The man met them."
         },
         {
           "type": "paragraph",
@@ -2047,7 +2051,7 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Genesis attributes those naming decisions to the man."
+          "text": "Genesis tells us that the man made those naming decisions."
         },
         {
           "type": "paragraph",
@@ -2059,11 +2063,11 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "He remained Creator while allowing human agency to have consequential standing within the world he had made."
+          "text": "He remained Creator while allowing human choices to have real results within the world He had made."
         },
         {
           "type": "paragraph",
-          "text": "That matters because it gives us a positive-priority baseline for human agency and divine non-intervention."
+          "text": "That matters because we have already seen this relationship before anything went wrong: humans could make meaningful choices without God constantly stepping in."
         },
         {
           "type": "paragraph",
@@ -2071,7 +2075,11 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "So God's silence in Genesis 3 should not automatically be interpreted through the negative context in which we now encounter it."
+          "text": "God had already allowed human decisions to stand without interrupting them, before humans used their freedom wrongly."
+        },
+        {
+          "type": "paragraph",
+          "text": "So we should not automatically explain God’s silence in Genesis 3 only through the wrong being done here."
         },
         {
           "type": "paragraph",
@@ -2083,11 +2091,11 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "But the relational point is narrower:"
+          "text": "But the point about God and humans is narrower:"
         },
         {
           "type": "paragraph",
-          "text": "God's sovereignty had already been shown to coexist with meaningful human volition without continual narrated interruption."
+          "text": "Genesis had already shown God’s ruling authority alongside real human choice, without showing Him interrupting every decision."
         },
         {
           "type": "paragraph",
@@ -2099,11 +2107,11 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Nor does it establish that he commissioned the serpent."
+          "text": "Nor does it show that He sent the serpent to do this."
         },
         {
           "type": "paragraph",
-          "text": "Nor can we simply turn the silence into a complete theory of free will and say:"
+          "text": "Nor can we turn that silence into a full explanation of free will and say:"
         },
         {
           "type": "quote",
@@ -2115,15 +2123,15 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "The purpose of the silence remains undisclosed."
+          "text": "The reason for the silence has not been given."
         },
         {
           "type": "paragraph",
-          "text": "But its existence is not without precedent."
+          "text": "But we have seen God allow human action without interruption before."
         },
         {
           "type": "paragraph",
-          "text": "And calling it evidence of indifference would require us to forget almost everything Genesis has already shown us about God's involvement."
+          "text": "And treating the silence as proof that He does not care would require us to forget almost everything Genesis has already shown us about His involvement."
         },
         {
           "type": "paragraph",
@@ -2167,7 +2175,7 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "The humans therefore do not meet the serpent's competing representation abandoned to an evidentiary vacuum."
+          "text": "So the humans do not meet the serpent’s competing picture with no evidence to help them judge it."
         },
         {
           "type": "paragraph",
@@ -2175,7 +2183,7 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "With capacities already given."
+          "text": "With abilities already given."
         },
         {
           "type": "paragraph",
@@ -2183,19 +2191,19 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "With a boundary already communicated."
+          "text": "With a boundary already explained."
         },
         {
           "type": "paragraph",
-          "text": "With a consequence already disclosed."
+          "text": "With a consequence already made known."
         },
         {
           "type": "paragraph",
-          "text": "And with genuine agency already demonstrated."
+          "text": "And with a real ability to choose and act already demonstrated."
         },
         {
           "type": "paragraph",
-          "text": "God does not narratively interrupt the decision."
+          "text": "The story does not show God interrupting the decision."
         },
         {
           "type": "paragraph",
@@ -2228,7 +2236,7 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "What changes first is the representation."
+          "text": "What changes first is the picture of that world."
         },
         {
           "type": "paragraph",
@@ -2252,27 +2260,27 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "It takes realities God has already disclosed and rearranges the relationships among them."
+          "text": "It takes things God has already made known and changes how they appear to fit together."
         },
         {
           "type": "paragraph",
-          "text": "Provision can now contain deprivation."
+          "text": "What God gives can now look as though it leaves something missing."
         },
         {
           "type": "paragraph",
-          "text": "Boundary can become obstruction."
+          "text": "The boundary can become an obstacle."
         },
         {
           "type": "paragraph",
-          "text": "Warning can become misinformation."
+          "text": "The warning can become false information."
         },
         {
           "type": "paragraph",
-          "text": "Difference in knowledge can become concealed advantage."
+          "text": "A difference in knowledge can become a hidden advantage."
         },
         {
           "type": "paragraph",
-          "text": "Present human condition can become deficiency."
+          "text": "The humans’ present condition can look as though it lacks something."
         },
         {
           "type": "paragraph",
@@ -2288,7 +2296,7 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "It supplies no evidence that makes its alternative account more reasonable than the reality the humans already inhabit."
+          "text": "It supplies no evidence that gives them better reason to believe its alternative account than the reality they already live in."
         },
         {
           "type": "paragraph",
@@ -2296,15 +2304,15 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Not by eliminating human agency."
+          "text": "Not by taking away the humans’ ability to choose and act."
         },
         {
           "type": "paragraph",
-          "text": "By becoming influential within it."
+          "text": "By influencing how they use it."
         },
         {
           "type": "paragraph",
-          "text": "The woman begins evaluating the same tree differently."
+          "text": "The woman begins judging the same tree differently."
         },
         {
           "type": "paragraph",
@@ -2340,11 +2348,11 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Their bodies are not narrated as changing."
+          "text": "The story does not describe their bodies changing."
         },
         {
           "type": "paragraph",
-          "text": "Yet nakedness now becomes something they seek to conceal."
+          "text": "Yet nakedness now becomes something they try to cover."
         },
         {
           "type": "paragraph",
@@ -2356,7 +2364,7 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Between those two moments stands the extraordinary power of a competing picture of God to become a way of seeing everything else."
+          "text": "Between those two moments we see the extraordinary power of a competing picture of God: it can become a way of seeing everything else."
         },
         {
           "type": "paragraph",
@@ -2364,11 +2372,11 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "It is showing us how beliefs about God can become relationships with reality."
+          "text": "It shows how beliefs about God can change the way we relate to reality."
         },
         {
           "type": "paragraph",
-          "text": "What we believe about God can affect what looks abundant and what looks scarce."
+          "text": "What we believe about God can affect what looks plentiful and what looks scarce."
         },
         {
           "type": "paragraph",
@@ -2376,15 +2384,15 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "What looks sufficient and what looks deficient."
+          "text": "What looks like enough and what looks like something missing."
         },
         {
           "type": "paragraph",
-          "text": "What looks like wisdom and what looks like deprivation."
+          "text": "What looks like wisdom and what looks like being denied something good."
         },
         {
           "type": "paragraph",
-          "text": "And because human agency is genuine, those interpretations can become actions."
+          "text": "And because humans really can choose and act, those ways of seeing can become actions."
         },
         {
           "type": "paragraph",
@@ -2392,7 +2400,7 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Experiences can then reveal dimensions of the representation that were difficult to see from the other side of the action."
+          "text": "Those experiences can then show us parts of the picture that were hard to see before we acted."
         },
         {
           "type": "paragraph",
@@ -2416,7 +2424,7 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Those correspondences deserve to stand."
+          "text": "Those points of agreement deserve to stand."
         },
         {
           "type": "paragraph",
@@ -2428,11 +2436,11 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "And the lived result raises a larger question than whether the serpent correctly named an outcome feature."
+          "text": "And what they experience raises a larger question than whether the serpent got one detail of the result right."
         },
         {
           "type": "paragraph",
-          "text": "It asks whether the picture through which the humans were induced to cross the boundary faithfully characterized the reality they would inhabit."
+          "text": "Did the picture that persuaded the humans to cross the boundary give them a faithful account of what they were entering?"
         },
         {
           "type": "paragraph",
@@ -2448,19 +2456,19 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "God's warning about death has not been exhaustively explained."
+          "text": "God’s warning about death has not been fully explained."
         },
         {
           "type": "paragraph",
-          "text": "The complete meaning of the knowledge of good and evil has not been exhausted."
+          "text": "We have not learned everything that the knowledge of good and evil means."
         },
         {
           "type": "paragraph",
-          "text": "God's complete purpose in giving the prohibition has not been disclosed."
+          "text": "We have not been told God’s complete purpose in giving the prohibition."
         },
         {
           "type": "paragraph",
-          "text": "The humans' coverings have not been evaluated as successful or unsuccessful."
+          "text": "The story has not yet told us whether the humans’ coverings succeed or fail."
         },
         {
           "type": "paragraph",
@@ -2476,7 +2484,7 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "God's provision preceded the competing representation."
+          "text": "God had provided before the competing picture appeared."
         },
         {
           "type": "paragraph",
@@ -2488,7 +2496,7 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "It supplied no evidentiary basis that made its account more reasonable."
+          "text": "It supplied no evidence that gave better reason to believe its account."
         },
         {
           "type": "paragraph",
@@ -2496,11 +2504,11 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Only later did the prohibited alternative become attractive."
+          "text": "Only later did the forbidden choice become attractive."
         },
         {
           "type": "paragraph",
-          "text": "Her agency remained real as her evaluation changed."
+          "text": "Her ability to choose and act remained real as her view of the tree changed."
         },
         {
           "type": "paragraph",
@@ -2516,11 +2524,11 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "And the first disclosed lived manifestation of that knowing changed their relationship to a reality that had not changed."
+          "text": "And the first sign of that knowing in their experience changed how they related to something that had not changed."
         },
         {
           "type": "paragraph",
-          "text": "By the end of verse 7, reality has begun adjudicating the competing pictures."
+          "text": "By the end of verse 7, what actually happens has begun testing the competing pictures."
         },
         {
           "type": "paragraph",
@@ -2540,7 +2548,7 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Not with a caricature in which God says only true things and the serpent says only false things."
+          "text": "Not with an oversimplified picture in which God says only true things and the serpent says only false things."
         },
         {
           "type": "paragraph",
@@ -2548,7 +2556,7 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Not with a man whose undisclosed psychology we invent."
+          "text": "Not with a man whose thoughts and feelings we invent because they have not been told to us."
         },
         {
           "type": "paragraph",
@@ -2560,15 +2568,15 @@ export const genesisTreeEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "One representation came from the Creator whose provision the humans already inhabited."
+          "text": "One picture came from the Creator who had already provided the world the humans lived in."
         },
         {
           "type": "paragraph",
-          "text": "The other came from a creature that supplied neither an alternative world nor superior evidence, but offered another way of interpreting the world already given."
+          "text": "The other came from a creature that supplied neither another world nor better evidence. It offered another way of understanding the world already given."
         },
         {
           "type": "paragraph",
-          "text": "That alternative interpretation became influential."
+          "text": "That alternative understanding became influential."
         },
         {
           "type": "paragraph",
@@ -2601,6 +2609,10 @@ export const genesisTreeEssay: EssayEntry = {
         {
           "type": "paragraph",
           "text": "And that is where we should let the evidence stop."
+        },
+        {
+          "type": "paragraph",
+          "text": "**Keep watching Him.**"
         }
       ]
     }
