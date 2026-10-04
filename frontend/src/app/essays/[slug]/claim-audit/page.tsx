@@ -119,9 +119,11 @@ export default async function ClaimAuditPage({ params }: PageProps) {
     >
       <StructuredData data={schema} />
 
-      <div className="mb-8 border-l-2 border-[#8a6d2f] bg-[#fff8e6] p-5 text-base leading-7 text-[#465767]">
-        <p className="font-semibold text-[#101b23]">{audit.statusNote}</p>
-      </div>
+      {audit.statusNotePosition !== 'after-table' ? (
+        <div className="mb-8 border-l-2 border-[#8a6d2f] bg-[#fff8e6] p-5 text-base leading-7 text-[#465767]">
+          <p className="font-semibold text-[#101b23]">{audit.statusNote}</p>
+        </div>
+      ) : null}
 
       <section>
         <SectionHeading title="Claim Audit">
@@ -131,7 +133,7 @@ export default async function ClaimAuditPage({ params }: PageProps) {
           </p>
         </SectionHeading>
 
-        <div className="mt-8 overflow-x-auto border border-[#d9d0c3] bg-[#fffdf8] shadow-[0_20px_60px_rgba(23,38,49,0.05)]">
+        <div tabIndex={0} role="region" aria-label="Claim audit table" className="mt-8 overflow-x-auto border border-[#d9d0c3] bg-[#fffdf8] shadow-[0_20px_60px_rgba(23,38,49,0.05)]">
           <table className={`${hasExternalChallenges ? 'min-w-[1120px]' : 'min-w-[880px]'} border-collapse text-left text-sm`}>
             <thead className="bg-[#101b23] text-[#fffdf8]">
               <tr>
@@ -260,6 +262,11 @@ export default async function ClaimAuditPage({ params }: PageProps) {
             </tbody>
           </table>
         </div>
+        {audit.statusNotePosition === 'after-table' ? (
+          <div className="mt-6 border-l-2 border-[#8a6d2f] bg-[#fff8e6] p-5 text-base leading-7 text-[#465767]">
+            <p className="font-semibold text-[#101b23]">{audit.statusNote}</p>
+          </div>
+        ) : null}
       </section>
 
       {audit.boundaryClaims?.length ? (
@@ -270,7 +277,7 @@ export default async function ClaimAuditPage({ params }: PageProps) {
               possibility into a conclusion.
             </p>
           </SectionHeading>
-          <div className="mt-8 overflow-x-auto border border-[#d9d0c3] bg-[#fffdf8] shadow-[0_20px_60px_rgba(23,38,49,0.05)]">
+          <div tabIndex={0} role="region" aria-label="Claims outside present authorization" className="mt-8 overflow-x-auto border border-[#d9d0c3] bg-[#fffdf8] shadow-[0_20px_60px_rgba(23,38,49,0.05)]">
             <table className="min-w-[820px] border-collapse text-left text-sm">
               <thead className="bg-[#101b23] text-[#fffdf8]">
                 <tr>

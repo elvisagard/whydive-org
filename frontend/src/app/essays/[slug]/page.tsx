@@ -235,7 +235,7 @@ export default async function EssayDetailPage({ params }: PageProps) {
       intro={essay.deck}
       image={{
         src: essayImagePath,
-        alt: `Editorial image for ${essay.title}.`,
+        alt: essay.imageAlt ?? `Editorial image for ${essay.title}.`,
       }}
     >
       <ArticlePrintStyles essayUrl={essayUrl} />
@@ -479,7 +479,7 @@ export default async function EssayDetailPage({ params }: PageProps) {
               Inspect the claim audit.
             </h2>
             <p className="mt-3 text-base leading-7 text-[#536271]">
-              See the present status of this essay's claims, argument records, source links, and
+              See the present status of this essay&apos;s claims, argument records, source links, and
               revision notes.
             </p>
             <Link

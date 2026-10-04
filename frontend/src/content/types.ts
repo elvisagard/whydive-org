@@ -30,6 +30,7 @@ export interface EssayEntry {
   updatedDateIso?: string;
   readingTime?: string;
   image?: string;
+  imageAlt?: string;
   series?: EssaySeriesRef;
   scriptureRange?: string;
   topics?: string[];
@@ -123,6 +124,7 @@ export interface ClaimAuditEntry {
   essaySlug: string;
   deck: string;
   statusNote: string;
+  statusNotePosition?: 'before-table' | 'after-table';
   rows: ClaimAuditRow[];
   boundaryClaims?: BoundaryClaim[];
   argumentRecords: ArgumentRecord[];

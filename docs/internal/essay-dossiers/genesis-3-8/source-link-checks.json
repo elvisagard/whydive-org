@@ -1,0 +1,152 @@
+{
+  "checkedOn": "2026-10-04",
+  "note": "Programmatic HTTP reachability only; content verification and retrieval limitations are recorded in source-integrity-review.md. A 403 here does not override successful web-tool content retrieval.",
+  "results": [
+    {
+      "key": "hebrew",
+      "label": "Genesis 3:8 — Masoretic Hebrew and interlinear",
+      "url": "https://biblehub.com/interlinear/genesis/3-8.htm",
+      "status": 200,
+      "finalUrl": "https://biblehub.com/interlinear/genesis/3-8.htm",
+      "bytes": 33085,
+      "contentType": "text/html"
+    },
+    {
+      "key": "english",
+      "label": "Genesis 3:8 — KJV, NIV, ESV, NASB, NLT and NET comparison",
+      "url": "https://biblehub.com/genesis/3-8.htm",
+      "status": 200,
+      "finalUrl": "https://biblehub.com/genesis/3-8.htm",
+      "bytes": 55557,
+      "contentType": "text/html"
+    },
+    {
+      "key": "net",
+      "url": "https://classic.net.bible.org/verse.php?book=Gen&chapter=3&tab=commentaries&verse=8",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "key": "spanish",
+      "label": "Genesis 3:8 — Spanish, including Reina Valera 1909",
+      "url": "https://bibliaparalela.com/genesis/3-8.htm",
+      "status": 200,
+      "finalUrl": "https://bibliaparalela.com/genesis/3-8.htm",
+      "bytes": 15678,
+      "contentType": "text/html"
+    },
+    {
+      "key": "portuguese",
+      "label": "Genesis 3:8 — Portuguese Almeida Revista e Atualizada (ARA)",
+      "url": "https://www.bible.com/pt/bible/1608/GEN.3.8-13.ARA",
+      "status": 200,
+      "finalUrl": "https://www.bible.com/pt/bible/1608/GEN.3.8-13.ARA",
+      "bytes": 357792,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "key": "german",
+      "label": "Genesis 3:8 — German Lutherbibel 1912",
+      "url": "https://bibeltext.com/genesis/3-8.htm",
+      "status": 200,
+      "finalUrl": "https://bibeltext.com/genesis/3-8.htm",
+      "bytes": 15209,
+      "contentType": "text/html"
+    },
+    {
+      "key": "chinese",
+      "label": "Genesis 3:8 — Chinese Union Version comparison",
+      "url": "https://cnbible.com/genesis/3-8.htm",
+      "status": 200,
+      "finalUrl": "https://cnbible.com/genesis/3-8.htm",
+      "bytes": 15402,
+      "contentType": "text/html"
+    },
+    {
+      "key": "swahili",
+      "label": "Genesis 3:8 — Swahili Revised Union Version (SRUV)",
+      "url": "https://www.bible.com/sw/bible/1818/GEN.3.SRUV",
+      "status": 200,
+      "finalUrl": "https://www.bible.com/sw/bible/1818/GEN.3.SRUV",
+      "bytes": 352948,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "key": "greek",
+      "url": "https://sacred-texts.com/bib/sep/gen003.htm",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "key": "latin",
+      "label": "Genesis 3:8 — Latin Vulgate",
+      "url": "https://vulgate.org/ot/genesis_3.htm",
+      "status": 200,
+      "finalUrl": "https://vulgate.org/ot/genesis_3.htm",
+      "bytes": 74925,
+      "contentType": "text/html"
+    },
+    {
+      "key": "rashi",
+      "url": "https://www.chabad.org/library/bible_cdo/aid/8167/jewish/Chapter-3.htm",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "key": "ramban",
+      "url": "https://www.sefaria.org/Ramban_on_Genesis.3.8.1",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "key": "commentaries",
+      "label": "Genesis 3:8 — Keil and Delitzsch, Cambridge, and Ellicott",
+      "url": "https://biblehub.com/commentaries/genesis/3-8.htm",
+      "status": 200,
+      "finalUrl": "https://biblehub.com/commentaries/genesis/3-8.htm",
+      "bytes": 32116,
+      "contentType": "text/html"
+    },
+    {
+      "key": "niehaus",
+      "label": "Jeffrey Niehaus — Biblical Theology, Session 3, transcript p. 13, storm interpretation",
+      "url": "https://biblicalelearning.org/wp-content/uploads/2024/11/Niehaus_BibTheo_EN_Ses03.pdf",
+      "status": 200,
+      "finalUrl": "https://biblicalelearning.org/wp-content/uploads/2024/11/Niehaus_BibTheo_EN_Ses03.pdf",
+      "bytes": 265226,
+      "contentType": "application/pdf"
+    },
+    {
+      "key": "niehaus-bibliography",
+      "label": "Jeffrey Niehaus — author bibliography, Gordon-Conwell",
+      "url": "https://www.gordonconwell.edu/faculty/senior/jeffrey-niehaus/",
+      "status": 200,
+      "finalUrl": "https://www.gordonconwell.edu/faculty/senior/jeffrey-niehaus/",
+      "bytes": 190767,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "key": "cain",
+      "label": "Genesis 4 — later canonical correspondence only",
+      "url": "https://biblehub.com/kjv/genesis/4.htm",
+      "status": 200,
+      "finalUrl": "https://biblehub.com/kjv/genesis/4.htm",
+      "bytes": 12341,
+      "contentType": "text/html"
+    },
+    {
+      "key": "hagar16",
+      "label": "Genesis 16 — later canonical correspondence only",
+      "url": "https://biblehub.com/kjv/genesis/16.htm",
+      "status": 200,
+      "finalUrl": "https://biblehub.com/kjv/genesis/16.htm",
+      "bytes": 10267,
+      "contentType": "text/html"
+    },
+    {
+      "key": "hagar21",
+      "label": "Genesis 21 — later canonical correspondence only",
+      "url": "https://biblehub.com/kjv/genesis/21.htm",
+      "status": 200,
+      "finalUrl": "https://biblehub.com/kjv/genesis/21.htm",
+      "bytes": 13729,
+      "contentType": "text/html"
+    }
+  ]
+}

@@ -1,3 +1,4 @@
+import { genesisHidingClaimAudit } from './genesisHidingClaimAudit';
 import type { ClaimAuditEntry } from './types';
 import { genesisBlessingClaimAudit } from './genesisBlessingClaimAudit';
 import { genesisCompletionClaimAudit } from './genesisCompletionClaimAudit';
@@ -6,6 +7,7 @@ import { genesisLordClaimAudit } from './genesisLordClaimAudit';
 import { genesisLightsClaimAudit } from './genesisLightsClaimAudit';
 
 export const claimAuditEntries: ClaimAuditEntry[] = [
+  genesisHidingClaimAudit,
   genesisBlessingClaimAudit,
   genesisCompletionClaimAudit,
   genesisReflectionClaimAudit,
