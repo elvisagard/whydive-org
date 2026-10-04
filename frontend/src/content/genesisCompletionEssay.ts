@@ -10,7 +10,7 @@ export const genesisCompletionEssay: EssayEntry = {
   "status": "published",
   "publicationDate": "September 2026",
   "publicationDateIso": "2026-09-22",
-  "readingTime": "11 minute read",
+  "readingTime": "12 minute read",
   "image": assetUrl("/images/whydive/when-the-making-was-finished-hero-v2.png"),
   "series": {
     "title": "Knowing God in Genesis",
@@ -42,7 +42,7 @@ export const genesisCompletionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Until now, God has spoken light, sky, land, vegetation, lights, fish, birds, and land animals into the developing creation. Again and again, God speaks, something happens, and God sees."
+          "text": "Until now, God has spoken light, sky, land, plants, lights, fish, birds, and land animals into the world taking shape before us. Again and again, God speaks, something happens, and God sees."
         },
         {
           "type": "paragraph",
@@ -62,7 +62,7 @@ export const genesisCompletionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "And for the first time, the narrative moves toward a creature God will directly address."
+          "text": "And for the first time, the story moves toward a creature God will speak to directly."
         },
         {
           "type": "paragraph",
@@ -91,11 +91,11 @@ export const genesisCompletionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Earlier, the narrative mentioned the Spirit of God hovering over the waters. A reader may naturally wonder whether that earlier disclosure has something to do with the plural language here. But Genesis does not identify the one or ones being addressed."
+          "text": "Earlier, the story mentioned the Spirit of God hovering over the waters. A reader may wonder whether that has something to do with the words “us” and “our” here. But Genesis does not identify the one or ones God is speaking to."
         },
         {
           "type": "paragraph",
-          "text": "What it does make difficult to miss is the plurality itself:"
+          "text": "What it does make difficult to miss is the use of words that mean more than one:"
         },
         {
           "type": "paragraph",
@@ -111,7 +111,7 @@ export const genesisCompletionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Then, almost immediately, the language returns to singular attribution:"
+          "text": "Then, almost immediately, “our” becomes “his,” and the story says that God created:"
         },
         {
           "type": "quote",
@@ -119,7 +119,7 @@ export const genesisCompletionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Whatever we eventually conclude about the “us,” Genesis has given us more information about God than we possessed before—and has done so without explaining all of it."
+          "text": "Whatever we eventually conclude about the “us,” Genesis has told us more about God than we knew before. And it has done so without explaining all of it."
         },
         {
           "type": "paragraph",
@@ -128,6 +128,10 @@ export const genesisCompletionEssay: EssayEntry = {
         {
           "type": "paragraph",
           "text": "The unexplained is not necessarily the undisclosed."
+        },
+        {
+          "type": "paragraph",
+          "text": "Something can be shown to us without being fully explained."
         },
         {
           "type": "paragraph",
@@ -140,7 +144,7 @@ export const genesisCompletionEssay: EssayEntry = {
       "blocks": [
         {
           "type": "paragraph",
-          "text": "Human beings arrive with striking continuity with the life that came before them."
+          "text": "Human beings have much in common with the life that came before them."
         },
         {
           "type": "paragraph",
@@ -168,11 +172,11 @@ export const genesisCompletionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Animals inhabit the created world."
+          "text": "Animals live in the created world."
         },
         {
           "type": "paragraph",
-          "text": "Humans inhabit that same world."
+          "text": "Humans live in that same world."
         },
         {
           "type": "paragraph",
@@ -200,7 +204,7 @@ export const genesisCompletionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Again, the familiar and unexplained sit beside each other without apology."
+          "text": "Again, we find something familiar beside something unexplained. Genesis does not seem troubled by that."
         },
         {
           "type": "paragraph",
@@ -208,7 +212,7 @@ export const genesisCompletionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "And humanity receives a treatment nothing before it received."
+          "text": "And humanity is described and treated in a way nothing before it has been."
         }
       ]
     },
@@ -225,11 +229,11 @@ export const genesisCompletionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Dominion can be an uncomfortable word."
+          "text": "Dominion means authority to rule. It can be an uncomfortable word."
         },
         {
           "type": "paragraph",
-          "text": "We know what domination can look like. Human history gives us more than enough examples of power becoming oppression."
+          "text": "We know what domination can look like. Human history gives us more than enough examples of power being used to crush or mistreat others."
         },
         {
           "type": "paragraph",
@@ -249,11 +253,11 @@ export const genesisCompletionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "No narrated evil."
+          "text": "No evil has been described."
         },
         {
           "type": "paragraph",
-          "text": "No human hierarchy."
+          "text": "No ranking of some humans above others."
         },
         {
           "type": "paragraph",
@@ -261,7 +265,7 @@ export const genesisCompletionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Whatever dominion will eventually mean, its first appearance is not inside a conflict narrative."
+          "text": "Whatever dominion will eventually mean, it first appears before the story has introduced any conflict."
         },
         {
           "type": "paragraph",
@@ -269,7 +273,7 @@ export const genesisCompletionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "And the stated domain is notable."
+          "text": "And we should notice where this authority applies."
         },
         {
           "type": "paragraph",
@@ -298,7 +302,7 @@ export const genesisCompletionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "The animals received blessing without Genesis showing us whether they understood what had happened. Now the narrative explicitly gives us a recipient capable of being addressed:"
+          "text": "The animals received blessing without Genesis showing us whether they understood what had happened. Now the story clearly shows God speaking to humanity:"
         },
         {
           "type": "quote",
@@ -346,7 +350,7 @@ export const genesisCompletionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Provision has become **disclosed provision**."
+          "text": "Provision has become **disclosed provision**. God has supplied food, and He has told the people He gave it to."
         },
         {
           "type": "paragraph",
@@ -395,7 +399,7 @@ export const genesisCompletionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "They do not negotiate their responsibilities."
+          "text": "They do not bargain over their responsibilities."
         },
         {
           "type": "paragraph",
@@ -411,15 +415,15 @@ export const genesisCompletionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "It means **Genesis does not make their response the subject of this movement**."
+          "text": "It means **Genesis does not focus on their response in this part of the story**."
         },
         {
           "type": "paragraph",
-          "text": "Before Genesis tells us anything humanity will do with God, it gives us a history of what God does toward humanity."
+          "text": "Before Genesis tells us anything humanity will do with God, it shows us what God does toward humanity."
         },
         {
           "type": "paragraph",
-          "text": "He intends them."
+          "text": "He intends to make them."
         },
         {
           "type": "paragraph",
@@ -427,7 +431,7 @@ export const genesisCompletionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "He describes them relative to himself."
+          "text": "He describes them in relation to Himself."
         },
         {
           "type": "paragraph",
@@ -439,15 +443,15 @@ export const genesisCompletionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "He provides for them."
+          "text": "He gives them what they need."
         },
         {
           "type": "paragraph",
-          "text": "And he tells them about the provision."
+          "text": "And He tells them what He has given."
         },
         {
           "type": "paragraph",
-          "text": "The initiative remains with God."
+          "text": "God is still the one taking the first step."
         }
       ]
     },
@@ -472,7 +476,7 @@ export const genesisCompletionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Vegetation was good."
+          "text": "Plants were good."
         },
         {
           "type": "paragraph",
@@ -480,7 +484,7 @@ export const genesisCompletionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Animate life was good."
+          "text": "Animal life was good."
         },
         {
           "type": "paragraph",
@@ -488,7 +492,7 @@ export const genesisCompletionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "But now the field of vision expands:"
+          "text": "But now God looks at the whole:"
         },
         {
           "type": "quote",
@@ -508,15 +512,15 @@ export const genesisCompletionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "This is not merely God's appraisal of humanity."
+          "text": "God is not judging humanity alone."
         },
         {
           "type": "paragraph",
-          "text": "It is his appraisal of the whole."
+          "text": "He is judging everything He has made, together."
         },
         {
           "type": "paragraph",
-          "text": "Humanity may occupy a climactic position among the physical creatures, but Genesis does not allow humanity to swallow the value of everything that came before."
+          "text": "Humanity may be the high point among the physical creatures. But that does not take away the value of everything that came before."
         },
         {
           "type": "paragraph",
@@ -561,11 +565,11 @@ export const genesisCompletionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Provision has been disclosed."
+          "text": "God has told humanity what He has provided."
         },
         {
           "type": "paragraph",
-          "text": "God surveys the whole."
+          "text": "God looks over the whole."
         },
         {
           "type": "paragraph",
@@ -581,7 +585,7 @@ export const genesisCompletionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "And that continuation changes how we understand the culmination of the story."
+          "text": "And what follows changes our understanding of where the story finally leads."
         },
         {
           "type": "quote",
@@ -589,7 +593,7 @@ export const genesisCompletionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "The narrative now tells us explicitly that the work is complete."
+          "text": "The story now tells us plainly that the work is complete."
         },
         {
           "type": "paragraph",
@@ -646,7 +650,7 @@ export const genesisCompletionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "And God ceased from the work he had been doing."
+          "text": "And God stopped doing the work He had been doing."
         },
         {
           "type": "paragraph",
@@ -658,19 +662,19 @@ export const genesisCompletionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "That adds something new to the portrait."
+          "text": "That shows us something else about God."
         },
         {
           "type": "paragraph",
-          "text": "For six days, we have watched God initiate and act."
+          "text": "For six days, we have watched God take the first step and act."
         },
         {
           "type": "paragraph",
-          "text": "Now we see his relationship to completion."
+          "text": "Now we see what He does when the work is complete."
         },
         {
           "type": "paragraph",
-          "text": "God's activity is not endless activity merely for activity's sake."
+          "text": "God does not keep working endlessly just to keep working."
         },
         {
           "type": "paragraph",
@@ -695,7 +699,7 @@ export const genesisCompletionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "God ceases from his creative work and then immediately continues acting."
+          "text": "God stops His creative work and then immediately continues acting."
         },
         {
           "type": "paragraph",
@@ -703,11 +707,11 @@ export const genesisCompletionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "He sanctifies."
+          "text": "He sanctifies—He makes the day holy."
         },
         {
           "type": "paragraph",
-          "text": "So cessation from creating cannot mean cessation of all divine activity."
+          "text": "So stopping the work of creating cannot mean God has stopped doing everything."
         },
         {
           "type": "paragraph",
@@ -736,11 +740,11 @@ export const genesisCompletionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Then humanity received reproductive blessing as well."
+          "text": "Then humanity was also blessed to be fruitful and multiply."
         },
         {
           "type": "paragraph",
-          "text": "That could tempt us to conclude that blessing is essentially reproductive empowerment."
+          "text": "That could tempt us to think blessing simply means giving life the ability to produce more life."
         },
         {
           "type": "paragraph",
@@ -756,7 +760,7 @@ export const genesisCompletionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Whatever blessing means, reproduction cannot exhaust it."
+          "text": "Whatever blessing means, it must mean more than the ability to reproduce."
         },
         {
           "type": "paragraph",
@@ -813,7 +817,7 @@ export const genesisCompletionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "The first holiness in the biblical story appears before anything has gone wrong."
+          "text": "God makes the day holy. This first holiness in the biblical story appears before anything has gone wrong."
         },
         {
           "type": "paragraph",
@@ -821,7 +825,7 @@ export const genesisCompletionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "No impurity."
+          "text": "Nothing has been described as impure or unclean."
         },
         {
           "type": "paragraph",
@@ -829,11 +833,11 @@ export const genesisCompletionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "No priesthood."
+          "text": "No priests have been introduced."
         },
         {
           "type": "paragraph",
-          "text": "No salvation from a broken condition."
+          "text": "No saving from a broken condition has been described."
         },
         {
           "type": "paragraph",
@@ -869,7 +873,7 @@ export const genesisCompletionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "But they should not be allowed to rewrite the first appearance backward."
+          "text": "But those later events should not change what we see at this first appearance."
         },
         {
           "type": "paragraph",
@@ -882,7 +886,7 @@ export const genesisCompletionEssay: EssayEntry = {
       "blocks": [
         {
           "type": "paragraph",
-          "text": "And what does God sanctify?"
+          "text": "And what does God make holy?"
         },
         {
           "type": "paragraph",
@@ -922,7 +926,7 @@ export const genesisCompletionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Yet God's culminating activity establishes a distinction within time itself."
+          "text": "Yet in these final actions, God makes a distinction within time itself. He treats this day differently from the others."
         },
         {
           "type": "paragraph",
@@ -958,7 +962,7 @@ export const genesisCompletionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "But it does tell us where the literary movement arrives:"
+          "text": "But it does tell us where this part of the story arrives:"
         },
         {
           "type": "paragraph",
@@ -966,7 +970,7 @@ export const genesisCompletionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "**divine cessation.**"
+          "text": "**divine cessation.** God has stopped the creative work."
         },
         {
           "type": "paragraph",
@@ -978,11 +982,11 @@ export const genesisCompletionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Humanity may be the climactic physical creature."
+          "text": "Humanity may be the high point among the physical creatures."
         },
         {
           "type": "paragraph",
-          "text": "But the story does not culminate with another physical thing."
+          "text": "But the story reaches its ending with something other than another physical thing."
         }
       ]
     },
@@ -1035,7 +1039,7 @@ export const genesisCompletionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Genesis never gives the seventh day the evening-and-morning formula used for the other six."
+          "text": "Genesis never gives the seventh day the evening-and-morning ending used for the other six."
         },
         {
           "type": "paragraph",
@@ -1051,7 +1055,7 @@ export const genesisCompletionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "The omission is real."
+          "text": "The usual ending really is missing."
         },
         {
           "type": "paragraph",
@@ -1059,11 +1063,11 @@ export const genesisCompletionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "There is no need to turn it into an endless day, a metaphorical continuation, or a theory of eternity simply because we have discovered the pattern break."
+          "text": "We do not have to conclude that this day never ended, that it continues in a symbolic sense, or that it explains eternity just because the pattern has changed."
         },
         {
           "type": "paragraph",
-          "text": "Sometimes the text gives us a distinction more clearly than it gives us the explanation for the distinction."
+          "text": "Sometimes the text shows us clearly that something is different without telling us why."
         },
         {
           "type": "paragraph",
@@ -1076,7 +1080,7 @@ export const genesisCompletionEssay: EssayEntry = {
       "blocks": [
         {
           "type": "paragraph",
-          "text": "We began this creation movement watching God work."
+          "text": "We began this creation story watching God work."
         },
         {
           "type": "paragraph",
@@ -1104,7 +1108,7 @@ export const genesisCompletionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "God evaluated."
+          "text": "God judged what He saw."
         },
         {
           "type": "paragraph",
@@ -1116,7 +1120,7 @@ export const genesisCompletionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "And Genesis does not leave us wondering whether the creative work simply faded from view."
+          "text": "And Genesis does not leave us wondering whether it simply stopped telling us about the creative work."
         },
         {
           "type": "paragraph",
@@ -1128,7 +1132,7 @@ export const genesisCompletionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "He ceases."
+          "text": "He stops the creative work."
         },
         {
           "type": "paragraph",
@@ -1144,7 +1148,7 @@ export const genesisCompletionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "They have not negotiated it."
+          "text": "They have not bargained for it."
         },
         {
           "type": "paragraph",
@@ -1156,7 +1160,7 @@ export const genesisCompletionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "The initiative remains where it has been from the beginning."
+          "text": "The initiative—the first move—remains where it has been from the beginning."
         },
         {
           "type": "paragraph",
@@ -1173,6 +1177,10 @@ export const genesisCompletionEssay: EssayEntry = {
         {
           "type": "paragraph",
           "text": "**It ends after we are shown what the Creator does when his making is finished.**"
+        },
+        {
+          "type": "paragraph",
+          "text": "**Keep watching Him.**"
         }
       ]
     }
