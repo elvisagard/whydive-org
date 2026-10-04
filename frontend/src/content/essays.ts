@@ -89,6 +89,7 @@ export const essayEntries: EssayEntry[] = [
   {
     title: 'Strong Conclusions Require Strong Evidence',
     slug: 'strong-conclusions-require-strong-evidence',
+    claimAuditSlug: 'strong-conclusions-require-strong-evidence',
     deck: 'The governing principle beneath the WhyDive framework.',
     category: 'evidence',
     status: 'published',
@@ -270,6 +271,7 @@ export const essayEntries: EssayEntry[] = [
   {
     title: 'Why Judgment Matters',
     slug: 'why-judgment-matters',
+    claimAuditSlug: 'why-judgment-matters',
     deck: 'More information does not automatically produce better judgment. WhyDive begins with the movement from evidence to reasoning to judgment.',
     category: 'judgment',
     status: 'published',
@@ -418,6 +420,7 @@ export const essayEntries: EssayEntry[] = [
   {
     title: 'The Judgment Problem in the Age of AI',
     slug: 'the-judgment-problem-in-the-age-of-ai',
+    claimAuditSlug: 'the-judgment-problem-in-the-age-of-ai',
     deck: 'AI has made it easier to get an answer. It has not made it easier to know what an answer is worth.',
     category: 'ai-and-human-reasoning',
     status: 'published',

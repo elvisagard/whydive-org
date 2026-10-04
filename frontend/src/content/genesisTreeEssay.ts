@@ -4,6 +4,7 @@ import { assetUrl } from '@/lib/assets';
 export const genesisTreeEssay: EssayEntry = {
   "title": "When the Tree Changed Without Changing",
   "slug": "when-the-tree-changed-without-changing",
+  "claimAuditSlug": "when-the-tree-changed-without-changing",
   "deck": "Genesis 3:1–7 and the Reality Behind a Competing Picture of God",
   "category": "religion",
   "status": "published",
