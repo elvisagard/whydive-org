@@ -119,6 +119,12 @@ export default async function ClaimAuditPage({ params }: PageProps) {
     >
       <StructuredData data={schema} />
 
+      {audit.provenanceNotes?.length ? (
+        <aside aria-label="Record provenance" className="mb-8 space-y-3 border-l-2 border-[#8a6d2f] bg-[#fff8e6] p-5 text-base leading-7 text-[#465767]">
+          {audit.provenanceNotes.map((note) => <p key={note}>{note}</p>)}
+        </aside>
+      ) : null}
+
       {audit.statusNotePosition !== 'after-table' ? (
         <div className="mb-8 border-l-2 border-[#8a6d2f] bg-[#fff8e6] p-5 text-base leading-7 text-[#465767]">
           <p className="font-semibold text-[#101b23]">{audit.statusNote}</p>
@@ -209,6 +215,7 @@ export default async function ClaimAuditPage({ params }: PageProps) {
                     ) : null}
                     <td className="border-t border-[#d9d0c3] px-4 py-4 align-top">
                       <div className="grid gap-2">
+                        {row.evidenceNote ? <p>{renderInlineMarkup(row.evidenceNote)}</p> : null}
                         {records.map(({ id, record }) => (
                           <a
                             key={`${row.argumentRecordId}-${id}`}
@@ -476,11 +483,11 @@ export default async function ClaimAuditPage({ params }: PageProps) {
           <div className="mt-8 grid gap-4">
             {audit.openQuestions.map((record) => (
               <article
-                key={record.id}
+                key={record.id ?? record.question}
                 id={record.id}
                 className="scroll-mt-28 border border-[#d9d0c3] bg-[#fffdf8] p-5 shadow-[0_20px_60px_rgba(23,38,49,0.05)]"
               >
-                <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#8a6d2f]">{record.id}</p>
+                {record.id ? <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#8a6d2f]">{record.id}</p> : null}
                 <p className="mt-3 text-lg font-semibold leading-7 text-[#101b23]">{record.question}</p>
                 {record.status ? <p className="mt-3 text-base leading-7 text-[#6f551e]">{record.status}</p> : null}
                 {record.notes?.length ? (
@@ -506,6 +513,48 @@ export default async function ClaimAuditPage({ params }: PageProps) {
               </article>
             ))}
           </div>
+        </section>
+      ) : null}
+
+      {audit.detailedRevisionRecords?.length ? (
+        <section className="mt-16">
+          <SectionHeading title="Finalized Revision Records">
+            <p>These records preserve corrected formulations, their boundaries, and their implications for the essay.</p>
+          </SectionHeading>
+          <div className="mt-8 grid gap-6">
+            {audit.detailedRevisionRecords.map((record) => (
+              <article key={record.id} id={record.id} className="scroll-mt-28 border border-[#d9d0c3] bg-[#fffdf8] p-5 md:p-8">
+                <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#8a6d2f]">{record.id}</p>
+                <h3 className="mt-3 text-2xl font-semibold text-[#101b23]">{record.title}</h3>
+                <div className="mt-6 space-y-5 text-base leading-7 text-[#536271]">
+                  {record.sections.map((section, index) => (
+                    <div key={`${record.id}-${index}`}>
+                      {section.label ? <h4 className="font-semibold text-[#101b23]">{section.label}</h4> : null}
+                      <div className="mt-2 space-y-3">
+                        {section.body.map((paragraph, paragraphIndex) => <p key={paragraphIndex}>{renderInlineMarkup(paragraph)}</p>)}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </article>
+            ))}
+          </div>
+        </section>
+      ) : null}
+
+      {audit.revisionSummaries?.length ? (
+        <section className="mt-16">
+          <SectionHeading title="Revision Summaries">
+            <p>The surviving revision topics are preserved without assigning unverified record identifiers.</p>
+          </SectionHeading>
+          <dl className="mt-8 grid gap-4">
+            {audit.revisionSummaries.map((record) => (
+              <div key={record.topic} className="border border-[#d9d0c3] bg-[#fffdf8] p-5">
+                <dt className="font-semibold text-[#101b23]">{record.topic}</dt>
+                <dd className="mt-3 text-base leading-7 text-[#536271]">{renderInlineMarkup(record.summary)}</dd>
+              </div>
+            ))}
+          </dl>
         </section>
       ) : null}
 

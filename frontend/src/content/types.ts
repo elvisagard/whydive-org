@@ -60,6 +60,7 @@ export interface ClaimAuditRow {
   claim: string;
   status: string;
   rationale: string;
+  evidenceNote?: string;
   externalChallenge?: string;
   argumentRecordId: string;
   argumentRecordIds?: string[];
@@ -110,7 +111,7 @@ export interface EmergentRecord {
 }
 
 export interface OpenQuestionRecord {
-  id: string;
+  id?: string;
   question: string;
   status?: string;
   notes?: string[];
@@ -131,6 +132,9 @@ export interface ClaimAuditEntry {
   emergentRecords?: EmergentRecord[];
   openQuestions?: OpenQuestionRecord[];
   revisionRecord?: RevisionRecordEntry[];
+  detailedRevisionRecords?: Pick<ArgumentRecord, 'id' | 'title' | 'sections'>[];
+  revisionSummaries?: { topic: string; summary: string }[];
+  provenanceNotes?: string[];
   architecture?: string[];
   closingPrinciples?: string[];
 }
