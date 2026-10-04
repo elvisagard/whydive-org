@@ -97,7 +97,7 @@ export const genesisLightsEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "It is easy to read past the sequence because the world of the fourth day is much more familiar to us. Lights in the sky. Day and night. Days and years. These belong to the world we know."
+          "text": "It is easy to miss that order because the world of the fourth day is so familiar. Lights in the sky. Day and night. Days and years. These belong to the world we know."
         },
         {
           "type": "paragraph",
@@ -114,7 +114,7 @@ export const genesisLightsEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "God distinguished the light from the darkness. He called the light Day and the darkness Night. Evening came. Morning came."
+          "text": "God separated the light from the darkness. He called the light Day and the darkness Night. Evening came. Morning came."
         },
         {
           "type": "paragraph",
@@ -142,11 +142,11 @@ export const genesisLightsEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "It has counted three days before the lights that will be associated with days and years."
+          "text": "It has counted three days before introducing the lights that will have a part in marking days and years."
         },
         {
           "type": "paragraph",
-          "text": "The passage does not stop to explain how we should resolve every question this creates."
+          "text": "The passage does not stop to answer every question this raises."
         },
         {
           "type": "paragraph",
@@ -175,11 +175,11 @@ export const genesisLightsEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "These are real functions."
+          "text": "These lights have real work to do."
         },
         {
           "type": "paragraph",
-          "text": "But they are functions concerning realities we have already encountered."
+          "text": "But that work concerns things we have already met in the story."
         },
         {
           "type": "paragraph",
@@ -203,7 +203,7 @@ export const genesisLightsEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "The lights enter an order God has already been developing, and they are given work within it."
+          "text": "God has already been putting the world in order. The lights now enter that world and receive work to do within it."
         }
       ]
     },
@@ -236,11 +236,15 @@ export const genesisLightsEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Being created does not make their functions unreal. Genesis still says they govern."
+          "text": "Here, Day and Night do not begin with the lights that govern them. God has already called the light Day and the darkness Night."
         },
         {
           "type": "paragraph",
-          "text": "But their work does not make them ultimate."
+          "text": "The lights were made by God. That does not make their work any less real. Genesis still says they govern."
+        },
+        {
+          "type": "paragraph",
+          "text": "But their work does not make them ultimate. Their governing role still depends on the God who made them."
         },
         {
           "type": "paragraph",
@@ -252,7 +256,7 @@ export const genesisLightsEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Before they are associated with days and years, Genesis has already taken us through three days."
+          "text": "Before the lights receive their work concerning days and years, Genesis has already taken us through three days."
         },
         {
           "type": "paragraph",
@@ -265,15 +269,15 @@ export const genesisLightsEssay: EssayEntry = {
       "blocks": [
         {
           "type": "paragraph",
-          "text": "This is where the sequence begins to show us something about God without stopping to give us an abstract description of him."
+          "text": "The order of these events begins to show us something about God. We learn it by watching, before being given a description of what He is like."
         },
         {
           "type": "paragraph",
-          "text": "Our ordinary experience is deeply connected with the realities introduced on day four."
+          "text": "Our everyday lives are closely connected with the things introduced on day four."
         },
         {
           "type": "paragraph",
-          "text": "We live by days and years. We experience daylight and darkness. We look upward and see the objects through which these regularities of our world become visible."
+          "text": "We live by days and years. We experience daylight and darkness. We look up and see the lights through which these familiar patterns become visible."
         },
         {
           "type": "paragraph",
@@ -293,11 +297,11 @@ export const genesisLightsEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "We watch him give them their functions."
+          "text": "We watch him give them their work."
         },
         {
           "type": "paragraph",
-          "text": "The things that govern important aspects of created experience are themselves objects of God's activity."
+          "text": "The lights govern important parts of our daily experience. Yet they are themselves things God makes, places, and gives work to do."
         },
         {
           "type": "paragraph",
@@ -313,7 +317,11 @@ export const genesisLightsEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "The lights now structure important aspects of the world we experience, yet Genesis has already shown God acting before they appear."
+          "text": "The lights now have a part in ordering the world we experience. Yet Genesis has already shown God acting before they appear."
+        },
+        {
+          "type": "paragraph",
+          "text": "He did not need these lights to be there before He could do the work we have already watched Him do."
         }
       ]
     },
@@ -322,7 +330,7 @@ export const genesisLightsEssay: EssayEntry = {
       "blocks": [
         {
           "type": "paragraph",
-          "text": "Genesis does not interrupt day four to give us a list of God's attributes."
+          "text": "Genesis does not interrupt day four to list God's qualities."
         },
         {
           "type": "paragraph",
@@ -334,11 +342,15 @@ export const genesisLightsEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Within the disclosed sequence, God is already acting before the lights appear. When they do appear, their presence, placement, and functions are presented in relation to his activity."
+          "text": "In the order the story gives us, God is already acting before the lights appear. Then He makes them, places them, and gives them their work."
         },
         {
           "type": "paragraph",
-          "text": "This is different from simply being told an attribute and then looking for evidence to support it."
+          "text": "They depend on His action. The story does not show His earlier action depending on them."
+        },
+        {
+          "type": "paragraph",
+          "text": "That is different from starting with a description of God and then looking for evidence to support it."
         },
         {
           "type": "paragraph",
@@ -346,7 +358,7 @@ export const genesisLightsEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Sometimes what Genesis makes available about God is found not in an adjective attached to him, but in the relationship between God and what he creates."
+          "text": "Sometimes Genesis shows us what God is like through His relationship with what He creates, rather than through a word used to describe Him."
         },
         {
           "type": "paragraph",
@@ -358,7 +370,11 @@ export const genesisLightsEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "At the same time, there is more evidence available about the One developing it."
+          "text": "At the same time, we have more evidence about the One developing it."
+        },
+        {
+          "type": "paragraph",
+          "text": "The world is developing, and our knowledge of God is growing. That does not mean God Himself is developing."
         }
       ]
     },
@@ -415,7 +431,7 @@ export const genesisLightsEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "It is becoming increasingly recognizable."
+          "text": "We can recognize more and more of this world."
         },
         {
           "type": "paragraph",
@@ -439,7 +455,7 @@ export const genesisLightsEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "They participate in the distinction between light and darkness."
+          "text": "They have a part in separating light from darkness."
         },
         {
           "type": "paragraph",
@@ -447,7 +463,7 @@ export const genesisLightsEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Creation is becoming not merely fuller, but more relational and functional."
+          "text": "More things are present, but that is not the only change. Those things have work to do in relation to one another."
         },
         {
           "type": "paragraph",
@@ -455,7 +471,7 @@ export const genesisLightsEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "A world is taking shape in which created things genuinely do things in relationship with other created things."
+          "text": "A world is taking shape in which created things really do things, and their work involves other created things."
         }
       ]
     },
@@ -480,7 +496,7 @@ export const genesisLightsEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "We now know things about stars that an ordinary reader looking into the ancient night sky could not have known. We know something of their scale, their distances, their numbers, and the enormous reaches of space in which they exist."
+          "text": "We know things about stars that someone looking into the ancient night sky could not have known. We know more about their size, how far away they are, how many there are, and the vast space around them."
         },
         {
           "type": "paragraph",
@@ -496,7 +512,7 @@ export const genesisLightsEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "That knowledge can deepen our encounter with the words without allowing us to pretend that Genesis itself gave us an astronomy lesson."
+          "text": "Knowing more about stars can deepen what these words mean to us. But it does not mean Genesis itself taught us those facts about space."
         },
         {
           "type": "paragraph",
@@ -521,11 +537,11 @@ export const genesisLightsEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "What is the precise relationship between the first three days and the lights introduced on the fourth?"
+          "text": "How do the first three days relate to the lights introduced on the fourth?"
         },
         {
           "type": "paragraph",
-          "text": "Why did God establish light, Day and Night, and successive days before creating the things that would later receive functions concerning them?"
+          "text": "Why did God establish light, Day and Night, and days passing before making the lights that would receive work concerning them?"
         },
         {
           "type": "paragraph",
@@ -557,7 +573,7 @@ export const genesisLightsEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "And now we have watched God create things that will govern important dimensions of that world."
+          "text": "And now we have watched God make things that will govern important parts of that world."
         },
         {
           "type": "paragraph",
@@ -581,7 +597,7 @@ export const genesisLightsEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "We will live inside regularities so familiar that they can simply feel like the way things are."
+          "text": "We will live with patterns so familiar that they can simply feel like the way things are."
         },
         {
           "type": "paragraph",
@@ -593,7 +609,11 @@ export const genesisLightsEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "And before Genesis asks us to understand everything about what that means, it has already given us something to see about the One who made them."
+          "text": "Genesis has not answered every question about what that means. But it has already shown us something about the One who made these lights."
+        },
+        {
+          "type": "paragraph",
+          "text": "**Keep watching Him.**"
         }
       ]
     }
