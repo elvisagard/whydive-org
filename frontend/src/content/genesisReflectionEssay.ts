@@ -10,7 +10,7 @@ export const genesisReflectionEssay: EssayEntry = {
   "status": "published",
   "publicationDate": "September 2026",
   "publicationDateIso": "2026-09-22",
-  "readingTime": "11 minute read",
+  "readingTime": "13 minute read",
   "image": assetUrl("/images/whydive/look-at-creation-but-watch-god-hero-v2.png"),
   "series": {
     "title": "Knowing God in Genesis",
@@ -46,7 +46,7 @@ export const genesisReflectionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Then, almost immediately, it begins generating questions it does not answer."
+          "text": "Then, almost immediately, it begins raising questions it does not answer."
         },
         {
           "type": "paragraph",
@@ -54,11 +54,11 @@ export const genesisReflectionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "How does divine speech produce physical reality?"
+          "text": "How does God speaking bring physical things into being?"
         },
         {
           "type": "paragraph",
-          "text": "How does light exist before the lights later appointed to govern day and night?"
+          "text": "How does light exist before the lights that will later be given the work of governing day and night?"
         },
         {
           "type": "paragraph",
@@ -106,7 +106,7 @@ export const genesisReflectionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Because while Genesis leaves many questions unanswered, it is remarkably persistent about answering others."
+          "text": "Because while Genesis leaves many questions unanswered, it keeps returning to clear answers about other things."
         }
       ]
     },
@@ -115,7 +115,7 @@ export const genesisReflectionEssay: EssayEntry = {
       "blocks": [
         {
           "type": "paragraph",
-          "text": "Again and again, the narrative directs our attention toward the same Person."
+          "text": "Again and again, the story directs our attention toward the same Person."
         },
         {
           "type": "paragraph",
@@ -143,7 +143,7 @@ export const genesisReflectionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "God evaluates."
+          "text": "God judges what He sees."
         },
         {
           "type": "paragraph",
@@ -159,11 +159,11 @@ export const genesisReflectionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "God ceases."
+          "text": "God stops the creative work."
         },
         {
           "type": "paragraph",
-          "text": "God sanctifies."
+          "text": "God sanctifies—He makes the seventh day holy."
         },
         {
           "type": "paragraph",
@@ -183,7 +183,7 @@ export const genesisReflectionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Vegetation."
+          "text": "Plants."
         },
         {
           "type": "paragraph",
@@ -211,7 +211,7 @@ export const genesisReflectionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "But the narrative keeps returning our attention to God."
+          "text": "But the story keeps returning our attention to God."
         },
         {
           "type": "paragraph",
@@ -219,11 +219,11 @@ export const genesisReflectionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "It could have explained mechanisms."
+          "text": "It could have explained how things work."
         },
         {
           "type": "paragraph",
-          "text": "It could have supplied classifications."
+          "text": "It could have explained how to sort living things into groups."
         },
         {
           "type": "paragraph",
@@ -235,11 +235,11 @@ export const genesisReflectionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Instead, the relatively small amount it does disclose repeatedly tells us what **God does in relation to what exists**."
+          "text": "Instead, the relatively little it does tell us repeatedly shows **what God does in relation to what exists**."
         },
         {
           "type": "paragraph",
-          "text": "The imbalance is remarkable."
+          "text": "The difference between how much is left unexplained and how much is told is remarkable."
         },
         {
           "type": "paragraph",
@@ -247,11 +247,11 @@ export const genesisReflectionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Yet some of what Genesis does tell us is extraordinarily consequential."
+          "text": "Yet some of what Genesis does tell us can change how we understand a great deal."
         },
         {
           "type": "paragraph",
-          "text": "Perhaps the amount of information we receive should not be confused with the importance of the information we receive."
+          "text": "Perhaps how much information we receive is a different question from how much that information matters."
         },
         {
           "type": "paragraph",
@@ -276,7 +276,7 @@ export const genesisReflectionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Creation fills the field of view."
+          "text": "Creation fills our view."
         },
         {
           "type": "paragraph",
@@ -284,15 +284,15 @@ export const genesisReflectionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "When light appears, Genesis tells us what God says, sees, separates, names, and evaluates."
+          "text": "When light appears, Genesis tells us what God says, sees, separates, names, and judges."
         },
         {
           "type": "paragraph",
-          "text": "When vegetation appears, Genesis tells us what God calls for and what God sees."
+          "text": "When plants appear, Genesis tells us what God calls for and what God sees."
         },
         {
           "type": "paragraph",
-          "text": "When the lights appear, Genesis tells us what functions God gives them."
+          "text": "When the lights appear, Genesis tells us what work God gives them."
         },
         {
           "type": "paragraph",
@@ -300,7 +300,7 @@ export const genesisReflectionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "When humanity arrives, Genesis describes humanity relative to God himself:"
+          "text": "When humanity arrives, Genesis describes human beings in relation to God Himself:"
         },
         {
           "type": "quote",
@@ -308,7 +308,7 @@ export const genesisReflectionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Then God addresses humans directly."
+          "text": "Then God speaks to humans directly."
         },
         {
           "type": "paragraph",
@@ -320,7 +320,7 @@ export const genesisReflectionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "When the physical work is complete, the narrative still does not abandon its subject."
+          "text": "When the physical work is complete, the story still keeps our attention on God."
         },
         {
           "type": "paragraph",
@@ -328,7 +328,7 @@ export const genesisReflectionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "God ceases."
+          "text": "God stops the creative work."
         },
         {
           "type": "paragraph",
@@ -353,7 +353,7 @@ export const genesisReflectionEssay: EssayEntry = {
       "blocks": [
         {
           "type": "paragraph",
-          "text": "Something else becomes visible when the whole movement is placed together."
+          "text": "Something else becomes visible when we look at the whole story together."
         },
         {
           "type": "paragraph",
@@ -389,11 +389,11 @@ export const genesisReflectionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "He provides for them."
+          "text": "He gives them what they need."
         },
         {
           "type": "paragraph",
-          "text": "He tells them that he has provided for them."
+          "text": "He tells them what He has given them."
         },
         {
           "type": "paragraph",
@@ -417,11 +417,11 @@ export const genesisReflectionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "No negotiation."
+          "text": "No bargaining."
         },
         {
           "type": "paragraph",
-          "text": "Then the creative work reaches completion."
+          "text": "Then the creative work is finished."
         },
         {
           "type": "paragraph",
@@ -433,11 +433,11 @@ export const genesisReflectionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "The work is finished, and God ceases from it."
+          "text": "The work is finished, and God stops doing it."
         },
         {
           "type": "paragraph",
-          "text": "Then he blesses and sanctifies the seventh day."
+          "text": "Then He blesses the seventh day and makes it holy."
         },
         {
           "type": "paragraph",
@@ -445,15 +445,15 @@ export const genesisReflectionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "From beginning to end, the movement is remarkably proactive."
+          "text": "From beginning to end, God keeps taking the first step."
         },
         {
           "type": "paragraph",
-          "text": "Before Genesis tells us what creation will do with God, it gives us a sustained history of **what God does toward creation**."
+          "text": "Before Genesis tells us what creation will do with God, it gives us a continuing record of **what God does toward creation**."
         },
         {
           "type": "paragraph",
-          "text": "That may be one of the most consequential things the opening story gives us."
+          "text": "That may be one of the most important things the opening story gives us."
         },
         {
           "type": "paragraph",
@@ -494,7 +494,7 @@ export const genesisReflectionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Good does not first appear as the opposite of evil. Evil has not entered the disclosed story."
+          "text": "Good does not first appear as the opposite of evil. Evil has not entered the story we have been given."
         },
         {
           "type": "paragraph",
@@ -506,15 +506,15 @@ export const genesisReflectionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Provision appears before scarcity."
+          "text": "God provides before the story tells us of anyone going without."
         },
         {
           "type": "paragraph",
-          "text": "Authority appears before narrated oppression."
+          "text": "Authority appears before the story describes anyone using power to oppress others."
         },
         {
           "type": "paragraph",
-          "text": "God's cessation from work appears without an exhaustion narrative."
+          "text": "God stops His work without the story saying He is tired."
         },
         {
           "type": "paragraph",
@@ -522,7 +522,7 @@ export const genesisReflectionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "That does not tell us everything these categories will eventually mean."
+          "text": "That does not tell us everything goodness, blessing, provision, authority, rest, and holiness will eventually mean."
         },
         {
           "type": "paragraph",
@@ -530,7 +530,7 @@ export const genesisReflectionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "But perhaps later disruption should not be allowed to travel backward and become the original definition of what existed before the disruption arrived."
+          "text": "But when things go wrong later, that should not become our starting definition of what was already there before anything went wrong."
         },
         {
           "type": "paragraph",
@@ -538,7 +538,7 @@ export const genesisReflectionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "The first thing Genesis describes as holy is not something rescued from contamination."
+          "text": "The first thing Genesis describes as holy has not been rescued from anything impure or unclean."
         },
         {
           "type": "paragraph",
@@ -583,7 +583,7 @@ export const genesisReflectionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "What exactly constitutes that image?"
+          "text": "What exactly does being made in that image mean?"
         },
         {
           "type": "paragraph",
@@ -603,7 +603,7 @@ export const genesisReflectionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "The evening-and-morning formula closes the first six days but is absent from the seventh."
+          "text": "The words about evening and morning close the first six days. They are missing from the seventh."
         },
         {
           "type": "paragraph",
@@ -643,7 +643,7 @@ export const genesisReflectionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "without possessing a complete definition of image and likeness."
+          "text": "without having a complete definition of image and likeness. Genesis describes humanity in relation to God in a way it has not described other creatures."
         },
         {
           "type": "paragraph",
@@ -655,15 +655,15 @@ export const genesisReflectionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "without knowing why."
+          "text": "without knowing why those familiar words about evening and morning are missing."
         },
         {
           "type": "paragraph",
-          "text": "The unanswered question does not automatically erase the disclosed fact."
+          "text": "The unanswered question does not automatically erase what Genesis has told us."
         },
         {
           "type": "paragraph",
-          "text": "And the disclosed fact does not give us permission to pretend the unanswered question has disappeared."
+          "text": "And what Genesis has told us does not give us permission to pretend the unanswered question has disappeared."
         },
         {
           "type": "paragraph",
@@ -676,7 +676,7 @@ export const genesisReflectionEssay: EssayEntry = {
       "blocks": [
         {
           "type": "paragraph",
-          "text": "That distinction changes the experience of uncertainty."
+          "text": "That distinction changes what it is like to live with uncertainty."
         },
         {
           "type": "paragraph",
@@ -696,11 +696,11 @@ export const genesisReflectionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "An unanswered question is not, by itself, counterevidence."
+          "text": "An unanswered question is not, by itself, counterevidence—evidence that a claim may be wrong."
         },
         {
           "type": "paragraph",
-          "text": "It becomes a challenge to something we think we know when evidence arising from that question actually bears against the claim."
+          "text": "It challenges something we think we know when investigating the question brings evidence that actually counts against that claim."
         },
         {
           "type": "paragraph",
@@ -712,7 +712,7 @@ export const genesisReflectionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Genesis does not seem afraid of leaving its reader with enormous unresolved territory."
+          "text": "Genesis does not seem afraid of leaving its reader with so much still unexplained."
         },
         {
           "type": "paragraph",
@@ -725,15 +725,15 @@ export const genesisReflectionEssay: EssayEntry = {
       "blocks": [
         {
           "type": "paragraph",
-          "text": "Two ideas helped me visualize what was happening."
+          "text": "Two ideas helped me picture what was happening."
         },
         {
           "type": "paragraph",
-          "text": "The first was an **anchor**."
+          "text": "The first was an **anchor**. An anchor holds something steady. Here, it pictures what we have learned well enough to hold onto as we keep asking questions."
         },
         {
           "type": "paragraph",
-          "text": "Some things become sufficiently clear that we can responsibly carry them forward."
+          "text": "Some things become clear enough that we can responsibly use them in the next stage of our reading."
         },
         {
           "type": "paragraph",
@@ -741,15 +741,15 @@ export const genesisReflectionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "God acts intentionally."
+          "text": "God acts with intention."
         },
         {
           "type": "paragraph",
-          "text": "God attends to what results."
+          "text": "God pays attention to what results."
         },
         {
           "type": "paragraph",
-          "text": "God evaluates."
+          "text": "God judges what He sees."
         },
         {
           "type": "paragraph",
@@ -757,7 +757,7 @@ export const genesisReflectionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "God provides."
+          "text": "God gives what is needed."
         },
         {
           "type": "paragraph",
@@ -769,7 +769,7 @@ export const genesisReflectionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "God sanctifies."
+          "text": "God makes something holy."
         },
         {
           "type": "paragraph",
@@ -777,7 +777,7 @@ export const genesisReflectionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "They are reference points."
+          "text": "They are points we can return to while we explore what we do not yet understand."
         },
         {
           "type": "paragraph",
@@ -785,11 +785,11 @@ export const genesisReflectionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "The second idea was a **vector**."
+          "text": "The second idea was a **vector**. Think of an arrow pointing in a direction. Here, the idea helps us notice where the story keeps pointing our attention."
         },
         {
           "type": "paragraph",
-          "text": "The disclosure does not merely give information. Its repeated selections direct our attention."
+          "text": "Genesis does more than give us facts. What it chooses to tell us, again and again, directs our attention."
         },
         {
           "type": "paragraph",
@@ -801,7 +801,7 @@ export const genesisReflectionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "That does not mean we know God's complete purpose for every inclusion and omission."
+          "text": "That does not mean we know all of God’s reasons for what the story includes and leaves out."
         },
         {
           "type": "paragraph",
@@ -809,15 +809,15 @@ export const genesisReflectionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "It simply means the direction of the disclosure itself can be observed."
+          "text": "It simply means we can notice where the story keeps pointing."
         },
         {
           "type": "paragraph",
-          "text": "The anchor tells us what has become sufficiently established to carry forward."
+          "text": "The anchor tells us what has become clear enough to carry forward."
         },
         {
           "type": "paragraph",
-          "text": "The vector tells us where the disclosure keeps directing our attention."
+          "text": "The vector tells us where the story keeps directing our attention."
         },
         {
           "type": "paragraph",
@@ -830,7 +830,7 @@ export const genesisReflectionEssay: EssayEntry = {
       "blocks": [
         {
           "type": "paragraph",
-          "text": "This also helped clarify the relationship between Genesis and the created world it describes."
+          "text": "This also helped clarify how Genesis relates to the created world it describes."
         },
         {
           "type": "paragraph",
@@ -842,7 +842,7 @@ export const genesisReflectionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "We can examine living organisms."
+          "text": "We can examine living things."
         },
         {
           "type": "paragraph",
@@ -862,7 +862,7 @@ export const genesisReflectionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "But studying vegetation alone cannot tell us:"
+          "text": "But studying plants alone cannot tell us:"
         },
         {
           "type": "quote",
@@ -906,19 +906,19 @@ export const genesisReflectionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "It tells us something about how that Person regarded what he made."
+          "text": "It tells us something about what that Person thought of what He made."
         },
         {
           "type": "paragraph",
-          "text": "It tells us things about the Creator that the created thing, examined by itself, could not securely tell us."
+          "text": "It tells us things about the Creator that we could not firmly establish by examining the created thing alone."
         },
         {
           "type": "paragraph",
-          "text": "Then the creation becomes the concrete world in relation to which those claims can be considered."
+          "text": "Then we can consider those claims in relation to the actual world they describe. When Genesis says God blessed living creatures, for example, those creatures are part of the world we can study."
         },
         {
           "type": "paragraph",
-          "text": "That is a different kind of access."
+          "text": "We are learning about God in a different way: by hearing what Genesis tells us about Him, as we consider the world it describes."
         },
         {
           "type": "paragraph",
@@ -931,7 +931,7 @@ export const genesisReflectionEssay: EssayEntry = {
       "blocks": [
         {
           "type": "paragraph",
-          "text": "That may be why the imbalance between known and unknown matters so much."
+          "text": "That may be why the difference between how much we know and how much we do not know matters so much."
         },
         {
           "type": "paragraph",
@@ -939,11 +939,11 @@ export const genesisReflectionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "The disclosure is comparatively small."
+          "text": "What Genesis tells us is much smaller by comparison."
         },
         {
           "type": "paragraph",
-          "text": "But the disclosure is dense."
+          "text": "But those few things carry a great deal of meaning."
         },
         {
           "type": "paragraph",
@@ -955,11 +955,11 @@ export const genesisReflectionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "God's disclosed speech repeatedly corresponds with what follows."
+          "text": "Again and again, what God says matches what happens next."
         },
         {
           "type": "paragraph",
-          "text": "God attends to what he makes."
+          "text": "God pays attention to what He makes."
         },
         {
           "type": "paragraph",
@@ -967,11 +967,11 @@ export const genesisReflectionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "God blesses life toward abundance."
+          "text": "God blesses life to multiply and fill its world."
         },
         {
           "type": "paragraph",
-          "text": "God creates humanity in distinctive relation to himself."
+          "text": "God creates humanity in a special relation to Himself."
         },
         {
           "type": "paragraph",
@@ -987,7 +987,7 @@ export const genesisReflectionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "God ceases."
+          "text": "God stops the creative work."
         },
         {
           "type": "paragraph",
@@ -1003,7 +1003,7 @@ export const genesisReflectionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "A small amount of revelation can radically orient a much larger field of unanswered questions."
+          "text": "A small amount of revelation—what God makes known—can change how we approach a much larger set of unanswered questions. We still have questions, but we now ask them knowing something about the One they concern."
         }
       ]
     },
@@ -1016,7 +1016,7 @@ export const genesisReflectionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Genesis has not made God completely explicable."
+          "text": "Genesis has not made God someone we can completely explain."
         },
         {
           "type": "paragraph",
@@ -1028,7 +1028,7 @@ export const genesisReflectionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "We do not know how divine speech produces physical reality."
+          "text": "We do not know how God speaking brings physical things into being."
         },
         {
           "type": "paragraph",
@@ -1044,7 +1044,7 @@ export const genesisReflectionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "There is more mystery at the end of the creation movement than we could possibly resolve."
+          "text": "By the end of the creation story, more mystery remains than we could possibly resolve."
         },
         {
           "type": "paragraph",
@@ -1056,7 +1056,7 @@ export const genesisReflectionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Not through an abstract list of attributes."
+          "text": "Not through a list of words describing His qualities."
         },
         {
           "type": "paragraph",
@@ -1072,7 +1072,7 @@ export const genesisReflectionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "What he did when created things began participating."
+          "text": "What He did when the things He made began to take part in what happened."
         },
         {
           "type": "paragraph",
@@ -1092,7 +1092,7 @@ export const genesisReflectionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "But a history has accumulated."
+          "text": "But we now have a history of what God has done."
         },
         {
           "type": "quote",
@@ -1100,7 +1100,7 @@ export const genesisReflectionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "And perhaps the world can remain mysterious without making its Creator inaccessible within the story."
+          "text": "And perhaps the world can remain mysterious while the story still lets us come to know its Creator."
         }
       ]
     },
@@ -1109,7 +1109,7 @@ export const genesisReflectionEssay: EssayEntry = {
       "blocks": [
         {
           "type": "paragraph",
-          "text": "None of this gives us permission to freeze the portrait."
+          "text": "None of this gives us permission to decide that our picture of God is finished and can never change."
         },
         {
           "type": "paragraph",
@@ -1125,11 +1125,11 @@ export const genesisReflectionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "It may refine it."
+          "text": "It may help us see it more clearly and precisely."
         },
         {
           "type": "paragraph",
-          "text": "It may expose assumptions we did not know we were carrying."
+          "text": "It may uncover things we had assumed without noticing."
         },
         {
           "type": "paragraph",
@@ -1145,11 +1145,11 @@ export const genesisReflectionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "We do not need exhaustive knowledge before we can say that something has genuinely been disclosed."
+          "text": "We do not need to know everything before we can say that something has truly been made known."
         },
         {
           "type": "paragraph",
-          "text": "And we do not need to pretend certainty where the disclosure has left a question open."
+          "text": "And we do not need to pretend certainty where what we have been told still leaves a question open."
         },
         {
           "type": "paragraph",
@@ -1169,7 +1169,7 @@ export const genesisReflectionEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "And through all the things it places before our eyes, it keeps directing us back toward the same subject."
+          "text": "And through all the things it places before our eyes, the story keeps directing us back toward the same Person."
         },
         {
           "type": "paragraph",
@@ -1178,6 +1178,10 @@ export const genesisReflectionEssay: EssayEntry = {
         {
           "type": "paragraph",
           "text": "**But watch God.**"
+        },
+        {
+          "type": "paragraph",
+          "text": "**Keep watching Him.**"
         }
       ]
     }
