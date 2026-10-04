@@ -10,7 +10,7 @@ export const genesisBlessingEssay: EssayEntry = {
   "status": "published",
   "publicationDate": "September 2026",
   "publicationDateIso": "2026-09-22",
-  "readingTime": "8 minute read",
+  "readingTime": "9 minute read",
   "image": assetUrl("/images/whydive/and-god-blessed-them-hero.png"),
   "series": {
     "title": "Knowing God in Genesis",
@@ -38,7 +38,7 @@ export const genesisBlessingEssay: EssayEntry = {
       "blocks": [
         {
           "type": "paragraph",
-          "text": "There is something almost understated about the arrival of animal life in Genesis."
+          "text": "Genesis tells us about the arrival of animal life in surprisingly quiet words."
         },
         {
           "type": "paragraph",
@@ -54,11 +54,11 @@ export const genesisBlessingEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "By this point in the story, we have watched light appear, waters divide, dry land emerge, vegetation grow, and lights take their places in the heavens. But living creatures introduce something different. These creatures move. They reproduce. They carry within themselves the capacity for generations that do not yet exist."
+          "text": "By this point in the story, we have watched light appear, waters divide, dry land emerge, plants grow, and lights take their places in the sky. But living creatures introduce something different. These creatures move. They reproduce. They carry within themselves the ability to produce generations that do not yet exist."
         },
         {
           "type": "paragraph",
-          "text": "A modern reader knows enough about living organisms to feel the weight hidden inside these few sentences. Reproduction involves staggering biological complexity. What Genesis compresses into “be fruitful and multiply” encompasses realities its first readers could never have described as we can."
+          "text": "A modern reader knows enough about living things to feel how much these few sentences leave unexplained. Producing new life involves many complex processes. The words “be fruitful and multiply” describe something its first readers could not have explained as we can. That knowledge can deepen our wonder, but Genesis itself does not teach us those details."
         },
         {
           "type": "paragraph",
@@ -66,11 +66,11 @@ export const genesisBlessingEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "There is no indication that life presents God with a new level of difficulty. No struggle. No experiment. No discovery of how to make living things work."
+          "text": "The story gives no sign that making animal life is harder for God. No struggle. No experiment. No discovery of how to make living things work."
         },
         {
           "type": "paragraph",
-          "text": "The narrative remains in the same remarkable register:"
+          "text": "The story continues in the same remarkable way:"
         },
         {
           "type": "paragraph",
@@ -82,7 +82,7 @@ export const genesisBlessingEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Perhaps the understatement itself is worth noticing."
+          "text": "Perhaps that quiet way of telling it is itself worth noticing."
         }
       ]
     },
@@ -107,7 +107,7 @@ export const genesisBlessingEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Where do creatures that cross the categories fit—animals that live between land and water, for example?"
+          "text": "Where do creatures that belong to more than one group fit—animals that live between land and water, for example?"
         },
         {
           "type": "paragraph",
@@ -127,7 +127,7 @@ export const genesisBlessingEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Instead, amid everything Genesis could have told us about the first great abundance of animal life, it tells us something else:"
+          "text": "Genesis could have told us many things about all this new animal life. Instead, it tells us something else:"
         },
         {
           "type": "quote",
@@ -159,7 +159,7 @@ export const genesisBlessingEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Now, for the first time in the narrative, **God blesses**."
+          "text": "Now, for the first time in the story, **God blesses**."
         },
         {
           "type": "paragraph",
@@ -172,7 +172,7 @@ export const genesisBlessingEssay: EssayEntry = {
       "blocks": [
         {
           "type": "paragraph",
-          "text": "The blessing is not left completely undefined."
+          "text": "The passage gives us some idea of what this blessing means."
         },
         {
           "type": "paragraph",
@@ -204,7 +204,7 @@ export const genesisBlessingEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Life is given the capacity to extend beyond the creatures God has just made."
+          "text": "Life is given the ability to continue beyond the creatures God has just made."
         },
         {
           "type": "paragraph",
@@ -224,11 +224,11 @@ export const genesisBlessingEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "This is different from the inanimate creation we have encountered. Light is not told to produce more light. The expanse is not blessed to reproduce. The seas are not commanded to make additional seas."
+          "text": "This is different from the things we have met that are not alive. Light is not told to produce more light. The expanse is not blessed to reproduce. The seas are not commanded to make additional seas."
         },
         {
           "type": "paragraph",
-          "text": "But living creatures receive the ability to produce life beyond themselves, and Genesis places that capacity inside God's blessing."
+          "text": "But living creatures receive the ability to produce life beyond themselves, and Genesis places that ability inside God's blessing."
         },
         {
           "type": "paragraph",
@@ -237,6 +237,10 @@ export const genesisBlessingEssay: EssayEntry = {
         {
           "type": "paragraph",
           "text": "**God positively wills a future for this life.**"
+        },
+        {
+          "type": "paragraph",
+          "text": "He wants this life to continue. His blessing points toward more life, beyond the creatures now before us."
         },
         {
           "type": "paragraph",
@@ -285,7 +289,7 @@ export const genesisBlessingEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "No indication that these creatures even comprehend what has just been given to them."
+          "text": "No indication that these creatures even understand what has just been given to them."
         },
         {
           "type": "paragraph",
@@ -297,7 +301,7 @@ export const genesisBlessingEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "That means we should be careful about importing something into blessing that its first appearance does not require."
+          "text": "So we should be careful about adding a requirement to blessing that we do not find in its first appearance."
         },
         {
           "type": "quote",
@@ -313,11 +317,11 @@ export const genesisBlessingEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "At least here, the reality of God's blessing is not made dependent upon demonstrated awareness in the recipient."
+          "text": "At least here, God's blessing is real before the creatures show that they understand it. That does not prove they understand nothing. It means their understanding is not shown as what makes the blessing work."
         },
         {
           "type": "paragraph",
-          "text": "God can act beneficially toward a creature before that creature has shown understanding what God has done."
+          "text": "God can do good for a creature before that creature has shown that it understands what God has done."
         }
       ]
     },
@@ -330,7 +334,7 @@ export const genesisBlessingEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Nothing precedes this blessing that could be described as achievement."
+          "text": "Before this blessing, the story records nothing the creatures have achieved."
         },
         {
           "type": "paragraph",
@@ -342,7 +346,7 @@ export const genesisBlessingEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "They have not negotiated terms."
+          "text": "They have not bargained over what each side must do."
         },
         {
           "type": "paragraph",
@@ -362,7 +366,7 @@ export const genesisBlessingEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Later Scripture may give us covenants, conditions, commands, consequences, and promises. Those later relationships should be allowed to speak when we reach them."
+          "text": "Later Scripture may show us covenants—solemn agreements—as well as conditions, commands, consequences, and promises. We should listen to what those later relationships show us when we reach them."
         },
         {
           "type": "paragraph",
@@ -387,7 +391,7 @@ export const genesisBlessingEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "When Genesis turns to the land animals, the explicit blessing formula is not repeated."
+          "text": "When Genesis turns to the land animals, it does not repeat the words about God blessing them."
         },
         {
           "type": "paragraph",
@@ -419,7 +423,7 @@ export const genesisBlessingEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Perhaps the land animals were somehow excluded from his positive interest."
+          "text": "Perhaps the land animals were somehow left outside His care."
         },
         {
           "type": "paragraph",
@@ -427,11 +431,11 @@ export const genesisBlessingEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "What it *has* told us is that God makes these creatures, differentiates them, attends to the result, and calls it good."
+          "text": "What it *has* told us is that God makes these creatures in their different kinds, pays attention to the result, and calls it good."
         },
         {
           "type": "paragraph",
-          "text": "So the absence of a narrated blessing cannot simply become evidence for the absence of divine care."
+          "text": "So the fact that Genesis does not record a blessing here cannot simply become evidence that God does not care."
         },
         {
           "type": "paragraph",
@@ -456,7 +460,7 @@ export const genesisBlessingEssay: EssayEntry = {
       "blocks": [
         {
           "type": "paragraph",
-          "text": "There is another curious feature in this movement."
+          "text": "There is another curious detail in this part of the story."
         },
         {
           "type": "paragraph",
@@ -472,7 +476,7 @@ export const genesisBlessingEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "We have seen something like this before with vegetation. God does not narrate created reality as completely passive."
+          "text": "We have seen something like this before with plants. Genesis does not describe creation as doing nothing. The earth has a part in what happens."
         },
         {
           "type": "paragraph",
@@ -480,7 +484,7 @@ export const genesisBlessingEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "The narrative seems perfectly comfortable holding both statements together."
+          "text": "The story seems perfectly comfortable holding both statements together."
         },
         {
           "type": "paragraph",
@@ -496,7 +500,7 @@ export const genesisBlessingEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Nor does it appear to regard them as competitors."
+          "text": "Nor does it seem to treat them as competing explanations, as though one must rule out the other."
         },
         {
           "type": "paragraph",
@@ -504,11 +508,11 @@ export const genesisBlessingEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Created participation does not make God disappear."
+          "text": "The earth having a part in what happens does not make God disappear."
         },
         {
           "type": "paragraph",
-          "text": "And divine agency does not require creation to do nothing."
+          "text": "And God being the one who makes the animals does not require creation to do nothing."
         },
         {
           "type": "paragraph",
@@ -525,7 +529,7 @@ export const genesisBlessingEssay: EssayEntry = {
       "blocks": [
         {
           "type": "paragraph",
-          "text": "By the end of these verses, something important has happened in our developing portrait of God."
+          "text": "By the end of these verses, we have learned something important about God."
         },
         {
           "type": "paragraph",
@@ -541,11 +545,11 @@ export const genesisBlessingEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "He differentiates them."
+          "text": "He makes them in their different kinds."
         },
         {
           "type": "paragraph",
-          "text": "He attends to what has resulted."
+          "text": "He pays attention to what has resulted."
         },
         {
           "type": "paragraph",
@@ -553,11 +557,11 @@ export const genesisBlessingEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "And, for the creatures of the waters and the air, he blesses them toward abundance and a future."
+          "text": "And He blesses the creatures of the waters and the air to multiply, fill their world, and have a future."
         },
         {
           "type": "paragraph",
-          "text": "There is still no reciprocal relationship described."
+          "text": "The story still does not describe a relationship in which the creatures respond to what God has done."
         },
         {
           "type": "paragraph",
@@ -577,15 +581,15 @@ export const genesisBlessingEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "That means “intimacy” may still be too strong a word for what we have seen. Intimacy normally suggests something mutual."
+          "text": "That means “intimacy” may still be too strong a word for what we have seen. Intimacy normally means closeness shared by both sides. The story has not yet shown us that."
         },
         {
           "type": "paragraph",
-          "text": "But **beneficence** is not too strong."
+          "text": "But **beneficence** is not too strong. That word means doing good for another. We have watched God do that."
         },
         {
           "type": "paragraph",
-          "text": "God's beneficial action toward life precedes demonstrated reciprocation from life."
+          "text": "God does good for these living creatures before they are shown giving anything back."
         },
         {
           "type": "paragraph",
@@ -605,11 +609,11 @@ export const genesisBlessingEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "We do not know how blessing operates."
+          "text": "We do not know how blessing works."
         },
         {
           "type": "paragraph",
-          "text": "We do not know why the blessing is explicitly narrated for some creatures and not repeated for the land animals."
+          "text": "We do not know why Genesis tells us about a blessing for some creatures and does not repeat it for the land animals."
         },
         {
           "type": "paragraph",
@@ -633,7 +637,11 @@ export const genesisBlessingEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "The Person is becoming less so."
+          "text": "But the Person is becoming less unfamiliar. We do not know everything about how life came to be. We know more about the God who gave it."
+        },
+        {
+          "type": "paragraph",
+          "text": "**Keep watching Him.**"
         }
       ]
     }
