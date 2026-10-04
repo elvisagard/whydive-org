@@ -611,6 +611,13 @@ export const genesisNakednessClaimAudit: ClaimAuditEntry = {
           ]
         },
         {
+          "label": "Publication source verification — 4 October 2026",
+          "body": [
+            "The linked commentary allows that nakedness and shame occupied Adam’s immediate awareness more strongly than his transgression. That supports the limited psychological possibility used here. It also describes concealment of sin through its consequences, so it does not establish an unqualified scholarly finding that Adam was not evasive.",
+            "The supplied record’s no-lying formulation is this investigation’s bounded use of that possibility, not a quotation or a complete summary of the commentary. This online transcription was verified during publication preparation; the original investigation’s exact print edition and page remain unidentified."
+          ]
+        },
+        {
           "label": "Reasoning",
           "body": [
             "First-person testimony is privileged evidence concerning Adam's experience.",
@@ -653,6 +660,12 @@ export const genesisNakednessClaimAudit: ClaimAuditEntry = {
             "**HIGH.**",
             "This protects Adam from being caricatured while allowing the reader to notice what his explanation actually does."
           ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Keil and Delitzsch, Biblical Commentary on the Old Testament — Genesis 3, comment on 3:9–10 (Bible Hub online transcription; verified 4 October 2026)",
+          "href": "https://biblehub.com/commentaries/kad/genesis/3.htm"
         }
       ]
     },
@@ -1327,7 +1340,7 @@ export const genesisNakednessClaimAudit: ClaimAuditEntry = {
   ],
   "provenanceNotes": [
     "The essay develops seven selected public arguments. This audit separates fourteen consequential findings for inspection, with claim identifiers and statuses preserved from the 31-claim dossier.",
-    "The nine supplied Argument Records and fifteen finalized Revision Records are retained below. Scholarly references within those records preserve the supplied attribution; incomplete bibliographic details have not been reconstructed or presented as verified citations."
+    "The nine supplied Argument Records and fifteen finalized Revision Records are retained below. The named Keil and Delitzsch reference is now linked and its limited support explained in AR-3.10-07. Verification of the online text does not recover the original investigation’s print edition or page."
   ],
   "closingPrinciples": [
     "The evidence horizon is Genesis 3:10. Later evidence retains corrective authority.",

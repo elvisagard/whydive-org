@@ -6,7 +6,9 @@ export const genesisNakednessEssay: EssayEntry = {
   "slug": "when-nakedness-became-a-reason-to-hide",
   "deck": "Adam explains his fear—but why did nakedness, once no problem, become his reason for hiding?",
   "category": "religion",
-  "status": "draft",
+  "status": "published",
+  "publicationDate": "October 2026",
+  "publicationDateIso": "2026-10-04",
   "readingTime": "11 minute read",
   "image": assetUrl("/images/whydive/when-nakedness-became-a-reason-to-hide-hero.png"),
   "imageAlt": "Adam in a garment of green leaves stands close to a tree, looking outward with an apprehensive expression.",
@@ -31,8 +33,9 @@ export const genesisNakednessEssay: EssayEntry = {
     "relationship"
   ],
   "claimAuditSlug": "when-nakedness-became-a-reason-to-hide",
-  "sourceNote": "The opening quotation is Genesis 3:10 in the King James Version (KJV). The essay stops at Genesis 3:10. The linked Claim Audit preserves the adjudicated claims, argument records, revisions, and open questions. Scholarly references retained in the supplied records are not a verified bibliography.",
+  "sourceNote": "The opening quotation is Genesis 3:10 in the King James Version (KJV). The essay stops at Genesis 3:10. The linked Claim Audit preserves the adjudicated claims, argument records, revisions, and open questions. The linked commentary was checked during publication preparation; the audit distinguishes its limited contribution from the study’s own judgment.",
   "bibliography": [
+    {"label": "Keil and Delitzsch, Biblical Commentary on the Old Testament — Genesis 3, comment on 3:9–10 (Bible Hub online transcription; verified 4 October 2026)", "href": "https://biblehub.com/commentaries/kad/genesis/3.htm"},
     {
       "label": "Genesis 3:10 — King James Version (quotation verification)",
       "href": "https://www.biblegateway.com/passage/?search=Genesis+3%3A10&version=KJV"
