@@ -1,4 +1,5 @@
 import { genesisNakednessEssay } from './genesisNakednessEssay';
+import { genesisChoiceEssay } from './genesisChoiceEssay';
 import { genesisHidingEssay } from './genesisHidingEssay';
 import type { EssayCategory, EssayEntry } from './types';
 import { assetUrl } from '@/lib/assets';
@@ -82,6 +83,7 @@ export const essayEntries: EssayEntry[] = [
   genesisLordEssay,
   genesisTreeEssay,
   genesisHidingEssay,
+  genesisChoiceEssay,
   genesisNakednessEssay,
   genesisLanguageEssay,
   {
