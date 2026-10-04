@@ -9,7 +9,7 @@ export const genesisWaterEssay: EssayEntry = {
   "status": "published",
   "publicationDate": "September 2026",
   "publicationDateIso": "2026-09-17",
-  "readingTime": "13 minute read",
+  "readingTime": "11 minute read",
   "image": assetUrl('/images/whydive/water-from-water-hero.png'),
   "series": {
     "title": "Knowing God in Genesis",
@@ -80,7 +80,7 @@ export const genesisWaterEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Light and darkness already sound different. Even before God separates them, the words give me two categories. I may have questions about what exactly is happening, but I do not have to wonder why the sentence uses two different names."
+          "text": "Light and darkness already sound different. Even before God separates them, the words give me two kinds of things. I may wonder what exactly is happening, but I can see why the sentence uses two different names."
         },
         {
           "type": "paragraph",
@@ -137,7 +137,7 @@ export const genesisWaterEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Now I have categories I did not have before."
+          "text": "Now I have a way to tell the two groups apart."
         },
         {
           "type": "paragraph",
@@ -165,7 +165,7 @@ export const genesisWaterEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "After the result is narrated, I have **waters below and waters above**."
+          "text": "After the story tells me what happened, I have **waters below and waters above**."
         },
         {
           "type": "paragraph",
@@ -177,7 +177,7 @@ export const genesisWaterEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "God speaks from knowledge I do not yet possess."
+          "text": "God speaks from knowledge I do not yet have."
         },
         {
           "type": "paragraph",
@@ -222,7 +222,7 @@ export const genesisWaterEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "There will be something in the midst of the waters. It will separate. There will be waters on one side and waters on another."
+          "text": "There will be something in the middle of the waters. It will separate. There will be waters on one side and waters on another."
         },
         {
           "type": "paragraph",
@@ -250,7 +250,7 @@ export const genesisWaterEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "The second “And God said” does not meet me in quite the same position as the first one did."
+          "text": "When I hear “And God said” the second time, I already know something I did not know the first time."
         },
         {
           "type": "paragraph",
@@ -279,7 +279,7 @@ export const genesisWaterEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Then I am allowed to encounter what follows."
+          "text": "Then I am allowed to see what follows."
         },
         {
           "type": "paragraph",
@@ -303,7 +303,7 @@ export const genesisWaterEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "God speaks of something in the midst of the waters."
+          "text": "God speaks of something in the middle of the waters."
         },
         {
           "type": "paragraph",
@@ -327,11 +327,15 @@ export const genesisWaterEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "The correspondence is there for me to see."
+          "text": "I can see how what happens matches what He said."
         },
         {
           "type": "paragraph",
-          "text": "That does not tell me everything about why God chose to reveal creation this way. I should be careful here. It would be easy to say, “God does this because He is trying to teach me to trust Him.”"
+          "text": "That does not tell me everything about why God chose to reveal creation this way. I should be careful here."
+        },
+        {
+          "type": "paragraph",
+          "text": "It would be easy to say, “God does this because He is trying to teach me to trust Him.”"
         },
         {
           "type": "paragraph",
@@ -372,7 +376,7 @@ export const genesisWaterEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "The Hebrew word behind those translations has generated a great deal of discussion."
+          "text": "People have long discussed what the Hebrew word behind these translations means."
         },
         {
           "type": "paragraph",
@@ -380,11 +384,11 @@ export const genesisWaterEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "It tells us what this created reality does."
+          "text": "It tells us what the thing God made does."
         },
         {
           "type": "paragraph",
-          "text": "It tells us where it stands in relation to the waters."
+          "text": "It tells us where it is in relation to the waters."
         },
         {
           "type": "paragraph",
@@ -396,7 +400,7 @@ export const genesisWaterEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "But it does not explain its physical mechanism."
+          "text": "But it does not explain how it physically separates the waters."
         },
         {
           "type": "paragraph",
@@ -404,7 +408,7 @@ export const genesisWaterEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "It does not tell us why God chose this particular sequence."
+          "text": "It does not tell us why God chose to do these things in this order."
         },
         {
           "type": "paragraph",
@@ -453,11 +457,11 @@ export const genesisWaterEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "I can be uncertain about ancient cosmology and still notice that God differentiated."
+          "text": "I can be unsure how ancient people pictured the world and still notice that God made a distinction."
         },
         {
           "type": "paragraph",
-          "text": "I can remain unsure how the waters were separated and still compare what God said with what subsequently happened."
+          "text": "I can remain unsure how the waters were separated and still compare what God said with what happened next."
         },
         {
           "type": "paragraph",
@@ -526,15 +530,19 @@ export const genesisWaterEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "That does not make the disclosure empty."
+          "text": "That does not mean He has shown me nothing."
         },
         {
           "type": "paragraph",
-          "text": "In fact, it is remarkably precise in the places where it chooses to speak."
+          "text": "In fact, what the passage does tell me is clear and specific."
         },
         {
           "type": "paragraph",
           "text": "**God tells me enough to know what He has disclosed, even while much remains undisclosed.**"
+        },
+        {
+          "type": "paragraph",
+          "text": "I can know what He has shown me without knowing everything He has left unexplained."
         },
         {
           "type": "paragraph",
@@ -555,6 +563,10 @@ export const genesisWaterEssay: EssayEntry = {
         {
           "type": "paragraph",
           "text": "**an incomplete explanation is not the same thing as an unreliable revelation.**"
+        },
+        {
+          "type": "paragraph",
+          "text": "Not having every answer does not, by itself, mean I cannot rely on what God has shown me."
         },
         {
           "type": "paragraph",
@@ -599,6 +611,10 @@ export const genesisWaterEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
+          "text": "I have something to remember when I consider whether I can trust this Speaker."
+        },
+        {
+          "type": "paragraph",
           "text": "I have heard Him speak."
         },
         {
@@ -611,7 +627,7 @@ export const genesisWaterEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "And again, what follows corresponds."
+          "text": "And again, what follows matches what He said."
         },
         {
           "type": "paragraph",
@@ -619,7 +635,7 @@ export const genesisWaterEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "Genesis is beginning to give me that history—not a complete history of God, but a starting point from which His character can begin to become recognizable."
+          "text": "Genesis is beginning to give me that history. It is not a complete history of God. But it gives me a starting point for recognizing what He is like."
         },
         {
           "type": "paragraph",
@@ -636,6 +652,10 @@ export const genesisWaterEssay: EssayEntry = {
         {
           "type": "paragraph",
           "text": "**God is not.**"
+        },
+        {
+          "type": "paragraph",
+          "text": "The beginning being described is the beginning of the heavens and the earth. God is already there as their Creator. This sentence does not answer every question about His existence."
         },
         {
           "type": "paragraph",
@@ -667,7 +687,7 @@ export const genesisWaterEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "He differentiates."
+          "text": "He makes distinctions."
         },
         {
           "type": "paragraph",
@@ -691,7 +711,11 @@ export const genesisWaterEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "If I freeze the story here and make this unfinished world the complete measure of God, I may mistake an intermediate stage for the finished work—and an intermediate stage cannot tell me everything about the Person still working."
+          "text": "If I stop the story here, I may treat this unfinished world as though it were the finished work."
+        },
+        {
+          "type": "paragraph",
+          "text": "But one stage along the way cannot tell me everything about the Person who is still working. I should not make it the complete measure of what He is like."
         },
         {
           "type": "paragraph",
@@ -699,11 +723,11 @@ export const genesisWaterEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "It lets me watch God while the reality I inhabit is being brought into existence."
+          "text": "It lets me watch God as the world I live in is being brought into existence."
         },
         {
           "type": "paragraph",
-          "text": "What I learn about that reality and what I learn about God are therefore arriving through the same events—but they are not the same thing."
+          "text": "Through the same events, I learn something about the world and something about God. Those are connected discoveries, but they are not the same discovery."
         },
         {
           "type": "paragraph",
@@ -711,7 +735,7 @@ export const genesisWaterEssay: EssayEntry = {
         },
         {
           "type": "paragraph",
-          "text": "The Person creating it precedes it."
+          "text": "The Person creating it is already there before it."
         },
         {
           "type": "paragraph",
@@ -728,7 +752,7 @@ export const genesisWaterEssay: EssayEntry = {
       "blocks": [
         {
           "type": "paragraph",
-          "text": "There will be many more occurrences of those words:"
+          "text": "Those words will come again:"
         },
         {
           "type": "quote",
@@ -837,6 +861,10 @@ export const genesisWaterEssay: EssayEntry = {
         {
           "type": "paragraph",
           "text": "**I am beginning to know the Person.**"
+        },
+        {
+          "type": "paragraph",
+          "text": "**Keep watching Him.**"
         }
       ]
     }
