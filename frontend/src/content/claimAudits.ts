@@ -1,3 +1,4 @@
+import { genesisConfrontationClaimAudit } from './genesisConfrontationClaimAudit';
 import { genesisTreeClaimAudit } from './genesisTreeClaimAudit';
 import { frameworkClaimAudits } from './frameworkClaimAudits';
 import { genesisNakednessClaimAudit } from './genesisNakednessClaimAudit';
@@ -11,6 +12,7 @@ import { genesisLordClaimAudit } from './genesisLordClaimAudit';
 import { genesisLightsClaimAudit } from './genesisLightsClaimAudit';
 
 export const claimAuditEntries: ClaimAuditEntry[] = [
+  genesisConfrontationClaimAudit,
   genesisTreeClaimAudit,
   ...frameworkClaimAudits,
   genesisHidingClaimAudit,

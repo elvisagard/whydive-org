@@ -191,7 +191,7 @@ export default async function ClaimAuditPage({ params }: PageProps) {
                   })) ?? [];
 
                 return (
-                  <tr key={`${row.argumentRecordId}-${index}`} className={index % 2 ? 'bg-[#f8f4ed]' : 'bg-[#fffdf8]'}>
+                  <tr id={row.id ? `claim-${row.id}` : undefined} key={`${row.argumentRecordId}-${index}`} className={`scroll-mt-28 ${index % 2 ? 'bg-[#f8f4ed]' : 'bg-[#fffdf8]'}`}>
                     {hasClaimIds ? (
                       <td className="border-t border-[#d9d0c3] px-4 py-4 align-top font-semibold text-[#6f551e]">
                         {row.id}
@@ -338,6 +338,14 @@ export default async function ClaimAuditPage({ params }: PageProps) {
                 {record.id.toUpperCase()}
               </p>
               <h2 className="wd-display mt-3 text-3xl leading-tight text-[#101b23]">{record.title}</h2>
+              {audit.rows.some((row) => row.id && (row.argumentRecordIds ?? [row.argumentRecordId]).includes(record.id)) ? (
+                <nav aria-label={`Claims supported by ${record.id}`} className="mt-4 flex flex-wrap gap-3 text-sm">
+                  <span className="font-semibold">Supporting claims:</span>
+                  {audit.rows.filter((row) => row.id && (row.argumentRecordIds ?? [row.argumentRecordId]).includes(record.id)).map((row) => (
+                    <a key={row.id} href={`#claim-${row.id}`} className="underline underline-offset-4">{row.id}</a>
+                  ))}
+                </nav>
+              ) : null}
               <div className="mt-5 grid gap-4 text-base leading-7 text-[#536271]">
                 <p>
                   <span className="font-semibold text-[#101b23]">Claim: </span>
