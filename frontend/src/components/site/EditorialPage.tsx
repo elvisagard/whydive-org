@@ -6,7 +6,7 @@ interface EditorialPageProps {
   eyebrow: string;
   eyebrowHref?: string;
   title: string;
-  intro: string;
+  intro: ReactNode;
   image?: {
     src: string;
     alt: string;

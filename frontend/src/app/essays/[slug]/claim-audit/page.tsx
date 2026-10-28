@@ -121,7 +121,7 @@ export default async function ClaimAuditPage({ params }: PageProps) {
 
       {audit.provenanceNotes?.length ? (
         <aside aria-label="Record provenance" className="mb-8 space-y-3 border-l-2 border-[#8a6d2f] bg-[#fff8e6] p-5 text-base leading-7 text-[#465767]">
-          {audit.provenanceNotes.map((note) => <p key={note}>{note}</p>)}
+          {audit.provenanceNotes.map((note) => <p key={note}>{renderInlineMarkup(note)}</p>)}
         </aside>
       ) : null}
 

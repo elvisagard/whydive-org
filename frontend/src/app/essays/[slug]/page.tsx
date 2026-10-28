@@ -232,7 +232,7 @@ export default async function EssayDetailPage({ params }: PageProps) {
       eyebrow={category?.title ?? 'Essay'}
       eyebrowHref={category ? `/essays/category/${category.slug}` : undefined}
       title={essay.title}
-      intro={essay.deck}
+      intro={essay.deckItalic ? <em>{essay.deck}</em> : essay.deck}
       image={{
         src: essayImagePath,
         alt: essay.imageAlt ?? `Editorial image for ${essay.title}.`,
@@ -298,7 +298,7 @@ export default async function EssayDetailPage({ params }: PageProps) {
         <div className="essay-print-article-opener" aria-hidden="true">
           <p className="essay-print-kicker">{category?.title ?? 'Essay'}</p>
           <h1 className="essay-print-title">{essay.title}</h1>
-          <p className="essay-print-deck">{essay.deck}</p>
+          <p className="essay-print-deck">{essay.deckItalic ? <em>{essay.deck}</em> : essay.deck}</p>
           <img className="essay-print-image" src={essayImagePath} alt="" />
         </div>
 

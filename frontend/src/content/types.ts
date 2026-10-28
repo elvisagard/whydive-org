@@ -19,6 +19,7 @@ export interface EssaySeriesRef {
 }
 
 export interface EssayEntry {
+  deckItalic?: boolean;
   title: string;
   slug: string;
   deck: string;

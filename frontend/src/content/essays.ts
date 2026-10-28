@@ -1,3 +1,4 @@
+import { genesisWomanEssay } from './genesisWomanEssay';
 import { genesisConfrontationEssay } from './genesisConfrontationEssay';
 import { genesisNakednessEssay } from './genesisNakednessEssay';
 import { genesisChoiceEssay } from './genesisChoiceEssay';
@@ -87,6 +88,7 @@ export const essayEntries: EssayEntry[] = [
   genesisChoiceEssay,
   genesisNakednessEssay,
   genesisConfrontationEssay,
+  genesisWomanEssay,
   genesisLanguageEssay,
   {
     title: 'Strong Conclusions Require Strong Evidence',
